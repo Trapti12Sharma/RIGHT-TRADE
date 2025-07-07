@@ -118,82 +118,73 @@ const Navbar = () => {
       </div>
 
       {/* Bottom White Navbar */}
-      <div className="bg-white shadow">
-        <div className="max-w-[1280px] mx-auto px-6 py-5 flex items-center space-x-14">
-          {/* Logo */}
-          <div>
-            {/* <img src={logo} alt="FXTM Logo" className="w-32 h-auto" /> */}
-            <span className="text-2xl font-bold text-[#0b1736]">FXTM</span>
-          </div>
+ <div className="bg-white shadow">
+  <div className="max-w-[1280px] mx-auto px-6 pt-6 flex items-center space-x-14">
+    {/* Logo */}
+    <div>
+      <span className="text-2xl font-bold text-[#0b1736]">FXTM</span>
+    </div>
 
-          {/* Menu Items */}
-          <ul className="flex space-x-10 text-[#0b1736] font-medium text-sm relative">
-            {menuItems.map((item) => (
-              <li key={item.name} className="relative">
-                {/* Wrap button and dropdown in one div for hover persistence */}
-                <div
-                  onMouseEnter={() => setOpenDropdown(item.name)}
-                  onMouseLeave={() => {
-                    // Close only if dropdown itself is not hovered
-                    setTimeout(() => {
-                      if (!isDropdownHovered) setOpenDropdown(null);
-                    }, 100); // small delay to allow entering dropdown
-                  }}
-
-                >
-                                <div
-                className="flex flex-col items-center group"
-                onMouseEnter={() => setOpenDropdown(item.name)}
-                onMouseLeave={() => setOpenDropdown(null)}
-              >
-                <button className="hover:text-[#ff4c1b] transition">
-                  {item.name}
-                </button>
-                <span
-                  className={`h-1 w-full bg-[#ff4c1b] mt-2 transition ${
-                    openDropdown === item.name ? "block" : "hidden"
-                  }`}
-                ></span>
-              </div>
-
-
-                  {openDropdown === item.name && (
-              <div
-                className="mt-8 fixed left-0 top-[92px] w-full bg-[#10162f] text-white py-10 px-20 z-40 text-sm"
-                onMouseEnter={() => setIsDropdownHovered(true)}
-                onMouseLeave={() => {
-                  setIsDropdownHovered(false);
-                  setOpenDropdown(null);
-                }}
-                 >
-                <div className="max-w-7xl mx-auto flex ml-13 gap-8">
-                  {item.dropdown.map((section, idx) => (
-                    <div key={idx}>
-                      <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">
-                        {section.heading}
-                      </h4>
-                      <ul className="space-y-3">
-                        {section.links.map((link, index) => (
-                          <li
-                            key={index}
-                            className="hover:underline cursor-pointer text-white"
-                                            >
-                                  {link}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+    {/* Menu Items */}
+  <ul className="flex space-x-10  text-[#0b1736] font-medium text-sm relative">
+  {menuItems.map((item) => (
+    <li
+      key={item.name}
+      className="relative cursor-pointer"
+      onMouseEnter={() => setOpenDropdown(item.name)}
+      onMouseLeave={() => {
+        setTimeout(() => {
+          if (!isDropdownHovered) setOpenDropdown(null);
+        }, 100);
+      }}
+    >
+      <div className="flex flex-col items-center">
+        <button className=" cursor-pointer">
+          {item.name}
+        </button>
+        <span
+          className={`h-1 mt-2  bg-[#ff4c1b] ${
+            openDropdown === item.name ? "w-full block" : "w-0"
+          }`}
+        ></span>
       </div>
+
+      {openDropdown === item.name && (
+        <div
+          className="mt-8 fixed left-0 top-[92px] w-full bg-[#10162f] text-white py-10 px-20 z-40 text-sm"
+          onMouseEnter={() => setIsDropdownHovered(true)}
+          onMouseLeave={() => {
+            setIsDropdownHovered(false);
+            setOpenDropdown(null);
+          }}
+        >
+          <div className="max-w-7xl mx-auto flex ml-13 gap-8">
+            {item.dropdown.map((section, idx) => (
+              <div key={idx}>
+                <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">
+                  {section.heading}
+                </h4>
+                <ul className="space-y-3">
+                  {section.links.map((link, index) => (
+                    <li
+                      key={index}
+                      className="hover:underline cursor-pointer text-white"
+                    >
+                      {link}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </li>
+  ))}
+</ul>
+
+  </div>
+</div>
     </div>
   );
 };

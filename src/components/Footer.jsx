@@ -1,23 +1,22 @@
 import React from "react";
 import {
-  FaTelegramPlane,
-  FaTwitter,
-  FaLinkedinIn,
-  FaYoutube,
-  FaInstagram,
   FaFacebookF,
-  FaPhoneAlt,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+  FaPaperPlane,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-[#10162f] text-white text-sm">
-      <div className="max-w-7xl mx-auto px-10 py-12">
-        {/* Join our community & social icons */}
-        <div className="flex flex-col md:flex-row md:justify-between items-center border-b border-gray-700 pb-6 mb-10">
-          <h2 className="text-lg mb-4 md:mb-0">Join our community</h2>
-          <div className="flex space-x-4 text-lg">
-            <FaTelegramPlane className="cursor-pointer" />
+      <div className="max-w-7xl mx-auto px-6 pt-10 pb-4">
+        {/* Top section */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+          <h2 className="text-lg font-medium mb-4 md:mb-0">Join our community</h2>
+          <div className="flex space-x-6 text-xl">
+            <FaPaperPlane className="cursor-pointer" />
             <FaTwitter className="cursor-pointer" />
             <FaLinkedinIn className="cursor-pointer" />
             <FaYoutube className="cursor-pointer" />
@@ -26,12 +25,14 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer links grid */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <hr className="border-gray-600 mb-8" />
+
+        {/* Links grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* MARKETS */}
           <div>
-            <h4 className="font-bold mb-4">MARKETS</h4>
-            <ul className="space-y-3 text-gray-300">
+            <h3 className="font-bold mb-4">MARKETS</h3>
+            <ul className="space-y-2">
               <li>Metals</li>
               <li>Stocks</li>
               <li>Currency Pairs (FX)</li>
@@ -43,8 +44,8 @@ const Footer = () => {
 
           {/* KNOWLEDGE HUB */}
           <div>
-            <h4 className="font-bold mb-4">KNOWLEDGE HUB</h4>
-            <ul className="space-y-3 text-gray-300">
+            <h3 className="font-bold mb-4">KNOWLEDGE HUB</h3>
+            <ul className="space-y-2">
               <li>Full Library</li>
               <li>Trading Videos</li>
               <li>Ebooks</li>
@@ -56,8 +57,8 @@ const Footer = () => {
 
           {/* REGULATION & LICENSING */}
           <div>
-            <h4 className="font-bold mb-4">REGULATION & LICENSING</h4>
-            <ul className="space-y-3 text-gray-300">
+            <h3 className="font-bold mb-4">REGULATION & LICENSING</h3>
+            <ul className="space-y-2">
               <li>Licensed Broker</li>
               <li>Privacy Statement</li>
               <li>Cookie Policy</li>
@@ -68,39 +69,70 @@ const Footer = () => {
 
           {/* ABOUT */}
           <div>
-            <h4 className="font-bold mb-4">ABOUT</h4>
-            <ul className="space-y-3 text-gray-300">
-              <li className="flex items-start space-x-2">
-                <FaPhoneAlt className="mt-1" />
-                <span>
-                  Contact Us:
-                  <br />
-                  Customer Support: +44 20 3734 1025
-                </span>
-              </li>
+            <h3 className="font-bold mb-4">ABOUT</h3>
+            <ul className="space-y-2">
+              <li>Contact Us</li>
+              <li>Customer Support: +44 20 3734 1025</li>
               <li>+44 20 3734 1025</li>
               <li>
-                <strong>Exinity Limited:</strong>
-                <br />
-                Exinity Limited, 5th Floor, 355 NEX Tower,
-                <br />
-                Rue du Savoir, Cybercity, Ebene 72201,
-                <br />
-                Mauritius
+                Exinity Limited: <br />
+                5th Floor, 355 NEX Tower, Rue du Savoir, Cybercity, Ebene
+                72201, Mauritius
               </li>
               <li>
-                <strong>Exinity Capital East Africa Ltd:</strong>
-                <br />
-                West End Towers, Waiyaki Way, 6th Floor,
-                <br />
-                P.O. Box 1896-00606, Nairobi, Republic of Kenya
+                Exinity Capital East Africa Ltd: <br />
+                West End Towers, Waiyaki Way, 6th Floor, P.O. Box 1896-00606,
+                Nairobi, Republic of Kenya
               </li>
             </ul>
           </div>
-
-          {/* Empty column for spacing in grid */}
-          <div></div>
         </div>
+
+        {/* Horizontal row section */}
+        <div className="flex flex-col md:flex-row md:justify-between gap-10 mt-8">
+          {/* TRADING */}
+          <div>
+            <h3 className="font-bold mb-4">TRADING</h3>
+            <ul className="space-y-2">
+              <li>Accounts Overview & Comparison</li>
+              <li>Advantage Account</li>
+              <li>Demo Trading</li>
+            </ul>
+          </div>
+
+          {/* PLATFORMS */}
+          <div>
+            <h3 className="font-bold mb-4">PLATFORMS</h3>
+            <ul className="space-y-2">
+              <li>MT4</li>
+              <li>MT5</li>
+              <li>Mobile Trading</li>
+            </ul>
+          </div>
+
+          {/* PRICING */}
+          <div>
+            <h3 className="font-bold mb-4">PRICING</h3>
+            <ul className="space-y-2">
+              <li>Performance Statistics</li>
+              <li>Commissions and Fees</li>
+              <li>Deposits and Withdrawals</li>
+            </ul>
+          </div>
+
+          {/* CAREERS */}
+          <div>
+            <h3 className="font-bold mb-4">CAREERS</h3>
+            <ul className="space-y-2">
+              <li>Careers</li>
+              <li>FXTM in Nigeria</li>
+              <li>FXTM Partnership - Affiliates</li>
+              <li>Sponsorships and ESG</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr className="border-gray-600 mt-8" />
       </div>
     </footer>
   );
