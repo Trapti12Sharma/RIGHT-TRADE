@@ -168,7 +168,7 @@ const Navbar = () => {
                   {section.links.map((link, index) => (
                     <li
                       key={index}
-                      className="hover:underline cursor-pointer text-white"
+                      className="cursor-pointer text-white px-3 py-1 rounded-md hover:bg-gray-600"
                     >
                       {link}
                     </li>
