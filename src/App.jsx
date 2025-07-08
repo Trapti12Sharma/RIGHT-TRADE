@@ -11,6 +11,9 @@ import WhatIsTrading from "./components/WhatIsTrading";
 import DemoAccountSection from "./components/DemoAccountSection";
 import DemoStepsSection from "./components/DemoStepsSection";
 import ExpertHintsSection from "./components/ExpertHintsSection";
+import TradeOnTheGoSection from "./components/TradeOnTheGoSection";
+import TradingPlatformsSection from "./components/TradingPlatformsSection";
+import LatestNewsSection from "./components/LatestNewsSection";
 
 
 
@@ -27,6 +30,9 @@ const App = () => {
        <DemoAccountSection />
        <DemoStepsSection />
         <ExpertHintsSection />
+        <TradeOnTheGoSection />
+        <TradingPlatformsSection />
+         <LatestNewsSection />
        <Footer />
        <FooterBottom />
       {/* Page content */}

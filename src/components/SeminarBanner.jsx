@@ -44,7 +44,7 @@ const SeminarBanner = () => {
   return (
     <div
       className="relative w-full h-screen flex items-center justify-start bg-cover bg-center transition-all duration-1000"
-      style={{ backgroundImage: `url('${slide.image}')` }}
+      style={{ backgroundImage: `url('${slide.image}')` ,  fontFamily: '"Source Sans Pro", sans-serif', }}
     >
             {/* Orange Polygon Overlay */}
             <div
@@ -57,16 +57,24 @@ const SeminarBanner = () => {
 
       {/* Text Content */}
       <div className="relative z-10 text-white px-10 max-w-xl">
-        <h2 className="text-3xl font-bold mb-4">{slide.heading}</h2>
-        <p className="mb-2">{slide.subText}</p>
+        <h2  className="text-3xl font-bold mb-4" style={{ 
+  fontSize: '50px'
+    }}>{slide.heading}</h2>
+        <p className="mb-2"  style={{ 
+  fontSize: '25px'
+    }}>{slide.subText}</p>
         {slide.details?.map((line, i) => (
-          <p key={i} className="mb-2 font-semibold">{line}</p>
+          <p  style={{ 
+  fontSize: '25px'
+    }} key={i} className="mb-2 font-semibold">{line}</p>
         ))}
-        <p className="mb-4">{!slide.details ? null : ""}</p>
+        <p  style={{ 
+  fontSize: '25px'
+    }} className="mb-4">{!slide.details ? null : ""}</p>
         <button className="bg-lime-500 text-black font-semibold px-4 py-2 rounded-full hover:bg-lime-600 transition">
           {slide.buttonText}
         </button>
-        <p className="text-xs italic mt-2">{slide.note}</p>
+        <p  className="text-xs italic mt-2">{slide.note}</p>
       </div>
     </div>
   );
