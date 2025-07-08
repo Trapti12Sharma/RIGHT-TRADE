@@ -11,10 +11,13 @@ import WhatIsTrading from "./components/WhatIsTrading";
 import DemoAccountSection from "./components/DemoAccountSection";
 import DemoStepsSection from "./components/DemoStepsSection";
 import ExpertHintsSection from "./components/ExpertHintsSection";
-import TradeOnTheGoSection from "./components/TradeOnTheGoSection";
-import TradingPlatformsSection from "./components/TradingPlatformsSection";
+import TradingSections from './components/TradingSections';
+// import TradeOnTheGoSection from "./components/TradeOnTheGoSection";
+// import TradingPlatformsSection from "./components/TradingPlatformsSection";
 import LatestNewsSection from "./components/LatestNewsSection";
-
+import EducationSections from "./components/EducationSections";
+import ExpertTraderSection from './components/ExpertTraderSection';
+import AwardsSection from "./components/AwardsSection";
 
 
 const App = () => {
@@ -30,9 +33,13 @@ const App = () => {
        <DemoAccountSection />
        <DemoStepsSection />
         <ExpertHintsSection />
-        <TradeOnTheGoSection />
-        <TradingPlatformsSection />
+        <TradingSections />
+        {/* <TradeOnTheGoSection />
+        <TradingPlatformsSection /> */}
          <LatestNewsSection />
+         <EducationSections />
+         <ExpertTraderSection />
+         <AwardsSection />
        <Footer />
        <FooterBottom />
       {/* Page content */}

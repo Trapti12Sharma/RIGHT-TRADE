@@ -15,13 +15,33 @@ const WhatIsTrading = () => {
 
       {/* Right content side */}
       <div className="md:w-1/2 w-full bg-white p-8 md:p-16 flex flex-col justify-center">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[#10162f]">
+        <h2 style={{ 
+          fontFamily: '"Source Sans Pro", sans-serif', 
+          fontSize: '40px',
+          margin:'0px 0px 20px',
+           textAlign:"justify"
+            }}
+             className=" md:text-3xl  mb-6 text-[#10162f]">
           What is trading?
         </h2>
-        <p className="text-[#10162f] mb-4 leading-relaxed">
+        <p style={{ 
+          fontFamily: '"Source Sans Pro", sans-serif', 
+          fontSize: '16px',
+          margin:'0px 0px 16px',
+           textAlign:"justify"
+          
+            }}
+         className="text-[#10162f] mb-4 leading-relaxed">
           Trading is the buying and selling securities, such as stocks, bonds, currencies, and commodities, to make a profit. And success depends on a trader's ability to be profitable over time.
         </p>
-        <p className="text-[#10162f] leading-relaxed">
+        <p style={{ 
+          fontFamily: '"Source Sans Pro", sans-serif', 
+          fontSize: '16px',
+          margin:'0px 0px 16px',
+           textAlign:"justify"
+          
+            }}
+        className="text-[#10162f] leading-relaxed">
           Investors try to forecast market price movements and profit from buying or selling an asset at a higher or lower price. You can 'go long' and buy a security, hoping it will go up in value and give you a profit, or you can 'go short' and sell in the belief that it will go down in value.
         </p>
       </div>

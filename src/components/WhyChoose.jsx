@@ -32,13 +32,27 @@ const WhyChoose = () => {
   return (
     <section className="bg-[#121733] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-semibold mb-12">Why choose FXTM?</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <h2  style={{ 
+  fontFamily: '"Source Sans Pro", sans-serif', 
+  fontSize: '40px'
+    }} 
+    className="font-semibold mb-12">Why choose FXTM?</h2>
+        <div style={{ 
+  fontFamily: '"Source Sans Pro", sans-serif', 
+  fontSize: '24px'
+    }} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {features.map((feature, idx) => (
             <div key={idx} className="flex flex-col items-center text-center px-4">
               {feature.icon}
-              <h3 className="font-semibold text-lg mt-4 mb-2">{feature.title}</h3>
-              <p className="text-sm leading-relaxed">{feature.description}</p>
+              <h5 style={{ 
+  fontFamily: '"Source Sans Pro", sans-serif', 
+  fontSize: '20px'
+    }}  className="font-semibold  mt-4 mb-2">{feature.title}</h5>
+              <p style={{ 
+  fontFamily: '"Source Sans Pro", sans-serif', 
+  fontSize: '16px',
+  margin: '0px 0px 16px'
+    }}  className=" leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
