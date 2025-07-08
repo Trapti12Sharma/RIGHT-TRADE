@@ -2,23 +2,30 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import reversal from "../assets/reversal.png";
+import trailing from "../assets/trailing.png";
+import swap from "../assets/swap.png";
+import abc from "../assets/abc.png";
+import mistake from "../assets/mistake.png";
+import election from "../assets/election.png";
+// import tradefuture from "../assets/tradefuture.png";
 
 const cardData1 = [
   {
     title: "What is a Trend Reversal?",
-    image: "/assets/reversal.png",
+    image: reversal,
     desc: "Trend reversal markets end one existing trend and begin a new one...",
     link: "#",
   },
   {
     title: "What is a Trailing Stop?",
-    image: "/assets/trailing-stop.png",
+    image: trailing,
     desc: "Trailing Stop is used to lock profits...",
     link: "#",
   },
   {
     title: "What is a Swap?",
-    image: "/assets/swap.png",
+    image: swap,
     desc: "Swaps refer to interest fees you either pay or receive...",
     link: "#",
   },
@@ -27,19 +34,19 @@ const cardData1 = [
 const cardData2 = [
   {
     title: "2024 US election: How to navigate volatility and manage risk",
-    image: "/assets/stop-limit.png",
+    image: election,
     desc: "As the 2024 US election enters the home stretch...",
     link: "#",
   },
   {
     title: "ABC Patterns in Trading: A Strategy Guide",
-    image: "/assets/quote.png",
+    image: abc,
     desc: "ABC patterns are computed using AB and BC waves...",
     link: "#",
   },
   {
     title: "8 Common Mistakes New Futures Traders Make",
-    image: "/assets/mistake.png",
+    image: mistake,
     desc: "Entering futures trading without preparation can lead to losses...",
     link: "#",
   },

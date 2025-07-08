@@ -1,29 +1,33 @@
 import React from "react";
+import award from "../assets/award.svg";
+import award1 from "../assets/award1.svg";
+import award2 from "../assets/award2.svg";
+import award3 from "../assets/award3.svg";
 
 const awards = [
   {
-    title: "The Best Educational Program",
-    year: "2022",
-    subtitle: "WORLD FINANCIAL AWARD",
-    img: "/icons/award-edu-2022.svg" // place appropriate svgs in public/icons
+    // title: "The Best Educational Program",
+    // year: "2022",
+    // subtitle: "WORLD FINANCIAL AWARD",
+    img: award, // place appropriate svgs in public/icons
   },
   {
-    title: "Best Online Trading Platform Nigeria",
-    year: "2021",
-    subtitle: "WORLD BUSINESS OUTLOOK",
-    img: "/icons/award-platform-2021.svg"
+    // title: "Best Online Trading Platform Nigeria",
+    // year: "2021",
+    // subtitle: "WORLD BUSINESS OUTLOOK",
+    img: award1,
   },
   {
-    title: "Best Trading Experience",
-    year: "2021",
-    subtitle: "WORLD FINANCE",
-    img: "/icons/award-experience-2021.svg"
+    // title: "Best Trading Experience",
+    // year: "2021",
+    // subtitle: "WORLD FINANCE",
+    img: award2,
   },
   {
-    title: "The Most Trusted Forex Broker",
-    year: "2022",
-    subtitle: "WORLD FINANCIAL AWARD",
-    img: "/icons/award-broker-2022.svg"
+    // title: "The Most Trusted Forex Broker",
+    // year: "2022",
+    // subtitle: "WORLD FINANCIAL AWARD",
+    img: award3,
   },
 ];
 

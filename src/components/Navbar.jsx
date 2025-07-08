@@ -3,6 +3,7 @@ import { FaSearch, FaChevronDown } from "react-icons/fa";
 import logo from "../assets/logo.png"; // update path as per your project
 
 const Navbar = () => {
+  
   const [openDropdown, setOpenDropdown] = useState(null);
   const [showSearch, setShowSearch] = useState(false);
   const [isDropdownHovered, setIsDropdownHovered] = useState(false);

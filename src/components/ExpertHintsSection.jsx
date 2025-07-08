@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaQuoteRight } from "react-icons/fa";
 
 const ExpertHintsSection = () => {
@@ -18,13 +18,26 @@ const ExpertHintsSection = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideDirection, setSlideDirection] = useState("next");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideDirection("next");
+      setCurrentIndex((prevIndex) =>
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   const goToSlide = (index) => {
+    setSlideDirection(index > currentIndex ? "next" : "prev");
     setCurrentIndex(index);
   };
 
   return (
-    <section className="bg-[#10162f] text-white text-center py-16 px-4">
+    <section className="bg-[#10162f] text-white text-center py-16 px-4 overflow-hidden">
       {/* Quote Icon */}
       <div className="flex justify-center mb-6">
         <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center">
@@ -35,13 +48,23 @@ const ExpertHintsSection = () => {
       {/* Subtitle */}
       <h4 className="text-[#f2532e] font-semibold mb-4">HINTS FROM EXPERTS</h4>
 
-      {/* Quote Text */}
-      <p className="max-w-3xl mx-auto text-lg font-medium mb-4 px-4">
-        {slides[currentIndex].text}
-      </p>
-
-      {/* Author */}
-      <p className="font-semibold">{slides[currentIndex].author}</p>
+      {/* Slides container */}
+      <div className="relative max-w-3xl mx-auto h-auto">
+        <div className="overflow-hidden">
+          <div
+            key={currentIndex}
+            className={`transition-transform duration-700 ease-in-out`}
+            style={{
+              transform: `translateX(0%)`,
+            }}
+          >
+            <p className="text-lg font-medium mb-4 px-4">
+              {slides[currentIndex].text}
+            </p>
+            <p className="font-semibold">{slides[currentIndex].author}</p>
+          </div>
+        </div>
+      </div>
 
       {/* Dots */}
       <div className="flex justify-center mt-6 space-x-4">

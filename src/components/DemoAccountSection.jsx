@@ -3,7 +3,7 @@ import home6 from "../assets/home6.png"; // update path as per your project
 
 const DemoAccountSection = () => {
   return (
-    <section className="relative overflow-hidden py-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center" style={{ backgroundColor: "#1e2235" }}>
+    <section className="relative overflow-hidden pt-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center" style={{ backgroundColor: "#1e2235" }}>
       {/* Background circular overlay */}
       <div className="absolute inset-0">
         <div className="w-[800px] h-[800px] bg-[#10162f] opacity-60 rounded-full absolute -left-40 -top-40"></div>
