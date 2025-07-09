@@ -1,13 +1,18 @@
 import React from "react";
+import worldMap from "../assets/worldMap.png";
 
 const FooterBottom = () => {
   return (
-    <div className="bg-[#10162f] text-white text-xs leading-relaxed">
+    <div className="bg-[#1a1f3c] text-white text-xs leading-relaxed"  style={{
+    backgroundImage: `url(${worldMap})`,
+    backgroundColor: "#1a1f3c",
+    backgroundRepeat: "no-repeat",
+  }} >
       {/* Top full-width horizontal line */}
       <div className="w-full border-t border-gray-600"></div>
 
       {/* Content container with max-width centered */}
-      <div className="max-w-7xl mx-auto px-4 py-8 space-y-4">
+      <div  className="max-w-7xl mx-auto px-4 py-8 space-y-4" style={{padding:'50px 156px 0 156px',fontFamily: '"Source Sans Pro", sans-serif', fontSize:'8px'}}>
         <p>
           <strong>FXTM brand</strong> is authorized and regulated in various jurisdictions.
         </p>
