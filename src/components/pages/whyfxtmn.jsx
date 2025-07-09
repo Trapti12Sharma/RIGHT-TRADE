@@ -8,6 +8,9 @@ import fxtm5 from '../../assets/fxtm5.svg';
 import fxtm6 from '../../assets/fxtm6.png';
 import fxtm7 from '../../assets/fxtm7.png';
 import fxtm8 from '../../assets/fxtm8.png';
+import fxtm9 from '../../assets/fxtm9.png';
+
+
 
 const WhyFxtm = () => {
   return (
@@ -158,17 +161,23 @@ const WhyFxtm = () => {
 
 {/* Fifth Section – Exinity Group */}
 <section
-  className="w-full text-white py-24 px-4 text-center"
+  className="relative w-full text-white py-24 px-4 text-center bg-cover bg-center bg-no-repeat"
   style={{
-    background: 'linear-gradient(to right, #1e2235, #2a2f4a)',
+    backgroundImage: `url(${fxtm9})`, // keep your imported image path here
     fontFamily: "'Source Sans Pro', sans-serif",
   }}
 >
-  <h2 className="text-3xl md:text-4xl font-semibold mb-6">Exinity Group</h2>
-  <p className="text-lg md:text-xl max-w-4xl mx-auto leading-8">
-    The leadership team behind Exinity Group has proven experience in banking, trading and financial technology.
-    Their priority? Helping you to succeed.
-  </p>
+  {/* Dark overlay to improve text visibility */}
+  <div className="absolute inset-0 bg-[#1d2235]/80 backdrop-blur-sm z-0"></div>
+
+  {/* Content with relative z-index to stay above the overlay */}
+  <div className="relative z-10">
+    <h2 className="text-3xl md:text-4xl font-semibold mb-6">Exinity Group</h2>
+    <p className="text-lg md:text-xl max-w-4xl mx-auto leading-8">
+      The leadership team behind Exinity Group has proven experience in banking, trading and financial technology.
+      Their priority? Helping you to succeed.
+    </p>
+  </div>
 </section>
 
 {/* Sixth Section  More reasons to trade with FXT */}
