@@ -1,6 +1,7 @@
 import React, { useRef,useState, useEffect } from "react";
 import { FaSearch, FaChevronDown } from "react-icons/fa";
 import logo from "../assets/logo.png"; // update path as per your project
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   
@@ -170,11 +171,18 @@ fontweight: 400,
         <div className="max-w-[1280px] mx-auto px-6 pt-2 flex items-center space-x-14">
           {/* Logo */}
           <div>
-            <span className="text-2xl font-bold"> <img
+
+           
+                              <Link to="/"><span style={{cursor:"pointer"}} className="text-2xl font-bold">
+            <img
                         src={logo}
                         alt="FXTM"
                         className="w-50 h-15"
-                      /></span>
+                      /></span></Link> 
+                            
+                              
+                            
+            
           </div>
 
           {/* Menu Items */}
@@ -231,7 +239,11 @@ fontweight: 400,
                               key={index}
                               className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600"
                             >
-                              {link}
+                                                      {link === "Why FXTM" ? (
+                              <Link to="/WhyFxtm">{link}</Link>
+                            ) : (
+                              link
+                            )}
                             </li>
                           ))}
                         </ul>
