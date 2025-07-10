@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Shared Layout Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import FooterBottom from "./components/FooterBottom";
+// import FooterBottom from "./components/FooterBottom";
 
 // Home Page Components
 import SeminarBanner from "./components/SeminarBanner";
@@ -57,7 +57,7 @@ const App = () => {
         <Route path="/WhyFxtm" element={<WhyFxtm />} />
       </Routes>
       <Footer />
-      <FooterBottom />
+      {/* <FooterBottom /> */}
     </Router>
   );
 };
