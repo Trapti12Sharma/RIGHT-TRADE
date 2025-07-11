@@ -241,7 +241,14 @@ const Navbar = () => {
                           <ul className="space-y-3">
                             {section.links.map((link, index) => (
                               <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-                                {link === "Why FXTM" ? <Link to="/WhyFxtm">{link}</Link> : link}
+                                {link === "Why FXTM" ? <Link to="/WhyFxtm">{link}</Link> : link === "Awards" ? (
+  <Link to="/awards" >
+    {link}
+  </Link>
+) : (
+  <span className="cursor-pointer">{link}</span>
+)}
+                                
                               </li>
                             ))}
                           </ul>
@@ -312,12 +319,17 @@ const Navbar = () => {
                             {section.links.map((link, index) => (
                               <li key={index} className="text-sm text-gray-300">
                                 {link === "Why FXTM" ? (
-                                  <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>
-                                    {link}
-                                  </Link>
-                                ) : (
-                                  <span className="cursor-pointer">{link}</span>
-                                )}
+  <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>
+    {link}
+  </Link>
+) : link === "Awards" ? (
+  <Link to="/awards" onClick={() => setIsMobileMenuOpen(false)}>
+    {link}
+  </Link>
+) : (
+  <span className="cursor-pointer">{link}</span>
+)}
+
                               </li>
                             ))}
                           </ul>
