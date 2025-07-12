@@ -26,6 +26,8 @@ import AwardsSection from "./components/AwardsSection";
 // New Page
 import WhyFxtm from "./components/pages/whyfxtmn";
 import Award from "./components/pages/award";
+import FundSafety from "./components/pages/fundSafety";
+
 
 
 // Home Page Grouped as Component
@@ -58,6 +60,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/WhyFxtm" element={<WhyFxtm />} />
         <Route path="/awards" element={<Award />} />
+        <Route path="/fundsafety" element={<FundSafety />} />
+
       </Routes>
       <Footer />
       {/* <FooterBottom /> */}
