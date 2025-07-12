@@ -4,11 +4,74 @@ import React from "react";
 import fund1 from "../../assets/fund1.png"; // 🔒 Banner
 import fund2 from "../../assets/fund2.png"; // 💼 Insurance
 import fund3 from "../../assets/fund3.png"; // ✅ Regulation
+import fund4 from "../../assets/fund4.png"; // ✅ Regulation
+import fund5 from "../../assets/fund5.png";
+import fund6 from "../../assets/fund6.svg"; // ✅ Regulation
+import fund7 from "../../assets/fund7.svg"; // ✅ Regulation
+import fund8 from "../../assets/fund8.svg";
+import fund9 from "../../assets/fund9.svg";
+import fund10 from "../../assets/fund10.svg"; // ✅ Award image
+import fund11 from "../../assets/fund11.svg"; // ✅ Award image
+import fund12 from "../../assets/fund12.svg"; // ✅ Award image
 
 import ImageTextSection from "../common/ImageTextSection";
 import TextImageSection from "../common/TextImageSection";
+import ImageLeftTextRightSection from "../common/ImageLeftTextRightSection";
+import TextLeftImageRightSection from "../common/TextLeftImageRightSection";
+import TrustReasonsSection from "../common/TrustReasonsSection";
+import TrustCTASection from "../common/TrustCTASection";
+import FaqSection from "../common/FaqSection";
+import AwardsSection from "../common/AwardsSection";
 
 const FundSafety = () => {
+  const faqItems = [
+    { question: "What is segregation of funds?" },
+    { question: "How does segregation of funds work?" },
+    { question: "What are the benefits of segregated funds?" },
+    {
+      question: "What's the difference between mutual funds and segregated funds?",
+    },
+    { question: "Can you withdraw from segregated funds?" },
+  ];
+
+  const awardsItems = [
+    {
+      imageSrc: fund9,
+      
+    },
+    {
+      imageSrc: fund10,
+      
+    },
+    {
+      imageSrc: fund11,
+      
+    },
+    {
+      imageSrc: fund12,
+      
+    },
+  ];
+
+  const reasonsData = [
+    {
+      icon: fund6,
+      title: "10 years strong",
+      description: "Over a decade of trust, value and happy customers.",
+    },
+    {
+      icon: fund7,
+      title: "Over 1 million clients worldwide",
+      description: "Trusted by clients in over 150 countries.",
+    },
+    {
+      icon: fund8,
+      title: "Rapid execution speeds",
+      description:
+        "Trade execution in milliseconds means you'll always get the best market price.",
+    },
+  ];
+
   return (
     <>
       {/* 🔒 Section 1 - Secure Vault Banner */}
@@ -29,7 +92,9 @@ const FundSafety = () => {
 
         {/* Banner Content */}
         <div className="relative z-20 px-6 sm:px-10 lg:px-24 max-w-3xl text-left">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-3 leading-tight">How we protect your money</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-3 leading-tight">
+            How we protect your money
+          </h2>
           <p className="text-lg mb-6">Trade with complete peace of mind.</p>
           <button className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-[#e74728] transition duration-300">
             Learn more
@@ -71,12 +136,48 @@ const FundSafety = () => {
       />
 
       {/* 📄 Section 4 - Regulation Info */}
-            <TextImageSection
+      <TextImageSection
         imgSrc={fund3}
         title="We're regulated"
         paragraph="There’s no need to look for our licence. We’re regulated in various jurisdictions, including by the Financial Services Commission, Mauritius under licence C113012295 and Capital Markets Authority of Kenya under licence number 135."
         reverse={true}
-        />
+      />
+
+      {/* Section 5 */}
+      <ImageLeftTextRightSection
+        imgSrc={fund4}
+        title="Your funds are separate and secure"
+        paragraph="We keep your funds entirely separate from our own operational funds in various top-tier banking institutions. We won't ever use any of your money for either our own use or any other investment, ensuring your protection at all times."
+      />
+
+      {/* Section 6: Cutting-edge encryption */}
+      <TextLeftImageRightSection
+        imgSrc={fund5}
+        title="Cutting-edge encryption"
+        paragraph="We use the SSL (Secure Sockets Layer) network security protocol to guarantee a secure connection in all communications with you, protect your safety during transactions with us and keep all your information private."
+        listItems={[
+          "User identification and server authentication policies make sure the data is sent to the right customer terminal and server.",
+          "Data transmission is encrypted to prevent data theft and unauthorized access by third parties.",
+          "Keeps data integrity and ensures that all data remains unchanged during transmission.",
+        ]}
+      />
+
+      {/* Section 7: Why Traders Trust FXTM */}
+      <TrustReasonsSection reasons={reasonsData} />
+
+      {/* Section 8: CTA */}
+      <TrustCTASection
+        title="Trade with a broker you can trust"
+        subtitle="Licensed, regulated and dedicated to your safety."
+        buttonText="Start trading"
+        buttonLink="/start-trading"
+      />
+
+      {/* Section 9: FAQ Section */}
+      <FaqSection faqs={faqItems} />
+
+      {/* Section 10: Awards Section */}
+      <AwardsSection awards={awardsItems} />
     </>
   );
 };

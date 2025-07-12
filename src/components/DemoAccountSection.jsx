@@ -3,7 +3,7 @@ import home6 from "../assets/home6.png"; // update path as per your project
 
 const DemoAccountSection = () => {
   return (
-    <section className="relative overflow-hidden pt-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center" style={{ backgroundColor: "#1e2235" }}>
+    <section className="relative overflow-hidden md:pb-4 pt-16 px-6  md:px-20 flex flex-col md:flex-row items-center justify-center" style={{ backgroundColor: "#1e2235" }}>
       {/* Background circular overlay */}
       <div className="absolute inset-0">
         <div className="w-[800px] h-[800px] bg-[#10162f] opacity-60 rounded-full absolute -left-40 -top-40"></div>
@@ -35,14 +35,14 @@ const DemoAccountSection = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-4">
-            <button className="bg-[#f2532e] hover:bg-[#e24725] text-white px-6 py-3 rounded-full font-semibold">
-              Open Demo
-            </button>
-            <button className="bg-white text-[#10162f] px-6 py-3 rounded-full font-semibold">
-              FXTM Trader
-            </button>
-          </div>
+         <div className="flex flex-col md:flex-row gap-4 mb-6 md:mb-0">
+  <button className="bg-[#f2532e] hover:bg-[#e24725] text-white px-6 py-3 rounded-full font-semibold">
+    Open Demo
+  </button>
+  <button className="bg-white text-[#10162f] px-6 py-3 rounded-full font-semibold">
+    FXTM Trader
+  </button>
+</div>
         </div>
       </div>
     </section>

@@ -6,9 +6,9 @@ export default function ExpertTraderSection() {
     <div className="bg-[#1f2239] relative py-20">
       {/* Arrow shape at top center */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full">
-        <svg width="40" height="20" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">
+        {/* <svg width="40" height="20" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">
           <polygon points="0,0 20,20 40,0" fill="#1f2239" />
-        </svg>
+        </svg> */}
       </div>
 
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
