@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Shared Layout Components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// import FooterBottom from "./components/FooterBottom";
+
 
 // Home Page Components
 import SeminarBanner from "./components/SeminarBanner";
@@ -27,6 +27,8 @@ import AwardsSection from "./components/AwardsSection";
 import WhyFxtm from "./components/pages/whyfxtmn";
 import Award from "./components/pages/award";
 import FundSafety from "./components/pages/fundSafety";
+import TradingStatistics from "./components/pages/tradingStatistics";
+
 
 
 
@@ -61,7 +63,7 @@ const App = () => {
         <Route path="/WhyFxtm" element={<WhyFxtm />} />
         <Route path="/awards" element={<Award />} />
         <Route path="/fundsafety" element={<FundSafety />} />
-
+          <Route path="/tradingstatistics" element={<TradingStatistics />} />
       </Routes>
       <Footer />
       {/* <FooterBottom /> */}
