@@ -31,7 +31,6 @@ import TradingStatistics from "./components/pages/tradingStatistics";
 
 
 
-
 // Home Page Grouped as Component
 const Home = () => {
   return (
