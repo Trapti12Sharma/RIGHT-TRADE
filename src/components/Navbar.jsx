@@ -189,7 +189,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/">
               <span style={{ cursor: "pointer" }} className="text-2xl font-bold">
-                <img src={logo} alt="FXTM" className="w-[170px] h-[60px]" />
+                <img src={logo} alt="FXTM" className="w-[70px] h-auto object-contain" />
               </span>
             </Link>
           </div>
@@ -239,7 +239,7 @@ const Navbar = () => {
                             <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">{section.heading}</h4>
                           )}
                           <ul className="space-y-3">
-                            {section.links.map((link, index) => (
+                           {section.links.map((link, index) => (
   <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
     {link === "Why FXTM" ? (
       <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
@@ -249,11 +249,14 @@ const Navbar = () => {
       <Link to="/fundsafety" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
     ) : link === "Trading Statistics" ? (
       <Link to="/tradingstatistics" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+    ) : link === "Deposits and Withdrawals" ? (
+      <Link to="/deposits-withdrawals" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
     ) : (
       <span className="cursor-pointer">{link}</span>
     )}
   </li>
 ))}
+
 
                           </ul>
                         </div>

@@ -28,6 +28,8 @@ import WhyFxtm from "./components/pages/whyfxtmn";
 import Award from "./components/pages/award";
 import FundSafety from "./components/pages/fundSafety";
 import TradingStatistics from "./components/pages/tradingStatistics";
+import DepositsWithdrawals from "./components/pages/DepositsWithdrawals";
+
 
 
 
@@ -63,6 +65,7 @@ const App = () => {
         <Route path="/awards" element={<Award />} />
         <Route path="/fundsafety" element={<FundSafety />} />
           <Route path="/tradingstatistics" element={<TradingStatistics />} />
+           <Route path="/deposits-withdrawals" element={<DepositsWithdrawals />} />
       </Routes>
       <Footer />
       {/* <FooterBottom /> */}

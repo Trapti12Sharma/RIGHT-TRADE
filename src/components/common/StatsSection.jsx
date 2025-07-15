@@ -13,11 +13,11 @@ const StatsSection = ({ title, subtitle, buttonText, note, image }) => {
     >
       {/* 🔺 Left Orange Overlay */}
       <div
-        className="absolute inset-0 bg-[#e94c2a] opacity-95"
-        style={{
-          clipPath: 'polygon(0 0, 50% 0, 40% 100%, 0% 100%)',
-        }}
-      ></div>
+          className="absolute inset-0 bg-[#f7421e] opacity-95"
+          style={{
+            clipPath: "polygon(0 0, 60% 0, 80% 70%, 0% 100%)",
+          }}
+        ></div>
 
       {/* Content */}
       <div className="relative z-20 px-6 sm:px-10 lg:px-24 max-w-3xl text-left">

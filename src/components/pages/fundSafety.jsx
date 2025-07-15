@@ -86,7 +86,7 @@ const FundSafety = () => {
         <div
           className="absolute inset-0 bg-[#f7421e] opacity-95"
           style={{
-            clipPath: "polygon(0 0, 50% 0, 25% 100%, 0% 100%)",
+            clipPath: "polygon(0 0, 60% 0, 80% 70%, 0% 100%)",
           }}
         ></div>
 
