@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react"
 import { FaSearch, FaChevronDown, FaBars, FaTimes, FaUser, FaFileAlt, FaEnvelope } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.jpeg"
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null)
