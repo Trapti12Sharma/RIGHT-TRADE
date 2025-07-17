@@ -1,11 +1,11 @@
-// src/pages/WhyRightTrade Capital.jsx
+// src/pages/WhyFxtm.jsx
 import React from "react";
-import RightTrade Capital1 from "../../assets/RightTrade Capital1.png"; // update path if needed
-import RightTrade Capital2 from '../../assets/RightTrade Capital2.svg';
-import RightTrade Capital3 from '../../assets/RightTrade Capital3.svg';
-import RightTrade Capital4 from '../../assets/RightTrade Capital4.svg';
-import RightTrade Capital5 from '../../assets/RightTrade Capital5.svg';
-import RightTrade Capital9 from '../../assets/RightTrade Capital9.png';
+import fxtm1 from "../../assets/fxtm1.png"; // update path if needed
+import fxtm2 from '../../assets/fxtm2.svg';
+import fxtm3 from '../../assets/fxtm3.svg';
+import fxtm4 from '../../assets/fxtm4.svg';
+import fxtm5 from '../../assets/fxtm5.svg';
+import fxtm9 from '../../assets/fxtm9.png';
 import { Link } from "react-router-dom";
 import email from "../../assets/email.png"
 import doc from "../../assets/doc.png"
@@ -16,14 +16,14 @@ import message from "../../assets/message.png"
 
 
 
-const WhyRightTrade Capital = () => {
+const WhyFxtm = () => {
   return (
     <>
       {/* Hero Section */}
       <div
         className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-start bg-cover bg-center"
         style={{
-          backgroundImage: `url(${RightTrade Capital1})`,
+          backgroundImage: `url(${fxtm1})`,
           fontFamily: "'Source Sans Pro', sans-serif",
         }}
       >
@@ -50,7 +50,7 @@ const WhyRightTrade Capital = () => {
         </div>
       </div>
 
-      {/* Why RightTrade Capital Section */}
+      {/* Why FXTM Section */}
       <section
         className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-20 xl:px-32 text-[#1c1c1c]"
         style={{ fontFamily: '"Source Sans Pro"' }}
@@ -59,6 +59,7 @@ const WhyRightTrade Capital = () => {
         <div className="text-[#0061eb] mb-4 sm:mb-6 text-sm">
           <Link to="/" className="hover:underline font-medium">
             RightTrade Capital
+
           </Link>
           <span className="text-black"> › About Us</span>
         </div>
@@ -188,7 +189,7 @@ const WhyRightTrade Capital = () => {
       <section
         className="relative w-full text-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 text-center bg-cover bg-center bg-no-repeat"
         style={{
- backgroundImage: `url(${RightTrade Capital9})`,
+ backgroundImage: `url(${fxtm9})`,
            fontFamily: "'Source Sans Pro'",
         }}
       >
@@ -212,12 +213,13 @@ const WhyRightTrade Capital = () => {
       >
         <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-8 sm:mb-12 lg:mb-14">
           More reasons to trade with RightTrade Capital
+          
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 max-w-6xl mx-auto">
           {/* Box 1 */}
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img src={RightTrade Capital2} alt="Account icon" className="w-8 h-8 sm:w-10 sm:h-10" />
+              <img src={fxtm2} alt="Account icon" className="w-8 h-8 sm:w-10 sm:h-10" />
             </div>
             <h3 className="font-bold text-sm sm:text-base mb-2">Accounts to suit your trading needs</h3>
             <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
@@ -229,7 +231,7 @@ const WhyRightTrade Capital = () => {
           {/* Box 2 */}
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img src={RightTrade Capital2}  alt="Spread icon" className="w-8 h-8 sm:w-10 sm:h-10" />
+              <img src={fxtm2}  alt="Spread icon" className="w-8 h-8 sm:w-10 sm:h-10" />
             </div>
             <h3 className="font-bold text-sm sm:text-base mb-2">Spreads as low as zero</h3>
             <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
@@ -241,7 +243,7 @@ const WhyRightTrade Capital = () => {
           {/* Box 3 */}
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img src={RightTrade Capital3}  alt="Platform icon" className="w-8 h-8 sm:w-10 sm:h-10" />
+              <img src={fxtm3}  alt="Platform icon" className="w-8 h-8 sm:w-10 sm:h-10" />
             </div>
             <h3 className="font-bold text-sm sm:text-base mb-2">The most popular trading platform</h3>
             <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
@@ -253,7 +255,7 @@ const WhyRightTrade Capital = () => {
           {/* Box 4 */}
           <div className="flex flex-col items-center">
             <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img src={RightTrade Capital4}  alt="Education icon" className="w-8 h-8 sm:w-10 sm:h-10" />
+              <img src={fxtm4}  alt="Education icon" className="w-8 h-8 sm:w-10 sm:h-10" />
             </div>
             <h3 className="font-bold text-sm sm:text-base mb-2">A wealth of free educational content</h3>
             <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
@@ -358,5 +360,5 @@ const WhyRightTrade Capital = () => {
   )
 }
 
-export default WhyRightTrade Capital
+export default WhyFxtm
 

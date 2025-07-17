@@ -131,8 +131,8 @@ const Footer = () => {
               <h3 className="font-bold mb-3 sm:mb-4 text-sm sm:text-base">CAREERS</h3>
               <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                 <li className="hover:text-gray-300 cursor-pointer transition-colors">Careers</li>
-                <li className="hover:text-gray-300 cursor-pointer transition-colors">RightTrade Capital in Nigeria</li>
-                <li className="hover:text-gray-300 cursor-pointer transition-colors">RightTrade Capital Partnership - Affiliates</li>
+                <li className="hover:text-gray-300 cursor-pointer transition-colors">RightTRADE Capital in Nigeria</li>
+                <li className="hover:text-gray-300 cursor-pointer transition-colors">RightTRADE Capital Partnership - Affiliates</li>
                 <li className="hover:text-gray-300 cursor-pointer transition-colors">Sponsorships and ESG</li>
               </ul>
             </div>
@@ -164,11 +164,11 @@ const Footer = () => {
           }}
         >
           <p className="text-xs sm:text-sm">
-            <strong>RightTrade Capital brand</strong> is authorized and regulated in various jurisdictions.
+            <strong>RightTRADE Capital brand</strong> is authorized and regulated in various jurisdictions.
           </p>
 
           <p className="text-xs sm:text-sm leading-relaxed">
-            <strong>Exinity Limited</strong> (www.RightTrade Capital.com) with registration number C119470 C1/GBL and registration
+            <strong>Exinity Limited</strong> (www.RightTRADE Capital.com) with registration number C119470 C1/GBL and registration
             address at 5th Floor, NEX Tower, Rue du Savoir, Cybercity, 72201 Ebene, Republic of Mauritius is regulated
             by the Financial Services Commission of the Republic of Mauritius with an Investment Dealer License with
             license number C113012295, licensed by the Financial Sector Conduct Authority (FSCA) of South Africa, with
@@ -181,14 +181,14 @@ const Footer = () => {
           </p>
 
           <p className="text-xs sm:text-sm leading-relaxed">
-            <strong>Exinity Capital East Africa Ltd</strong> (www.RightTrade Capital.com) with registration number PVT-ZQU6JE7 and
+            <strong>Exinity Capital East Africa Ltd</strong> (www.RightTRADE Capital.com) with registration number PVT-ZQU6JE7 and
             registration address at West End Towers, Waiyaki Way, 6th Floor, P.O. Box 1896-00606, Nairobi, Republic of
             Kenya is regulated by the Capital Markets Authority of the Republic of Kenya with a Non-Dealing Online
             Foreign Exchange Broker with license number 135.
           </p>
 
           <p className="text-xs sm:text-sm leading-relaxed">
-            <strong>Exinity UK Limited</strong> (www.RightTrade Capital.com/uk) with registration number 10599136 and
+            <strong>Exinity UK Limited</strong> (www.RightTRADE Capital.com/uk) with registration number 10599136 and
             registration address at 8-10 Old Jewry, London, England, EC2R 8DN, UK is authorised and regulated by the
             Financial Conduct Authority with license number 777911.
           </p>
@@ -215,7 +215,7 @@ const Footer = () => {
             accounts lose money when trading Online Forex and CFDs with this provider. You should consider whether you
             understand how CFDs work and whether you can afford to take the high risk of losing your money. It is the
             responsibility of the Client to ascertain whether they are permitted to use the services of Exinity Capital
-            East Africa Ltd based on the legal requirements in their country of residence. Please read RightTrade Capital's full{" "}
+            East Africa Ltd based on the legal requirements in their country of residence. Please read RightTRADE Capital's full{" "}
             <span className="text-blue-400 underline cursor-pointer hover:text-blue-300 transition-colors">
               Risk Disclosure
             </span>
@@ -232,7 +232,7 @@ const Footer = () => {
             .
           </p>
 
-          <p className="mt-4 text-xs sm:text-sm">© 2011 - 2025 RightTrade Capital</p>
+          <p className="mt-4 text-xs sm:text-sm">© 2011 - 2025 RightTRADE Capital</p>
 
           <p className="text-xs sm:text-sm">
             <span className="text-blue-400 font-semibold">Risk warning:</span> Trading is risky. Your capital is at

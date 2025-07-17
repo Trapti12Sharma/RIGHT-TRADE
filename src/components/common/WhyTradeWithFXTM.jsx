@@ -1,4 +1,4 @@
-// src/components/common/WhyTradeWithRightTrade Capital.jsx
+// src/components/common/WhyTradeWithFXTM.jsx
 
 import React from 'react';
 import {
@@ -35,7 +35,7 @@ const features = [
   },
 ];
 
-const WhyTradeWithRightTrade Capital = () => {
+const WhyTradeWithFXTM = () => {
   return (
     <section className="bg-[#1d203d] text-white py-16 px-6 sm:px-10 md:px-20 text-center">
       <h2 className="text-2xl md:text-3xl font-semibold mb-10">Why trade with RightTrade Capital?</h2>
@@ -52,4 +52,4 @@ const WhyTradeWithRightTrade Capital = () => {
   );
 };
 
-export default WhyTradeWithRightTrade Capital;
+export default WhyTradeWithFXTM;

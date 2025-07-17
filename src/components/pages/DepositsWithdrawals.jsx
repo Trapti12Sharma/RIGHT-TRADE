@@ -18,13 +18,13 @@ import choiceIcon from '../../assets/choice.svg';
 const DepositsWithdrawals = () => {
 
     const withdrawSteps = [
-    "Log in to MyRightTrade Capital and open the Withdraw page under ‘My Money’.",
+    "Log in to MyRightTRADE Capital and open the Withdraw page under ‘My Money’.",
     "Choose your payment method and click ‘Withdraw’.",
-    "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
+    "Choose the MyRightTRADE Capital account or wallet you wish to withdraw funds from",
     "Complete the necessary fields and click 'Submit.'"
   ];
     const steps = [
-    { number: 1, description: "Open the Deposits page within the 'My Money' section in MyRightTrade Capital." },
+    { number: 1, description: "Open the Deposits page within the 'My Money' section in MyRightTRADE Capital." },
     { number: 2, description: "Choose your preferred deposit method and click ‘Deposit’." },
     { number: 3, description: "Choose the trading account you’d like to deposit funds into and complete the necessary fields." },
     { number: 4, description: "Confirm your deposit details in the next page – and you’re good to go!" },
@@ -48,12 +48,12 @@ const DepositsWithdrawals = () => {
   ];
 
   const faqs = [
-    "What payment methods do RightTrade Capital support?",
+    "What payment methods do RightTRADE Capital support?",
     "What countries do you support payment methods in?",
-    "What are the minimum and maximum deposit amounts for RightTrade Capital?",
-    "What are the minimum and maximum withdrawal amounts from RightTrade Capital?",
-    "How do you withdraw from RightTrade Capital?",
-    "Can I make internal transfers between trading accounts within MyRightTrade Capital",
+    "What are the minimum and maximum deposit amounts for RightTRADE Capital?",
+    "What are the minimum and maximum withdrawal amounts from RightTRADE Capital?",
+    "How do you withdraw from RightTRADE Capital?",
+    "Can I make internal transfers between trading accounts within MyRightTRADE Capital",
     "Why are you introducing a new transaction fee?",
     "How much is the transaction fee?",
     "Will you charge a fee for transactions of more than $30?",
@@ -76,7 +76,7 @@ const DepositsWithdrawals = () => {
       {/* 🔗 Section 2 - Breadcrumb */}
       <div className="bg-white py-4 px-6 sm:px-10 lg:px-24 text-sm" style={{ fontFamily: '"Source Sans Pro", sans-serif' }}>
         <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
-          <span className="text-blue-500">RightTrade Capital</span>
+          <span className="text-blue-500">RightTRADE Capital</span>
           <span className="text-[#e74728]">❯</span>
           <span className="text-black font-medium">Deposit and Withdrawal</span>
         </nav>

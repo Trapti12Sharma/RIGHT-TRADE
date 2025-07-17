@@ -12,7 +12,7 @@ const ExpertHintsSection = () => {
       author: "Lukman Otunuga",
     },
     {
-      text: `"I would encourage everyone to get a feel for real market conditions and practice the self-discipline required to trade successfully. Our RightTrade Capital demo accounts provide an ideal and risk free first step."`,
+      text: `"I would encourage everyone to get a feel for real market conditions and practice the self-discipline required to trade successfully. Our RightTRADE Capital demo accounts provide an ideal and risk free first step."`,
       author: "Christopher Lodge",
     },
   ];

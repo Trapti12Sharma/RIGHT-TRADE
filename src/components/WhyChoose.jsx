@@ -25,7 +25,7 @@ const WhyChoose = () => {
       icon: <FaShieldAlt size={40} className="text-[#ff4c1b]" />,
       title: "Total fund security",
       description:
-        "Secure Your Investments. Trade confidently with RightTrade Capital, where your funds are segregated and insured up to $1 million.",
+        "Secure Your Investments. Trade confidently with RightTRADE Capital, where your funds are segregated and insured up to $1 million.",
     },
   ];
 
@@ -36,7 +36,7 @@ const WhyChoose = () => {
   fontFamily: '"Source Sans Pro", sans-serif', 
   fontSize: '40px'
     }} 
-    className="font-semibold mb-12">Why choose RightTrade Capital?</h2>
+    className="font-semibold mb-12">Why choose RightTRADE Capital?</h2>
         <div style={{ 
   fontFamily: '"Source Sans Pro", sans-serif', 
   fontSize: '24px'

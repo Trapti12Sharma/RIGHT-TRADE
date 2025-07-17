@@ -21,7 +21,7 @@ const AwardsSection = ({ awards }) => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h2 className="text-center text-[#ff451c] text-xl md:text-2xl font-semibold mb-10">
-          RightTrade Capital gives you more trust, more access, and more value
+          RightTRADE Capital gives you more trust, more access, and more value
         </h2>
 
         {/* Awards Grid */}

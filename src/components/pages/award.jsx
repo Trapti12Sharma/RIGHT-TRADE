@@ -52,7 +52,7 @@ const Award = () => {
       >
         {/* Breadcrumb */}
         <div className="text-sm text-gray-700 mb-8 flex flex-wrap justify-center gap-2">
-          <span className="text-[#3B82F6]">RightTrade Capital</span>
+          <span className="text-[#3B82F6]">RightTRADE Capital</span>
           <span className="text-[#e74728]">❯</span>
           <span className="text-[#3B82F6]">About Us</span>
           <span className="text-[#e74728]">❯</span>
@@ -164,14 +164,14 @@ const Award = () => {
         Start trading with us today
       </h2>
       <p className="text-sm">
-        Already on board? Log back into MyRightTrade Capital to check on your accounts or make transactions.
+        Already on board? Log back into MyRightTRADE Capital to check on your accounts or make transactions.
       </p>
     </div>
 
     {/* Buttons */}
     <div className="flex flex-wrap gap-4 justify-center lg:justify-end">
       <button className="bg-white text-[#ff4c1b] font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition">
-        Go to MyRightTrade Capital
+        Go to MyRightTRADE Capital
       </button>
       <button className="bg-lime-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition">
         Open Account
