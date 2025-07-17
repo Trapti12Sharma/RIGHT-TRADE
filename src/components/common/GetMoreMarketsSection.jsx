@@ -10,7 +10,7 @@ const GetMoreMarketsSection = () => {
       <div className="max-w-5xl mx-auto">
         {/* Heading and text */}
         <h2 className="text-xl sm:text-2xl font-normal mb-3 text-left">
-          Get more from the markets when you join FXTM
+          Get more from the markets when you join RightTrade Capital
         </h2>
 
         <p className="mb-3 text-sm text-left">

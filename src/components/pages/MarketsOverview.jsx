@@ -1,8 +1,13 @@
 import React from "react";
 import StatsSection from "../common/StatsSection";
+import ExpertTrader from "../common/ExpertTrader";
+
+
 
 // import your image
 import statsBg from "../../assets/markets1.png"; // replace with correct image path
+import bgImage from "../../assets/expert-trader-bg.png"; // your image
+
 
 const MarketOverview = () => {
   const statsData = {
@@ -24,6 +29,15 @@ const MarketOverview = () => {
         note={statsData.note}
         image={statsData.image}
       />
+        
+        <ExpertTrader
+      tag="EXPERT TRADER"
+      heading="Already trading?"
+      description="Sharpen your edge with market updates, expert insights, and real-time tools."
+      buttonText="Trade Now"
+      backgroundImage={bgImage}
+    />
+
     </div>
   );
 };

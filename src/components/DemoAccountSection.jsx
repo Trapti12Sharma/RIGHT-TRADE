@@ -40,7 +40,7 @@ const DemoAccountSection = () => {
     Open Demo
   </button>
   <button className="bg-white text-[#10162f] px-6 py-3 rounded-full font-semibold">
-    FXTM Trader
+    RightTrade Capital Trader
   </button>
 </div>
         </div>

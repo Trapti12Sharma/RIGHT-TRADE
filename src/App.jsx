@@ -24,7 +24,7 @@ import ExpertTraderSection from "./components/ExpertTraderSection";
 import AwardsSection from "./components/AwardsSection";
 
 // New Page
-import WhyFxtm from "./components/pages/whyfxtmn";
+import WhyRightTrade Capital from "./components/pages/whyRightTrade Capitaln";
 import Award from "./components/pages/award";
 import FundSafety from "./components/pages/fundSafety";
 import TradingStatistics from "./components/pages/tradingStatistics";
@@ -72,7 +72,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/WhyFxtm" element={<WhyFxtm />} />
+        <Route path="/WhyRightTrade Capital" element={<WhyRightTrade Capital />} />
         <Route path="/awards" element={<Award />} />
         <Route path="/fundsafety" element={<FundSafety />} />
         <Route path="/tradingstatistics" element={<TradingStatistics />} />

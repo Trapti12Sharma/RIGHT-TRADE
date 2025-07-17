@@ -4,7 +4,7 @@ import statsBg from "../../assets/forexs1.png";
 
 const Forex = () => {
   const statsData = {
-    title: "Start forex trading with FXTM",
+    title: "Start forex trading with RightTrade Capital",
     subtitle:
       "Trade the most popular Forex majors with spreads from zero",
     buttonText: "Open account",

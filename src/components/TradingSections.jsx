@@ -35,7 +35,7 @@ const TradingSections = () => {
               Never miss another trading opportunity again.
             </p>
             <p className="text-sm text-gray-300 mb-4 max-w-md">
-              Get the FXTM Trader app for commission-free trading and spreads as low as zero on major FX pairs and gold.
+              Get the RightTrade Capital Trader app for commission-free trading and spreads as low as zero on major FX pairs and gold.
               <br /><br />
               Everything you need. One app.
             </p>

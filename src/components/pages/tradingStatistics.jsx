@@ -5,7 +5,7 @@ import StatsSection from '../common/StatsSection';
 import BreadcrumbAndDescription from '../common/BreadcrumbAndDescription';
 import ExecutionStats from '../common/ExecutionStats';
 import SpreadChart from '../common/SpreadChart';
-import WhyTradeWithFXTM from '../common/WhyTradeWithFXTM';
+import WhyTradeWithRightTrade Capital from '../common/WhyTradeWithRightTrade Capital';
 import ContactOptions from '../common/ContactOptions';
 import FaqSection from '../common/FaqSection2'; // ⬅️ new import
 import AwardsSection from '../common/AwardsSection'; 
@@ -45,7 +45,7 @@ const TradingStatistics = () => {
       {/*  Section 2 - Breadcrumb & Description */}
       <BreadcrumbAndDescription
         breadcrumbs={[
-          { label: 'FXTM', href: '#' },
+          { label: 'RightTrade Capital', href: '#' },
           { label: 'About Us', href: '#' },
           { label: 'Performance Statistics', href: '#' },
         ]}
@@ -73,8 +73,8 @@ const TradingStatistics = () => {
       {/*  Section 4 - Spread Chart */}
       <SpreadChart />
 
-      {/*  Section 5 - Why Trade With FXTM */}
-      <WhyTradeWithFXTM />
+      {/*  Section 5 - Why Trade With RightTrade Capital */}
+      <WhyTradeWithRightTrade Capital />
 
       {/*  Section 6 - Contact CTA */}
       <ContactOptions />

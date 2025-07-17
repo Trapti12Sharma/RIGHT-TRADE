@@ -6,7 +6,7 @@ const SupportSection = () => {
     <section className="bg-[#f8f8f8] py-16 px-4 md:px-12 text-left">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
-          Join FXTM today to trade with some of the best pricing in the business
+          Join RightTrade Capital today to trade with some of the best pricing in the business
         </h2>
 
         <p className="text-gray-700 mb-4 text-lg">

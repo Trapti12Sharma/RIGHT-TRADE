@@ -61,7 +61,7 @@ const Navbar = () => {
       dropdown: [
         {
           heading: "ABOUT US",
-          links: ["Why FXTM", "Awards", "Fund Safety", "Trading Statistics"],
+          links: ["Why RightTrade Capital", "Awards", "Fund Safety", "Trading Statistics"],
         },
         {
           heading: "COSTS",
@@ -200,7 +200,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/">
               <span style={{ cursor: "pointer" }} className="text-2xl font-bold">
-                <img src={logo} alt="FXTM" className="w-[70px] h-auto object-contain" />
+                <img src={logo} alt="RightTrade Capital" className="w-[70px] h-auto object-contain pb-1" />
               </span>
             </Link>
           </div>
@@ -252,8 +252,8 @@ const Navbar = () => {
                           <ul className="space-y-3">
                           {section.links.map((link, index) => (
                     <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-                      {link === "Why FXTM" ? (
-                        <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      {link === "Why RightTrade Capital" ? (
+                        <Link to="/WhyRightTrade Capital" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
                       ) : link === "Awards" ? (
                         <Link to="/awards" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
                       ) : link === "Fund Safety" ? (
@@ -327,7 +327,7 @@ const Navbar = () => {
                 <FaTimes size={20} />
               </button>
               <div className="flex items-center">
-                <img src={logo} alt="FXTM" className="w-[80px] h-[40px]" />
+                <img src={logo} alt="RightTrade Capital" className="w-[80px] h-[40px]" />
               </div>
               <span className="text-sm font-medium">LOGIN</span>
             </div>
@@ -360,8 +360,8 @@ const Navbar = () => {
                           <ul className="space-y-2">
                             {section.links.map((link, index) => (
   <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-    {link === "Why FXTM" ? (
-      <Link to="/WhyFxtm">{link}</Link>
+    {link === "Why RightTrade Capital" ? (
+      <Link to="/WhyRightTrade Capital">{link}</Link>
     ) : link === "Awards" ? (
       <Link to="/awards">{link}</Link>
     ) : link === "Fund Safety" ? (
