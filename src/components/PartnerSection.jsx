@@ -10,7 +10,7 @@ const PartnerSection = () => {
         }}
         className="text-[#212529] leading-snug max-w-4xl mx-auto md:text-center text-justify"
       >
-        Partner with RightTrade Capital, a leading online forex trading website, to leverage
+        Partner with RightTRADE Capital, a leading online forex trading website, to leverage
         global market opportunities.
       </h4>
       <p
