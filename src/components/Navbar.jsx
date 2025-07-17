@@ -61,7 +61,7 @@ const Navbar = () => {
       dropdown: [
         {
           heading: "ABOUT US",
-          links: ["Why RightTRADE Capital", "Awards", "Fund Safety", "Trading Statistics"],
+          links: ["Why FXTM", "Awards", "Fund Safety", "Trading Statistics"],
         },
         {
           heading: "COSTS",
@@ -252,8 +252,8 @@ const Navbar = () => {
                           <ul className="space-y-3">
                           {section.links.map((link, index) => (
                     <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-                      {link === "Why RightTRADE Capital" ? (
-                        <Link to="/WhyRightTRADE Capital" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      {link === "Why FXTM" ? (
+                        <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
                       ) : link === "Awards" ? (
                         <Link to="/awards" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
                       ) : link === "Fund Safety" ? (
@@ -327,7 +327,7 @@ const Navbar = () => {
                 <FaTimes size={20} />
               </button>
               <div className="flex items-center">
-                <img src={logo} alt="RightTRADE Capital" className="w-[80px] h-[40px]" />
+                <img src={logo} alt="RightTrade Capital" className="w-[80px] h-[40px]" />
               </div>
               <span className="text-sm font-medium">LOGIN</span>
             </div>
@@ -360,8 +360,8 @@ const Navbar = () => {
                           <ul className="space-y-2">
                             {section.links.map((link, index) => (
   <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-    {link === "Why RightTRADE Capital" ? (
-      <Link to="/WhyRightTRADE Capital">{link}</Link>
+    {link === "Why FXTM" ? (
+      <Link to="/Whyfxtm">{link}</Link>
     ) : link === "Awards" ? (
       <Link to="/awards">{link}</Link>
     ) : link === "Fund Safety" ? (

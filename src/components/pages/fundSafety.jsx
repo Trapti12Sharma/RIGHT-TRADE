@@ -109,7 +109,7 @@ const FundSafety = () => {
         style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
       >
         <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
-          <span className="text-blue-500">RightTRADE Capital</span>
+          <span className="text-blue-500">RightTrade Capital</span>
           <span className="text-[#e74728]">❯</span>
           <span className="text-blue-500">About Us</span>
           <span className="text-[#e74728]">❯</span>
@@ -121,16 +121,16 @@ const FundSafety = () => {
       <ImageTextSection
         imgSrc={fund2}
         title="Your funds are insured"
-        paragraph="In the extremely unlikely event of RightTRADE Capital’s insolvency, your funds will be insured up to $1 million, in excess of $10,000. This insurance covers both your available balance and open positions."
+        paragraph="In the extremely unlikely event of RightTrade Capital’s insolvency, your funds will be insured up to $1 million, in excess of $10,000. This insurance covers both your available balance and open positions."
         linkText="View certificate"
         linkHref="#"
         listItems={[
-          "The claim of an RightTRADE Capital policyholder shall not receive a confirmation from the Insolvency Practitioner as described in the Policy.",
+          "The claim of an RightTrade Capital policyholder shall not receive a confirmation from the Insolvency Practitioner as described in the Policy.",
           "To qualify as a Claimant, you must meet the requirements of an Eligible Claimant as defined in the Policy.",
-          "You may not claim from the Insolvency Practitioner even if entitled at the Date of the Insolvency event of RightTRADE Capital and if your Insurance Compensation Claim Item is greater than 2 times the size of the Insured Limit or has other clauses which might apply.",
-          "The losses must be a result of a financial mismanagement, accident, or fraud by an employee, accountant, manager, administrator, auditor, board member, or RightTRADE Capital or any of its employees or agents at any time or location, unless the trader made the trades in coordination with RightTRADE Capital.",
+          "You may not claim from the Insolvency Practitioner even if entitled at the Date of the Insolvency event of RightTrade Capital and if your Insurance Compensation Claim Item is greater than 2 times the size of the Insured Limit or has other clauses which might apply.",
+          "The losses must be a result of a financial mismanagement, accident, or fraud by an employee, accountant, manager, administrator, auditor, board member, or RightTrade Capital or any of its employees or agents at any time or location, unless the trader made the trades in coordination with RightTrade Capital.",
           "The terms and conditions are subject to revision and are not final.",
-          "A payment is only valid after RightTRADE Capital’s full insolvency filing is dependent upon the cooperation of RightTRADE Capital and its compliance with the obligations under the Policy.",
+          "A payment is only valid after RightTrade Capital’s full insolvency filing is dependent upon the cooperation of RightTrade Capital and its compliance with the obligations under the Policy.",
           "Although You are an Insolvency, You do not have a right to bring a claim against the Insurer under the policy.",
         ]}
       />
@@ -162,7 +162,7 @@ const FundSafety = () => {
         ]}
       />
 
-      {/* Section 7: Why Traders Trust RightTRADE Capital */}
+      {/* Section 7: Why Traders Trust RightTrade Capital */}
       <TrustReasonsSection reasons={reasonsData} />
 
       {/* Section 8: CTA */}

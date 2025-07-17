@@ -30,7 +30,7 @@ const TradingCommissions = () => {
 
 
   const breadcrumbs = [
-    { label: 'RightTRADE Capital', href: '/' },
+    { label: 'RightTrade Capital', href: '/' },
     { label: 'Trading Commissions and Fees', href: '/trading-commissions' },
   ];
 

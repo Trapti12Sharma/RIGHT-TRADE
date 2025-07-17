@@ -6,7 +6,7 @@ const CFDCommodities = () => {
   const statsData = {
     title: "Trade commodities with an award-winning broker",
     subtitle:
-      "Buy and sell oil, natural gas, coffee and more with RightTRADE Capital",
+      "Buy and sell oil, natural gas, coffee and more with RightTrade Capital",
     buttonText: "Open accounts",
     note: "Trading is risky.",
     image: statsBg,

@@ -4,7 +4,7 @@ const TrustReasonsSection = ({ reasons }) => {
   return (
     <section className="bg-[#1d203f] text-white py-12 px-4 text-center">
       <h3 className="text-xl sm:text-3xl font-semibold mb-12">
-        More reasons why traders trust RightTRADE Capital
+        More reasons why traders trust RightTrade Capital 
       </h3>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         {reasons.map((item, index) => (

@@ -4,7 +4,7 @@ const DemoStepsSection = () => {
   const steps = [
     {
       number: "1",
-      text: "Create a MyRightTRADE Capital profile",
+      text: "Create a MyRightTrade Capital profile",
       progress: 25,
     },
     {
@@ -31,7 +31,7 @@ const DemoStepsSection = () => {
       <h2 className="text-[#10162f] mb-12"  style={{ 
   fontFamily: '"Source Sans Pro", sans-serif', fontSize:'40px'
     }}>
-        How to open an RightTRADE Capital demo account
+        How to open an RightTrade Capital demo account
       </h2>
 
       <div className="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">

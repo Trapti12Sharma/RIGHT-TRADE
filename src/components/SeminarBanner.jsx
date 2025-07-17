@@ -5,7 +5,7 @@ const slides = [
   {
     image: "/home.png", // Slide 1
     heading: "Learn. Trade. Earn.",
-    subText: "Join RightTRADE Capital Academy's Upcoming Seminar",
+    subText: "Join RightTrade Capital Academy's Upcoming Seminar",
     details: [
       "When: 10am, 18th January 2025",
       "Where: 5 Allen Avenue, Ikeja, Lagos",
@@ -15,7 +15,7 @@ const slides = [
   },
   {
     image: "/home1.png", // Slide 2
-    heading: "Trade Futures CFDs with RightTRADE Capital",
+    heading: "Trade Futures CFDs with RightTrade Capital",
     subText: "Diversify your trades and hedge against market volatility with CFD futures trading.",
     buttonText: "Trade now",
     note: "Trading is risky",

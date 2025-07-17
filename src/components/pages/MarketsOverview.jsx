@@ -1,6 +1,6 @@
 import React from "react";
 import StatsSection from "../common/StatsSection";
-// import ExpertTrader from "./components/ExpertTrader";
+// import ExpertTrader from "../ExpertTrader";
 
 
 
