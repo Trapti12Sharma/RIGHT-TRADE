@@ -29,7 +29,18 @@ import Award from "./components/pages/award";
 import FundSafety from "./components/pages/fundSafety";
 import TradingStatistics from "./components/pages/tradingStatistics";
 import DepositsWithdrawals from "./components/pages/DepositsWithdrawals";
-
+import TradingCommissions from "./components/pages/TradingCommissions";
+import MarketsOverview from "./components/pages/MarketsOverview";
+import ContractSpecifications from "./components/pages/ContractSpecifications";
+import Forex from "./components/pages/Forex";
+import MajorCurrencyPairs from "./components/pages/MajorCurrencyPairs";
+import SpotMetals from "./components/pages/SpotMetals";
+import CFDCommodities from "./components/pages/CFDCommodities";
+import StockTrading from "./components/pages/StockTrading";
+import StockCFDs from "./components/pages/StockCFDs";
+import CFDOnIndices from "./components/pages/CFDOnIndices";
+import CryptoCFDs from "./components/pages/CryptoCFDs";
+import Futures from "./components/pages/Futures";
 
 
 
@@ -64,8 +75,20 @@ const App = () => {
         <Route path="/WhyFxtm" element={<WhyFxtm />} />
         <Route path="/awards" element={<Award />} />
         <Route path="/fundsafety" element={<FundSafety />} />
-          <Route path="/tradingstatistics" element={<TradingStatistics />} />
-           <Route path="/deposits-withdrawals" element={<DepositsWithdrawals />} />
+        <Route path="/tradingstatistics" element={<TradingStatistics />} />
+        <Route path="/deposits-withdrawals" element={<DepositsWithdrawals />} />
+        <Route path="/trading-commissions" element={<TradingCommissions />} />
+        <Route path="/markets-overview" element={<MarketsOverview />} />
+        <Route path="/contract-specifications" element={<ContractSpecifications />} />
+        <Route path="/forex" element={<Forex />} />
+        <Route path="/major-currency-pairs" element={<MajorCurrencyPairs />} />
+        <Route path="/spot-metals" element={<SpotMetals />} />
+        <Route path="/cfd-commodities" element={<CFDCommodities />} />
+        <Route path="/stocks-trading" element={<StockTrading />} />
+        <Route path="/stock-cfds" element={<StockCFDs />} />
+        <Route path="/cfd-on-indices" element={<CFDOnIndices />} />
+        <Route path="/crypto-cfds" element={<CryptoCFDs />} />
+        <Route path="/futures" element={<Futures />} />
       </Routes>
       <Footer />
       {/* <FooterBottom /> */}

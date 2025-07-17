@@ -11,9 +11,11 @@ const Navbar = () => {
   const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 })
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null)
+  const navContainerRef = useRef(null);
   const itemRefs = useRef({})
+   const dropdownTimeoutRef = useRef(null);
 
-  useEffect(() => {
+   useEffect(() => {
     if (openDropdown && itemRefs.current[openDropdown]) {
       const rect = itemRefs.current[openDropdown].getBoundingClientRect()
       setUnderlineStyle({
@@ -31,7 +33,16 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
-
+  
+    const handleMouseLeave = () => {
+      dropdownTimeoutRef.current = setTimeout(() => {
+        setOpenDropdown(null);
+      }, 150);
+    };
+  
+    const handleMouseEnter = () => {
+      if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+    };
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
@@ -239,23 +250,47 @@ const Navbar = () => {
                             <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">{section.heading}</h4>
                           )}
                           <ul className="space-y-3">
-                           {section.links.map((link, index) => (
-  <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-    {link === "Why FXTM" ? (
-      <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-    ) : link === "Awards" ? (
-      <Link to="/awards" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-    ) : link === "Fund Safety" ? (
-      <Link to="/fundsafety" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-    ) : link === "Trading Statistics" ? (
-      <Link to="/tradingstatistics" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-    ) : link === "Deposits and Withdrawals" ? (
-      <Link to="/deposits-withdrawals" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-    ) : (
-      <span className="cursor-pointer">{link}</span>
-    )}
-  </li>
-))}
+                          {section.links.map((link, index) => (
+                    <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
+                      {link === "Why FXTM" ? (
+                        <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      ) : link === "Awards" ? (
+                        <Link to="/awards" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      ) : link === "Fund Safety" ? (
+                        <Link to="/fundsafety" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      ) : link === "Trading Statistics" ? (
+                        <Link to="/tradingstatistics" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      ) : link === "Deposits and Withdrawals" ? (
+                        <Link to="/deposits-withdrawals" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      ) : link === "Trading Commissions and Fees" ? (
+                        <Link to="/trading-commissions" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                      ) : link === "Markets Overview" ? (
+                          <Link to="/markets-overview" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Contract Specifications" ? (
+                          <Link to="/contract-specifications" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Forex" ? (
+                          <Link to="/forex" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Major Currency pairs" ? (
+                          <Link to="/major-currency-pairs" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Spot Metals" ? (
+                          <Link to="/spot-metals" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "CFD Commodities" ? (
+                          <Link to="/cfd-commodities" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Stocks Trading" ? (
+                          <Link to="/stocks-trading" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Stocks CFDs" ? (
+                          <Link to="/stock-cfds" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "CFD on Indices" ? (
+                          <Link to="/cfd-on-indices" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Crypto CFDs" ? (
+                          <Link to="/crypto-cfds" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : link === "Futures" ? (
+                          <Link to="/futures" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
+                        ) : (
+                        <span className="cursor-pointer">{link}</span>
+                      )}
+                    </li>
+                  ))}
 
 
                           </ul>
@@ -333,7 +368,33 @@ const Navbar = () => {
       <Link to="/fundsafety">{link}</Link>
     ) : link === "Trading Statistics" ? (
       <Link to="/tradingstatistics">{link}</Link>
-    ) : (
+    ) :  link === "Deposits and Withdrawals" ? (
+                        <Link to="/deposits-withdrawals">{link}</Link>
+                      ) : link === "Trading Commissions and Fees" ? (
+                        <Link to="/trading-commissions" >{link}</Link>
+                      ) : link === "Markets Overview" ? (
+                          <Link to="/markets-overview" >{link}</Link>
+                        ) : link === "Contract Specifications" ? (
+                          <Link to="/contract-specifications">{link}</Link>
+                        ) : link === "Forex" ? (
+                          <Link to="/forex">{link}</Link>
+                        ) : link === "Major Currency pairs" ? (
+                          <Link to="/major-currency-pairs">{link}</Link>
+                        ) : link === "Spot Metals" ? (
+                          <Link to="/spot-metals">{link}</Link>
+                        ) : link === "CFD Commodities" ? (
+                          <Link to="/cfd-commodities">{link}</Link>
+                        ) : link === "Stocks Trading" ? (
+                          <Link to="/stocks-trading">{link}</Link>
+                        ) : link === "Stocks CFDs" ? (
+                          <Link to="/stock-cfds">{link}</Link>
+                        ) : link === "CFD on Indices" ? (
+                          <Link to="/cfd-on-indices">{link}</Link>
+                        ) : link === "Crypto CFDs" ? (
+                          <Link to="/crypto-cfds">{link}</Link>
+                        ) : link === "Futures" ? (
+                          <Link to="/futures">{link}</Link>
+                        ) : (
       <span className="cursor-pointer">{link}</span>
     )}
   </li>

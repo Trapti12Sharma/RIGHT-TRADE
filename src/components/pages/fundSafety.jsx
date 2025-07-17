@@ -74,7 +74,7 @@ const FundSafety = () => {
 
   return (
     <>
-      {/* 🔒 Section 1 - Secure Vault Banner */}
+      {/*  Section 1 - Secure Vault Banner */}
       <section
         className="relative w-full min-h-[480px] bg-cover bg-center flex items-center text-white"
         style={{
