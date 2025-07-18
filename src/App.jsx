@@ -65,40 +65,45 @@ const Home = () => {
 
 const App = () => {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/why-righttrade-capital" element={<WhyRightTrade />} />
-        <Route path="/awards" element={<Award />} />
-        <Route path="/fund-safety" element={<FundSafety />} />
-        <Route path="/trading-statistics" element={<TradingStatistics />} />
-        <Route
-          path="/deposits-and-withdrawals"
-          element={<DepositsWithdrawals />}
-        />
-        <Route
-          path="/trading-commissions-and-fees"
-          element={<TradingCommissions />}
-        />
-        <Route path="/markets-overview" element={<MarketsOverview />} />
-        <Route
-          path="/contract-specifications"
-          element={<ContractSpecifications />}
-        />
-        <Route path="/forex" element={<Forex />} />
-        <Route path="/major-currency-pairs" element={<MajorCurrencyPairs />} />
-        <Route path="/spot-metals" element={<SpotMetals />} />
-        <Route path="/cfd-commodities" element={<CFDCommodities />} />
-        <Route path="/stocks-trading" element={<StockTrading />} />
-        <Route path="/stocks-cfds" element={<StockCFDs />} />
-        <Route path="/cfd-on-indices" element={<CFDOnIndices />} />
-        <Route path="/crypto-cfds" element={<CryptoCFDs />} />
-        <Route path="/futures" element={<Futures />} />
-      </Routes>
-      <Footer />
-      {/* <FooterBottom /> */}
-    </Router>
+    <div className="overflow-x-hidden">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/why-righttrade-capital" element={<WhyRightTrade />} />
+          <Route path="/awards" element={<Award />} />
+          <Route path="/fund-safety" element={<FundSafety />} />
+          <Route path="/trading-statistics" element={<TradingStatistics />} />
+          <Route
+            path="/deposits-and-withdrawals"
+            element={<DepositsWithdrawals />}
+          />
+          <Route
+            path="/trading-commissions-and-fees"
+            element={<TradingCommissions />}
+          />
+          <Route path="/markets-overview" element={<MarketsOverview />} />
+          <Route
+            path="/contract-specifications"
+            element={<ContractSpecifications />}
+          />
+          <Route path="/forex" element={<Forex />} />
+          <Route
+            path="/major-currency-pairs"
+            element={<MajorCurrencyPairs />}
+          />
+          <Route path="/spot-metals" element={<SpotMetals />} />
+          <Route path="/cfd-commodities" element={<CFDCommodities />} />
+          <Route path="/stocks-trading" element={<StockTrading />} />
+          <Route path="/stocks-cfds" element={<StockCFDs />} />
+          <Route path="/cfd-on-indices" element={<CFDOnIndices />} />
+          <Route path="/crypto-cfds" element={<CryptoCFDs />} />
+          <Route path="/futures" element={<Futures />} />
+        </Routes>
+        <Footer />
+        {/* <FooterBottom /> */}
+      </Router>
+    </div>
   );
 };
 

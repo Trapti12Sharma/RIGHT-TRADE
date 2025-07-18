@@ -116,16 +116,6 @@ const Navbar = () => {
           links: ["Platforms Overview", "MT4", "MT5", "Mobile Trading"],
         },
         {
-          heading: "Tools",
-          links: [
-            "Tools Overview",
-            "Pro Trading Tools",
-            "Profit Calculator",
-            "Margin Calculator",
-            "Trading Signals",
-          ],
-        },
-        {
           heading: "Terms",
           links: [
             "Holiday Trading Schedule",
@@ -136,41 +126,21 @@ const Navbar = () => {
       ],
     },
     {
-      name: "EDUCATION",
+      name: "TOOLS",
       dropdown: [
         {
-          heading: "Trading Education",
-          links: ["Expert Trader", "Education Overview", "Glossary"],
+          heading: "Tools",
+          links: ["Tools Overview", "Pro Trading Tools", "Trading Signals"],
         },
         {
-          heading: "Market Analysis",
-          links: [
-            "Market Analysis",
-            "Market Analyst Team",
-            "Economic Calendar",
-            "Economic Events",
-          ],
-        },
-        {
-          heading: "Top Guides",
-          links: [
-            "Forex Trading for Beginners",
-            "CFD Trading for Beginners",
-            "How to trade CFDs on indices",
-            "How to trade natural gas",
-            "ABC Trading Patterns",
-            "Copy Trading: The Ultimate Guide",
-          ],
+          heading: "Calculators",
+          links: ["Profit Calculator", "Margin Calculator"],
         },
       ],
     },
     {
-      name: "AFFILIATES",
-      dropdown: [
-        {
-          links: ["Affiliates", "Commission"],
-        },
-      ],
+      name: "CONTACT US",
+      link: "/contact-us",
     },
   ];
 
@@ -182,27 +152,9 @@ const Navbar = () => {
     <>
       {/* Top Bar */}
       <div className="bg-[#0d141e] text-white text-sm w-full hidden lg:block">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex justify-end items-center space-x-12 pr-24">
-          <div
-            className="relative flex items-center"
-            onMouseEnter={() => setShowSearch(true)}
-            onMouseLeave={() => setShowSearch(false)}
-          >
-            {showSearch ? (
-              <div className="transition-all duration-300 ease-in-out overflow-hidden w-48 opacity-100 flex items-center bg-[#1f2937] px-3 py-1 rounded">
-                <input
-                  type="text"
-                  placeholder="Search"
-                  className="bg-transparent text-white focus:outline-none w-full"
-                />
-                <FaSearch className="ml-2 cursor-pointer" />
-              </div>
-            ) : (
-              <FaSearch className="cursor-pointer" />
-            )}
-          </div>
+        <div className="max-w-7xl mx-auto px-4 py-2 flex justify-end items-center space-x-10 pr-30">
           <span className="cursor-pointer">HELP CENTRE</span>
-          <span className="cursor-pointer">CONTACT US</span>
+
           <span className="cursor-pointer flex items-center gap-1">
             EN <FaChevronDown size={10} />
           </span>
@@ -232,73 +184,84 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex h-full font-medium text-sm relative">
-            {menuItems.map((item) => (
-              <div
-                key={item.name}
-                className="relative"
-                onMouseEnter={() => {
-                  setIsNavItemHovered(true);
-                  setOpenDropdown(item.name);
-                }}
-                onMouseLeave={() => setIsNavItemHovered(false)}
-              >
+            {menuItems.map((item) =>
+              item.link ? (
                 <li
-                  className="relative cursor-pointer px-8 py-3 h-18 hover:bg-opacity-10"
-                  ref={(el) => (itemRefs.current[item.name] = el)}
+                  key={item.name}
+                  className="relative cursor-pointer px-8 py-3 h-18 flex items-center"
                 >
-                  <div className="h-full w-full flex items-center justify-center">
-                    <span className="font-medium">{item.name}</span>
-                  </div>
-
-                  {/* Dropdown */}
-                  {openDropdown === item.name && (
-                    <div
-                      className={`fixed left-0 w-full bg-[#10162f] text-white py-10 px-20 z-40 text-sm transition-all duration-300 ${
-                        scrolled ? "top-20" : "top-34"
-                      }`}
-                      onMouseEnter={() => setIsDropdownHovered(true)}
-                      onMouseLeave={() => setIsDropdownHovered(false)}
-                    >
-                      <span
-                        className="absolute top-0 h-1 bg-[#ff4c1b] transition-all duration-300"
-                        style={{
-                          left: underlineStyle.left,
-                          width: underlineStyle.width,
-                          position: "absolute",
-                        }}
-                      ></span>
-                      <div className="max-w-7xl mx-auto flex ml-13 gap-20">
-                        {item.dropdown.map((section, idx) => (
-                          <div key={idx}>
-                            {section.heading && (
-                              <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">
-                                {section.heading}
-                              </h4>
-                            )}
-                            <ul className="space-y-3">
-                              {section.links.map((link, index) => (
-                                <li
-                                  key={index}
-                                  className="cursor-pointer py-1 rounded-md hover:bg-gray-600"
-                                >
-                                  <Link
-                                    to={`/${link
-                                      .toLowerCase()
-                                      .replace(/\s+/g, "-")}`}
-                                  >
-                                    {link}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                  <Link to={item.link} className="font-medium">
+                    {item.name}
+                  </Link>
                 </li>
-              </div>
-            ))}
+              ) : (
+                <div
+                  key={item.name}
+                  className="relative"
+                  onMouseEnter={() => {
+                    setIsNavItemHovered(true);
+                    setOpenDropdown(item.name);
+                  }}
+                  onMouseLeave={() => setIsNavItemHovered(false)}
+                >
+                  <li
+                    className="relative cursor-pointer px-8 py-3 h-18 hover:bg-opacity-10"
+                    ref={(el) => (itemRefs.current[item.name] = el)}
+                  >
+                    <div className="h-full w-full flex items-center justify-center">
+                      <span className="font-medium">{item.name}</span>
+                    </div>
+
+                    {/* Dropdown */}
+                    {openDropdown === item.name && (
+                      <div
+                        className={`fixed left-0 w-full bg-[#10162f] text-white py-10 px-20 z-40 text-sm transition-all duration-300 ${
+                          scrolled ? "top-20" : "top-34"
+                        }`}
+                        onMouseEnter={() => setIsDropdownHovered(true)}
+                        onMouseLeave={() => setIsDropdownHovered(false)}
+                      >
+                        <span
+                          className="absolute top-0 h-1 bg-[#ff4c1b] transition-all duration-300"
+                          style={{
+                            left: underlineStyle.left,
+                            width: underlineStyle.width,
+                            position: "absolute",
+                          }}
+                        ></span>
+                        <div className="max-w-7xl mx-auto flex justify-center ml-13 gap-20">
+                          {item.dropdown.map((section, idx) => (
+                            <div key={idx}>
+                              {section.heading && (
+                                <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">
+                                  {section.heading}
+                                </h4>
+                              )}
+                              <ul className="space-y-3">
+                                {section.links.map((link, index) => (
+                                  <li
+                                    key={index}
+                                    className="cursor-pointer py-1 rounded-md hover:bg-gray-600"
+                                  >
+                                    <Link
+                                      to={`/${link
+                                        .toLowerCase()
+                                        .replace(/\s+/g, "-")}`}
+                                    >
+                                      {link}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </li>
+                </div>
+              )
+            )}
           </ul>
 
           {/* Mobile Icons */}
@@ -326,62 +289,70 @@ const Navbar = () => {
               >
                 <FaTimes size={20} />
               </button>
-              <img
-                src={logo}
-                alt="RightTrade Capital"
-                className="w-[80px] h-[40px]"
-              />
+              <img src={logo} alt="RightTrade Capital" className="w-[80px]" />
               <span className="text-sm font-medium">LOGIN</span>
             </div>
             <div className="p-4">
-              {menuItems.map((item) => (
-                <div
-                  key={item.name}
-                  className="border-b border-gray-600 last:border-b-0"
-                >
-                  <button
-                    onClick={() => toggleMobileDropdown(item.name)}
-                    className="flex items-center justify-between w-full py-4 text-left font-medium"
+              {menuItems.map((item) =>
+                item.link ? (
+                  <Link
+                    key={item.name}
+                    to={item.link}
+                    className="block py-4 border-b border-gray-600 font-medium"
+                    onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    <span>{item.name}</span>
-                    <FaChevronDown
-                      className={`transition-transform duration-200 ${
-                        openMobileDropdown === item.name ? "rotate-180" : ""
-                      }`}
-                      size={12}
-                    />
-                  </button>
-                  {openMobileDropdown === item.name && (
-                    <div className="pb-4 pl-4">
-                      {item.dropdown.map((section, idx) => (
-                        <div key={idx} className="mb-4">
-                          {section.heading && (
-                            <h4 className="text-[#ff4c1b] font-bold mb-2 text-sm">
-                              {section.heading}
-                            </h4>
-                          )}
-                          <ul className="space-y-2">
-                            {section.links.map((link, index) => (
-                              <li
-                                key={index}
-                                className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600"
-                              >
-                                <Link
-                                  to={`/${link
-                                    .toLowerCase()
-                                    .replace(/\s+/g, "-")}`}
+                    {item.name}
+                  </Link>
+                ) : (
+                  <div
+                    key={item.name}
+                    className="border-b border-gray-600 last:border-b-0"
+                  >
+                    <button
+                      onClick={() => toggleMobileDropdown(item.name)}
+                      className="flex items-center justify-between w-full py-4 text-left font-medium"
+                    >
+                      <span>{item.name}</span>
+                      <FaChevronDown
+                        className={`transition-transform duration-200 ${
+                          openMobileDropdown === item.name ? "rotate-180" : ""
+                        }`}
+                        size={12}
+                      />
+                    </button>
+                    {openMobileDropdown === item.name && (
+                      <div className="pb-4 pl-4">
+                        {item.dropdown.map((section, idx) => (
+                          <div key={idx} className="mb-4">
+                            {section.heading && (
+                              <h4 className="text-[#ff4c1b] font-bold mb-2 text-sm">
+                                {section.heading}
+                              </h4>
+                            )}
+                            <ul className="space-y-2">
+                              {section.links.map((link, index) => (
+                                <li
+                                  key={index}
+                                  className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600"
                                 >
-                                  {link}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
+                                  <Link
+                                    to={`/${link
+                                      .toLowerCase()
+                                      .replace(/\s+/g, "-")}`}
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
