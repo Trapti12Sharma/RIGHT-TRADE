@@ -3,10 +3,57 @@ import StatsSection from "../common/StatsSection";
 import SimpleCenteredTextSection from "../common/SimpleCenteredTextSection";
 import ImageWithTextCenterSection from "../common/ImageWithTextCenterSection";
 import ForexTradeSection from "../common/ForexTradeSection";
+import ImageLeftTextRightSection from "../common/ImageLeftTextRightSection";
+import VideoSection from "../common/VideoSection";
+import FaqSection from "../common/FaqSection";
+import TrustCTASection from "../common/TrustCTASection";
+import AwardsSection from "../common/AwardsSection";
+import ContactOptions from "../common/ContactOptions";
+
 import statsBg from "../../assets/currency1.png";
-import diagramImg from "../../assets/currency2.png"; // new image
+import diagramImg from "../../assets/currency2.png";
+import fxTradingImg from "../../assets/currency3.png";
 
 const MajorCurrencyPairs = () => {
+  const awardsItems = [
+    // ✅ Place it here before return
+    { imageSrc: fund9 },
+    { imageSrc: fund10 },
+    { imageSrc: fund11 },
+    { imageSrc: fund12 },
+  ];
+  // ✅ Fifth section data (Video)
+  const videoData = {
+    videoUrl: "https://player.vimeo.com/video/76979871", // Replace with actual video
+    title: "What is Forex?",
+    description:
+      "Forex (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to",
+    linkText: "forex trading for beginners.",
+    linkHref: "#", // Update link to the actual page
+  };
+  const faqItems = [
+    {
+      question: "What are currency pairs in forex trading?",
+      answer:
+        "Currency pairs are the quotation of two different currencies traded in the forex market. The first currency is the base currency and the second is the quote currency. For example, in EUR/USD, EUR is the base and USD is the quote currency.",
+    },
+    {
+      question: "How is the value of a currency pair determined?",
+      answer:
+        "The value of a currency pair is determined by how much of the quote currency is needed to buy one unit of the base currency. For example, if EUR/USD is 1.2000, it means 1 Euro = 1.20 US Dollars.",
+    },
+    {
+      question: "Which currency is the easiest to trade?",
+      answer:
+        "Major currency pairs such as EUR/USD, USD/JPY, and GBP/USD are considered easiest to trade due to high liquidity and tight spreads.",
+    },
+    {
+      question: "What are the 7 major currency pairs?",
+      answer:
+        "The 7 major currency pairs are EUR/USD, USD/JPY, GBP/USD, USD/CHF, USD/CAD, AUD/USD, and NZD/USD.",
+    },
+  ];
+
   const statsData = {
     title: "Major currency pairs: most traded currencies",
     subtitle:
@@ -39,12 +86,41 @@ const MajorCurrencyPairs = () => {
     image: diagramImg,
   };
 
+  const fxTradingSection = {
+    imgSrc: fxTradingImg,
+
+    paragraph:
+      "When you trade currencies with RightTrade Capital, you’re making a call on whether the price of a currency pair will rise or fall. If you’re correct, you’ll make a profit. That’s because you’re trading a CFD, which means you can go long or short, and benefit from leverage. Let’s look at how it works.",
+  };
+
   return (
     <>
       <StatsSection {...statsData} />
       <SimpleCenteredTextSection {...textSectionData} />
       <ImageWithTextCenterSection {...currencyDiagramSection} />
       <ForexTradeSection {...forexTradeData} />
+      <ImageLeftTextRightSection {...fxTradingSection} bgColor="bg-[#1f213f]" />
+      <SimpleCenteredTextSection
+        heading="TRADING STRATEGIES"
+        subtext="Dive deeper into strategies that FX and CFD traders love to work with"
+        buttonText="Read more"
+      />
+      <VideoSection {...videoData} />
+
+      {/* Section 6 */}
+      <FaqSection faqs={faqItems} />
+
+      {/*  Section 6 - Contact CTA */}
+      <ContactOptions />
+
+      {/* Section 7 */}
+      <TrustCTASection
+        title="Join us"
+        subtitle="Start trading with RightTrade Capital."
+        buttonText="Open account"
+      />
+      {/* Section 10: Awards Section */}
+      <AwardsSection awards={awardsItems} />
     </>
   );
 };
