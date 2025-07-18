@@ -13,6 +13,10 @@ import ContactOptions from "../common/ContactOptions";
 import statsBg from "../../assets/currency1.png";
 import diagramImg from "../../assets/currency2.png";
 import fxTradingImg from "../../assets/currency3.png";
+import fund9 from "../../assets/fund9.svg";
+import fund10 from "../../assets/fund10.svg";
+import fund11 from "../../assets/fund11.svg";
+import fund12 from "../../assets/fund12.svg";
 
 const MajorCurrencyPairs = () => {
   const awardsItems = [
@@ -107,20 +111,22 @@ const MajorCurrencyPairs = () => {
       />
       <VideoSection {...videoData} />
 
-      {/* Section 6 */}
-      <FaqSection faqs={faqItems} />
+      {/* Section 7 */}
 
       {/*  Section 6 - Contact CTA */}
       <ContactOptions />
 
-      {/* Section 7 */}
+      {/* Section 10: Awards Section */}
+      <AwardsSection awards={awardsItems} />
+
+      {/* Section 6 */}
+      <FaqSection faqs={faqItems} />
+
       <TrustCTASection
         title="Join us"
         subtitle="Start trading with RightTrade Capital."
         buttonText="Open account"
       />
-      {/* Section 10: Awards Section */}
-      <AwardsSection awards={awardsItems} />
     </>
   );
 };
