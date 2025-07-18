@@ -167,10 +167,10 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <div
-        className={`sticky top-0 z-50 transition-all duration-300 ease-in-out shadow ${
+        className={`fixed w-full top-0 z-50 transition-all ease-in-out shadow ${
           scrolled
             ? "bg-[rgba(26,29,48,0.76)] text-white backdrop-blur-md"
-            : "bg-white text-black"
+            : "bg-white text-black mt-13"
         }`}
       >
         <div className="max-w-[1280px] mx-auto px-6 pt-2 flex items-center justify-between lg:space-x-14">
