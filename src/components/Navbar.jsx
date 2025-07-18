@@ -9,19 +9,19 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [showSearch, setShowSearch] = useState(false);
-  const [isDropdownHovered, setIsDropdownHovered] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
-  const navContainerRef = useRef(null);
+  const [isNavItemHovered, setIsNavItemHovered] = useState(false);
+  const [isDropdownHovered, setIsDropdownHovered] = useState(false);
+
   const itemRefs = useRef({});
-  const dropdownTimeoutRef = useRef(null);
 
   useEffect(() => {
     if (openDropdown && itemRefs.current[openDropdown]) {
@@ -35,12 +35,6 @@ const Navbar = () => {
     }
   }, [openDropdown]);
 
-  useEffect(() => {
-    return () => {
-      if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
-    };
-  }, []);
-
   // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -50,22 +44,16 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleMouseLeave = () => {
-    dropdownTimeoutRef.current = setTimeout(() => {
+  // Close dropdown when not hovered
+  useEffect(() => {
+    if (!isNavItemHovered && !isDropdownHovered) {
       setOpenDropdown(null);
-    }, 150);
-  };
+    }
+  }, [isNavItemHovered, isDropdownHovered]);
 
-  const handleMouseEnter = () => {
-    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
-  };
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "unset";
     return () => {
       document.body.style.overflow = "unset";
     };
@@ -187,28 +175,16 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Top Bar - Hidden on mobile */}
-      <div
-        style={{
-          fontFamily: '"Source Sans Pro", sans-serif',
-          fontWeight: 400,
-          fontSize: "0.835rem",
-        }}
-        className="bg-[#0d141e] text-white text-sm w-full hidden lg:block"
-      >
+      {/* Top Bar */}
+      <div className="bg-[#0d141e] text-white text-sm w-full hidden lg:block">
         <div className="max-w-7xl mx-auto px-4 py-2 flex justify-end items-center space-x-12 pr-24">
-          {/* Search and Top Bar Items */}
           <div
             className="relative flex items-center"
             onMouseEnter={() => setShowSearch(true)}
             onMouseLeave={() => setShowSearch(false)}
           >
             {showSearch ? (
-              <div
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  showSearch ? "w-48 opacity-100" : "w-0 opacity-0"
-                } flex items-center bg-[#1f2937] px-3 py-1 rounded`}
-              >
+              <div className="transition-all duration-300 ease-in-out overflow-hidden w-48 opacity-100 flex items-center bg-[#1f2937] px-3 py-1 rounded">
                 <input
                   type="text"
                   placeholder="Search"
@@ -234,10 +210,6 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <div
-        style={{
-          fontFamily: '"Source Sans Pro", sans-serif',
-          fontSize: "16px",
-        }}
         className={`sticky top-0 z-50 transition-all duration-300 ease-in-out shadow ${
           scrolled
             ? "bg-[rgba(26,29,48,0.76)] text-white backdrop-blur-md"
@@ -245,74 +217,43 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-[1280px] mx-auto px-6 pt-2 flex items-center justify-between lg:space-x-14">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link to="/">
-              <span
-                style={{ cursor: "pointer" }}
-                className="text-2xl font-bold"
-              >
-                <img
-                  src={logo}
-                  alt="RightTRADE Capital"
-                  className="w-[70px] h-auto object-contain pb-1"
-                />
-              </span>
-            </Link>
-          </div>
+          <Link to="/">
+            <img
+              src={logo}
+              alt="RightTrade Capital"
+              className="w-[70px] h-auto object-contain pb-1"
+            />
+          </Link>
 
-          {/* Desktop Menu Items */}
-          <ul className="hidden lg:flex space-x-10 font-medium text-sm relative">
+          {/* Desktop Menu */}
+          <ul className="hidden lg:flex h-full font-medium text-sm relative">
             {menuItems.map((item) => (
               <div
                 key={item.name}
                 className="relative"
                 onMouseEnter={() => {
-                  if (dropdownTimeoutRef.current)
-                    clearTimeout(dropdownTimeoutRef.current);
+                  setIsNavItemHovered(true);
                   setOpenDropdown(item.name);
-                  setIsDropdownHovered(true);
                 }}
-                onMouseLeave={() => {
-                  setIsDropdownHovered(false);
-                  dropdownTimeoutRef.current = setTimeout(() => {
-                    setOpenDropdown(null);
-                  }, 150);
-                }}
+                onMouseLeave={() => setIsNavItemHovered(false)}
               >
                 <li
-                  key={item.name}
-                  className="relative cursor-pointer px-2 py-3 hover:bg-opacity-10"
+                  className="relative cursor-pointer px-8 py-3 h-18 hover:bg-opacity-10"
                   ref={(el) => (itemRefs.current[item.name] = el)}
-                  onMouseEnter={() => setOpenDropdown(item.name)}
-                  onMouseLeave={() => {
-                    dropdownTimeoutRef.current = setTimeout(() => {
-                      if (!isDropdownHovered) setOpenDropdown(null);
-                    }, 100);
-                  }}
                 >
                   <div className="h-full w-full flex items-center justify-center">
                     <span className="font-medium">{item.name}</span>
                   </div>
-                  {/* Desktop Dropdown */}
+
+                  {/* Dropdown */}
                   {openDropdown === item.name && (
                     <div
                       className={`fixed left-0 w-full bg-[#10162f] text-white py-10 px-20 z-40 text-sm transition-all duration-300 ${
-                        scrolled ? "top-20" : "top-32"
+                        scrolled ? "top-20" : "top-34"
                       }`}
-                      onMouseEnter={() => {
-                        if (dropdownTimeoutRef.current)
-                          clearTimeout(dropdownTimeoutRef.current);
-                        setIsDropdownHovered(true);
-                      }}
-                      onMouseLeave={() => {
-                        setIsDropdownHovered(false);
-                        dropdownTimeoutRef.current = setTimeout(() => {
-                          setOpenDropdown(null);
-                        }, 100);
-                      }}
+                      onMouseEnter={() => setIsDropdownHovered(true)}
+                      onMouseLeave={() => setIsDropdownHovered(false)}
                     >
-                      {/* Orange line aligned to nav item */}
                       <span
                         className="absolute top-0 h-1 bg-[#ff4c1b] transition-all duration-300"
                         style={{
@@ -335,131 +276,13 @@ const Navbar = () => {
                                   key={index}
                                   className="cursor-pointer py-1 rounded-md hover:bg-gray-600"
                                 >
-                                  {link === "Why FXTM" ? (
-                                    <Link
-                                      to="/WhyFxtm"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Awards" ? (
-                                    <Link
-                                      to="/awards"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Fund Safety" ? (
-                                    <Link
-                                      to="/fundsafety"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Trading Statistics" ? (
-                                    <Link
-                                      to="/tradingstatistics"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Deposits and Withdrawals" ? (
-                                    <Link
-                                      to="/deposits-withdrawals"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link ===
-                                    "Trading Commissions and Fees" ? (
-                                    <Link
-                                      to="/trading-commissions"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Markets Overview" ? (
-                                    <Link
-                                      to="/markets-overview"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Contract Specifications" ? (
-                                    <Link
-                                      to="/contract-specifications"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Forex" ? (
-                                    <Link
-                                      to="/forex"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Major Currency pairs" ? (
-                                    <Link
-                                      to="/major-currency-pairs"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Spot Metals" ? (
-                                    <Link
-                                      to="/spot-metals"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "CFD Commodities" ? (
-                                    <Link
-                                      to="/cfd-commodities"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Stocks Trading" ? (
-                                    <Link
-                                      to="/stocks-trading"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Stocks CFDs" ? (
-                                    <Link
-                                      to="/stock-cfds"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "CFD on Indices" ? (
-                                    <Link
-                                      to="/cfd-on-indices"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Crypto CFDs" ? (
-                                    <Link
-                                      to="/crypto-cfds"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : link === "Futures" ? (
-                                    <Link
-                                      to="/futures"
-                                      onClick={() => setIsMobileMenuOpen(false)}
-                                    >
-                                      {link}
-                                    </Link>
-                                  ) : (
-                                    <span className="cursor-pointer">
-                                      {link}
-                                    </span>
-                                  )}
+                                  <Link
+                                    to={`/${link
+                                      .toLowerCase()
+                                      .replace(/\s+/g, "-")}`}
+                                  >
+                                    {link}
+                                  </Link>
                                 </li>
                               ))}
                             </ul>
@@ -473,7 +296,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Mobile Menu Button and Login */}
+          {/* Mobile Icons */}
           <div className="flex items-center space-x-4 lg:hidden">
             <span className="cursor-pointer text-sm font-medium">LOGIN</span>
             <button onClick={() => setIsMobileMenuOpen(true)} className="p-2">
@@ -483,18 +306,14 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[100] lg:hidden">
-          {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black bg-opacity-50"
             onClick={() => setIsMobileMenuOpen(false)}
           />
-
-          {/* Mobile Menu */}
           <div className="absolute inset-0 bg-[#1a1d30] text-white overflow-y-auto">
-            {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-gray-600">
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -502,17 +321,13 @@ const Navbar = () => {
               >
                 <FaTimes size={20} />
               </button>
-              <div className="flex items-center">
-                <img
-                  src={logo}
-                  alt="RightTrade Capital"
-                  className="w-[80px] h-[40px]"
-                />
-              </div>
+              <img
+                src={logo}
+                alt="RightTrade Capital"
+                className="w-[80px] h-[40px]"
+              />
               <span className="text-sm font-medium">LOGIN</span>
             </div>
-
-            {/* Navigation Items */}
             <div className="p-4">
               {menuItems.map((item) => (
                 <div
@@ -531,8 +346,6 @@ const Navbar = () => {
                       size={12}
                     />
                   </button>
-
-                  {/* Mobile Dropdown Content */}
                   {openMobileDropdown === item.name && (
                     <div className="pb-4 pl-4">
                       {item.dropdown.map((section, idx) => (
@@ -548,45 +361,13 @@ const Navbar = () => {
                                 key={index}
                                 className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600"
                               >
-                                {link === "Why FXTM" ? (
-                                  <Link to="/Whyfxtm">{link}</Link>
-                                ) : link === "Awards" ? (
-                                  <Link to="/awards">{link}</Link>
-                                ) : link === "Fund Safety" ? (
-                                  <Link to="/fundsafety">{link}</Link>
-                                ) : link === "Trading Statistics" ? (
-                                  <Link to="/tradingstatistics">{link}</Link>
-                                ) : link === "Deposits and Withdrawals" ? (
-                                  <Link to="/deposits-withdrawals">{link}</Link>
-                                ) : link === "Trading Commissions and Fees" ? (
-                                  <Link to="/trading-commissions">{link}</Link>
-                                ) : link === "Markets Overview" ? (
-                                  <Link to="/markets-overview">{link}</Link>
-                                ) : link === "Contract Specifications" ? (
-                                  <Link to="/contract-specifications">
-                                    {link}
-                                  </Link>
-                                ) : link === "Forex" ? (
-                                  <Link to="/forex">{link}</Link>
-                                ) : link === "Major Currency pairs" ? (
-                                  <Link to="/major-currency-pairs">{link}</Link>
-                                ) : link === "Spot Metals" ? (
-                                  <Link to="/spot-metals">{link}</Link>
-                                ) : link === "CFD Commodities" ? (
-                                  <Link to="/cfd-commodities">{link}</Link>
-                                ) : link === "Stocks Trading" ? (
-                                  <Link to="/stocks-trading">{link}</Link>
-                                ) : link === "Stocks CFDs" ? (
-                                  <Link to="/stock-cfds">{link}</Link>
-                                ) : link === "CFD on Indices" ? (
-                                  <Link to="/cfd-on-indices">{link}</Link>
-                                ) : link === "Crypto CFDs" ? (
-                                  <Link to="/crypto-cfds">{link}</Link>
-                                ) : link === "Futures" ? (
-                                  <Link to="/futures">{link}</Link>
-                                ) : (
-                                  <span className="cursor-pointer">{link}</span>
-                                )}
+                                <Link
+                                  to={`/${link
+                                    .toLowerCase()
+                                    .replace(/\s+/g, "-")}`}
+                                >
+                                  {link}
+                                </Link>
                               </li>
                             ))}
                           </ul>
@@ -596,39 +377,6 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
-            </div>
-
-            {/* Bottom Section */}
-            <div className="p-4 mt-8">
-              {/* Action Buttons */}
-              <div className="flex items-center justify-center space-x-6 mb-6">
-                <button className="bg-[#ff4c1b] text-white px-8 py-3 rounded-full font-semibold text-sm">
-                  OPEN ACCOUNT
-                </button>
-                <FaUser size={20} className="cursor-pointer" />
-                <FaFileAlt size={20} className="cursor-pointer" />
-                <FaEnvelope size={20} className="cursor-pointer" />
-              </div>
-
-              {/* Promotional Section
-              <div className="text-center mb-6">
-                <h3 className="text-xl font-bold mb-3">Power up your trading skills</h3>
-                <p className="text-sm text-gray-300 mb-4 leading-relaxed">
-                  Master the markets and skill up to the next level on our free demo account. Explore hundreds of
-                  instruments and tools, and practice trading with zero risk. And when you feel more confident, switch
-                  over to a live account and start trading for real.
-                </p>
-                <button className="bg-transparent border border-[#ff4c1b] text-[#ff4c1b] px-6 py-2 rounded-full font-semibold text-sm">
-                  Open Demo
-                </button>
-              </div>
-
-              {/* Risk Warning */}
-              {/* <div className="text-xs text-gray-400 text-center">
-                <p>
-                  <strong>Risk warning:</strong> Trading is risky. Your capital is at risk.
-                </p>
-              </div>  */}
             </div>
           </div>
         </div>
