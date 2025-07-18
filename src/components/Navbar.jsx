@@ -65,7 +65,12 @@ const Navbar = () => {
       dropdown: [
         {
           heading: "ABOUT US",
-          links: ["Why FXTM", "Awards", "Fund Safety", "Trading Statistics"],
+          links: [
+            "Why RightTrade Capital",
+            "Awards",
+            "Fund Safety",
+            "Trading Statistics",
+          ],
         },
         {
           heading: "COSTS",

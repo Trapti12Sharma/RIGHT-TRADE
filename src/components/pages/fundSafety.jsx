@@ -29,7 +29,8 @@ const FundSafety = () => {
     { question: "How does segregation of funds work?" },
     { question: "What are the benefits of segregated funds?" },
     {
-      question: "What's the difference between mutual funds and segregated funds?",
+      question:
+        "What's the difference between mutual funds and segregated funds?",
     },
     { question: "Can you withdraw from segregated funds?" },
   ];
@@ -37,19 +38,15 @@ const FundSafety = () => {
   const awardsItems = [
     {
       imageSrc: fund9,
-      
     },
     {
       imageSrc: fund10,
-      
     },
     {
       imageSrc: fund11,
-      
     },
     {
       imageSrc: fund12,
-      
     },
   ];
 
@@ -86,7 +83,7 @@ const FundSafety = () => {
         <div
           className="absolute inset-0 bg-[#f7421e] opacity-95"
           style={{
-            clipPath: "polygon(0 0, 60% 0, 80% 70%, 0% 100%)",
+            clipPath: "polygon(0 0, 35% 0, 50% 50%, 0 200%)",
           }}
         ></div>
 
