@@ -1,59 +1,67 @@
-import { useRef, useState, useEffect } from "react"
-import { FaSearch, FaChevronDown, FaBars, FaTimes, FaUser, FaFileAlt, FaEnvelope } from "react-icons/fa"
-import { Link } from "react-router-dom"
-import logo from "../assets/logo.jpeg"
+import { useRef, useState, useEffect } from "react";
+import {
+  FaSearch,
+  FaChevronDown,
+  FaBars,
+  FaTimes,
+  FaUser,
+  FaFileAlt,
+  FaEnvelope,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import logo from "../assets/logon.png";
 
 const Navbar = () => {
-  const [openDropdown, setOpenDropdown] = useState(null)
-  const [showSearch, setShowSearch] = useState(false)
-  const [isDropdownHovered, setIsDropdownHovered] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 })
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [openMobileDropdown, setOpenMobileDropdown] = useState(null)
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [showSearch, setShowSearch] = useState(false);
+  const [isDropdownHovered, setIsDropdownHovered] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
   const navContainerRef = useRef(null);
-  const itemRefs = useRef({})
-   const dropdownTimeoutRef = useRef(null);
+  const itemRefs = useRef({});
+  const dropdownTimeoutRef = useRef(null);
 
-   useEffect(() => {
+  useEffect(() => {
     if (openDropdown && itemRefs.current[openDropdown]) {
-      const rect = itemRefs.current[openDropdown].getBoundingClientRect()
+      const rect = itemRefs.current[openDropdown].getBoundingClientRect();
       setUnderlineStyle({
         left: rect.left,
         width: rect.width,
-      })
+      });
     }
-  }, [openDropdown])
+  }, [openDropdown]);
 
   // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-  
-    const handleMouseLeave = () => {
-      dropdownTimeoutRef.current = setTimeout(() => {
-        setOpenDropdown(null);
-      }, 150);
+      setScrolled(window.scrollY > 20);
     };
-  
-    const handleMouseEnter = () => {
-      if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
-    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleMouseLeave = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 150);
+  };
+
+  const handleMouseEnter = () => {
+    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+  };
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden"
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset"
+      document.body.style.overflow = "unset";
     }
     return () => {
-      document.body.style.overflow = "unset"
-    }
-  }, [isMobileMenuOpen])
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileMenuOpen]);
 
   const menuItems = [
     {
@@ -72,10 +80,19 @@ const Navbar = () => {
     {
       name: "MARKETS",
       dropdown: [
-        { heading: "INSTRUMENTS", links: ["Markets Overview", "Contract Specifications"] },
+        {
+          heading: "INSTRUMENTS",
+          links: ["Markets Overview", "Contract Specifications"],
+        },
         { heading: "FX", links: ["Forex", "Major Currency pairs"] },
-        { heading: "METALS AND COMMODITIES", links: ["Spot Metals", "CFD Commodities"] },
-        { heading: "STOCKS AND INDICES", links: ["Stocks Trading", "Stocks CFDs", "CFD on Indices"] },
+        {
+          heading: "METALS AND COMMODITIES",
+          links: ["Spot Metals", "CFD Commodities"],
+        },
+        {
+          heading: "STOCKS AND INDICES",
+          links: ["Stocks Trading", "Stocks CFDs", "CFD on Indices"],
+        },
         { heading: "CRYPTO", links: ["Crypto CFDs"] },
         { heading: "FUTURE CFDS", links: ["Futures"] },
       ],
@@ -99,11 +116,21 @@ const Navbar = () => {
         },
         {
           heading: "Tools",
-          links: ["Tools Overview", "Pro Trading Tools", "Profit Calculator", "Margin Calculator", "Trading Signals"],
+          links: [
+            "Tools Overview",
+            "Pro Trading Tools",
+            "Profit Calculator",
+            "Margin Calculator",
+            "Trading Signals",
+          ],
         },
         {
           heading: "Terms",
-          links: ["Holiday Trading Schedule", "Leverage and Margin", "Dividends"],
+          links: [
+            "Holiday Trading Schedule",
+            "Leverage and Margin",
+            "Dividends",
+          ],
         },
       ],
     },
@@ -116,7 +143,12 @@ const Navbar = () => {
         },
         {
           heading: "Market Analysis",
-          links: ["Market Analysis", "Market Analyst Team", "Economic Calendar", "Economic Events"],
+          links: [
+            "Market Analysis",
+            "Market Analyst Team",
+            "Economic Calendar",
+            "Economic Events",
+          ],
         },
         {
           heading: "Top Guides",
@@ -139,17 +171,21 @@ const Navbar = () => {
         },
       ],
     },
-  ]
+  ];
 
   const toggleMobileDropdown = (itemName) => {
-    setOpenMobileDropdown(openMobileDropdown === itemName ? null : itemName)
-  }
+    setOpenMobileDropdown(openMobileDropdown === itemName ? null : itemName);
+  };
 
   return (
     <>
       {/* Top Bar - Hidden on mobile */}
       <div
-        style={{ fontFamily: '"Source Sans Pro", sans-serif', fontWeight: 400, fontSize: "0.835rem" }}
+        style={{
+          fontFamily: '"Source Sans Pro", sans-serif',
+          fontWeight: 400,
+          fontSize: "0.835rem",
+        }}
         className="bg-[#0d141e] text-white text-sm w-full hidden lg:block"
       >
         <div className="max-w-7xl mx-auto px-4 py-2 flex justify-end items-center space-x-12 pr-24">
@@ -190,17 +226,29 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <div
-        style={{ fontFamily: '"Source Sans Pro", sans-serif', fontSize: "16px" }}
+        style={{
+          fontFamily: '"Source Sans Pro", sans-serif',
+          fontSize: "16px",
+        }}
         className={`sticky top-0 z-50 transition-all duration-300 ease-in-out shadow ${
-          scrolled ? "bg-[rgba(26,29,48,0.76)] text-white backdrop-blur-md" : "bg-white text-black"
+          scrolled
+            ? "bg-[rgba(26,29,48,0.76)] text-white backdrop-blur-md"
+            : "bg-white text-black"
         }`}
       >
         <div className="max-w-[1280px] mx-auto px-6 pt-2 flex items-center justify-between lg:space-x-14">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/">
-              <span style={{ cursor: "pointer" }} className="text-2xl font-bold">
-                <img src={logo} alt="RightTRADE Capital" className="w-[70px] h-auto object-contain pb-1" />
+              <span
+                style={{ cursor: "pointer" }}
+                className="text-2xl font-bold"
+              >
+                <img
+                  src={logo}
+                  alt="RightTRADE Capital"
+                  className="w-[70px] h-auto object-contain pb-1"
+                />
               </span>
             </Link>
           </div>
@@ -215,8 +263,8 @@ const Navbar = () => {
                 onMouseEnter={() => setOpenDropdown(item.name)}
                 onMouseLeave={() => {
                   setTimeout(() => {
-                    if (!isDropdownHovered) setOpenDropdown(null)
-                  }, 100)
+                    if (!isDropdownHovered) setOpenDropdown(null);
+                  }, 100);
                 }}
               >
                 <div className="flex flex-col items-center">
@@ -230,8 +278,8 @@ const Navbar = () => {
                     }`}
                     onMouseEnter={() => setIsDropdownHovered(true)}
                     onMouseLeave={() => {
-                      setIsDropdownHovered(false)
-                      setOpenDropdown(null)
+                      setIsDropdownHovered(false);
+                      setOpenDropdown(null);
                     }}
                   >
                     {/* Orange line aligned to nav item */}
@@ -247,52 +295,140 @@ const Navbar = () => {
                       {item.dropdown.map((section, idx) => (
                         <div key={idx}>
                           {section.heading && (
-                            <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">{section.heading}</h4>
+                            <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">
+                              {section.heading}
+                            </h4>
                           )}
                           <ul className="space-y-3">
-                          {section.links.map((link, index) => (
-                    <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-                      {link === "Why FXTM" ? (
-                        <Link to="/WhyFxtm" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                      ) : link === "Awards" ? (
-                        <Link to="/awards" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                      ) : link === "Fund Safety" ? (
-                        <Link to="/fundsafety" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                      ) : link === "Trading Statistics" ? (
-                        <Link to="/tradingstatistics" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                      ) : link === "Deposits and Withdrawals" ? (
-                        <Link to="/deposits-withdrawals" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                      ) : link === "Trading Commissions and Fees" ? (
-                        <Link to="/trading-commissions" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                      ) : link === "Markets Overview" ? (
-                          <Link to="/markets-overview" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Contract Specifications" ? (
-                          <Link to="/contract-specifications" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Forex" ? (
-                          <Link to="/forex" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Major Currency pairs" ? (
-                          <Link to="/major-currency-pairs" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Spot Metals" ? (
-                          <Link to="/spot-metals" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "CFD Commodities" ? (
-                          <Link to="/cfd-commodities" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Stocks Trading" ? (
-                          <Link to="/stocks-trading" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Stocks CFDs" ? (
-                          <Link to="/stock-cfds" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "CFD on Indices" ? (
-                          <Link to="/cfd-on-indices" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Crypto CFDs" ? (
-                          <Link to="/crypto-cfds" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : link === "Futures" ? (
-                          <Link to="/futures" onClick={() => setIsMobileMenuOpen(false)}>{link}</Link>
-                        ) : (
-                        <span className="cursor-pointer">{link}</span>
-                      )}
-                    </li>
-                  ))}
-
-
+                            {section.links.map((link, index) => (
+                              <li
+                                key={index}
+                                className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600"
+                              >
+                                {link === "Why FXTM" ? (
+                                  <Link
+                                    to="/WhyFxtm"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Awards" ? (
+                                  <Link
+                                    to="/awards"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Fund Safety" ? (
+                                  <Link
+                                    to="/fundsafety"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Trading Statistics" ? (
+                                  <Link
+                                    to="/tradingstatistics"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Deposits and Withdrawals" ? (
+                                  <Link
+                                    to="/deposits-withdrawals"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Trading Commissions and Fees" ? (
+                                  <Link
+                                    to="/trading-commissions"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Markets Overview" ? (
+                                  <Link
+                                    to="/markets-overview"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Contract Specifications" ? (
+                                  <Link
+                                    to="/contract-specifications"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Forex" ? (
+                                  <Link
+                                    to="/forex"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Major Currency pairs" ? (
+                                  <Link
+                                    to="/major-currency-pairs"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Spot Metals" ? (
+                                  <Link
+                                    to="/spot-metals"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "CFD Commodities" ? (
+                                  <Link
+                                    to="/cfd-commodities"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Stocks Trading" ? (
+                                  <Link
+                                    to="/stocks-trading"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Stocks CFDs" ? (
+                                  <Link
+                                    to="/stock-cfds"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "CFD on Indices" ? (
+                                  <Link
+                                    to="/cfd-on-indices"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Crypto CFDs" ? (
+                                  <Link
+                                    to="/crypto-cfds"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : link === "Futures" ? (
+                                  <Link
+                                    to="/futures"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                  >
+                                    {link}
+                                  </Link>
+                                ) : (
+                                  <span className="cursor-pointer">{link}</span>
+                                )}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       ))}
@@ -317,17 +453,27 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="fixed inset-0 z-[100] lg:hidden">
           {/* Backdrop */}
-          <div className="absolute inset-0 bg-black bg-opacity-50" onClick={() => setIsMobileMenuOpen(false)} />
+          <div
+            className="absolute inset-0 bg-black bg-opacity-50"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
 
           {/* Mobile Menu */}
           <div className="absolute inset-0 bg-[#1a1d30] text-white overflow-y-auto">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-gray-600">
-              <button onClick={() => setIsMobileMenuOpen(false)} className="p-2">
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2"
+              >
                 <FaTimes size={20} />
               </button>
               <div className="flex items-center">
-                <img src={logo} alt="RightTrade Capital" className="w-[80px] h-[40px]" />
+                <img
+                  src={logo}
+                  alt="RightTrade Capital"
+                  className="w-[80px] h-[40px]"
+                />
               </div>
               <span className="text-sm font-medium">LOGIN</span>
             </div>
@@ -335,7 +481,10 @@ const Navbar = () => {
             {/* Navigation Items */}
             <div className="p-4">
               {menuItems.map((item) => (
-                <div key={item.name} className="border-b border-gray-600 last:border-b-0">
+                <div
+                  key={item.name}
+                  className="border-b border-gray-600 last:border-b-0"
+                >
                   <button
                     onClick={() => toggleMobileDropdown(item.name)}
                     className="flex items-center justify-between w-full py-4 text-left font-medium"
@@ -355,52 +504,57 @@ const Navbar = () => {
                       {item.dropdown.map((section, idx) => (
                         <div key={idx} className="mb-4">
                           {section.heading && (
-                            <h4 className="text-[#ff4c1b] font-bold mb-2 text-sm">{section.heading}</h4>
+                            <h4 className="text-[#ff4c1b] font-bold mb-2 text-sm">
+                              {section.heading}
+                            </h4>
                           )}
                           <ul className="space-y-2">
                             {section.links.map((link, index) => (
-  <li key={index} className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600">
-    {link === "Why FXTM" ? (
-      <Link to="/Whyfxtm">{link}</Link>
-    ) : link === "Awards" ? (
-      <Link to="/awards">{link}</Link>
-    ) : link === "Fund Safety" ? (
-      <Link to="/fundsafety">{link}</Link>
-    ) : link === "Trading Statistics" ? (
-      <Link to="/tradingstatistics">{link}</Link>
-    ) :  link === "Deposits and Withdrawals" ? (
-                        <Link to="/deposits-withdrawals">{link}</Link>
-                      ) : link === "Trading Commissions and Fees" ? (
-                        <Link to="/trading-commissions" >{link}</Link>
-                      ) : link === "Markets Overview" ? (
-                          <Link to="/markets-overview" >{link}</Link>
-                        ) : link === "Contract Specifications" ? (
-                          <Link to="/contract-specifications">{link}</Link>
-                        ) : link === "Forex" ? (
-                          <Link to="/forex">{link}</Link>
-                        ) : link === "Major Currency pairs" ? (
-                          <Link to="/major-currency-pairs">{link}</Link>
-                        ) : link === "Spot Metals" ? (
-                          <Link to="/spot-metals">{link}</Link>
-                        ) : link === "CFD Commodities" ? (
-                          <Link to="/cfd-commodities">{link}</Link>
-                        ) : link === "Stocks Trading" ? (
-                          <Link to="/stocks-trading">{link}</Link>
-                        ) : link === "Stocks CFDs" ? (
-                          <Link to="/stock-cfds">{link}</Link>
-                        ) : link === "CFD on Indices" ? (
-                          <Link to="/cfd-on-indices">{link}</Link>
-                        ) : link === "Crypto CFDs" ? (
-                          <Link to="/crypto-cfds">{link}</Link>
-                        ) : link === "Futures" ? (
-                          <Link to="/futures">{link}</Link>
-                        ) : (
-      <span className="cursor-pointer">{link}</span>
-    )}
-  </li>
-))}
-
-
+                              <li
+                                key={index}
+                                className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600"
+                              >
+                                {link === "Why FXTM" ? (
+                                  <Link to="/Whyfxtm">{link}</Link>
+                                ) : link === "Awards" ? (
+                                  <Link to="/awards">{link}</Link>
+                                ) : link === "Fund Safety" ? (
+                                  <Link to="/fundsafety">{link}</Link>
+                                ) : link === "Trading Statistics" ? (
+                                  <Link to="/tradingstatistics">{link}</Link>
+                                ) : link === "Deposits and Withdrawals" ? (
+                                  <Link to="/deposits-withdrawals">{link}</Link>
+                                ) : link === "Trading Commissions and Fees" ? (
+                                  <Link to="/trading-commissions">{link}</Link>
+                                ) : link === "Markets Overview" ? (
+                                  <Link to="/markets-overview">{link}</Link>
+                                ) : link === "Contract Specifications" ? (
+                                  <Link to="/contract-specifications">
+                                    {link}
+                                  </Link>
+                                ) : link === "Forex" ? (
+                                  <Link to="/forex">{link}</Link>
+                                ) : link === "Major Currency pairs" ? (
+                                  <Link to="/major-currency-pairs">{link}</Link>
+                                ) : link === "Spot Metals" ? (
+                                  <Link to="/spot-metals">{link}</Link>
+                                ) : link === "CFD Commodities" ? (
+                                  <Link to="/cfd-commodities">{link}</Link>
+                                ) : link === "Stocks Trading" ? (
+                                  <Link to="/stocks-trading">{link}</Link>
+                                ) : link === "Stocks CFDs" ? (
+                                  <Link to="/stock-cfds">{link}</Link>
+                                ) : link === "CFD on Indices" ? (
+                                  <Link to="/cfd-on-indices">{link}</Link>
+                                ) : link === "Crypto CFDs" ? (
+                                  <Link to="/crypto-cfds">{link}</Link>
+                                ) : link === "Futures" ? (
+                                  <Link to="/futures">{link}</Link>
+                                ) : (
+                                  <span className="cursor-pointer">{link}</span>
+                                )}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       ))}
@@ -446,7 +600,7 @@ const Navbar = () => {
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

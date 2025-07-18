@@ -1,6 +1,12 @@
 import React from "react";
 
-const ExpertTrader = ({ tag, heading, description, buttonText, onClick }) => {
+const ExpertTrader = ({
+  tag = "EXPERT TRADER",
+  heading = "Already trading?",
+  description = "Sharpen your edge with the latest market updates, expert analysis, real-time prices, and innovative trading tools.",
+  buttonText,
+  onClick,
+}) => {
   return (
     <section className="bg-cover bg-center bg-no-repeat">
       <div className="bg-[#121733]/80 py-20 px-6">
