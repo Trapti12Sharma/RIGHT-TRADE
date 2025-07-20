@@ -102,6 +102,26 @@ You’ll pay that interest to us – but we keep these fees as low as possible."
 <SimpleCenteredTextSection
   heading="Trading fees with stocks"
   subtext="US stock trading is commission-free and includes access to real time price data to help you keep an eye on the latest movements."
+   style={{
+    container: {
+      backgroundColor: "#f9f9f9",
+      padding: "60px 20px",
+      textAlign: "center",
+    },
+    heading: {
+      fontSize: "2rem",
+      fontWeight: "600",
+      marginBottom: "20px",
+    },
+    subtext: {
+      fontSize: "1rem",
+      color: "#555",
+      lineHeight: "1.6",
+      whiteSpace: "pre-line",
+      maxWidth: "800px",
+      margin: "0 auto",
+    },
+  }}
 />
 
 
