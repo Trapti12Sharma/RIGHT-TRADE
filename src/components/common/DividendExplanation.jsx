@@ -46,5 +46,5 @@ const DividendExplanation = ({ title, content, beforeImage, afterImage }) => {
     </section>
   );
 };
-
+``
 export default DividendExplanation;
