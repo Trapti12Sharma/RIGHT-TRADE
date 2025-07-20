@@ -1,48 +1,62 @@
-import React from 'react';
-import StatsSection from '../common/StatsSection';
-import FeatureSection from '../common/FeatureSection';
-import SideImageTextSection from '../common/SideImageTextSection'; // ✅ updated import
-import ImportantInfoSection from '../common/ImportantInfoSection';
-import JoinUsBanner from '../common/JoinUsBanner';
-import FourStepSection from '../common/FourStepSection';
-import HowToWithdrawSection from '../common/HowToWithdrawSection';
-import GetMoreMarketsSection from '../common/GetMoreMarketsSection';
+import React from "react";
+import StatsSection from "../common/StatsSection";
+import FeatureSection from "../common/FeatureSection";
+import SideImageTextSection from "../common/SideImageTextSection"; // ✅ updated import
+import ImportantInfoSection from "../common/ImportantInfoSection";
+import JoinUsBanner from "../common/JoinUsBanner";
+import FourStepSection from "../common/FourStepSection";
+import HowToWithdrawSection from "../common/HowToWithdrawSection";
+import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
 import HelpSupportSection from "../common/HelpSupportSection";
 
-import depositImg from '../../assets/deposits1.png';
-import manageFundsImg from '../../assets/deposits2.png';
-import safetyIcon from '../../assets/safety.svg';
-import regulationIcon from '../../assets/regulation.svg';
-import choiceIcon from '../../assets/choice.svg';
+import depositImg from "../../assets/deposits1.png";
+import manageFundsImg from "../../assets/deposits2.png";
+import safetyIcon from "../../assets/safety.svg";
+import regulationIcon from "../../assets/regulation.svg";
+import choiceIcon from "../../assets/choice.svg";
 
 const DepositsWithdrawals = () => {
-
-    const withdrawSteps = [
+  const withdrawSteps = [
     "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
     "Choose your payment method and click ‘Withdraw’.",
     "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
-    "Complete the necessary fields and click 'Submit.'"
+    "Complete the necessary fields and click 'Submit.'",
   ];
-    const steps = [
-    { number: 1, description: "Open the Deposits page within the 'My Money' section in MyRightTrade Capital." },
-    { number: 2, description: "Choose your preferred deposit method and click ‘Deposit’." },
-    { number: 3, description: "Choose the trading account you’d like to deposit funds into and complete the necessary fields." },
-    { number: 4, description: "Confirm your deposit details in the next page – and you’re good to go!" },
+  const steps = [
+    {
+      number: 1,
+      description:
+        "Open the Deposits page within the 'My Money' section in MyRightTrade Capital.",
+    },
+    {
+      number: 2,
+      description: "Choose your preferred deposit method and click ‘Deposit’.",
+    },
+    {
+      number: 3,
+      description:
+        "Choose the trading account you’d like to deposit funds into and complete the necessary fields.",
+    },
+    {
+      number: 4,
+      description:
+        "Confirm your deposit details in the next page – and you’re good to go!",
+    },
   ];
   const features = [
     {
       image: safetyIcon,
-      heading: 'Safety',
+      heading: "Safety",
       text: "We keep your funds in top-tier banks, and they’re fully segregated from our own.",
     },
     {
       image: regulationIcon,
-      heading: 'Regulation',
+      heading: "Regulation",
       text: "We’re regulated in various jurisdictions. We put your money in top-tier banks, so that you can relax.",
     },
     {
       image: choiceIcon,
-      heading: 'Choice',
+      heading: "Choice",
       text: "We offer a wide variety of payment methods, including local banking.",
     },
   ];
@@ -61,7 +75,6 @@ const DepositsWithdrawals = () => {
     "Will I be notified of the fee when I withdraw/deposit?",
   ];
 
-
   return (
     <div>
       {/* 🔶 Section 1 - Hero Banner */}
@@ -74,7 +87,10 @@ const DepositsWithdrawals = () => {
       />
 
       {/* 🔗 Section 2 - Breadcrumb */}
-      <div className="bg-white py-4 px-6 sm:px-10 lg:px-24 text-sm" style={{ fontFamily: '"Source Sans Pro", sans-serif' }}>
+      <div
+        className="bg-white py-4 px-6 sm:px-10 lg:px-24 text-sm"
+        style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
+      >
         <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
           <span className="text-blue-500">RightTrade Capital</span>
           <span className="text-[#e74728]">❯</span>
@@ -92,21 +108,24 @@ const DepositsWithdrawals = () => {
       <SideImageTextSection
         image={manageFundsImg}
         title="Manage funds your way"
+        paragraphTextColor="text-black" // 👈 black text only for this section
         paragraphs={[
           "Deposit and withdraw quickly and easily with Mastercard, Visa and a host of local payment providers. You can even choose to pay in and withdraw with cryptocurrency.",
           "Forex trading entails speculating on currency prices to earn potential profits. By trading currencies in pairs, traders predict the rise or fall in value of one currency against another.",
         ]}
       />
 
-
-            {/*  Section 5 - Important Information */}
+      {/*  Section 5 - Important Information */}
       <ImportantInfoSection text="Important information about deposits and withdrawals" />
 
       {/*  Section 6 - Join Us Banner */}
       <JoinUsBanner />
 
       {/*  Section 7 - Four Step Section */}
-      <FourStepSection title="How to make a deposit in 4 simple steps" steps={steps} />
+      <FourStepSection
+        title="How to make a deposit in 4 simple steps"
+        steps={steps}
+      />
 
       {/*  8th Section - How to make a withdrawal */}
       <HowToWithdrawSection
@@ -114,13 +133,11 @@ const DepositsWithdrawals = () => {
         steps={withdrawSteps}
       />
 
-
-       {/*  9th Section - Get more from the markets */}
+      {/*  9th Section - Get more from the markets */}
       <GetMoreMarketsSection />
 
       {/*  10th Section */}
       <HelpSupportSection title="Frequently Asked Questions" faqs={faqs} />
-
     </div>
   );
 };

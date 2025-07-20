@@ -117,11 +117,7 @@ const Navbar = () => {
         },
         {
           heading: "Terms",
-          links: [
-            "Holiday Trading Schedule",
-            "Leverage and Margin",
-            "Dividends",
-          ],
+          links: ["Leverage and Margin", "Dividends"],
         },
       ],
     },

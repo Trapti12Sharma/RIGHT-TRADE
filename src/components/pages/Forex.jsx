@@ -7,8 +7,10 @@ import CurrencyInfoSection from "../common/CurrencyInfoSection";
 import VideoSection from "../common/VideoSection";
 import FaqSection from "../common/FaqSection";
 import TrustCTASection from "../common/TrustCTASection";
+import SideImageTextSection from "../common/SideImageTextSection";
 import statsBg from "../../assets/forexs1.png";
 import globeImg from "../../assets/globe.svg";
+import img from "../../assets/forexs2.png";
 
 const Forex = () => {
   // ✅ First section data
@@ -73,12 +75,9 @@ const Forex = () => {
 
   // ✅ Fifth section data (Video)
   const videoData = {
-    videoUrl: "https://player.vimeo.com/video/76979871", // Replace with actual video
     title: "What is Forex?",
     description:
-      "Forex (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to",
-    linkText: "forex trading for beginners.",
-    linkHref: "#", // Update link to the actual page
+      "Forex (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to forex trading for beginners.",
   };
 
   //  Sixth section data
@@ -131,7 +130,15 @@ const Forex = () => {
       <CurrencyInfoSection {...currencySectionData} />
 
       {/* 5 (New Reusable) */}
-      <VideoSection {...videoData} />
+      <SideImageTextSection
+        image={img}
+        bgColor="bg-[#2a2d45]"
+        textcolor="text-[#ffffff]"
+        title="What is Forex?"
+        paragraphs={[
+          "Forex (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to forex trading for beginners.",
+        ]}
+      />
 
       {/* Section 6 */}
       <FaqSection faqs={faqItems} />

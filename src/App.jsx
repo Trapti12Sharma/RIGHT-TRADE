@@ -41,6 +41,20 @@ import CFDOnIndices from "./components/pages/CFDOnIndices";
 import CryptoCFDs from "./components/pages/CryptoCFDs";
 import Futures from "./components/pages/Futures";
 
+import AccountsOverview from "./components/pages/AccountsOverview";
+import AdvantageAccount from "./components/pages/AdvantageAccount";
+import AdvantageStocksAccount from "./components/pages/AdvantageStocksAccount";
+import AdvantagePlusAccount from "./components/pages/AdvantagePlusAccount";
+import DemoAccounts from "./components/pages/DemoAccounts";
+
+import PlatformsOverview from "./components/pages/PlatformsOverview";
+import MT4 from "./components/pages/MT4";
+import MT5 from "./components/pages/MT5";
+import MobileTrading from "./components/pages/MobileTrading";
+
+import LeverageMargin from "./components/pages/LeverageAndMargin";
+import Dividends from "./components/pages/Dividends";
+
 // Home Page Grouped as Component
 const Home = () => {
   return (
@@ -100,6 +114,25 @@ const App = () => {
             <Route path="/cfd-on-indices" element={<CFDOnIndices />} />
             <Route path="/crypto-cfds" element={<CryptoCFDs />} />
             <Route path="/futures" element={<Futures />} />
+            <Route path="/accounts-overview" element={<AccountsOverview />} />
+            <Route path="/advantage-account" element={<AdvantageAccount />} />
+            <Route
+              path="/advantage-stocks-account"
+              element={<AdvantageStocksAccount />}
+            />
+            <Route
+              path="/advantage-plus-account"
+              element={<AdvantagePlusAccount />}
+            />
+            <Route path="/demo-accounts" element={<DemoAccounts />} />
+
+            <Route path="/platforms-overview" element={<PlatformsOverview />} />
+            <Route path="/mt4" element={<MT4 />} />
+            <Route path="/mt5" element={<MT5 />} />
+            <Route path="/mobile-trading" element={<MobileTrading />} />
+
+            <Route path="/leverage-and-margin" element={<LeverageMargin />} />
+            <Route path="/dividends" element={<Dividends />} />
           </Routes>
         </div>
         <Footer />

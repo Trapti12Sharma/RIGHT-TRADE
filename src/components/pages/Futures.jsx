@@ -7,8 +7,10 @@ import CurrencyInfoSection from "../common/CurrencyInfoSection";
 import VideoSection from "../common/VideoSection";
 import FaqSection from "../common/FaqSection";
 import TrustCTASection from "../common/TrustCTASection";
+import SideImageTextSection from "../common/SideImageTextSection";
 import statsBg from "../../assets/futures1.png";
 import globeImg from "../../assets/globe.svg";
+import img from "../../assets/futures2.png";
 
 const Futures = () => {
   // ✅ First section data
@@ -131,7 +133,17 @@ const Futures = () => {
       <CurrencyInfoSection {...currencySectionData} />
 
       {/* 5 (New Reusable) */}
-      <VideoSection {...videoData} />
+      <SideImageTextSection
+        image={img}
+        bgColor="bg-[#2a2d45]"
+        textcolor="text-[#ffffff]"
+        title="What is Futures trading?"
+        subtitle="Give yourself an advantage with our most popular account."
+        paragraphs={[
+          "With a Futures contract, you commit to buy or sell an asset at a set price on a future date.When the time comes, the buyer and seller must exchange the underlying asset - taking delivery of a physical asset or paying the cash difference between the agreed-upon contract price and the current market price.Future contracts can help traders protect against market volatility by hedging their other open positions.",
+        ]}
+        note="Advantage gives you more."
+      />
 
       {/* Section 6 */}
       <FaqSection faqs={faqItems} />
