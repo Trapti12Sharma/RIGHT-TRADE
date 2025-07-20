@@ -108,6 +108,26 @@ const MajorCurrencyPairs = () => {
         heading="TRADING STRATEGIES"
         subtext="Dive deeper into strategies that FX and CFD traders love to work with"
         buttonText="Read more"
+         style={{
+    container: {
+      backgroundColor: "#f9f9f9",
+      padding: "60px 20px",
+      textAlign: "center",
+    },
+    heading: {
+      fontSize: "2rem",
+      fontWeight: "600",
+      marginBottom: "20px",
+    },
+    subtext: {
+      fontSize: "1rem",
+      color: "#555",
+      lineHeight: "1.6",
+      whiteSpace: "pre-line",
+      maxWidth: "800px",
+      margin: "0 auto",
+    },
+  }}
       />
       <VideoSection {...videoData} />
 
