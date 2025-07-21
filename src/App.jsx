@@ -54,6 +54,7 @@ import MobileTrading from "./components/pages/MobileTrading";
 
 import LeverageMargin from "./components/pages/LeverageAndMargin";
 import Dividends from "./components/pages/Dividends";
+import ContactUs from "./components/pages/ContactUs";
 
 // Home Page Grouped as Component
 const Home = () => {
@@ -133,6 +134,7 @@ const App = () => {
 
             <Route path="/leverage-and-margin" element={<LeverageMargin />} />
             <Route path="/dividends" element={<Dividends />} />
+            <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
         </div>
         <Footer />

@@ -9,8 +9,8 @@ import FaqSection from "../common/FaqSection2"; // ⬅️ new import
 import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
 import TradingAccountComparison from "../common/TradingAccountComparison";
-import img from "../../assets/account2.png";
-import imgn from "../../assets/account3.png";
+import img from "../../assets/mobiletrading2.png";
+import imgn from "../../assets/mobiletrading3.png";
 import fund9 from "../../assets/fund9.svg";
 import fund10 from "../../assets/fund10.svg";
 import fund11 from "../../assets/fund11.svg";
