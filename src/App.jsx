@@ -56,6 +56,12 @@ import LeverageMargin from "./components/pages/LeverageAndMargin";
 import Dividends from "./components/pages/Dividends";
 import ContactUs from "./components/pages/ContactUs";
 
+import ToolsOverview from "./components/pages/ToolsOverview";
+import ProTradingTools from "./components/pages/ProTradingTools";
+import TradingSignals from "./components/pages/TradingSignals";
+import ProfitCalculator from "./components/pages/ProfitCalculator";
+import MarginCalculator from "./components/pages/MarginCalculator";
+
 // Home Page Grouped as Component
 const Home = () => {
   return (
@@ -135,6 +141,12 @@ const App = () => {
             <Route path="/leverage-and-margin" element={<LeverageMargin />} />
             <Route path="/dividends" element={<Dividends />} />
             <Route path="/contact-us" element={<ContactUs />} />
+
+            <Route path="/tools-overview" element={<ToolsOverview />} />
+            <Route path="/pro-trading-tools" element={<ProTradingTools />} />
+            <Route path="/trading-signals" element={<TradingSignals />} />
+            <Route path="/profit-calculator" element={<ProfitCalculator />} />
+            <Route path="/margin-calculator" element={<MarginCalculator />} />
           </Routes>
         </div>
         <Footer />

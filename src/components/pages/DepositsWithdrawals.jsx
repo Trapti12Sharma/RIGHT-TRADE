@@ -1,7 +1,7 @@
 import React from "react";
 import StatsSection from "../common/StatsSection";
 import FeatureSection from "../common/FeatureSection";
-import SideImageTextSection from "../common/SideImageTextSection"; // ✅ updated import
+import SideImageTextSection from "../common/SideImageTextSection";
 import ImportantInfoSection from "../common/ImportantInfoSection";
 import JoinUsBanner from "../common/JoinUsBanner";
 import FourStepSection from "../common/FourStepSection";
