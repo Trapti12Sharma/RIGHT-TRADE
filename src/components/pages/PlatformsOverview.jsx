@@ -3,9 +3,9 @@ import StatsSection from "../../components/common/StatsSection";
 import BreadcrumbAndDescription from "../common/BreadcrumbAndDescription";
 import SideImageTextSection from "../common/SideImageTextSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
-import TextImageSection from "../common/TextImageSection"; // 🆕
+import TextImageSection from "../common/TextImageSection";
 import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
-import FaqSection from "../common/FaqSection2"; // ⬅️ new import
+import FaqSection from "../common/FaqSection2";
 import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
 import TradingAccountComparison from "../common/TradingAccountComparison";

@@ -20,19 +20,37 @@ import ImageLeftTextRightSection from "../common/ImageLeftTextRightSection";
 import TextLeftImageRightSection from "../common/TextLeftImageRightSection";
 import TrustReasonsSection from "../common/TrustReasonsSection";
 import TrustCTASection from "../common/TrustCTASection";
-import FaqSection from "../common/FaqSection";
+import FaqSection from "../common/FaqSection2";
 import AwardsSection from "../common/AwardsSection";
 
 const FundSafety = () => {
   const faqItems = [
-    { question: "What is segregation of funds?" },
-    { question: "How does segregation of funds work?" },
-    { question: "What are the benefits of segregated funds?" },
+    {
+      question: "What segregation of funds?",
+      answer:
+        "This means that your money is kept entirely separate from the company's, and won't be used for its own operations or investment purposes.",
+    },
+    {
+      question: "How does segregation of funds work?",
+      answer:
+        "When you deposit with us, we'll keep your money in top-tier banks - completely separate from our own funds, offering you both protection and peace of mind. You don't need to do anything here - we'll take care of it for you.",
+    },
+    {
+      question: "What are benefits of segregation funds?",
+      answer:
+        "The main benefits are (and we know we're repeating ourselves a bit here) that as your funds are kept separately from our own, you can relax knowing you'll be unaffected by any investment or operational choices we make.",
+    },
     {
       question:
-        "What's the difference between mutual funds and segregated funds?",
+        "What's the difference between mutual funds and segregation funds?",
+      answer:
+        "Segregated funds are entirely separate from the company's. Mutual funds allow investors to pool their money all together, and that pool is managed by the firm or company in question.",
     },
-    { question: "Can you withdraw from segregated funds?" },
+    {
+      question: "Can you withdraw from segregation funds?",
+      answer:
+        "Yes. With RightTrade Capital, you can withdraw your funds at any time you wish. Remember to contact our Customer Support team if you need any help doing so.",
+    },
   ];
 
   const awardsItems = [

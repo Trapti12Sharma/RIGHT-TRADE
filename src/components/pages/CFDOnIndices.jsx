@@ -5,7 +5,7 @@ import ForexTradeSection from "../common/ForexTradeSection";
 import WhyTradeForexSection from "../common/WhyTradeForexSection";
 import CurrencyInfoSection from "../common/CurrencyInfoSection";
 import VideoSection from "../common/VideoSection";
-import FaqSection from "../common/FaqSection";
+import FaqSection from "../common/FaqSection2";
 import TrustCTASection from "../common/TrustCTASection";
 import statsBg from "../../assets/indices1.png";
 import globeImg from "../../assets/globe.svg";

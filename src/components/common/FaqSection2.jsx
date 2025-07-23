@@ -1,23 +1,47 @@
-import React from 'react';
-import { ChevronRight } from 'lucide-react'; // or use any icon you prefer
+import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
-const FaqSection = ({ faqs = [] }) => {
+const FaqSection = ({ faqs }) => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
-    <section className="py-16 px-4 bg-white">
-      <h2 className="text-center text-[#ff4b2b] text-lg font-semibold uppercase mb-10">
-        Frequently Asked Questions
-      </h2>
+    <section className="bg-white py-10 px-4">
+      <div className="max-w-4xl mx-auto">
+        <h3 className="text-center text-[#ff4422] font-semibold text-lg sm:text-xl mb-8 uppercase">
+          Frequently Asked Questions
+        </h3>
+        <div className="space-y-4">
+          {faqs.map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#f9f9f9] rounded-md overflow-hidden"
+            >
+              <div
+                onClick={() => toggleFAQ(index)}
+                className="flex justify-between items-center px-6 py-5 cursor-pointer hover:bg-[#f0f0f0] transition"
+              >
+                <span className="text-[#1d1d1d] font-medium text-sm sm:text-base">
+                  {item.question}
+                </span>
+                {activeIndex === index ? (
+                  <FaChevronUp className="text-[#ff4422]" />
+                ) : (
+                  <FaChevronDown className="text-[#ff4422]" />
+                )}
+              </div>
 
-      <div className="max-w-4xl mx-auto flex flex-col gap-4">
-        {faqs.map((question, index) => (
-          <div
-            key={index}
-            className="bg-[#f8f8f8] hover:shadow-md transition duration-200 rounded-md px-6 py-5 flex justify-between items-center cursor-pointer"
-          >
-            <span className="text-[#101828] font-medium text-base">{question}</span>
-            <ChevronRight size={20} className="text-[#ff4b2b]" />
-          </div>
-        ))}
+              {activeIndex === index && (
+                <div className="px-6 py-4 text-sm text-gray-700 bg-white border-t">
+                  {item.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

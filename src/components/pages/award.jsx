@@ -4,15 +4,13 @@ import {
   FaGlobe,
   FaSearch,
   FaUniversity,
-} from "react-icons/fa"; // for icons
-
-import fireworks from "../../assets/fireworks.png"; // Make sure this image is imported correctly
-import award2025 from "../../assets/award2025.svg"; // replace with actual image
+} from "react-icons/fa";
+import fireworks from "../../assets/fireworks.png";
+import award2025 from "../../assets/award2025.svg";
 
 const Award = () => {
   const [selectedYear, setSelectedYear] = useState("2025");
 
-  // ✅ FIXED: Define years before return
   const years = [
     "2025",
     "2022",

@@ -2,7 +2,7 @@ import React from "react";
 import StatsSection from "../common/StatsSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
 import TrustReasonsSection from "../common/TrustReasonsSection";
-import FaqSection from "../common/FaqSection";
+import FaqSection from "../common/FaqSection2";
 import InfoWithMediaSection from "../common/InfoWithMediaSection";
 import TextImageSection from "../common/TextImageSection";
 import SideImageTextSection from "../common/SideImageTextSection";

@@ -1,15 +1,21 @@
 import React from "react";
+import traderBg from "../assets/experttrader.jpg"; // ✅ Ensure this path matches your project structure
 
 const ExpertTrader = ({
   tag = "EXPERT TRADER",
   heading = "Already trading?",
   description = "Sharpen your edge with the latest market updates, expert analysis, real-time prices, and innovative trading tools.",
-  buttonText,
+  buttonText = "Expert Trader",
   onClick,
 }) => {
   return (
-    <section className="bg-cover bg-center bg-no-repeat">
-      <div className="bg-[#121733]/80 py-20 px-6">
+    <section
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${traderBg})`,
+      }}
+    >
+      <div className="bg-[#121733]/80 py-10 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white">
           {/* Left Content */}
           <div
@@ -17,7 +23,7 @@ const ExpertTrader = ({
               fontFamily: '"Source Sans Pro", sans-serif',
               fontSize: "16px",
               margin: "0px 12px",
-              padding: "80px 32",
+              padding: "40px 32px", // optional internal padding
             }}
             className="max-w-xl"
           >
@@ -36,7 +42,7 @@ const ExpertTrader = ({
                 fontSize: "40px",
                 margin: "9px 0px",
               }}
-              className="text-[#ffffff] mb-4"
+              className="text-white mb-4"
             >
               {heading}
             </h2>
@@ -46,7 +52,7 @@ const ExpertTrader = ({
                 fontSize: "16px",
                 margin: "9px 0px 0px",
               }}
-              className="text-[#ffffff] leading-relaxed"
+              className="text-white leading-relaxed"
             >
               {description}
             </p>
@@ -60,7 +66,7 @@ const ExpertTrader = ({
                 fontSize: "16px",
                 margin: "10px 34px",
               }}
-              className="bg-[#ff4521] text-[#ffffff] px-8 py-3 rounded-full hover:bg-[#e44418] transition"
+              className="bg-[#ff4521] text-white px-8 py-3 rounded-full hover:bg-[#e44418] transition"
               onClick={onClick}
             >
               {buttonText}

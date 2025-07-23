@@ -7,7 +7,7 @@ import JoinUsBanner from "../common/JoinUsBanner";
 import FourStepSection from "../common/FourStepSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
 import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
-import HelpSupportSection from "../common/HelpSupportSection";
+import FaqSection from "../common/FaqSection2";
 
 import depositImg from "../../assets/deposits1.png";
 import manageFundsImg from "../../assets/deposits2.png";
@@ -62,17 +62,65 @@ const DepositsWithdrawals = () => {
   ];
 
   const faqs = [
-    "What payment methods do RightTrade Capital support?",
-    "What countries do you support payment methods in?",
-    "What are the minimum and maximum deposit amounts for RightTrade Capital?",
-    "What are the minimum and maximum withdrawal amounts from RightTrade Capital?",
-    "How do you withdraw from RightTrade Capital?",
-    "Can I make internal transfers between trading accounts within MyRightTrade Capital",
-    "Why are you introducing a new transaction fee?",
-    "How much is the transaction fee?",
-    "Will you charge a fee for transactions of more than $30?",
-    "Does the transaction fee apply to IBs and partners?",
-    "Will I be notified of the fee when I withdraw/deposit?",
+    {
+      question: "What payment methods do RightTrade Capital support?",
+      answer:
+        "We offer a wide variety of payment methods including credit and debit cards, e-Wallets, bank wire transfers and local payment solutions.",
+    },
+    {
+      question: "What countries do you support payment methods in?",
+      answer:
+        "We accept payment methods from hundreds of countries. Register or log in to MyFXTM to see the available methods in your region.",
+    },
+    {
+      question:
+        "What are the minimum and maximum deposit amounts for RightTrade Capital?",
+      answer:
+        "The limits for these are set by each individual payment provider. You can find the minimum and maximum for each method in MyRightTrade Capital.",
+    },
+    {
+      question:
+        "What are the minimum and maximum withdrawal amounts from RightTrade Capital?",
+
+      answer:
+        "You can withdraw as much as like, as you long as you use the same payment method that you used to deposit with. A quick note here – if you still have open positions, you’ll need to leave enough free margin in your account to cover the withdrawal and any extra fees that may occur. You can calculate this amount here.",
+    },
+    {
+      question: "How do you withdraw from RightTrade Capital?",
+      answer:
+        "Scroll further up the page – we’ve broken it right down for you in 4 simple steps. Let us know if you need a hand with this.",
+    },
+    {
+      question:
+        "Can I make internal transfers between trading accounts within MyRightTrade Capital",
+      answer:
+        "This is data that reveals the efficiency, speed and other features of a company's performance. We're proud to show our performance statistics and our traders love to see them.",
+    },
+    {
+      question: "Why are you introducing a new transaction fee?",
+      answer:
+        "To optimise our customer service efforts and offer high-quality support when you need it most, we’ll be introducing a $3 transaction fee for any deposits or withdrawals less than $30 or equivalent.",
+    },
+    {
+      question: "How much is the transaction fee?",
+      answer:
+        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
+    },
+    {
+      question: "Will you charge a fee for transactions of more than $30?",
+      answer:
+        "No, we won’t. The transaction fee won’t apply to deposits or withdrawals equal to $30 (or equivalent) or more.",
+    },
+    {
+      question: "Does the transaction fee apply to IBs and partners?",
+      answer:
+        "Yes. Transaction fees apply to all clients, including clients under Partnership or IB agreements.",
+    },
+    {
+      question: "Will I be notified of the fee when I withdraw/deposit?",
+      answer:
+        "Yes. If you go to make a deposit or withdrawal less than $30 or equivalent, you’ll see a notification in MyFXTM letting you know the transaction will incur a $3 fee and asking you to confirm.",
+    },
   ];
 
   return (
@@ -118,9 +166,6 @@ const DepositsWithdrawals = () => {
       {/*  Section 5 - Important Information */}
       <ImportantInfoSection text="Important information about deposits and withdrawals" />
 
-      {/*  Section 6 - Join Us Banner */}
-      <JoinUsBanner />
-
       {/*  Section 7 - Four Step Section */}
       <FourStepSection
         title="How to make a deposit in 4 simple steps"
@@ -137,7 +182,7 @@ const DepositsWithdrawals = () => {
       <GetMoreMarketsSection />
 
       {/*  10th Section */}
-      <HelpSupportSection title="Frequently Asked Questions" faqs={faqs} />
+      <FaqSection faqs={faqs} />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import StatsSection from "../common/StatsSection";
 import ExpertTrader from "../ExpertTrader";
-import FaqSection from "../common/FaqSection";
+import FaqSection from "../common/FaqSection2";
 import AwardsSection from "../common/AwardsSection";
 import SideImageTextSection from "../common/SideImageTextSection";
 import TextImageSection from "../common/TextImageSection";
@@ -108,7 +108,7 @@ Advantage Plus gives you everything that makes Advantage account so popular, wit
         title="Join us"
         subtitle="Start trading with RightTrade Capital."
         description="No one makes it easier. Open an account or try our demo account to get started while you build your skills."
-        // buttonText="Start trading"
+        buttonText="Open Account"
         // buttonLink="/start-trading"
       />
 

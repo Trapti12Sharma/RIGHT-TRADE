@@ -7,7 +7,7 @@ import ExecutionStats from "../common/ExecutionStats";
 import SpreadChart from "../common/SpreadChart";
 import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
 import ContactOptions from "../common/ContactOptions";
-import FaqSection from "../common/FaqSection2"; // ⬅️ new import
+import FaqSection from "../common/FaqSection2";
 import AwardsSection from "../common/AwardsSection";
 import statsImg from "../../assets/tradingstatistics1.png";
 import fund9 from "../../assets/fund9.svg";
@@ -16,15 +16,30 @@ import fund11 from "../../assets/fund11.svg";
 import fund12 from "../../assets/fund12.svg";
 
 const TradingStatistics = () => {
-  const faqs = [
-    "What are performance statistics?",
-    "What is order execution speed?",
-    "What is slippage?",
-    "What does requotes mean?",
+  const faqItems = [
+    {
+      question: "What are performance statistics?",
+      answer:
+        "This is data that reveals the efficiency, speed and other features of a company's performance. We're proud to show our performance statistics and our traders love to see them.",
+    },
+    {
+      question: "What is order execution speed?",
+      answer:
+        "This is the speed at which your trade is executed following your order.",
+    },
+    {
+      question: "What is slippage?",
+      answer:
+        "Slippage means that your order is filled at a price that is different from the one you requested. Most of our clients receive improved pricing through positive slippage. It's usually even better than your initial request.",
+    },
+    {
+      question: "What does requotes mean?",
+      answer:
+        "This means we aren't able to complete a trade based on the price you entered. However, we're happy to say our requote stats are extremely low - and we're looking to go even lower!",
+    },
   ];
 
   const awardsItems = [
-    // ✅ Place it here before return
     { imageSrc: fund9 },
     { imageSrc: fund10 },
     { imageSrc: fund11 },
@@ -79,7 +94,7 @@ const TradingStatistics = () => {
       <ContactOptions />
 
       {/*  Section 7 - FAQs */}
-      <FaqSection faqs={faqs} />
+      <FaqSection faqs={faqItems} />
 
       {/*  Section 8 - */}
       <AwardsSection awards={awardsItems} />

@@ -3,7 +3,7 @@ import StatsSection from "../../components/common/StatsSection";
 import BreadcrumbAndDescription from "../common/BreadcrumbAndDescription";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
 import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
-import FaqSection from "../common/FaqSection2"; // ⬅️ new import
+import FaqSection from "../common/FaqSection2";
 import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
 import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
@@ -59,14 +59,29 @@ const DemoAccounts = () => {
     },
   ];
 
-  const faqs = [
-    "What are performance statistics?",
-    "What is order execution speed?",
-    "What is slippage?",
-    "What does requotes mean?",
+  const faqItems = [
+    {
+      question: "What is the best account for forex?",
+      answer:
+        "You can trade forex on all of our account types but many of our traders prefer to do so on our Advantage account, thanks to the fact that it offers the best value - with typically zero spreads on popular FX pairs. For information, check out our handy guide to choosing the best trading account.",
+    },
+    {
+      question: "What  kind of account do I need to trade forex?",
+      answer:
+        "You can trade forex on all of our account types. They all come with slightly different conditions, so do make sure you have a good look through the details to settle on the account that best suits your own goals.",
+    },
+    {
+      question: "Can I trade forex without a broker?",
+      answer:
+        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like FXTM also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+    },
+    {
+      question: "How much is the transaction fee?",
+      answer:
+        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
+    },
   ];
   const awardsItems = [
-    // ✅ Place it here before return
     { imageSrc: fund9 },
     { imageSrc: fund10 },
     { imageSrc: fund11 },
@@ -112,7 +127,7 @@ A free forex demo account lets you practice trading in real-time with virtual fu
         steps={withdrawSteps}
       />
       <GetMoreMarketsSection />
-      <FaqSection faqs={faqs} />
+      <FaqSection faqs={faqItems} />
       <AwardsSection awards={awardsItems} />
     </>
   );

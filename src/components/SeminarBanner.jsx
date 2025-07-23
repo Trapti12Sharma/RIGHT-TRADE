@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-// Images (place your image files in /public and update names accordingly)
 const slides = [
   {
-    image: "/home.png", // Slide 1
+    image: "/home.png",
     heading: "Learn. Trade. Earn.",
     subText: "Join RightTrade Capital Academy's Upcoming Seminar",
     details: [
@@ -14,7 +13,7 @@ const slides = [
     note: "Seats are limited – act fast to avoid disappointment",
   },
   {
-    image: "/home1.png", // Slide 2
+    image: "/home1.png",
     heading: "Trade Futures CFDs with RightTrade Capital",
     subText:
       "Diversify your trades and hedge against market volatility with CFD futures trading.",
@@ -22,7 +21,7 @@ const slides = [
     note: "Trading is risky",
   },
   {
-    image: "/home2.png", // Slide 3
+    image: "/home2.png",
     heading: "Release your inner trader",
     subText:
       "Learn to trade at your own pace with our free educational resources.",
@@ -60,43 +59,38 @@ const SeminarBanner = () => {
       ></div>
 
       {/* Text Content */}
-      <div className="relative z-10 text-white px-10 max-w-xl">
+      <div className="relative z-10 text-white px-4 sm:px-10 max-w-xl">
         <h2
-          className="text-3xl font-bold mb-4"
+          className="text-xl sm:text-3xl font-bold mb-2 sm:mb-4"
           style={{
-            fontSize: "50px",
+            fontSize: "30px",
           }}
         >
           {slide.heading}
         </h2>
         <p
-          className="mb-2"
+          className="mb-2 text-sm sm:text-lg"
           style={{
-            fontSize: "25px",
+            fontSize: "16px",
           }}
         >
           {slide.subText}
         </p>
         {slide.details?.map((line, i) => (
           <p
-            style={{
-              fontSize: "25px",
-            }}
             key={i}
-            className="mb-2 font-semibold"
+            className="mb-2 font-semibold text-sm sm:text-lg"
+            style={{
+              fontSize: "16px",
+            }}
           >
             {line}
           </p>
         ))}
-        <p
-          style={{
-            fontSize: "25px",
-          }}
-          className="mb-4"
-        >
+        <p className="mb-4 text-sm sm:text-lg" style={{ fontSize: "16px" }}>
           {!slide.details ? null : ""}
         </p>
-        <button className="bg-lime-500 text-black font-semibold px-4 py-2 rounded-full hover:bg-lime-600 transition">
+        <button className="bg-lime-500 text-black font-semibold px-4 py-2 rounded-full hover:bg-lime-600 transition text-sm sm:text-base">
           {slide.buttonText}
         </button>
         <p className="text-xs italic mt-2">{slide.note}</p>

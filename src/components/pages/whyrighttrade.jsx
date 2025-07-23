@@ -1,6 +1,6 @@
 // src/pages/WhyRightTrade.jsx
 import React from "react";
-import fxtm1 from "../../assets/fxtm1.png"; // update path if needed
+import fxtm1 from "../../assets/fxtm1.png";
 import fxtm2 from "../../assets/fxtm2.svg";
 import fxtm3 from "../../assets/fxtm3.svg";
 import fxtm4 from "../../assets/fxtm4.svg";

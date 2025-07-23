@@ -4,10 +4,9 @@ import home4 from "../assets/home4.png";
 const ForexIntro = () => {
   return (
     <section className="bg-white">
-      <div className="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2">
-        
+      <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Image First in JSX — will be on top in mobile, right side in desktop */}
-        <div className="order-1 md:order-2 h-[300px] md:h-auto">
+        <div className="order-1 md:order-2">
           <img
             src={home4}
             alt="Forex Trading"
@@ -16,7 +15,7 @@ const ForexIntro = () => {
         </div>
 
         {/* Text Content */}
-        <div className="order-2 md:order-1 flex items-center px-6 py-10 md:px-16"x>
+        <div className="order-2 md:order-1 flex items-center px-6 py-10 md:px-16">
           <div>
             <h2
               style={{
@@ -50,9 +49,10 @@ const ForexIntro = () => {
               }}
               className="text-[#1A1D30] leading-7 mb-4"
             >
-              This market is worth over $6 trillion daily, with central and private
-              banks, hedge funds, traders, and travelers worldwide open 24 hours a
-              day, 5.5 days per week exchanging money at different prices.
+              This market is worth over $6 trillion daily, with central and
+              private banks, hedge funds, traders, and travelers worldwide open
+              24 hours a day, 5.5 days per week exchanging money at different
+              prices.
             </p>
             <p
               style={{
