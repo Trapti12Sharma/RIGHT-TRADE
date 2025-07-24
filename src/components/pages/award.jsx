@@ -175,10 +175,10 @@ const Award = () => {
 
       {/* Section 5: Join Us CTA */}
       <section
-        className="w-full text-white py-16 px-6 bg-[#ff4c1b] relative overflow-hidden"
+        className="w-full text-white py-16 px-6 bg-[#FABF16] relative overflow-hidden"
         style={{
           backgroundImage:
-            "linear-gradient(135deg, rgba(255,76,27,1) 50%, rgba(255,0,0,0.5) 50%)",
+            "linear-gradient(135deg, rgba(250,191,22,1) 50%, rgba(255,200,0,0.5) 50%)",
         }}
       >
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
@@ -196,7 +196,7 @@ const Award = () => {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center lg:justify-end">
-            <button className="bg-white text-[#ff4c1b] font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition">
+            <button className="bg-white text-[#FABF16] font-semibold px-6 py-2 rounded-full hover:bg-gray-200 transition">
               Go to MyRightTrade Capital
             </button>
             <button className="bg-lime-400 text-black font-semibold px-6 py-2 rounded-full hover:bg-lime-500 transition">
