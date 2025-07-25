@@ -18,7 +18,7 @@ const DownloadSection = ({ title, subtitle, buttons }) => {
               <p className="text-base font-semibold text-left text-[#0F1E37]">
                 {btn.label}
               </p>
-              <button className="bg-[#FF3C1F] hover:bg-[#e73419] text-white font-semibold px-4 py-2 rounded flex items-center gap-1">
+              <button className="bg-[#FABF16] hover:bg-[#FABF16] text-white font-semibold px-4 py-2 rounded flex items-center gap-1">
                 Download
                 <span className="text-white text-sm">⬇️</span>
               </button>

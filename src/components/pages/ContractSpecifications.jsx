@@ -5,9 +5,83 @@ import SimpleCenteredTextSection from "../common/SimpleCenteredTextSection";
 import ExpertTrader from "../ExpertTrader";
 import FaqSection from "../common/FaqSection2";
 import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
+import TradingInstrumentsTable from "../common/TradingInstrumentsTable";
+
 import statsBg from "../../assets/contract1.png";
 
 const ContractSpecifications = () => {
+  const instrumentsData = [
+    {
+      ticker: "AUDUSD",
+      name: "Australian Dollar/US Dollar",
+      minSpread: "0",
+      pipValue: "0.01",
+      swapShort: "-0.005",
+      swapLong: "-0.0211",
+      startTrading: "00:15:00",
+      closeTrading: "23:55:00",
+    },
+    {
+      ticker: "EURUSD",
+      name: "Euro/US Dollar",
+      minSpread: "0",
+      pipValue: "0.01",
+      swapShort: "0.0476",
+      swapLong: "-0.1041",
+      startTrading: "00:15:00",
+      closeTrading: "23:55:00",
+    },
+    {
+      ticker: "GBPUSD",
+      name: "Great Britain Pound/US Dollar",
+      minSpread: "0",
+      pipValue: "0.01",
+      swapShort: "-0.0211",
+      swapLong: "-0.0314",
+      startTrading: "00:15:00",
+      closeTrading: "23:55:00",
+    },
+    {
+      ticker: "NZDUSD",
+      name: "New Zealand Dollar/US Dollar",
+      minSpread: "0.1",
+      pipValue: "0.01",
+      swapShort: "0.0056",
+      swapLong: "-0.0309",
+      startTrading: "00:15:00",
+      closeTrading: "23:55:00",
+    },
+    {
+      ticker: "USDCAD",
+      name: "US Dollar/Canadian Dollar",
+      minSpread: "0",
+      pipValue: "0.01",
+      swapShort: "-0.0982",
+      swapLong: "0.0407",
+      startTrading: "00:15:00",
+      closeTrading: "23:55:00",
+    },
+    {
+      ticker: "USDCHF",
+      name: "US Dollar/Swiss Franc",
+      minSpread: "0",
+      pipValue: "0.01",
+      swapShort: "-0.1321",
+      swapLong: "0.0659",
+      startTrading: "00:15:00",
+      closeTrading: "23:55:00",
+    },
+    {
+      ticker: "USDJPY",
+      name: "US Dollar/Japanese Yen",
+      minSpread: "0",
+      pipValue: "1",
+      swapShort: "-0.2204",
+      swapLong: "0.0826",
+      startTrading: "00:15:00",
+      closeTrading: "23:55:00",
+    },
+  ];
   const faqItems = [
     {
       question: "What is a market?",
@@ -98,31 +172,10 @@ const ContractSpecifications = () => {
       {/* Section 2 */}
       <BreadcrumbAndDescription {...breadcrumbData} />
       {/* Section 3 */}
-      <SimpleCenteredTextSection
-        heading="Trading Instruments"
-        subtext="Search an instrument in all markets"
-        style={{
-          container: {
-            backgroundColor: "#f9f9f9",
-            padding: "60px 20px",
-            textAlign: "center",
-          },
-          heading: {
-            fontSize: "2rem",
-            fontWeight: "600",
-            marginBottom: "20px",
-          },
-          subtext: {
-            fontSize: "1rem",
-            color: "#555",
-            lineHeight: "1.6",
-            whiteSpace: "pre-line",
-            maxWidth: "800px",
-            margin: "0 auto",
-          },
-        }}
+      <TradingInstrumentsTable
+        instruments={instrumentsData}
+        accentColor="#FABF16"
       />
-
       {/* Section 4 */}
       <ExpertTrader
         heading="Trade the world's markets"
