@@ -34,7 +34,7 @@ const awards = [
 const AwardsSection = () => (
   <section className="py-16 bg-white">
     <div className="max-w-6xl mx-auto text-center px-4">
-      <h2 className="text-2xl font-bold text-[#ff4c1b] mb-12">AWARDS</h2>
+      <h2 className="text-2xl font-bold text-[#FABF16] mb-12">AWARDS</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-12 items-center">
         {awards.map((a, i) => (
           <div key={i} className="flex flex-col items-center space-y-2">

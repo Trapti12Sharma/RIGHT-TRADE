@@ -10,7 +10,16 @@ const newsData = [
     time: "08:28",
     title: "Week Ahead: Can US500 index hold on to post-election gains?",
     desc: "Having just erased all of its year-to-date gains, this benchmark US stock index is now merely 1.4% higher since the November 5th close. Greater risk-off moves in the first week of March 2025 could wipe out all that remains of the US500’s climb since President Trump’s election win.",
-    tags: ["S&P 500", "US500", "WEEK AHEAD", "TRUMP", "TRADE WAR", "US JOBS REPORT", "NFP", "FED CHAIR JEROME POWELL"],
+    tags: [
+      "S&P 500",
+      "US500",
+      "WEEK AHEAD",
+      "TRUMP",
+      "TRADE WAR",
+      "US JOBS REPORT",
+      "NFP",
+      "FED CHAIR JEROME POWELL",
+    ],
     img: home10,
   },
   {
@@ -34,8 +43,12 @@ const newsData = [
 const LatestNewsSection = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 md:px-20">
-      <h2 className="text-center text-[#f2532e] font-semibold mb-2">LATEST NEWS</h2>
-      <p className="text-center text-blue-500 mb-8 cursor-pointer hover:underline">All articles</p>
+      <h2 className="text-center text-[#FABF16] font-semibold mb-2">
+        LATEST NEWS
+      </h2>
+      <p className="text-center text-blue-500 mb-8 cursor-pointer hover:underline">
+        All articles
+      </p>
 
       <div className="space-y-6 max-w-4xl mx-auto">
         {newsData.map((news, index) => (
@@ -45,13 +58,18 @@ const LatestNewsSection = () => {
           >
             {/* Image */}
             <div className="md:w-1/4 w-full mb-4 md:mb-0">
-              <img src={news.img} alt={news.title} className="rounded-md w-full" />
+              <img
+                src={news.img}
+                alt={news.title}
+                className="rounded-md w-full"
+              />
             </div>
 
             {/* Content */}
             <div className="md:w-3/4 md:pl-6 w-full">
-              <p className="text-xs text-[#f2532e] mb-1">
-                {news.date} <span className="text-gray-500 ml-2">{news.time}</span>
+              <p className="text-xs text-[#FABF16] mb-1">
+                {news.date}{" "}
+                <span className="text-gray-500 ml-2">{news.time}</span>
               </p>
               <h3 className="font-semibold mb-2">{news.title}</h3>
               <p className="text-gray-600 mb-2">{news.desc}</p>
@@ -71,7 +89,7 @@ const LatestNewsSection = () => {
 
             {/* Icon */}
             <div className="md:ml-4 mt-4 md:mt-0 flex-shrink-0">
-              <FaBookOpen className="text-white bg-[#f2532e] rounded p-2 w-8 h-8" />
+              <FaBookOpen className="text-white bg-[#FABF16] rounded p-2 w-8 h-8" />
             </div>
           </div>
         ))}

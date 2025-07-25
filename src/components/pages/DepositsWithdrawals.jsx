@@ -141,7 +141,7 @@ const DepositsWithdrawals = () => {
       >
         <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
           <span className="text-blue-500">RightTrade Capital</span>
-          <span className="text-[#e74728]">❯</span>
+          <span className="text-[#FABF16]">❯</span>
           <span className="text-black font-medium">Deposit and Withdrawal</span>
         </nav>
       </div>

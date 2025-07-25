@@ -25,18 +25,25 @@ const DemoStepsSection = () => {
   ];
 
   return (
-    <section className="bg-[#f9f9f9] text-center py-16 px-6" style={{ 
-  fontFamily: '"Source Sans Pro", sans-serif', 
-    }} >
-      <h2 className="text-[#10162f] mb-12"  style={{ 
-  fontFamily: '"Source Sans Pro", sans-serif', fontSize:'40px'
-    }}>
+    <section
+      className="bg-[#f9f9f9] text-center py-16 px-6"
+      style={{
+        fontFamily: '"Source Sans Pro", sans-serif',
+      }}
+    >
+      <h2
+        className="text-[#10162f] mb-12"
+        style={{
+          fontFamily: '"Source Sans Pro", sans-serif',
+          fontSize: "40px",
+        }}
+      >
         How to open an RightTrade Capital demo account
       </h2>
 
       <div className="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">
         {steps.map((step, index) => {
-          const circumference = 2 * Math.PI * 36; // radius = 36
+          const circumference = 2 * Math.PI * 36;
           const progressOffset =
             circumference - (step.progress / 100) * circumference;
 
@@ -56,7 +63,7 @@ const DemoStepsSection = () => {
                     cx="40"
                     cy="40"
                     r="36"
-                    stroke="#f2532e"
+                    stroke="#FABF16"
                     strokeWidth="8"
                     fill="none"
                     strokeDasharray={circumference}

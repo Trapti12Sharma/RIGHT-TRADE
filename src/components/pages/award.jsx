@@ -68,9 +68,9 @@ const Award = () => {
         {/* Breadcrumb */}
         <div className="text-sm text-gray-700 mb-8 flex flex-wrap justify-center gap-2">
           <span className="text-[#3B82F6]">RightTrade Capital</span>
-          <span className="text-[#e74728]">❯</span>
+          <span className="text-[#FABF16]">❯</span>
           <span className="text-[#3B82F6]">About Us</span>
-          <span className="text-[#e74728]">❯</span>
+          <span className="text-[#FABF16]">❯</span>
           <span className="text-[#212529] font-medium">Global Awards</span>
         </div>
 
@@ -95,7 +95,7 @@ const Award = () => {
         className="bg-[#f9f9f9] py-10 px-4"
         style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
       >
-        <h2 className="text-center text-[#e74728] text-xl font-bold mb-8 uppercase">
+        <h2 className="text-center text-[#FABF16] text-xl font-bold mb-8 uppercase">
           Awards
         </h2>
 
@@ -107,7 +107,7 @@ const Award = () => {
               onClick={() => setSelectedYear(year)}
               className={`px-8 py-4 border-r border-b border-[#e0e0e0] transition-all duration-200 ${
                 selectedYear === year
-                  ? "bg-white border-t-4 border-[#ff4c1b] font-semibold"
+                  ? "bg-white border-t-4 border-[#FABF16] font-semibold"
                   : "bg-[#f2f2f4] text-[#000]"
               }`}
             >
@@ -139,14 +139,14 @@ const Award = () => {
         </h2>
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
           <div>
-            <FaBalanceScale className="text-[#ff4c1b] text-4xl mb-4 mx-auto" />
+            <FaBalanceScale className="text-[#FABF16] text-4xl mb-4 mx-auto" />
             <h3 className="font-bold mb-2">Unbeatable trading costs</h3>
             <p className="text-sm">
               Take advantage of super-low commission rates and spreads from zero
             </p>
           </div>
           <div>
-            <FaGlobe className="text-[#ff4c1b] text-4xl mb-4 mx-auto" />
+            <FaGlobe className="text-[#FABF16] text-4xl mb-4 mx-auto" />
             <h3 className="font-bold mb-2">Rapid execution speeds</h3>
             <p className="text-sm">
               Trade execution in milliseconds means you'll always get the best
@@ -154,7 +154,7 @@ const Award = () => {
             </p>
           </div>
           <div>
-            <FaSearch className="text-[#ff4c1b] text-4xl mb-4 mx-auto" />
+            <FaSearch className="text-[#FABF16] text-4xl mb-4 mx-auto" />
             <h3 className="font-bold mb-2">
               The world's most popular platform
             </h3>
@@ -164,7 +164,7 @@ const Award = () => {
             </p>
           </div>
           <div>
-            <FaUniversity className="text-[#ff4c1b] text-4xl mb-4 mx-auto" />
+            <FaUniversity className="text-[#FABF16] text-4xl mb-4 mx-auto" />
             <h3 className="font-bold mb-2">Build your trading skills</h3>
             <p className="text-sm">
               Free educational resources to help you build your trading skills
@@ -174,13 +174,7 @@ const Award = () => {
       </section>
 
       {/* Section 5: Join Us CTA */}
-      <section
-        className="w-full text-white py-16 px-6 bg-[#FABF16] relative overflow-hidden"
-        style={{
-          backgroundImage:
-            "linear-gradient(135deg, rgba(250,191,22,1) 50%, rgba(255,200,0,0.5) 50%)",
-        }}
-      >
+      <section className="w-full text-white py-16 px-6 bg-[#FF4521] relative overflow-hidden">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Left Text */}
           <div className="max-w-xl text-left">

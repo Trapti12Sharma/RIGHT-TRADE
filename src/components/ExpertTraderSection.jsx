@@ -14,22 +14,29 @@ export default function ExpertTraderSection() {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left Content */}
         <div className="flex items-center gap-4">
-          <div className="border-2 border-[#ff4c29] rounded-full p-3 text-[#ff4c29]">
+          <div className="border-2 border-[#FABF16] rounded-full p-3 text-[#FABF16]">
             <FaGem size={32} />
           </div>
           <div>
-            <h2 className="text-white text-2xl font-semibold">Are you an expert trader?</h2>
-            <p className="text-white text-sm mt-1">Start trading with our Advantage account.</p>
+            <h2 className="text-white text-2xl font-semibold">
+              Are you an expert trader?
+            </h2>
+            <p className="text-white text-sm mt-1">
+              Start trading with our Advantage account.
+            </p>
           </div>
         </div>
 
         {/* Right Buttons */}
         <div className="flex items-center gap-4">
-          <a href="#" className="text-white text-sm hover:underline flex items-center">
+          <a
+            href="#"
+            className="text-white text-sm hover:underline flex items-center"
+          >
             Compare Accounts
             <span className="ml-1">&gt;</span>
           </a>
-          <button className="bg-[#ff4c29] text-white font-bold text-sm py-2 px-5 rounded-full">
+          <button className="bg-[#FABF16] text-white font-bold text-sm py-2 px-5 rounded-full">
             Open Advantage Account
           </button>
         </div>

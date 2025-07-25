@@ -1,6 +1,6 @@
 // src/components/common/BreadcrumbAndDescription.jsx
 
-import React from 'react';
+import React from "react";
 
 const BreadcrumbAndDescription = ({ breadcrumbs, heading, description }) => {
   return (
@@ -11,12 +11,18 @@ const BreadcrumbAndDescription = ({ breadcrumbs, heading, description }) => {
           <span key={index}>
             <a
               href={crumb.href}
-              className={`hover:underline ${index === breadcrumbs.length - 1 ? 'text-black' : 'text-blue-500'}`}
+              className={`hover:underline ${
+                index === breadcrumbs.length - 1
+                  ? "text-black"
+                  : "text-blue-500"
+              }`}
             >
               {crumb.label}
             </a>
             {index < breadcrumbs.length - 1 && (
-              <span className="mx-1 text-red-600">{'>'}</span>
+              <span className="mx-1" style={{ color: "#FABF16" }}>
+                {">"}
+              </span>
             )}
           </span>
         ))}
@@ -24,9 +30,7 @@ const BreadcrumbAndDescription = ({ breadcrumbs, heading, description }) => {
 
       {/* Heading */}
       {heading && (
-        <h2 className="text-xl sm:text-2xl font-medium mb-4">
-          {heading}
-        </h2>
+        <h2 className="text-xl sm:text-2xl font-medium mb-4">{heading}</h2>
       )}
 
       {/* Description */}

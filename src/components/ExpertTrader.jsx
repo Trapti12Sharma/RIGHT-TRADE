@@ -1,5 +1,5 @@
 import React from "react";
-import traderBg from "../assets/experttrader.jpg"; // ✅ Ensure this path matches your project structure
+import traderBg from "../assets/experttrader.jpg";
 
 const ExpertTrader = ({
   tag = "EXPERT TRADER",
@@ -23,7 +23,7 @@ const ExpertTrader = ({
               fontFamily: '"Source Sans Pro", sans-serif',
               fontSize: "16px",
               margin: "0px 12px",
-              padding: "40px 32px", // optional internal padding
+              padding: "40px 32px",
             }}
             className="max-w-xl"
           >
@@ -32,7 +32,7 @@ const ExpertTrader = ({
                 fontFamily: '"Source Sans Pro", sans-serif',
                 fontSize: "25px",
               }}
-              className="text-[#ff4521] mb-3"
+              className="text-[#FABF16] mb-3"
             >
               {tag}
             </p>
@@ -66,7 +66,7 @@ const ExpertTrader = ({
                 fontSize: "16px",
                 margin: "10px 34px",
               }}
-              className="bg-[#ff4521] text-white px-8 py-3 rounded-full hover:bg-[#e44418] transition"
+              className="bg-[#FABF16] text-white px-8 py-3 rounded-full hover:bg-[#e44418] transition"
               onClick={onClick}
             >
               {buttonText}

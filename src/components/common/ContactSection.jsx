@@ -5,7 +5,7 @@ import { Mail, Phone, MessageCircle } from "lucide-react";
 
 const ContactSection = ({ heading, subheading, contacts }) => {
   return (
-    <section className="bg-[#FABF16] text-white py-12 px-4 text-center font-[Source Sans Pro] relative z-10">
+    <section className="bg-[#FF4521] text-white py-12 px-4 text-center font-[Source Sans Pro] relative z-10">
       <div className="max-w-4xl mx-auto">
         <h5 className="text-sm font-semibold uppercase mb-2">{heading}</h5>
         <h2 className="text-2xl md:text-3xl font-bold mb-8">{subheading}</h2>

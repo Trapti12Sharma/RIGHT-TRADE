@@ -1,18 +1,18 @@
 // components/pages/FundSafety.jsx
 
 import React from "react";
-import fund1 from "../../assets/fund1.png"; // 🔒 Banner
-import fund2 from "../../assets/fund2.png"; // 💼 Insurance
-import fund3 from "../../assets/fund3.png"; // ✅ Regulation
-import fund4 from "../../assets/fund4.png"; // ✅ Regulation
+import fund1 from "../../assets/fund1.png";
+import fund2 from "../../assets/fund2.png";
+import fund3 from "../../assets/fund3.png";
+import fund4 from "../../assets/fund4.png";
 import fund5 from "../../assets/fund5.png";
-import fund6 from "../../assets/fund6.svg"; // ✅ Regulation
-import fund7 from "../../assets/fund7.svg"; // ✅ Regulation
+import fund6 from "../../assets/fund6.svg";
+import fund7 from "../../assets/fund7.svg";
 import fund8 from "../../assets/fund8.svg";
 import fund9 from "../../assets/fund9.svg";
-import fund10 from "../../assets/fund10.svg"; // ✅ Award image
-import fund11 from "../../assets/fund11.svg"; // ✅ Award image
-import fund12 from "../../assets/fund12.svg"; // ✅ Award image
+import fund10 from "../../assets/fund10.svg";
+import fund11 from "../../assets/fund11.svg";
+import fund12 from "../../assets/fund12.svg";
 
 import ImageTextSection from "../common/ImageTextSection";
 import TextImageSection from "../common/TextImageSection";
@@ -125,9 +125,9 @@ const FundSafety = () => {
       >
         <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
           <span className="text-blue-500">RightTrade Capital</span>
-          <span className="text-[#e74728]">❯</span>
+          <span className="text-[#FABF16]">❯</span>
           <span className="text-blue-500">About Us</span>
-          <span className="text-[#e74728]">❯</span>
+          <span className="text-[#FABF16]">❯</span>
           <span className="text-black font-medium">Fund Safety</span>
         </nav>
       </div>

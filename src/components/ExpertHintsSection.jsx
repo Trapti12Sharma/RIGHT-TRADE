@@ -41,12 +41,12 @@ const ExpertHintsSection = () => {
       {/* Quote Icon */}
       <div className="flex justify-center mb-6">
         <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center">
-          <FaQuoteRight className="text-[#f2532e] text-xl" />
+          <FaQuoteRight className="text-[#FABF16] text-xl" />
         </div>
       </div>
 
       {/* Subtitle */}
-      <h4 className="text-[#f2532e] font-semibold mb-4">HINTS FROM EXPERTS</h4>
+      <h4 className="text-[#FABF16] font-semibold mb-4">HINTS FROM EXPERTS</h4>
 
       {/* Slides container */}
       <div className="relative max-w-3xl mx-auto h-auto">
@@ -73,7 +73,7 @@ const ExpertHintsSection = () => {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? "bg-[#f2532e]" : "bg-gray-500"
+              currentIndex === index ? "bg-[#FABF16]" : "bg-gray-500"
             }`}
           ></button>
         ))}

@@ -159,7 +159,7 @@ const WhyRightTrade = () => {
           {/* Clients */}
           <div className="sm:border-r sm:border-[#d3d3d3] sm:pr-6">
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-              <span className="text-[#f7421e]">1</span>m
+              <span className="text-[#FABF16]">1</span>m
             </h3>
             <h4 className="uppercase font-bold mb-2 text-[#1c1c1c] text-sm sm:text-base">
               Clients
@@ -173,7 +173,7 @@ const WhyRightTrade = () => {
           {/* Countries */}
           <div className="sm:border-r sm:border-[#d3d3d3] sm:px-6">
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-              <span className="text-[#f7421e]">150</span>+
+              <span className="text-[#FABF16]">150</span>+
             </h3>
             <h4 className="uppercase font-bold mb-2 text-[#1c1c1c] text-sm sm:text-base">
               Countries
@@ -187,7 +187,7 @@ const WhyRightTrade = () => {
           {/* Awards */}
           <div className="sm:pl-6">
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-              <span className="text-[#f7421e]">45</span>+
+              <span className="text-[#FABF16]">45</span>+
             </h3>
             <h4 className="uppercase font-bold mb-2 text-[#1c1c1c] text-sm sm:text-base">
               Awards
@@ -318,6 +318,7 @@ const WhyRightTrade = () => {
       </section>
 
       {/* How to Start Trading Section */}
+
       <section
         className="bg-[#262a43] py-12 sm:py-16 lg:py-20 text-white"
         style={{ fontFamily: '"Source Sans Pro", sans-serif', lineHeight: 1.4 }}
@@ -337,10 +338,10 @@ const WhyRightTrade = () => {
               {/* Circle with number */}
               <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full border-4 border-[#262a43] bg-[#3a3f5a] flex items-center justify-center text-xl sm:text-2xl font-semibold">
                 <span className="z-10">{item.num}</span>
-                {/* Orange ring */}
+                {/* Yellow ring */}
                 <div
-                  className="absolute inset-0 rounded-full border-t-4 border-orange-500"
-                  style={{ transform: "rotate(50deg)" }}
+                  className="absolute inset-0 rounded-full border-t-4"
+                  style={{ borderColor: "#FABF16", transform: "rotate(50deg)" }}
                 ></div>
               </div>
               {/* Text under circle */}

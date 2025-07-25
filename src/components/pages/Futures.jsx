@@ -37,25 +37,25 @@ const Futures = () => {
   // ✅ Third section data (Why Trade  Futures)
   const whyTradeFeatures = [
     {
-      icon: <FaDollarSign size={40} className="text-[#ff4c1b]" />,
+      icon: <FaDollarSign size={40} className="text-[#FABF16]" />,
       title: "Unbeatable pricing on major FX Pairs",
       description:
         "We offer typically 0.0 spreads on major FX Pairs like EURUSD and USDJPY on our most popular account, Advantage.",
     },
     {
-      icon: <FaBolt size={40} className="text-[#ff4c1b]" />,
+      icon: <FaBolt size={40} className="text-[#FABF16]" />,
       title: "Faster execution for a better price",
       description:
         "We execute your trades in milliseconds, so you'll always get the best market price.",
     },
     {
-      icon: <FaGlobe size={40} className="text-[#ff4c1b]" />,
+      icon: <FaGlobe size={40} className="text-[#FABF16]" />,
       title: "Globally trusted",
       description:
         "We're regulated and licensed under the FSC of the Republic of Mauritius and the UK's FCA, among others.",
     },
     {
-      icon: <FaUniversity size={40} className="text-[#ff4c1b]" />,
+      icon: <FaUniversity size={40} className="text-[#FABF16]" />,
       title: "Total fund security",
       description:
         "Trade with peace of mind. Your funds are fully segregated from our own and insured up to $1m.",

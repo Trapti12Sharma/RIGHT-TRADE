@@ -13,7 +13,7 @@ import FaqSection from "../common/FaqSection2";
 import tradingImage from "../../assets/commissions1.png";
 import spreadsImage from "../../assets/commissions2.png";
 import commissionsImage from "../../assets/commissions3.png";
-import swapsImage from "../../assets/commissions4.png"; // 🆕
+import swapsImage from "../../assets/commissions4.png";
 
 const TradingCommissions = () => {
   const faqs = [
@@ -83,14 +83,14 @@ const TradingCommissions = () => {
         noButton={true} // ✅ added to hide button only here
       />
 
-      {/* 🔶 Section 4 - Image Left & Text Right: Commissions */}
+      {/*  Section 4 - Image Left & Text Right: Commissions */}
       <ImageLeftTextRightSection
         imgSrc={commissionsImage}
         title="Commissions"
         paragraph="Commissions are the charges that you’ll pay us for handling your trades. We keep these small – in fact with our Advantage Plus account you won’t pay any commission fees at all."
       />
 
-      {/* 🔶 Section 5 - Text Left & Image Right: Swaps */}
+      {/*  Section 5 - Text Left & Image Right: Swaps */}
       <TextImageSection
         imgSrc={swapsImage}
         title="Swaps"
@@ -98,7 +98,7 @@ const TradingCommissions = () => {
 
 You’ll pay that interest to us – but we keep these fees as low as possible."
       />
-      {/* 🔶 Section 6 - Text Left & Image Right: Swaps */}
+      {/*  Section 6 - Text Left & Image Right: Swaps */}
 
       <CenteredTextSection
         heading="How our commissions work"
@@ -116,7 +116,7 @@ You’ll pay that interest to us – but we keep these fees as low as possible."
         }
       />
 
-      {/* 🔶 Section 7 - Simple Centered Heading and Text: Stocks */}
+      {/*  Section 7 - Simple Centered Heading and Text: Stocks */}
       <SimpleCenteredTextSection
         heading="Trading fees with stocks"
         subtext="US stock trading is commission-free and includes access to real time price data to help you keep an eye on the latest movements."
@@ -142,7 +142,7 @@ You’ll pay that interest to us – but we keep these fees as low as possible."
         }}
       />
 
-      {/* 🔶 Section 8 - Pricing Stats Cards with Numbers */}
+      {/*  Section 8 - Pricing Stats Cards with Numbers */}
       <PricingStatsSection
         title="Our pricing in numbers"
         stats={[

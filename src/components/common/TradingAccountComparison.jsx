@@ -13,12 +13,12 @@ const TradingAccountComparison = ({ accountData }) => {
           <div
             key={idx}
             className={`rounded-lg border ${
-              account.highlighted ? "border-red-500" : "border-gray-200"
+              account.highlighted ? "border-[#FABF16]" : "border-gray-200"
             } shadow-md bg-white`}
           >
             <div
               className={`p-6 ${
-                account.highlighted ? "border-t-4 border-red-500" : ""
+                account.highlighted ? "border-t-4 border-[#FABF16]" : ""
               }`}
             >
               <div className="text-center mb-4">
