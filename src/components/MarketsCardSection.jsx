@@ -75,28 +75,32 @@ const MarketsCardSection = () => {
 
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {markets.map((market, index) => {
-            const isLastTwo =
-              index >= markets.length - 2 && markets.length % 3 !== 0;
+            const isLastTwo = index >= markets.length - 2;
             return (
               <div
                 key={index}
                 className={`bg-[#1a1f35] p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 ${
-                  isLastTwo ? "lg:col-span-1 lg:mx-auto" : ""
+                  isLastTwo && markets.length % 3 === 2
+                    ? "lg:col-span-1 lg:mx-auto"
+                    : ""
                 }`}
               >
                 <h2
-                  className="mb-4 text-[#FABF16]"
                   style={{
                     fontSize: "25px",
-                    fontWeight: "600",
                     fontFamily: "Source Sans Pro",
+                    fontWeight: "600",
                   }}
+                  className="mb-4 text-[#FABF16]"
                 >
                   {market.title}
                 </h2>
                 <ul
                   className="space-y-2 text-gray-300 text-sm leading-relaxed"
-                  style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}
+                  style={{
+                    fontSize: "16px",
+                    fontFamily: "Source Sans Pro",
+                  }}
                 >
                   {market.description.map((point, i) => (
                     <li key={i}>• {point}</li>

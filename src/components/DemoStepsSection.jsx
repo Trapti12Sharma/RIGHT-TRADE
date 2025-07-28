@@ -28,18 +28,18 @@ const DemoStepsSection = () => {
     <section
       className="bg-[#f9f9f9] text-center py-16 px-6"
       style={{
-        fontFamily: '"Source Sans Pro", sans-serif',
+        fontFamily: '"Source Sans Pro"',
       }}
     >
-      <h2
+      <h1
         className="text-[#10162f] mb-12"
         style={{
-          fontFamily: '"Source Sans Pro", sans-serif',
+          fontFamily: '"Source Sans Pro"',
           fontSize: "40px",
         }}
       >
         How to open an RightTrade Capital demo account
-      </h2>
+      </h1>
 
       <div className="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">
         {steps.map((step, index) => {
@@ -76,7 +76,10 @@ const DemoStepsSection = () => {
                   {step.number}
                 </span>
               </div>
-              <p className="text-[#10162f] text-center max-w-[150px]">
+              <p
+                className="text-[#10162f] text-center max-w-[150px]"
+                style={{ fontSize: "16px", fontFamily: '"Source Sans Pro"' }}
+              >
                 {step.text}
               </p>
             </div>

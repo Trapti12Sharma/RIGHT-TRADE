@@ -21,21 +21,33 @@ const DemoAccountSection = () => {
         </div>
 
         {/* Right Text Content */}
-        <div className="md:w-1/2 w-full md:pl-16 text-white">
-          <h2 className="text-[#FABF16] font-semibold mb-2">
+        <div
+          className="md:w-1/2 w-full md:pl-16 text-white"
+          style={{ fontFamily: "'Source Sans Pro', sans-serif" }}
+        >
+          {/* Subheading */}
+          <h1
+            className="text-[#FABF16] font-semibold mb-2"
+            style={{ fontSize: "40px" }}
+          >
             SIGN UP FOR ALERTS, DEALS, AND LEARNING
-          </h2>
-          {/* <h2 className="text-2xl md:text-3xl font-semibold mb-4 leading-snug">
-            Get the latest news about the market, trading opportunities, and
-            platform features from the best forex trading platform.
-          </h2> */}
-          <ul className="list-disc pl-5 text-gray-300 mb-6 space-y-2">
+          </h1>
+
+          {/* Main Heading */}
+
+          {/* List */}
+          <ul className="list-disc pl-5 text-gray-300 mb-6 space-y-2 text-base">
             <li>Weekly ideas for trading</li>
             <li>Updates to the platform</li>
             <li>Invites to live sessions</li>
             <li>Deals just for members</li>
           </ul>
-          <p className="text-gray-300 mb-6 leading-relaxed">
+
+          {/* Paragraph */}
+          <p
+            className="text-gray-300 mb-6 leading-relaxed"
+            style={{ fontSize: "16px" }}
+          >
             Get news. Stay ahead. Be smarter when you trade.
           </p>
 

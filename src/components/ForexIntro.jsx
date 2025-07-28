@@ -5,7 +5,7 @@ const ForexIntro = () => {
   return (
     <section className="bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2">
-        {/* Image First in JSX — will be on top in mobile, right side in desktop */}
+        {/* Image First in JSX — top in mobile, right side in desktop */}
         <div className="order-1 md:order-2">
           <img
             src={home4}
@@ -17,25 +17,23 @@ const ForexIntro = () => {
         {/* Text Content */}
         <div className="order-2 md:order-1 flex items-center px-6 py-10 md:px-16">
           <div>
-            <h2
+            <h1
               style={{
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "36px", // increased from 32px
-                margin: "0px 0px 20px",
-                textAlign: "justify",
+                fontFamily: '"Source Sans Pro"',
+                fontSize: "40px",
+                marginBottom: "20px",
+                textAlign: "left",
               }}
               className="text-[#1A1D30] mb-6"
             >
               What makes RightTradeCapital special?
-            </h2>
+            </h1>
 
-            {/* List instead of paragraphs */}
             <ul
               style={{
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "18px", // increased from 16px
-                margin: "0px 0px 16px",
-                textAlign: "justify",
+                fontFamily: '"Source Sans Pro"',
+                fontSize: "16px",
+                textAlign: "left",
               }}
               className="text-[#1A1D30] leading-8 mb-4 list-disc list-inside space-y-2"
             >
@@ -54,8 +52,9 @@ const ForexIntro = () => {
 
             <a
               style={{
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "18px", // increased from 16px
+                fontFamily: '"Source Sans Pro"',
+                fontSize: "16px",
+                textAlign: "left",
               }}
               href="#"
               className="text-[#4CB1FF]"
