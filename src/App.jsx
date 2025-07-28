@@ -22,6 +22,7 @@ import EducationSections from "./components/EducationSections";
 import ExpertTraderSection from "./components/ExpertTraderSection";
 import AwardsSection from "./components/AwardsSection";
 import HomePage from "./components/HomePage";
+import MarketsCardSection from "./components/MarketsCardSection";
 
 // New Page
 import WhyRightTrade from "./components/pages/whyrighttrade";
@@ -72,6 +73,7 @@ const Home = () => {
       <HomePage />
       <WhyChoose />
       <ExpertTrader />
+      <MarketsCardSection />
       <ForexIntro />
       <WhatIsTrading />
       <DemoAccountSection />

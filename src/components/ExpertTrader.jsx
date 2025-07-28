@@ -2,10 +2,10 @@ import React from "react";
 import traderBg from "../assets/experttrader.jpg";
 
 const ExpertTrader = ({
-  tag = "EXPERT TRADER",
-  heading = "Already trading?",
-  description = "Sharpen your edge with the latest market updates, expert analysis, real-time prices, and innovative trading tools.",
-  buttonText = "Expert Trader",
+  tag = "Join Us to Learn and Grow",
+  heading = "Confident. Informed. Ready.",
+  description = `We want to build a trading community that is confident and well-informed. That's why our online trading platform has free built-in learning tools.`,
+  buttonText = "Start Learning",
   onClick,
 }) => {
   return (
@@ -52,10 +52,19 @@ const ExpertTrader = ({
                 fontSize: "16px",
                 margin: "9px 0px 0px",
               }}
-              className="text-white leading-relaxed"
+              className="text-white leading-relaxed mb-4"
             >
               {description}
             </p>
+
+            {/* Extra points list */}
+            <ul className="list-disc list-inside text-white space-y-1 text-sm md:text-base">
+              <li>Guides for structured trading</li>
+              <li>Video lessons with examples from the market</li>
+              <li>Webinars and sessions that are live</li>
+              <li>Tips for reading charts and managing risk</li>
+              <li>The best forex trading platform to improve your skills</li>
+            </ul>
           </div>
 
           {/* Button */}

@@ -1,36 +1,66 @@
 import React from "react";
 import {
-  FaChartBar,
-  FaGem,
-  FaChalkboardTeacher,
-  FaShieldAlt,
+  FaUserAlt,
+  FaMoneyCheckAlt,
+  FaPrayingHands,
+  FaLaptop,
 } from "react-icons/fa";
 
 const WhyChoose = () => {
-  const features = [
+  const accountTypes = [
     {
-      icon: <FaChartBar size={40} className="text-[#FABF16]" />,
-      title: "Countless opportunities",
-      description:
-        "Make the most of market moves. Access hundreds of trading instruments online across forex, indices, commodities, and stocks.",
+      icon: <FaUserAlt size={40} className="text-[#FABF16]" />,
+      title: "Standard Account",
+      description: (
+        <>
+          No commissions, which makes it great for trading at a low cost.
+          <br />
+          1.3 pips and up
+          <br />
+          Direct access to Web, Mobile, and MT4
+        </>
+      ),
     },
     {
-      icon: <FaGem size={40} className="text-[#FABF16]" />,
-      title: "Exceptional trading value",
-      description:
-        "Enhance your returns by trading your preferred assets with minimal spreads, low commissions, and precise execution.",
+      icon: <FaMoneyCheckAlt size={40} className="text-[#FABF16]" />,
+      title: "ECN Account",
+      description: (
+        <>
+          Institutional prices and very small spreads.
+          <br />
+          Spreads in the raw market
+          <br />
+          Low fees
+          <br />
+          Execution at lightning speed
+        </>
+      ),
     },
     {
-      icon: <FaChalkboardTeacher size={40} className="text-[#FABF16]" />,
-      title: "First-class education",
-      description:
-        "Knowledge is power. Empower your trading with essential skills through our comprehensive online resources.",
+      icon: <FaPrayingHands size={40} className="text-[#FABF16]" />,
+      title: "Swap-Free Islamic Account",
+      description: (
+        <>
+          100% interest-free for traders who follow Sharia law.
+          <br />
+          No swaps overnight
+          <br />
+          Order flow in real time
+        </>
+      ),
     },
     {
-      icon: <FaShieldAlt size={40} className="text-[#FABF16]" />,
-      title: "Total fund security",
-      description:
-        "Secure Your Investments. Trade confidently with RightTrade Capital, where your funds are segregated and insured up to $1 million.",
+      icon: <FaLaptop size={40} className="text-[#FABF16]" />,
+      title: "Demo Account",
+      description: (
+        <>
+          Practise trading with fake money on our live platform.
+          <br />
+          Regulated broker ecosystem
+          <br />
+          Safety, transparency & control
+        </>
+      ),
     },
   ];
 
@@ -44,39 +74,30 @@ const WhyChoose = () => {
           }}
           className="font-semibold mb-12"
         >
-          Why choose RightTrade Capital?
+          Different Types of Accounts for All Traders
         </h2>
+        {/* <p className="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed">
+          We have different types of accounts for different trading styles, and
+          all of them give you 100% access to our best forex trading platform
+          and global liquidity.
+        </p> */}
         <div
           style={{
             fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "24px",
           }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
         >
-          {features.map((feature, idx) => (
+          {accountTypes.map((account, idx) => (
             <div
               key={idx}
               className="flex flex-col items-center text-center px-4"
             >
-              {feature.icon}
-              <h5
-                style={{
-                  fontFamily: '"Source Sans Pro", sans-serif',
-                  fontSize: "20px",
-                }}
-                className="font-semibold  mt-4 mb-2"
-              >
-                {feature.title}
+              {account.icon}
+              <h5 className="font-semibold mt-4 mb-2 text-lg md:text-xl">
+                {account.title}
               </h5>
-              <p
-                style={{
-                  fontFamily: '"Source Sans Pro", sans-serif',
-                  fontSize: "16px",
-                  margin: "0px 0px 16px",
-                }}
-                className=" leading-relaxed"
-              >
-                {feature.description}
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                {account.description}
               </p>
             </div>
           ))}

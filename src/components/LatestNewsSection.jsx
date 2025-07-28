@@ -6,36 +6,30 @@ import home12 from "../assets/home12.png";
 
 const newsData = [
   {
-    date: "28 FEB",
-    time: "08:28",
-    title: "Week Ahead: Can US500 index hold on to post-election gains?",
-    desc: "Having just erased all of its year-to-date gains, this benchmark US stock index is now merely 1.4% higher since the November 5th close. Greater risk-off moves in the first week of March 2025 could wipe out all that remains of the US500’s climb since President Trump’s election win.",
-    tags: [
-      "S&P 500",
-      "US500",
-      "WEEK AHEAD",
-      "TRUMP",
-      "TRADE WAR",
-      "US JOBS REPORT",
-      "NFP",
-      "FED CHAIR JEROME POWELL",
+    title: "MetaTrader 4 (MT4)",
+    desc: [
+      "Charts, indicators, and automated strategies that work in real time",
+      "Execution with one click",
+      "An interface that works in more than one language",
     ],
     img: home10,
   },
   {
-    date: "26 FEB",
-    time: "07:25",
-    title: "Nvidia earnings preview: Make-or-break moment…",
-    desc: "Nvidia’s earnings will be a defining moment for itself and the entire tech space. Given the lofty expectations, the AI giant must deliver exceptional results to keep bulls alive. Here is what you need to know.",
-    tags: ["NVIDIA", "EARNINGS", "TECH STOCKS", "NASDAQ 100"],
+    title: "WebTrader",
+    desc: [
+      "Log in through your browser; no download is needed.",
+      "View of an all-in-one online trading platform",
+      "Syncing across devices in real time",
+    ],
     img: home11,
   },
   {
-    date: "25 FEB",
-    time: "14:31",
-    title: "Bitcoin tumbles below $90k on risk-off mood",
-    desc: "Bitcoin collapsed over 7% on Tuesday, hitting its lowest level since mid-November as a messy cocktail of developments soured investor appetite.",
-    tags: ["BITCOIN", "TRUMP", "ETF", "US GDP", "INFLATION", "FEDERAL RESERVE"],
+    title: "Mobile App (Android and iOS)",
+    desc: [
+      "Trade while you're on the go",
+      "Instant alerts and push notifications",
+      "You can control all of your trades from your phone.",
+    ],
     img: home12,
   },
 ];
@@ -43,11 +37,11 @@ const newsData = [
 const LatestNewsSection = () => {
   return (
     <section className="bg-[#f9f9f9] py-12 px-4 md:px-20">
-      <h2 className="text-center text-[#FABF16] font-semibold mb-2">
-        LATEST NEWS
+      <h2 className="text-center text-[#FABF16] font-semibold mb-2 text-xl md:text-2xl">
+        You can trade from anywhere
       </h2>
       <p className="text-center text-blue-500 mb-8 cursor-pointer hover:underline">
-        All articles
+        Explore our platforms
       </p>
 
       <div className="space-y-6 max-w-4xl mx-auto">
@@ -67,24 +61,12 @@ const LatestNewsSection = () => {
 
             {/* Content */}
             <div className="md:w-3/4 md:pl-6 w-full">
-              <p className="text-xs text-[#FABF16] mb-1">
-                {news.date}{" "}
-                <span className="text-gray-500 ml-2">{news.time}</span>
-              </p>
-              <h3 className="font-semibold mb-2">{news.title}</h3>
-              <p className="text-gray-600 mb-2">{news.desc}</p>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2 mt-2">
-                {news.tags.map((tag, idx) => (
-                  <span
-                    key={idx}
-                    className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
-                  >
-                    {tag}
-                  </span>
+              <h3 className="font-semibold mb-3 text-lg">{news.title}</h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                {news.desc.map((point, idx) => (
+                  <li key={idx}>{point}</li>
                 ))}
-              </div>
+              </ul>
             </div>
 
             {/* Icon */}

@@ -1,10 +1,10 @@
 import React from "react";
-import home6 from "../assets/home6.png"; // update path as per your project
+import home6 from "../assets/home6.png"; // update path if needed
 
 const DemoAccountSection = () => {
   return (
     <section
-      className="relative overflow-hidden md:pb-4 pt-16 px-6  md:px-20 flex flex-col md:flex-row items-center justify-center"
+      className="relative overflow-hidden md:pb-4 pt-16 px-6 md:px-20 flex flex-col md:flex-row items-center justify-center"
       style={{ backgroundColor: "#1e2235" }}
     >
       {/* Background circular overlay */}
@@ -13,37 +13,39 @@ const DemoAccountSection = () => {
         <div className="w-[600px] h-[600px] bg-[#10162f] opacity-40 rounded-full absolute -right-20 top-20"></div>
       </div>
 
-      {/* Content */}
+      {/* Main Content */}
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-7xl">
-        {/* Left phone image */}
+        {/* Left Image */}
         <div className="md:w-1/2 w-full flex justify-center mb-10 md:mb-0">
-          <img
-            src={home6}
-            alt="Demo Account Phone"
-            className="w-80 md:w-[400px]"
-          />
+          <img src={home6} alt="Alerts Image" className="w-80 md:w-[400px]" />
         </div>
 
-        {/* Right text content */}
+        {/* Right Text Content */}
         <div className="md:w-1/2 w-full md:pl-16 text-white">
-          <h4 className="text-[#FABF16] font-semibold mb-2">DEMO ACCOUNT</h4>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-            Power up your trading skills
+          <h2 className="text-[#FABF16] font-semibold mb-2">
+            SIGN UP FOR ALERTS, DEALS, AND LEARNING
           </h2>
+          {/* <h2 className="text-2xl md:text-3xl font-semibold mb-4 leading-snug">
+            Get the latest news about the market, trading opportunities, and
+            platform features from the best forex trading platform.
+          </h2> */}
+          <ul className="list-disc pl-5 text-gray-300 mb-6 space-y-2">
+            <li>Weekly ideas for trading</li>
+            <li>Updates to the platform</li>
+            <li>Invites to live sessions</li>
+            <li>Deals just for members</li>
+          </ul>
           <p className="text-gray-300 mb-6 leading-relaxed">
-            Master the markets and skill up to the next level on our free demo
-            account. Explore hundreds of instruments and tools, and practise
-            trading with zero risk. And when you feel more confident, switch
-            over to a live account and start trading for real.
+            Get news. Stay ahead. Be smarter when you trade.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-4 mb-6 md:mb-0">
+          <div className="flex flex-col md:flex-row gap-4">
             <button className="bg-[#FABF16] hover:bg-[#FABF16] text-white px-6 py-3 rounded-full font-semibold">
-              Open Demo
+              Sign Up Now
             </button>
             <button className="bg-white text-[#10162f] px-6 py-3 rounded-full font-semibold">
-              RightTrade Capital Trader
+              Explore RightTrade
             </button>
           </div>
         </div>

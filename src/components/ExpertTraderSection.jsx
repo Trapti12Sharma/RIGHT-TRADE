@@ -3,42 +3,51 @@ import { FaGem } from "react-icons/fa";
 
 export default function ExpertTraderSection() {
   return (
-    <div className="bg-[#1f2239] relative py-20">
+    <div className="bg-[#1f2239] relative py-20 px-6">
       {/* Arrow shape at top center */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full">
-        {/* <svg width="40" height="20" viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="0,0 20,20 40,0" fill="#1f2239" />
-        </svg> */}
-      </div>
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full"></div>
 
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* Left Content */}
-        <div className="flex items-center gap-4">
-          <div className="border-2 border-[#FABF16] rounded-full p-3 text-[#FABF16]">
-            <FaGem size={32} />
-          </div>
-          <div>
-            <h2 className="text-white text-2xl font-semibold">
-              Are you an expert trader?
-            </h2>
-            <p className="text-white text-sm mt-1">
-              Start trading with our Advantage account.
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Left Content */}
+          <div className="flex flex-col md:w-1/2 gap-4">
+            <div className="flex items-center gap-4">
+              <div className="border-2 border-[#FABF16] rounded-full p-3 text-[#FABF16]">
+                <FaGem size={32} />
+              </div>
+              <div>
+                <h2 className="text-white text-2xl font-semibold">
+                  Support around the world with a personal touch
+                </h2>
+              </div>
+            </div>
+
+            <p className="text-white text-sm leading-relaxed">
+              RightTradeCapital gives great support and personal attention to
+              clients all over the world. We make sure everything goes smoothly
+              on the best forex trading platform, from setup to execution.
             </p>
-          </div>
-        </div>
 
-        {/* Right Buttons */}
-        <div className="flex items-center gap-4">
-          <a
-            href="#"
-            className="text-white text-sm hover:underline flex items-center"
-          >
-            Compare Accounts
-            <span className="ml-1">&gt;</span>
-          </a>
-          <button className="bg-[#FABF16] text-white font-bold text-sm py-2 px-5 rounded-full">
-            Open Advantage Account
-          </button>
+            <ul className="text-white text-sm space-y-2 pl-5 list-disc mt-2">
+              <li>Customer support in many languages 24/5</li>
+              <li>Several ways to pay around the world</li>
+              <li>Information about local and global markets</li>
+              <li>People, not bots, help</li>
+            </ul>
+          </div>
+
+          {/* Right Content - Buttons */}
+          <div className="flex flex-col items-center md:items-end md:w-1/2 gap-4">
+            <a
+              href="#"
+              className="text-white text-sm hover:underline flex items-center"
+            >
+              Compare Accounts <span className="ml-1">&gt;</span>
+            </a>
+            <button className="bg-[#FABF16] text-[#1f2239] font-bold text-sm py-3 px-6 rounded-full hover:opacity-90 transition duration-300">
+              Open Advantage Account
+            </button>
+          </div>
         </div>
       </div>
     </div>

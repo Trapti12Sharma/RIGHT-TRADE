@@ -1,5 +1,6 @@
 // src/pages/WhyRightTrade.jsx
 import React from "react";
+import StatsSection from "../../components/common/StatsSection";
 import fxtm1 from "../../assets/fxtm1.png";
 import fxtm2 from "../../assets/fxtm2.svg";
 import fxtm3 from "../../assets/fxtm3.svg";
@@ -14,37 +15,12 @@ import message from "../../assets/message.png";
 const WhyRightTrade = () => {
   return (
     <>
-      {/* Hero Section */}
-      <div
-        className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] flex items-center justify-start bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${fxtm1})`,
-          fontFamily: "'Source Sans Pro', sans-serif",
-        }}
-      >
-        {/* Orange Polygon Overlay */}
-        <div
-          className="absolute inset-0 bg-[#f7421e] opacity-95"
-          style={{
-            clipPath: "polygon(0 0, 35% 0, 50% 50%, 0 200%)",
-          }}
-        ></div>
-        {/* Text Content */}
-        <div className="relative z-10 text-white px-4 sm:px-6 lg:px-10 max-w-xl">
-          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-2 sm:mb-4 leading-tight">
-            Ten years of
-            <br />
-            reliable trading
-          </h2>
-          <p className="text-sm sm:text-lg lg:text-xl mb-4 sm:mb-6">
-            Trade FX, CFDs and stocks with a well-established global broker.
-          </p>
-          <button className="bg-lime-500 text-black font-semibold px-4 sm:px-6 py-2 rounded-full hover:bg-lime-600 transition text-sm sm:text-base">
-            Get started
-          </button>
-        </div>
-      </div>
-
+      <StatsSection
+        title="Compare our trading accounts to find one which suits you"
+        subtitle="Tailored accounts for you"
+        buttonText="Learn more"
+        image={fxtm1}
+      />
       {/* Why FXTM Section */}
       <section
         className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-20 xl:px-32 text-[#1c1c1c]"
