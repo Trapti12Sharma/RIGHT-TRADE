@@ -67,8 +67,8 @@ const Navbar = () => {
           heading: "ABOUT US",
           links: [
             "Why RightTrade Capital",
-            "Awards",
-            "Fund Safety",
+            // "Awards",
+            // "Fund Safety",
             "Trading Statistics",
           ],
         },

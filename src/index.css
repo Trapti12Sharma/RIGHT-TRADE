@@ -2,3 +2,7 @@
 .clip-path-custom {
   clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
 }
+
+button {
+  cursor: pointer;
+}

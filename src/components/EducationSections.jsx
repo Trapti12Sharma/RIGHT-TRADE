@@ -33,7 +33,7 @@ const cardData1 = [
 
 const cardData2 = [
   {
-    title: "2024 US election: How to navigate volatility and manage risk",
+    title: "US election: How to navigate volatility and manage risk",
     image: election,
     desc: "As the 2024 US election enters the home stretch...",
     link: "#",
@@ -69,20 +69,31 @@ const sliderSettings = {
 const CardSlider = ({ title, subtitle, cards }) => (
   <div className="bg-[#f8f8f8] py-10">
     <div className="max-w-7xl mx-auto px-4">
-      <h2 className="text-center text-[10px] text-red-500 uppercase tracking-widest font-semibold mb-2">{subtitle}</h2>
+      <h2 className="text-center text-[10px] text-red-500 uppercase tracking-widest font-semibold mb-2">
+        {subtitle}
+      </h2>
       <h3 className="text-center text-xl font-medium mb-6">{title}</h3>
 
       <Slider {...sliderSettings}>
         {cards.map((card, i) => (
           <div key={i} className="px-2">
             <div className="bg-white rounded-lg shadow-sm overflow-hidden h-full flex flex-col">
-              <img src={card.image} alt={card.title} className="h-40 w-full object-cover" />
+              <img
+                src={card.image}
+                alt={card.title}
+                className="h-40 w-full object-cover"
+              />
               <div className="p-4 flex-1">
                 <h4 className="font-semibold text-sm mb-1">{card.title}</h4>
                 <p className="text-xs text-gray-600">{card.desc}</p>
               </div>
               <div className="px-4 pb-4">
-                <a href={card.link} className="text-blue-500 text-xs hover:underline">Read more →</a>
+                <a
+                  href={card.link}
+                  className="text-blue-500 text-xs hover:underline"
+                >
+                  Read more →
+                </a>
               </div>
             </div>
           </div>
@@ -96,7 +107,11 @@ export default function EducationSections() {
   return (
     <>
       <CardSlider title="" subtitle="Advanced Guides" cards={cardData1} />
-      <CardSlider title="Browse through our library for more insights" subtitle="Trading Basics" cards={cardData2} />
+      <CardSlider
+        title="Browse through our library for more insights"
+        subtitle="Trading Basics"
+        cards={cardData2}
+      />
     </>
   );
 }
