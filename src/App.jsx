@@ -83,7 +83,6 @@ const Home = () => {
       <LatestNewsSection />
       <EducationSections />
       <ExpertTraderSection />
-      <AwardsSection />
     </>
   );
 };

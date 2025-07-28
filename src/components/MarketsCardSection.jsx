@@ -53,30 +53,58 @@ const MarketsCardSection = () => {
   return (
     <section className="w-full bg-[#10162f] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
+        <h1
+          className="text-center font-bold mb-6"
+          style={{
+            fontSize: "40px",
+            fontFamily: "Source Sans Pro",
+          }}
+        >
           Markets You Can Buy and Sell on Our Online Trading Platform
-        </h2>
-        <p className="text-center max-w-2xl mx-auto mb-12 text-gray-300 text-lg">
+        </h1>
+        <p
+          className="text-center max-w-2xl mx-auto mb-12 text-gray-300"
+          style={{
+            fontSize: "16px",
+            fontFamily: "Source Sans Pro",
+          }}
+        >
           With just one login, you can access more than 500 global markets
           through our online trading platform.
         </p>
 
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {markets.map((market, index) => (
-            <div
-              key={index}
-              className="bg-[#1a1f35] p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-semibold mb-4 text-[#FABF16]">
-                {market.title}
-              </h3>
-              <ul className="space-y-2 text-gray-300 text-sm leading-relaxed">
-                {market.description.map((point, i) => (
-                  <li key={i}>• {point}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {markets.map((market, index) => {
+            const isLastTwo =
+              index >= markets.length - 2 && markets.length % 3 !== 0;
+            return (
+              <div
+                key={index}
+                className={`bg-[#1a1f35] p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 ${
+                  isLastTwo ? "lg:col-span-1 lg:mx-auto" : ""
+                }`}
+              >
+                <h2
+                  className="mb-4 text-[#FABF16]"
+                  style={{
+                    fontSize: "25px",
+                    fontWeight: "600",
+                    fontFamily: "Source Sans Pro",
+                  }}
+                >
+                  {market.title}
+                </h2>
+                <ul
+                  className="space-y-2 text-gray-300 text-sm leading-relaxed"
+                  style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}
+                >
+                  {market.description.map((point, i) => (
+                    <li key={i}>• {point}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
