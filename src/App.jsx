@@ -21,6 +21,7 @@ import LatestNewsSection from "./components/LatestNewsSection";
 import EducationSections from "./components/EducationSections";
 import ExpertTraderSection from "./components/ExpertTraderSection";
 import AwardsSection from "./components/AwardsSection";
+import HomePage from "./components/HomePage";
 
 // New Page
 import WhyRightTrade from "./components/pages/whyrighttrade";
@@ -68,6 +69,7 @@ const Home = () => {
     <>
       <SeminarBanner />
       <PartnerSection />
+      <HomePage />
       <WhyChoose />
       <ExpertTrader />
       <ForexIntro />

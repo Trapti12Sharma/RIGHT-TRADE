@@ -10,8 +10,8 @@ const PartnerSection = () => {
         }}
         className="text-[#212529] leading-snug max-w-4xl mx-auto md:text-center text-justify"
       >
-        Partner with RightTrade Capital, a leading online forex trading website, to leverage
-        global market opportunities.
+        RightTradeCapital is the best online forex trading platform for trading
+        forex with confidence.
       </h4>
       <p
         style={{
@@ -20,8 +20,12 @@ const PartnerSection = () => {
         }}
         className="mt-6 text-base text-[#212529] max-w-4xl mx-auto md:text-center text-justify"
       >
-        With friendly Customer Support, the latest technology and a range of
-        account types, we've got everything you need to discover better trading.
+        Welcome to RightTradeCapital, your safe and reliable way to get to
+        global markets. We are a regulated forex broker, and we offer an online
+        trading platform that is easy to use and focused on performance for
+        traders who want to get ahead. We help you trade forex online
+        confidently, giving you the tools, technology, and support to succeed —
+        with speed, security, and compliance.
       </p>
     </section>
   );

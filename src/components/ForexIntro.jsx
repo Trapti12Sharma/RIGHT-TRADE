@@ -20,57 +20,42 @@ const ForexIntro = () => {
             <h2
               style={{
                 fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "32px",
+                fontSize: "36px", // increased from 32px
                 margin: "0px 0px 20px",
                 textAlign: "justify",
               }}
               className="text-[#1A1D30] mb-6"
             >
-              What is Forex Trading?
+              What makes RightTradeCapital special?
             </h2>
-            <p
+
+            {/* List instead of paragraphs */}
+            <ul
               style={{
                 fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "16px",
+                fontSize: "18px", // increased from 16px
                 margin: "0px 0px 16px",
                 textAlign: "justify",
               }}
-              className="text-[#1A1D30] leading-7 mb-4"
+              className="text-[#1A1D30] leading-8 mb-4 list-disc list-inside space-y-2"
             >
-              Forex (also known as FX) is short for foreign exchange: the global
-              marketplace to buy and sell foreign currencies.
-            </p>
-            <p
-              style={{
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "16px",
-                margin: "0px 0px 16px",
-                textAlign: "justify",
-              }}
-              className="text-[#1A1D30] leading-7 mb-4"
-            >
-              This market is worth over $6 trillion daily, with central and
-              private banks, hedge funds, traders, and travelers worldwide open
-              24 hours a day, 5.5 days per week exchanging money at different
-              prices.
-            </p>
-            <p
-              style={{
-                fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "16px",
-                margin: "0px 0px 16px",
-                textAlign: "justify",
-              }}
-              className="text-[#1A1D30] leading-7 mb-4"
-            >
-              Currency prices change every second, giving investors limitless
-              opportunities to enter trades. And investors try to make money by
-              correctly predicting the price movements of different pairs.
-            </p>
+              <li>A safe and global online trading platform</li>
+              <li>100% Safe & Trusted Forex Broker with Rules</li>
+              <li>Get into more than 500 markets</li>
+              <li>
+                Best forex trading platform that works well on mobile devices
+              </li>
+              <li>
+                Made for traders who want to trade forex online with power and
+                control
+              </li>
+              <li>You make the plan. We provide the platform.</li>
+            </ul>
+
             <a
               style={{
                 fontFamily: '"Source Sans Pro", sans-serif',
-                fontSize: "16px",
+                fontSize: "18px", // increased from 16px
               }}
               href="#"
               className="text-[#4CB1FF]"

@@ -27,18 +27,22 @@ const TradingSections = () => {
           {/* Text side */}
           <div>
             <h2 className="text-2xl md:text-4xl font-semibold mb-3 leading-snug">
-              Trade on the go, straight from your phone
+              RightTradeCapital is the first step to your trading success.
             </h2>
+
+            {/* Updated Content */}
             <p className="text-base mb-2">
-              Never miss another trading opportunity again.
+              Use our safe and easy-to-use online trading platform to join a
+              global trading community.
             </p>
-            <p className="text-sm text-gray-300 mb-4 max-w-md">
-              Get the RightTrade Capital Trader app for commission-free trading
-              and spreads as low as zero on major FX pairs and gold.
-              <br />
-              <br />
-              Everything you need. One app.
-            </p>
+
+            {/* Increased List Font Size */}
+            <ul className="text-lg mb-4 leading-relaxed list-disc list-inside space-y-2 text-gray-300 max-w-md">
+              <li>You can open an account in minutes</li>
+              <li>You can fund with the methods you like.</li>
+              <li>Start trading with full control</li>
+              <li>Get expert help on the best forex trading platform.</li>
+            </ul>
           </div>
 
           {/* Phone image */}
@@ -54,7 +58,7 @@ const TradingSections = () => {
 
       {/* App Store button in white area */}
       <div className="bg-white -mt-[1px]">
-        <div className="max-w-7xl mx-32  flex">
+        <div className="max-w-7xl mx-32 flex">
           <a
             href="#"
             className="flex items-center space-x-2 bg-[#FABF16] hover:bg-[#FABF16] text-white px-6 py-3 rounded-full text-sm font-medium shadow-md transition"
