@@ -149,8 +149,6 @@ const Navbar = () => {
       {/* Top Bar */}
       <div className="bg-[#0d141e] text-white text-sm w-full hidden lg:block">
         <div className="max-w-7xl mx-auto px-4 py-2 flex justify-end items-center space-x-10 pr-30">
-          <span className="cursor-pointer">HELP CENTRE</span>
-
           <span className="cursor-pointer flex items-center gap-1">
             EN <FaChevronDown size={10} />
           </span>

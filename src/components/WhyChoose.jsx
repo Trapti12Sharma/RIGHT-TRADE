@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaUserAlt,
   FaMoneyCheckAlt,
@@ -48,38 +47,84 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="bg-[#121733] text-white py-16 px-6">
-      <div className="max-w-7xl mx-auto text-center">
-        <h1
-          className="font-semibold mb-16"
-          style={{
-            fontFamily: "Source Sans Pro",
-            fontSize: "40px",
-          }}
-        >
-          Different Types of Accounts for All Traders
-        </h1>
+    <section className="bg-[#121733] text-white py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1
+            className="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4"
+            style={{
+              fontFamily: "Source Sans Pro",
+            }}
+          >
+            Different Types of Accounts for All Traders
+          </h1>
+          <div className="w-24 h-1 bg-[#FABF16] mx-auto mt-6"></div>
+        </div>
 
+        {/* Cards Grid */}
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
+          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8"
           style={{ fontFamily: "Source Sans Pro" }}
         >
           {accountTypes.map((account, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center text-center px-4 min-h-[330px]"
+              className="group relative bg-gradient-to-br from-[#1a1f3a] to-[#0f1229] rounded-2xl p-8 border border-gray-700/30 hover:border-[#FABF16]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-[#FABF16]/10"
             >
-              {account.icon}
-              <h2 className="font-semibold mt-4 mb-3 text-lg">
-                {account.title}
-              </h2>
-              <ul className="text-gray-300 text-[16px] space-y-1 leading-relaxed">
-                {account.description.map((line, index) => (
-                  <li key={index}>{line}</li>
-                ))}
-              </ul>
+              {/* Background decoration */}
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#FABF16]/5 to-transparent rounded-bl-3xl"></div>
+
+              {/* Icon container */}
+              <div className="relative z-10 flex justify-center mb-6">
+                <div className="w-20 h-20 bg-gradient-to-br from-[#FABF16]/10 to-[#FABF16]/5 rounded-2xl flex items-center justify-center group-hover:from-[#FABF16]/20 group-hover:to-[#FABF16]/10 transition-all duration-300">
+                  <div className="transform group-hover:scale-110 transition-transform duration-300">
+                    {account.icon}
+                  </div>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10 text-center">
+                <h2 className="font-semibold text-xl mb-4 text-white group-hover:text-[#FABF16] transition-colors duration-300">
+                  {account.title}
+                </h2>
+
+                <div className="space-y-3 text-left">
+                  {account.description.map((line, index) => (
+                    <div
+                      key={index}
+                      className="flex items-start text-gray-300 text-sm leading-relaxed group-hover:text-gray-200 transition-colors duration-300"
+                    >
+                      <div className="w-1.5 h-1.5 bg-[#FABF16] rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span>{line}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Bottom accent */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FABF16]/20 to-transparent group-hover:via-[#FABF16]/40 transition-all duration-300"></div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom CTA section */}
+        <div className="text-center mt-16">
+          <p
+            className="text-gray-300 text-lg mb-6"
+            style={{ fontFamily: "Source Sans Pro" }}
+          >
+            Choose the account type that best fits your trading style
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="px-8 py-3 bg-[#FABF16] text-[#121733] font-semibold rounded-lg hover:bg-[#FABF16]/90 transition-colors duration-300 transform hover:scale-105">
+              Open Live Account
+            </button>
+            <button className="px-8 py-3 border-2 border-[#FABF16] text-[#FABF16] font-semibold rounded-lg hover:bg-[#FABF16] hover:text-[#121733] transition-all duration-300 transform hover:scale-105">
+              Try Demo Account
+            </button>
+          </div>
         </div>
       </div>
     </section>
