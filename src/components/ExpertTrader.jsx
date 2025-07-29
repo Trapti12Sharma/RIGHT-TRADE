@@ -1,5 +1,5 @@
 import React from "react";
-import traderBg from "../assets/experttrader.jpg";
+import traderBg from "../assets/join-us.jpg";
 
 const ExpertTrader = ({
   tag = "Join Us to Learn and Grow",

@@ -5,21 +5,21 @@ import { Play } from "lucide-react";
 
 const slides = [
   {
-    image: "/home1.png",
+    image: "/cfds.jpg",
     heading: "Trade Futures CFDs with RightTrade Capital",
     subText:
       "Diversify your trades and hedge against market volatility with CFD futures trading.",
     buttonText: "Trade Now",
   },
   {
-    image: "/home.png",
+    image: "/learn.jpg",
     heading: "Learn. Trade. Earn.",
     subText: "Join RightTrade Capital Academy's Upcoming Seminar",
     buttonText: "Learn to Trade",
   },
 
   {
-    image: "/home2.png",
+    image: "/inner-trader.jpg",
     heading: "Release Your Inner Trader",
     subText:
       "Learn to trade at your own pace with our free educational resources.",

@@ -1,5 +1,5 @@
 import React from "react";
-import home4 from "../assets/home4.png";
+import home4 from "../assets/RightTradeCapitalSpecial.jpg";
 
 const ForexIntro = () => {
   return (

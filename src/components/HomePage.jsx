@@ -1,6 +1,6 @@
 import React from "react";
 import RightImageLeftContent from "./common/RightImageLeftContent";
-import tradingImage from "../assets/account2.png";
+import tradingImage from "../assets/right-choice.jpg";
 
 const HomePage = () => {
   return (

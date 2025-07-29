@@ -1,5 +1,5 @@
 import React from "react";
-import home6 from "../assets/home6.png"; // update path if needed
+import home6 from "../assets/sign-up.png";
 
 const DemoAccountSection = () => {
   return (
@@ -17,7 +17,7 @@ const DemoAccountSection = () => {
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center w-full max-w-7xl">
         {/* Left Image */}
         <div className="md:w-1/2 w-full flex justify-center mb-10 md:mb-0">
-          <img src={home6} alt="Alerts Image" className="w-80 md:w-[400px]" />
+          <img src={home6} alt="Alerts Image" className="w-100 md:w-[700px]" />
         </div>
 
         {/* Right Text Content */}

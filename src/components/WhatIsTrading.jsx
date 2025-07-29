@@ -1,5 +1,5 @@
 import React from "react";
-import home5 from "../assets/home5.png"; // update path as per your project
+import home5 from "../assets/tools.jpg";
 
 const WhatIsTrading = () => {
   return (

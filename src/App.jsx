@@ -78,10 +78,10 @@ const Home = () => {
       <WhatIsTrading />
       <DemoAccountSection />
       <DemoStepsSection />
-      <ExpertHintsSection />
+
       <TradingSections />
       <LatestNewsSection />
-      <EducationSections />
+
       <ExpertTraderSection />
     </>
   );

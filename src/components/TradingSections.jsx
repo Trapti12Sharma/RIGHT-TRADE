@@ -1,6 +1,6 @@
 import React from "react";
-import phone from "../assets/phone.png";
-import laptop from "../assets/laptop.png";
+import phone from "../assets/first-step.png";
+import laptop from "../assets/trading-platform.png";
 
 const TradingSections = () => {
   return (
@@ -23,7 +23,7 @@ const TradingSections = () => {
         </div>
 
         {/* Content grid */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-10 md:py-14 grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-18 md:py-35 grid grid-cols-1 md:grid-cols-2 items-start gap-6">
           {/* Text side */}
           <div>
             <h1
@@ -62,7 +62,7 @@ const TradingSections = () => {
             <img
               src={phone}
               alt="Mobile Trading"
-              className="w-[160px] sm:w-[180px] md:w-[200px] lg:w-[220px] object-contain"
+              className="w-[700px] sm:w-[600px] md:w-[600px] lg:w-[680px] object-contain max-w-full"
             />
           </div>
         </div>
