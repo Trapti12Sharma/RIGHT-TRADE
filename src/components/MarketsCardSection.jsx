@@ -17,7 +17,6 @@ const markets = [
       "Spreads start at 0.0 pips",
       "Access in real time 24/5",
       "MT4 makes things happen quickly.",
-      "Our best forex trading platform lets you trade currencies safely and efficiently while keeping full control.",
     ],
     gradient: "from-blue-500/10 to-purple-500/10",
     borderColor: "border-blue-500/20",
@@ -62,7 +61,7 @@ const markets = [
     title: "CFDs for Stocks",
     icon: <FaBuilding size={32} className="text-[#FABF16]" />,
     description: [
-      "Put your money on big companies like Apple, Amazon, Tesla, and others.",
+      "Put your money on big companies",
       "Options for fractional trading",
       "Leverage is available",
       "Direct execution on the best forex trading site",
