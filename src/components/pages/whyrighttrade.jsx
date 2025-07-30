@@ -21,158 +21,235 @@ const WhyRightTrade = () => {
         buttonText="Learn more"
         image={fxtm1}
       />
+
       {/* Why FXTM Section */}
       <section
-        className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-20 xl:px-32 text-[#1c1c1c]"
-        style={{ fontFamily: '"Source Sans Pro"' }}
+        className="py-10 sm:py-14 lg:py-20 px-4 sm:px-8 lg:px-24 xl:px-36 bg-white text-[#1c1c1c]"
+        style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
       >
-        {/* Breadcrumb */}
-        <div className="text-[#0061eb] mb-4 sm:mb-6 text-sm">
-          <Link to="/" className="hover:underline font-medium">
-            RightTrade Capital
-          </Link>
-          <span className="text-black"> › About Us</span>
-        </div>
-
         {/* Title */}
-        <h1 className="text-2xl sm:text-2xl lg:text-2xl xl:text-3xl mb-6 sm:mb-8 lg:mb-10 text-center font-semibold">
+        <h1 className="text-[40px] font-medium text-center mb-3">
           Why RightTrade Capital
         </h1>
 
-        {/* Two Columns */}
-        <div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 text-sm sm:text-base lg:text-sm text-[#1c1c1c] leading-relaxed"
-          style={{ textAlign: "justify", lineHeight: 1.6 }}
+        {/* Content */}
+        <p
+          className="text-[16px] text-center leading-relaxed max-w-4xl mx-auto text-[#1c1c1c]"
+          style={{ lineHeight: "1.8" }}
         >
-          <div>
-            <p className="mb-4">
-              We built RightTrade Capital because we thought trading was too
-              exciting to be kept for the few.
-            </p>
-            <p className="mb-4">
-              Traders ourselves, we saw how the emerging web could bring
-              opportunity to anyone who was ready to take on a little risk and
-              put in the time to learn. We set out three rules to guide our
-              mission to take opportunity to the world.
-            </p>
-            <p className="mb-4">
-              <strong>Trust.</strong> With the right licensing and regulation,
-              those who chose to trade with us would be able do so with full
-              peace of mind. We agreed to keep customer funds segregated, so no
-              one would be out of pocket if things went south. We promised to be
-              transparent and honest. That meant no stealth fees and no secrets
-              in our trading stats.
-            </p>
-          </div>
-          <div>
-            <p className="mb-4">
-              <strong>Access.</strong> Nothing should be out of reach. If Warren
-              Buffet could trade it, you should be able to trade it. And since
-              you can't profit from what you don't know, we offer access to a
-              world class, money-can't-buy education for free.
-            </p>
-            <p className="mb-4">
-              <strong>Value.</strong> We agreed to work to keep the cost of
-              trading as low as possible and to offer our services in a spirit
-              of partnership, helping our customers to be profitable traders,
-              not just profitable customers. After all, if you do well, we do
-              well.
-            </p>
-            <p>
-              We still weigh everything we do against the 'three mores'. More
-              trust, more access, and more value. That's what we mean when we
-              say RightTrade Capital gives you more.
-            </p>
-          </div>
-        </div>
+          RightTradeCapital is a regulated and trusted forex broker around the
+          world that wants to make it easy for traders to access financial
+          markets. We have years of experience and are in more than 100
+          countries. Our online trading platform is safe, clear, and focused on
+          performance. To help traders succeed, we offer world-class technology,
+          powerful trading tools, and support in multiple languages 24 hours a
+          day, five days a week. We think that anyone, whether they are an
+          individual trader or a business, should be able to trade. We build our
+          infrastructure to be fast, safe, and open, and we always act with
+          honesty.
+        </p>
       </section>
 
       {/* Watch Our Film Section */}
       <section
         className="bg-[#2a2d45] py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-20 text-white"
-        style={{ fontFamily: '"Source Sans Pro"' }}
+        style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 items-center max-w-7xl mx-auto">
-          {/* Vimeo Video */}
+          {/* Image Block */}
           <div className="w-full order-2 lg:order-1">
-            <div
-              className="relative w-full"
-              style={{ paddingBottom: "56.25%" }}
-            >
-              <iframe
-                src="https://player.vimeo.com/video/76979871"
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title="RightTrade Capital Video"
-              ></iframe>
-            </div>
+            <img
+              // src={whatWeDoImage}
+              alt="What We Do"
+              className="w-full h-auto rounded-lg"
+            />
           </div>
 
           {/* Text Block */}
           <div className="order-1 lg:order-2 text-center lg:text-left">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mb-4 font-semibold">
-              Watch our film
+            <h1 className="text-[32px] font-semibold mb-4 leading-snug">
+              What We Do
+            </h1>
+            <h2 className="text-[20px] font-normal mb-4 leading-relaxed text-gray-200">
+              To create an online trading space that is safe, cutting-edge, and
+              focused on the needs of users, where traders can grow, succeed,
+              and become financially free.
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-              Whether you're an experienced trader or completely new to it,
-              we're here to help you get more from the financial markets.
-            </p>
+            <ul className="list-disc text-[16px] leading-relaxed pl-5 text-left mt-4 space-y-2 text-gray-100">
+              <li>Giving people the best trading tools and education</li>
+              <li>Providing clear and low-cost trading conditions</li>
+              <li>Making sure the funds are safe and following the rules</li>
+              <li>
+                Helping clients with support from real people who are quick to
+                respond
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       {/* RightTrade Capital in Numbers Section */}
       <section
-        className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-20 text-[#1c1c1c] text-center"
-        style={{ fontFamily: '"Source Sans Pro"', lineHeight: 1.4 }}
+        className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-20 text-[#1c1c1c]"
+        style={{ fontFamily: '"Source Sans Pro", sans-serif', lineHeight: 1.6 }}
       >
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-8 sm:mb-12 lg:mb-14">
-          RightTrade Capital in numbers
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 lg:gap-10 max-w-6xl mx-auto">
-          {/* Clients */}
-          <div className="sm:border-r sm:border-[#d3d3d3] sm:pr-6">
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-              <span className="text-[#FABF16]">1</span>m
-            </h3>
-            <h4 className="uppercase font-bold mb-2 text-[#1c1c1c] text-sm sm:text-base">
-              Clients
-            </h4>
-            <p className="text-xs sm:text-sm lg:text-base max-w-xs mx-auto">
-              Over 1 million people worldwide have chosen RightTrade Capital,
-              and thousands of new traders continue to jump on board each month.
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
+          {/* Text Block */}
+          <div className="text-left max-w-[600px] w-full">
+            <h1 className="text-[36px] font-semibold mb-4 leading-tight">
+              Learning and Understanding
+            </h1>
+            <h2 className="text-[22px] font-medium mb-4 leading-snug">
+              We think that education is the most important part of trading.
+              Here are some things our platform has:
+            </h2>
+            <ul className="list-disc pl-5 text-[16px] space-y-2 mb-4">
+              <li>Guides and tutorials for trading</li>
+              <li>Lessons in video for the market</li>
+              <li>Webinars with experts in real time</li>
+              <li>Daily reviews and calendars of economic events</li>
+            </ul>
+            <p className="text-[16px]">
+              We give traders the information they need to make better choices.
             </p>
           </div>
 
-          {/* Countries */}
-          <div className="sm:border-r sm:border-[#d3d3d3] sm:px-6">
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-              <span className="text-[#FABF16]">150</span>+
-            </h3>
-            <h4 className="uppercase font-bold mb-2 text-[#1c1c1c] text-sm sm:text-base">
-              Countries
-            </h4>
-            <p className="text-xs sm:text-sm lg:text-base max-w-xs mx-auto">
-              We serve a global audience from over 150 countries, with a global
-              network of offices, spanning Europe, Africa, and Asia.
-            </p>
+          {/* Image Block */}
+          <div className="w-full">
+            <img
+              // src={educationImage}
+              alt="Education Illustration"
+              className="w-full h-auto rounded-lg"
+            />
           </div>
+        </div>
+      </section>
 
-          {/* Awards */}
-          <div className="sm:pl-6">
-            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2">
-              <span className="text-[#FABF16]">45</span>+
-            </h3>
-            <h4 className="uppercase font-bold mb-2 text-[#1c1c1c] text-sm sm:text-base">
-              Awards
-            </h4>
-            <p className="text-xs sm:text-sm lg:text-base max-w-xs mx-auto">
-              We do it for you, not for the glory. But when one looks after
-              their customers like we do, the awards pile up: We're proud to
-              have received over 45 of them since we've started.
-            </p>
+      <section className="w-full bg-white font-[Source Sans Pro] py-16 px-4 sm:px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto text-[#1c1f3c]">
+          {/* Heading */}
+          <h1 className="text-[40px] font-light mb-4 leading-tight text-center">
+            What We Have
+          </h1>
+
+          {/* Subheading */}
+          <h2 className="text-[25px] font-light mb-6 text-center">
+            We give you access to a lot of different trading tools and
+            instruments, all in one advanced trading environment:
+          </h2>
+
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Card 1 */}
+            <div className="bg-[#f3f6fd] rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold mb-2">
+                1. Trading in Forex
+              </h3>
+              <p className="text-[16px] text-justify">
+                You can trade more than 60 currency pairs, including major,
+                minor, and exotic pairs, with spreads that start at 0.0 pips.
+                Our platform makes sure that trades happen in real time and with
+                as little slippage as possible.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-[#f3f6fd] rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold mb-2">2. CFDs on Indexes</h3>
+              <p className="text-[16px] text-justify">
+                Guess how the prices of global indexes like the S&P 500, NASDAQ,
+                FTSE 100, and DAX will change. Enjoy quick execution and
+                flexible leverage.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-[#f3f6fd] rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold mb-2">3. Goods</h3>
+              <p className="text-[16px] text-justify">
+                You can trade gold, silver, crude oil, and natural gas.
+                Diversify your trading strategy and protect your portfolio from
+                inflation.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-[#f3f6fd] rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold mb-2">
+                4. CFDs for Cryptocurrencies
+              </h3>
+              <p className="text-[16px] text-justify">
+                You can get into the crypto market without a wallet. You can
+                trade Bitcoin, Ethereum, Litecoin, and other major
+                cryptocurrencies through CFDs 24 hours a day, five days a week.
+              </p>
+            </div>
+
+            {/* Card 5 */}
+            <div className="bg-[#f3f6fd] rounded-xl p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="text-xl font-semibold mb-2">5. CFDs on Stocks</h3>
+              <p className="text-[16px] text-justify">
+                Get to know some of the biggest companies in the world, like
+                Apple, Tesla, Amazon, and Microsoft. Use fractional share
+                trading and leverage to take advantage of price changes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#1c1f3c] text-white font-[Source_Sans_Pro] py-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-[40px] font-semibold mb-4 text-center leading-tight">
+            Types of Accounts
+          </h1>
+          <h2 className="text-[25px] font-normal mb-8 text-center">
+            We have different types of accounts to meet the needs of different
+            traders:
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {/* Standard Account */}
+            <div className="bg-white text-[#1c1f3c] rounded-xl shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-3">Standard Account</h3>
+              <ul className="list-disc list-inside space-y-1 text-[16px] text-justify">
+                <li>No fees</li>
+                <li>Spreads that are competitive</li>
+                <li>You can use MT4, WebTrader, and mobile apps</li>
+              </ul>
+            </div>
+
+            {/* ECN Account */}
+            <div className="bg-white text-[#1c1f3c] rounded-xl shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-3">Account for ECN</h3>
+              <ul className="list-disc list-inside space-y-1 text-[16px] text-justify">
+                <li>Raw spreads start at 0.0 pips</li>
+                <li>Low fees for trading</li>
+                <li>Execution at the level of institutions</li>
+              </ul>
+            </div>
+
+            {/* Islamic Account */}
+            <div className="bg-white text-[#1c1f3c] rounded-xl shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-3">
+                Account with No Islamic Swaps
+              </h3>
+              <ul className="list-disc list-inside space-y-1 text-[16px] text-justify">
+                <li>No interest</li>
+                <li>Following Sharia</li>
+                <li>No charges for staying overnight</li>
+              </ul>
+            </div>
+
+            {/* Demo Account */}
+            <div className="bg-white text-[#1c1f3c] rounded-xl shadow-md p-6">
+              <h3 className="text-xl font-semibold mb-3">Account for Demo</h3>
+              <ul className="list-disc list-inside space-y-1 text-[16px] text-justify">
+                <li>A trading experience with no risk</li>
+                <li>A fake market environment</li>
+                <li>Great for testing and learning strategies</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -182,22 +259,156 @@ const WhyRightTrade = () => {
         className="relative w-full text-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 text-center bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${fxtm9})`,
-          fontFamily: "'Source Sans Pro'",
+          fontFamily: "'Source Sans Pro', sans-serif",
         }}
       >
-        {/* Dark overlay */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-[#1d2235]/80 backdrop-blur-sm z-0"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold mb-4 sm:mb-6">
-            Exinity Group
-          </h2>
-          <p className="text-sm sm:text-base lg:text-xl leading-relaxed sm:leading-8">
-            The leadership team behind Exinity Group has proven experience in
-            banking, trading and financial technology. Their priority? Helping
-            you to succeed.
-          </p>
+          <h1 className="text-[40px] font-semibold mb-4 leading-snug">
+            Rules and Openness
+          </h1>
+
+          {/* <h2 className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] font-normal mb-6">
+            We have licenses that are respected around the world and make sure
+            everything is clear:
+          </h2> */}
+
+          <ul className="text-[16px] leading-loose text-white space-y-2 list-disc list-inside sm:text-left text-center sm:pl-6">
+            <li>Reporting in real time</li>
+            <li>Clear prices and actions</li>
+            <li>Regular audits by a third party</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="w-full font-[Source Sans Pro]">
+        {/* Section with Blue Background */}
+        <div className="bg-[#1c1f3c] text-white py-16 px-4 sm:px-6 lg:px-12">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+            {/* Image */}
+            <div className="w-full lg:w-1/2">
+              <img
+                // src={supportImg}
+                alt="Support"
+                className="w-full h-auto object-contain rounded-lg"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="w-full lg:w-1/2 text-left">
+              <h1 className="text-[40px] font-normal mb-4 leading-tight">
+                Support Around the World
+              </h1>
+              <h2 className="text-[25px] font-normal mb-3">
+                Our customer service is here to help you with your trading
+                journey:
+              </h2>
+              <ul className="text-[16px] space-y-2 text-justify list-disc pl-5">
+                <li>Support in many languages 24 hours a day, 5 days a week</li>
+                <li>Help in the area</li>
+                <li>Account managers who are dedicated</li>
+                <li>Quick help through live chat and email</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full font-[Source Sans Pro]">
+        {/* Section with White Background */}
+        <div className="bg-white text-[#1c1f3c] py-16 px-4 sm:px-6 lg:px-12">
+          <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
+            {/* Content */}
+            <div className="w-full lg:w-1/2 text-left">
+              <h1 className="text-[40px] font-semibold mb-4 leading-tight max-w-xl">
+                Responsibility of Businesses
+              </h1>
+              <h2 className="text-[25px] font-normal mb-3 max-w-xl text-justify">
+                We care about doing business in an honest way and being
+                environmentally friendly:
+              </h2>
+              <ul className="text-[16px] text-justify list-disc space-y-2 pl-5 max-w-xl">
+                <li>Teaching people about money</li>
+                <li>Partnerships for charity</li>
+                <li>Business practices that follow ESG rules</li>
+              </ul>
+            </div>
+
+            {/* Image */}
+            <div className="w-full lg:w-1/2">
+              <img
+                // src={responsibilityImg}
+                alt="Responsibility"
+                className="w-full h-auto object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full font-[Source Sans Pro]">
+        {/* Section with Blue Background */}
+        <div className="bg-[#1c1f3c] text-white py-16 px-4 sm:px-6 lg:px-12">
+          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+            {/* Image */}
+            <div className="w-full lg:w-1/2">
+              <img
+                // src={edgeImg}
+                alt="Our Edge"
+                className="w-full h-auto object-contain rounded-lg"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="w-full lg:w-1/2 text-left lg:pl-16">
+              <h1 className="text-[40px] font-medium mb-4 leading-tight">
+                Our Edge
+              </h1>
+              <h2 className="text-[25px] font-normal mb-3">
+                What makes us different is:
+              </h2>
+              <ul className="text-[16px] list-disc space-y-2 pl-5 text-justify">
+                <li>Operations that are safe and regulated</li>
+                <li>New trading platforms</li>
+                <li>Low spreads and quick execution</li>
+                <li>Putting the customer first</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-white font-[Source Sans Pro] py-16 px-4 sm:px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10">
+          {/* Left: Text Content */}
+          <div className="w-full lg:w-1/2 text-justify">
+            <h1 className="text-[40px] font-medium text-[#1c1f3c] mb-3 leading-snug tracking-tight">
+              Come With Us
+            </h1>
+            <h2 className="text-[20px] font-normal text-[#1c1f3c] mb-3 leading-snug tracking-tight">
+              When you trade with RightTradeCapital
+              <br />
+              , you're part of a global community <br />
+              that cares, has experience, and uses <br />
+              technology.
+            </h2>
+            <ul className="text-[16px] font-normal space-y-2 list-disc pl-5 text-[#1c1f3c] leading-relaxed">
+              <li>Create a live or demo account</li>
+              <li>Get access to more than 500 tools</li>
+            </ul>
+          </div>
+
+          {/* Right: Image */}
+          <div className="w-full lg:w-1/2">
+            <img
+              // src={comeWithUsImg}
+              alt="Come With Us"
+              className="w-full h-auto object-contain rounded-lg"
+            />
+          </div>
         </div>
       </section>
 
