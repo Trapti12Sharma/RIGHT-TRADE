@@ -1,7 +1,7 @@
 // src/pages/WhyRightTrade.jsx
 import React from "react";
 import StatsSection from "../../components/common/StatsSection";
-import fxtm1 from "../../assets/fxtm1.png";
+import fxtm1 from "../../assets/Compare.jpg";
 import fxtm2 from "../../assets/fxtm2.svg";
 import fxtm3 from "../../assets/fxtm3.svg";
 import fxtm4 from "../../assets/fxtm4.svg";
@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import email from "../../assets/email.png";
 import doc from "../../assets/doc.png";
 import message from "../../assets/message.png";
+import whatWeDoImage from "../../assets/WhatWeDo.png";
 
 const WhyRightTrade = () => {
   return (
@@ -59,7 +60,7 @@ const WhyRightTrade = () => {
           {/* Image Block */}
           <div className="w-full order-2 lg:order-1">
             <img
-              // src={whatWeDoImage}
+              src={whatWeDoImage}
               alt="What We Do"
               className="w-full h-auto rounded-lg"
             />
