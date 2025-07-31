@@ -38,7 +38,7 @@ const LatestNewsSection = () => {
   return (
     <section className="bg-[#1c1f3c] py-16 px-4 md:px-20 text-white">
       <h2 className="text-center text-[#FABF16] font-bold mb-2 text-2xl md:text-3xl">
-        You can trade from anywhere
+        You Can Trade From Anywhere
       </h2>
       <p className="text-center text-blue-400 mb-10 cursor-pointer hover:underline text-sm md:text-base">
         Explore our platforms

@@ -5,7 +5,7 @@ import tradingImage from "../assets/right-choice.jpg";
 const HomePage = () => {
   return (
     <RightImageLeftContent
-      heading="Why Traders Make the Choice RightTrade Capital"
+      heading="Why Traders Make The Choice RightTrade Capital"
       content="We don't just give you access to trading at RightTrade Capital. Our best forex trading platform gives you an edge by being completely open, having powerful tools, and having infrastructure that is as good as what big institutions use."
       listItems={[
         "Forex broker operations that are safe and legal",

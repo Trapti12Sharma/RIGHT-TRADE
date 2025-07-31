@@ -17,20 +17,20 @@ const TradingSections = () => {
           >
             <path
               fill="#ffffff"
-              d="M0,224L80,202.7C160,181,320,139,480,144C640,149,800,203,960,208C1120,213,1280,171,1360,149.3L1440,128V320H0Z"
+              d="M0,280L80,266.7C160,253,320,227,480,208C640,189,800,179,960,181.3C1120,184,1280,200,1360,208L1440,216V320H0Z"
             />
           </svg>
         </div>
 
         {/* Content grid */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-18 md:py-35 grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-12 pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 items-start gap-6">
           {/* Text side */}
           <div>
             <h1
               className="mb-3 leading-snug font-semibold"
               style={{ fontSize: "40px", fontFamily: "Source Sans Pro" }}
             >
-              RightTradeCapital is the first step to your trading success.
+              RightTrade Capital Is The First Step To Your Trading Success.
             </h1>
 
             <p
@@ -69,13 +69,13 @@ const TradingSections = () => {
       </section>
 
       {/* Section 2: Trading Platforms */}
-      <section className="bg-white text-center pt-12 pb-20 px-6 md:px-12">
+      <section className="bg-white text-center pt-5 pb-20 px-6 md:px-12">
         <div className="max-w-3xl mx-auto">
           <h1
             className="font-semibold text-gray-800 mb-2"
             style={{ fontSize: "40px", fontFamily: "Source Sans Pro" }}
           >
-            Trading platforms
+            Trading Platforms
           </h1>
           <p
             className="text-sm text-gray-500"

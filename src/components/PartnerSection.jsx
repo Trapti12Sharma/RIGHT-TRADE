@@ -7,8 +7,8 @@ const PartnerSection = () => {
         className="text-[#212529] font-semibold max-w-5xl mx-auto text-justify md:text-center leading-snug"
         style={{ fontSize: "40px" }}
       >
-        RightTrade Capital is the best online forex trading platform for trading
-        forex with confidence.
+        RightTrade Capital Is The Best Online Forex Trading Platform For Trading
+        Forex With Confidence.
       </h1>
 
       <p

@@ -18,22 +18,21 @@ const WhatIsTrading = () => {
         <h2
           style={{
             fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "44px", // Increased from 40px
+            fontSize: "44px",
             margin: "0px 0px 20px",
-            textAlign: "justify",
           }}
-          className="md:text-3xl mb-6 text-[#10162f]"
+          className="md:text-3xl mb-6 text-[#10162f] text-left"
         >
-          Tools for trading that are made to work
+          Tools For Trading That Are Made To Work
         </h2>
+
         <p
           style={{
             fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "18px", // Increased from 16px
+            fontSize: "18px",
             margin: "0px 0px 16px",
-            textAlign: "justify",
           }}
-          className="text-[#10162f] mb-4 leading-relaxed"
+          className="text-[#10162f] mb-4 leading-relaxed text-left"
         >
           We give you more than just a place to work. We let you take charge.
         </p>
@@ -42,11 +41,10 @@ const WhatIsTrading = () => {
         <ul
           style={{
             fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "18px", // Increased from 16px
+            fontSize: "18px",
             margin: "0px 0px 16px",
-            textAlign: "justify",
           }}
-          className="text-[#10162f] mb-4 leading-relaxed list-disc list-inside space-y-2"
+          className="text-[#10162f] mb-4 leading-relaxed list-disc list-inside space-y-2 text-left"
         >
           <li>
             Economic Calendar: Keep an eye on financial events around the world
@@ -60,11 +58,10 @@ const WhatIsTrading = () => {
         <p
           style={{
             fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "18px", // Increased from 16px
+            fontSize: "18px",
             margin: "0px 0px 16px",
-            textAlign: "justify",
           }}
-          className="text-[#10162f] leading-relaxed"
+          className="text-[#10162f] leading-relaxed text-left"
         >
           Our online trading platform has everything you need to trade,
           including world-class infrastructure.

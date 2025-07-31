@@ -26,7 +26,7 @@ const ForexIntro = () => {
               }}
               className="text-[#1A1D30] mb-6"
             >
-              What makes RightTradeCapital special?
+              What Makes RightTrade Capital special?
             </h1>
 
             <ul
