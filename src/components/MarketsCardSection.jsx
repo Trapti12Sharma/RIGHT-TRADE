@@ -93,7 +93,7 @@ const MarketsCardSection = () => {
               fontFamily: "Source Sans Pro",
             }}
           >
-            Markets You Can Buy and Sell on Our{" "}
+            Markets You Can Buy And Sell On Our{" "}
             <span className="text-[#FABF16]">Online Trading Platform</span>
           </h1>
 

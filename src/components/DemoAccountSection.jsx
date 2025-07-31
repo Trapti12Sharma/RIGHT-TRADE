@@ -30,7 +30,7 @@ const DemoAccountSection = () => {
             className="text-[#FABF16] font-semibold mb-2"
             style={{ fontSize: "40px" }}
           >
-            SIGN UP FOR ALERTS, DEALS, AND LEARNING
+            Sign Up For Alerts, Deals, And Learning
           </h1>
 
           {/* Main Heading */}

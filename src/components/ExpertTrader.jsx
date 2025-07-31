@@ -2,7 +2,7 @@ import React from "react";
 import traderBg from "../assets/join-us.jpg";
 
 const ExpertTrader = ({
-  tag = "Join Us to Learn and Grow",
+  tag = "Join Us To Learn And Grow",
   heading = "Confident. Informed. Ready.",
   description = "We want to build a trading community that is confident and well-informed. That's why our online trading platform has free built-in learning tools.",
 }) => {

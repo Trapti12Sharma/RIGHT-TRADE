@@ -57,7 +57,7 @@ const WhyChoose = () => {
               fontFamily: "Source Sans Pro",
             }}
           >
-            Different Types of Accounts for All Traders
+            Different Types Of Accounts For All Traders
           </h1>
           <div className="w-24 h-1 bg-[#FABF16] mx-auto mt-6"></div>
         </div>

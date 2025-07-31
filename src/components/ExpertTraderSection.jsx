@@ -20,7 +20,7 @@ export default function ExpertTraderSection() {
                   className="text-white text-2xl font-semibold"
                   style={{ fontSize: "40px", fontFamily: "Source Sans Pro" }}
                 >
-                  Support around the world with a personal touch
+                  Support Around The World With A Personal Touch
                 </h1>
               </div>
             </div>
@@ -29,7 +29,7 @@ export default function ExpertTraderSection() {
               className="text-white text-sm leading-relaxed"
               style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}
             >
-              RightTradeCapital gives great support and personal attention to
+              RightTrade Capital gives great support and personal attention to
               clients all over the world. We make sure everything goes smoothly
               on the best forex trading platform, from setup to execution.
             </p>

@@ -38,7 +38,7 @@ const DemoStepsSection = () => {
           fontSize: "40px",
         }}
       >
-        How to open an RightTrade Capital demo account
+        How To Open An RightTrade Capital Demo Account
       </h1>
 
       <div className="flex flex-wrap justify-center gap-10 max-w-5xl mx-auto">
