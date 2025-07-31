@@ -59,24 +59,9 @@ const SeminarBanner = () => {
           }}
         >
           {/* Dark overlay for better text readability */}
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/80" />
         </div>
       ))}
-
-      {/* Animated Polygon Overlay - Responsive */}
-      <div className="absolute inset-0 transition-all duration-1000">
-        {/* Mobile: Full overlay */}
-        <div className="block md:hidden bg-[#18213E]/95 absolute inset-0" />
-
-        {/* Desktop: Polygon overlay */}
-        <div
-          className="hidden md:block absolute inset-0 bg-[#18213E]/95"
-          style={{
-            clipPath:
-              "polygon(0 0, min(65%, 950px) 0, min(45%, 650px) 100%, 0 100%)",
-          }}
-        />
-      </div>
 
       {/* Content Container */}
       <div className="relative z-20 h-full flex items-center text-center md:text-left">
