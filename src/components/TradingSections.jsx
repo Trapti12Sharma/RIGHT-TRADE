@@ -26,34 +26,20 @@ const TradingSections = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-12 pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 items-start gap-6">
           {/* Text side */}
           <div>
-            <h1
-              className="mb-3 leading-snug font-semibold"
-              style={{ fontSize: "40px", fontFamily: "Source Sans Pro" }}
-            >
+            <h1 className="mb-3 leading-snug font-semibold">
               RightTrade Capital Is The First Step To Your Trading Success.
             </h1>
 
-            <p
-              className="text-base mb-2"
-              style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}
-            >
+            <p className="text-base mb-2">
               Use our safe and easy-to-use online trading platform to join a
               global trading community.
             </p>
 
             <ul className="text-lg mb-4 leading-relaxed list-disc list-inside space-y-2 text-gray-300 max-w-md">
-              <li style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}>
-                You can open an account in minutes
-              </li>
-              <li style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}>
-                You can fund with the methods you like.
-              </li>
-              <li style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}>
-                Start trading with full control
-              </li>
-              <li style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}>
-                Get expert help on the best forex trading platform.
-              </li>
+              <li>You can open an account in minutes</li>
+              <li>You can fund with the methods you like.</li>
+              <li>Start trading with full control</li>
+              <li>Get expert help on the best forex trading platform.</li>
             </ul>
           </div>
 
@@ -71,16 +57,10 @@ const TradingSections = () => {
       {/* Section 2: Trading Platforms */}
       <section className="bg-white text-center pt-5 pb-20 px-6 md:px-12">
         <div className="max-w-3xl mx-auto">
-          <h1
-            className="font-semibold text-gray-800 mb-2"
-            style={{ fontSize: "40px", fontFamily: "Source Sans Pro" }}
-          >
+          <h1 className="font-semibold text-gray-800 mb-2">
             Trading Platforms
           </h1>
-          <p
-            className="text-sm text-gray-500"
-            style={{ fontSize: "16px", fontFamily: "Source Sans Pro" }}
-          >
+          <p className="text-sm text-gray-500">
             MetaTrader is the universally popular online trading platform that
             lets you monitor the markets and trade in real time. When you trade
             with us, you trade on one of these two powerful platforms, beloved

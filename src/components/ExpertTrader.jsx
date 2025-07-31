@@ -18,37 +18,19 @@ const ExpertTrader = ({
           {/* Left Content */}
           <div
             style={{
-              fontFamily: '"Source Sans Pro"',
-              fontSize: "16px",
               margin: "0px 12px",
               padding: "40px 32px",
             }}
             className="max-w-xl"
           >
-            <h1
-              style={{
-                fontFamily: '"Source Sans Pro"',
-                fontSize: "40px",
-              }}
-              className="text-[#FABF16] mb-3"
-            >
-              {tag}
-            </h1>
+            <h1 className="text-[#FABF16] mb-3">{tag}</h1>
 
-            <h2
-              style={{
-                fontFamily: '"Source Sans Pro"',
-                fontSize: "25px",
-              }}
-              className="text-white mb-4 leading-tight break-keep"
-            >
+            <h2 className="text-white mb-4 leading-tight break-keep">
               {heading}
             </h2>
 
             <p
               style={{
-                fontFamily: '"Source Sans Pro"',
-                fontSize: "16px",
                 textAlign: "justify",
               }}
               className="text-white leading-relaxed mb-4"

@@ -87,22 +87,12 @@ const MarketsCardSection = () => {
             <FaChartLine size={24} className="text-[#FABF16]" />
           </div>
 
-          <h1
-            className="font-bold mb-6 text-3xl sm:text-4xl lg:text-5xl leading-tight"
-            style={{
-              fontFamily: "Source Sans Pro",
-            }}
-          >
+          <h1 className="font-bold mb-6 text-3xl sm:text-4xl lg:text-5xl leading-tight">
             Markets You Can Buy And Sell On Our{" "}
             <span className="text-[#FABF16]">Online Trading Platform</span>
           </h1>
 
-          <p
-            className="max-w-3xl mx-auto mb-8 text-gray-300 text-lg leading-relaxed"
-            style={{
-              fontFamily: "Source Sans Pro",
-            }}
-          >
+          <p className="max-w-3xl mx-auto mb-8 text-gray-300 text-lg leading-relaxed">
             With just one login, you can access more than{" "}
             <span className="text-[#FABF16] font-semibold">
               500 global markets
@@ -150,13 +140,7 @@ const MarketsCardSection = () => {
                     </div>
                   </div>
 
-                  <h2
-                    style={{
-                      fontFamily: "Source Sans Pro",
-                      fontWeight: "600",
-                    }}
-                    className="mb-6 text-2xl text-white group-hover:text-[#FABF16] transition-colors duration-300"
-                  >
+                  <h2 className="mb-6 text-2xl text-white group-hover:text-[#FABF16] transition-colors duration-300">
                     {market.title}
                   </h2>
 
@@ -166,9 +150,6 @@ const MarketsCardSection = () => {
                       <li
                         key={i}
                         className="flex items-start text-gray-300 group-hover:text-gray-200 transition-colors duration-300"
-                        style={{
-                          fontFamily: "Source Sans Pro",
-                        }}
                       >
                         <div className="flex-shrink-0 w-5 h-5 bg-[#FABF16]/20 rounded-full flex items-center justify-center mt-0.5 mr-3 group-hover:bg-[#FABF16]/30 transition-colors duration-300">
                           <FaCheck size={10} className="text-[#FABF16]" />
@@ -201,16 +182,10 @@ const MarketsCardSection = () => {
         {/* Bottom CTA Section */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-[#1a1f3a] to-[#0f1229] rounded-2xl p-8 border border-gray-700/30">
-            <h3
-              className="text-2xl font-semibold mb-4"
-              style={{ fontFamily: "Source Sans Pro" }}
-            >
+            <h3 className="text-2xl font-semibold mb-4">
               Ready to Start Trading?
             </h3>
-            <p
-              className="text-gray-300 mb-6 max-w-2xl mx-auto"
-              style={{ fontFamily: "Source Sans Pro" }}
-            >
+            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Join thousands of traders who trust our platform for their trading
               needs. Get started with a demo account or open a live account
               today.

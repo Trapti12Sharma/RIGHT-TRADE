@@ -21,15 +21,9 @@ const DemoAccountSection = () => {
         </div>
 
         {/* Right Text Content */}
-        <div
-          className="md:w-1/2 w-full md:pl-16 text-white"
-          style={{ fontFamily: "'Source Sans Pro', sans-serif" }}
-        >
+        <div className="md:w-1/2 w-full md:pl-16 text-white">
           {/* Subheading */}
-          <h1
-            className="text-[#FABF16] font-semibold mb-2"
-            style={{ fontSize: "40px" }}
-          >
+          <h1 className="text-[#FABF16] font-semibold mb-2">
             Sign Up For Alerts, Deals, And Learning
           </h1>
 
@@ -44,10 +38,7 @@ const DemoAccountSection = () => {
           </ul>
 
           {/* Paragraph */}
-          <p
-            className="text-gray-300 mb-6 leading-relaxed"
-            style={{ fontSize: "16px" }}
-          >
+          <p className="text-gray-300 mb-6 leading-relaxed">
             Get news. Stay ahead. Be smarter when you trade.
           </p>
 

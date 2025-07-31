@@ -31,8 +31,6 @@ const ForexIntro = () => {
 
             <ul
               style={{
-                fontFamily: '"Source Sans Pro"',
-                fontSize: "16px",
                 textAlign: "left",
               }}
               className="text-[#1A1D30] leading-8 mb-4 list-disc list-inside space-y-2"
@@ -52,8 +50,6 @@ const ForexIntro = () => {
 
             <a
               style={{
-                fontFamily: '"Source Sans Pro"',
-                fontSize: "16px",
                 textAlign: "left",
               }}
               href="#"

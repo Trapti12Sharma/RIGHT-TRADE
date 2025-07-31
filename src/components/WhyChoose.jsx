@@ -51,22 +51,14 @@ const WhyChoose = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1
-            className="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4"
-            style={{
-              fontFamily: "Source Sans Pro",
-            }}
-          >
+          <h1 className="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
             Different Types Of Accounts For All Traders
           </h1>
           <div className="w-24 h-1 bg-[#FABF16] mx-auto mt-6"></div>
         </div>
 
         {/* Cards Grid */}
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8"
-          style={{ fontFamily: "Source Sans Pro" }}
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
           {accountTypes.map((account, idx) => (
             <div
               key={idx}
@@ -111,10 +103,7 @@ const WhyChoose = () => {
 
         {/* Bottom CTA section */}
         <div className="text-center mt-16">
-          <p
-            className="text-gray-300 text-lg mb-6"
-            style={{ fontFamily: "Source Sans Pro" }}
-          >
+          <p className="text-gray-300 text-lg mb-6">
             Choose the account type that best fits your trading style
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

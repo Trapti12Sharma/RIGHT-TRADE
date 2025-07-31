@@ -15,37 +15,16 @@ const WhatIsTrading = () => {
 
       {/* Right content side */}
       <div className="md:w-1/2 w-full bg-white p-8 md:p-16 flex flex-col justify-center">
-        <h2
-          style={{
-            fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "44px",
-            margin: "0px 0px 20px",
-          }}
-          className="md:text-3xl mb-6 text-[#10162f] text-left"
-        >
+        <h2 className="md:text-3xl mb-6 text-[#10162f] text-left">
           Tools For Trading That Are Made To Work
         </h2>
 
-        <p
-          style={{
-            fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "18px",
-            margin: "0px 0px 16px",
-          }}
-          className="text-[#10162f] mb-4 leading-relaxed text-left"
-        >
+        <p className="text-[#10162f] mb-4 leading-relaxed text-left">
           We give you more than just a place to work. We let you take charge.
         </p>
 
         {/* List Items */}
-        <ul
-          style={{
-            fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "18px",
-            margin: "0px 0px 16px",
-          }}
-          className="text-[#10162f] mb-4 leading-relaxed list-disc list-inside space-y-2 text-left"
-        >
+        <ul className="text-[#10162f] mb-4 leading-relaxed list-disc list-inside space-y-2 text-left">
           <li>
             Economic Calendar: Keep an eye on financial events around the world
           </li>
@@ -55,14 +34,7 @@ const WhatIsTrading = () => {
           <li>Calculators that work in real time and technical information</li>
         </ul>
 
-        <p
-          style={{
-            fontFamily: '"Source Sans Pro", sans-serif',
-            fontSize: "18px",
-            margin: "0px 0px 16px",
-          }}
-          className="text-[#10162f] leading-relaxed text-left"
-        >
+        <p className="text-[#10162f] leading-relaxed text-left">
           Our online trading platform has everything you need to trade,
           including world-class infrastructure.
         </p>
