@@ -15,7 +15,7 @@ const WhatIsTrading = () => {
 
       {/* Right content side */}
       <div className="md:w-1/2 w-full bg-white p-8 md:p-16 flex flex-col justify-center">
-        <h2 className="md:text-3xl mb-6 text-[#10162f] text-left">
+        <h2 className="md:text-3xl  mb-6 text-[#10162f] text-left">
           Tools For Trading That Are Made To Work
         </h2>
 

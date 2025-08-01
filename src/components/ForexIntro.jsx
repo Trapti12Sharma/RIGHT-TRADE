@@ -17,15 +17,7 @@ const ForexIntro = () => {
         {/* Text Content */}
         <div className="order-2 md:order-1 flex items-center px-6 py-10 md:px-16">
           <div>
-            <h1
-              style={{
-                fontFamily: '"Source Sans Pro"',
-                fontSize: "40px",
-                marginBottom: "20px",
-                textAlign: "left",
-              }}
-              className="text-[#1A1D30] mb-6"
-            >
+            <h1 className="text-[#1A1D30] text-4xl mb-6">
               What Makes RightTrade Capital special?
             </h1>
 

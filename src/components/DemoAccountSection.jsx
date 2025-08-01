@@ -23,7 +23,7 @@ const DemoAccountSection = () => {
         {/* Right Text Content */}
         <div className="md:w-1/2 w-full md:pl-16 text-white">
           {/* Subheading */}
-          <h1 className="text-[#FABF16] font-semibold mb-2">
+          <h1 className="text-[#FABF16] text-4xl font-semibold mb-2">
             Sign Up For Alerts, Deals, And Learning
           </h1>
 

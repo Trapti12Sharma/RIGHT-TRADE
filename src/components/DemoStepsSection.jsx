@@ -26,7 +26,7 @@ const DemoStepsSection = () => {
 
   return (
     <section className="bg-[#f9f9f9] text-center py-16 px-6">
-      <h1 className="text-[#10162f] mb-12">
+      <h1 className="text-[#10162f] mb-12 text-4xl">
         How To Open An RightTrade Capital Demo Account
       </h1>
 

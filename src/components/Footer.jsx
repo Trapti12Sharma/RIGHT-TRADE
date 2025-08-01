@@ -26,27 +26,16 @@ const Footer = () => {
       ],
     },
     {
-      title: "MARKETS",
+      title: "TOOLS",
       links: [
-        { label: "Markets Overview", path: "/overview" },
-        {
-          label: "Contract Specifications",
-          path: "/contract-specifications",
-        },
-        { label: "Forex", path: "/forex" },
-        {
-          label: "Major Currency pairs",
-          path: "/major-currency-pairs",
-        },
-        { label: "Spot Metals", path: "/spot-metals" },
-        { label: "CFD Commodities", path: "/commodities" },
-        { label: "Stocks Trading", path: "/stocks-trading" },
-        { label: "Stocks CFDs", path: "/stocks-cfds" },
-        { label: "CFD on Indices", path: "/indices" },
-        { label: "Crypto CFDs", path: "/crypto-cfds" },
-        { label: "Futures", path: "/futures" },
+        { label: "Tools Overview", path: "/tools-overview" },
+        { label: "Pro Trading Tools", path: "/pro-trading-tools" },
+        { label: "Trading Signals", path: "/trading-signals" },
+        { label: "Profit Calculator", path: "/profit-calculator" },
+        { label: "Margin Calculator", path: "/margin-calculator" },
       ],
     },
+
     {
       title: "TRADING",
       links: [
@@ -69,20 +58,33 @@ const Footer = () => {
         { label: "Dividends", path: "/dividends" },
       ],
     },
+
     {
-      title: "TOOLS",
+      title: "MARKETS",
       links: [
-        { label: "Tools Overview", path: "/tools-overview" },
-        { label: "Pro Trading Tools", path: "/pro-trading-tools" },
-        { label: "Trading Signals", path: "/trading-signals" },
-        { label: "Profit Calculator", path: "/profit-calculator" },
-        { label: "Margin Calculator", path: "/margin-calculator" },
+        { label: "Markets Overview", path: "/overview" },
+        {
+          label: "Contract Specifications",
+          path: "/contract-specifications",
+        },
+        { label: "Forex", path: "/forex" },
+        {
+          label: "Major Currency pairs",
+          path: "/major-currency-pairs",
+        },
+        { label: "Spot Metals", path: "/spot-metals" },
+        { label: "CFD Commodities", path: "/commodities" },
+        { label: "Stocks Trading", path: "/stocks-trading" },
+        { label: "Stocks CFDs", path: "/stocks-cfds" },
+        { label: "CFD on Indices", path: "/indices" },
+        { label: "Crypto CFDs", path: "/crypto-cfds" },
+        { label: "Futures", path: "/futures" },
       ],
     },
   ];
 
   return (
-    <footer className="bg-[#1a1f3c] text-white font-['Source_Sans_Pro',sans-serif]">
+    <footer className="bg-[#1a1f3c] text-white ">
       <div className="w-full border-t border-gray-600"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">

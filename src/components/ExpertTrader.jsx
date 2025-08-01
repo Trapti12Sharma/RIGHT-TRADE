@@ -23,7 +23,7 @@ const ExpertTrader = ({
             }}
             className="max-w-xl"
           >
-            <h1 className="text-[#FABF16] mb-3">{tag}</h1>
+            <h1 className="text-[#FABF16] mb-3 text-4xl">{tag}</h1>
 
             <h2 className="text-white mb-4 leading-tight break-keep">
               {heading}

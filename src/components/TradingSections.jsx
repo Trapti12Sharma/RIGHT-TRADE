@@ -4,7 +4,7 @@ import laptop from "../assets/trading-platform.png";
 
 const TradingSections = () => {
   return (
-    <div className="w-full overflow-hidden font-[Source Sans Pro]">
+    <div className="w-full overflow-hidden ">
       {/* Section 1: Blue Background */}
       <section className="relative bg-[#1c1f3c] text-white overflow-hidden -mb-[1px]">
         {/* White curve */}
@@ -26,7 +26,7 @@ const TradingSections = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pb-12 pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 items-start gap-6">
           {/* Text side */}
           <div>
-            <h1 className="mb-3 leading-snug font-semibold">
+            <h1 className="mb-3 leading-snug font-semibold text-4xl">
               RightTrade Capital Is The First Step To Your Trading Success.
             </h1>
 
@@ -57,10 +57,10 @@ const TradingSections = () => {
       {/* Section 2: Trading Platforms */}
       <section className="bg-white text-center pt-5 pb-20 px-6 md:px-12">
         <div className="max-w-3xl mx-auto">
-          <h1 className="font-semibold text-gray-800 mb-2">
+          <h1 className="font-semibold text-4xl text-gray-800 mb-2">
             Trading Platforms
           </h1>
-          <p className="text-sm text-gray-500">
+          <p className="text-base text-gray-500">
             MetaTrader is the universally popular online trading platform that
             lets you monitor the markets and trade in real time. When you trade
             with us, you trade on one of these two powerful platforms, beloved

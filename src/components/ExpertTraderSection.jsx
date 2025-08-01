@@ -16,7 +16,7 @@ export default function ExpertTraderSection() {
                 <FaGem size={32} />
               </div>
               <div>
-                <h1 className="text-white text-2xl font-semibold">
+                <h1 className="text-white text-4xl font-semibold">
                   Support Around The World With A Personal Touch
                 </h1>
               </div>

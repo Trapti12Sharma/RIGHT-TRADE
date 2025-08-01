@@ -2,8 +2,8 @@ import React from "react";
 
 const PartnerSection = () => {
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-20 text-center">
-      <h1 className="text-[#212529] font-semibold max-w-5xl mx-auto text-justify md:text-center leading-snug">
+    <section className="py-16 px-4 md:px-8 lg:px-40 text-center">
+      <h1 className="text-[#212529]  text-4xl font-semibold max-w-5xl mx-auto text-justify md:text-center leading-snug">
         RightTrade Capital Is The Best Online Forex Trading Platform For Trading
         Forex With Confidence.
       </h1>
