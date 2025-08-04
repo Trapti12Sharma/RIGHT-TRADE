@@ -16,19 +16,19 @@ export default function ExpertTraderSection() {
                 <FaGem size={32} />
               </div>
               <div>
-                <h1 className="text-white text-4xl font-semibold">
+                <h2 className="text-white text-4xl font-semibold">
                   Support Around The World With A Personal Touch
-                </h1>
+                </h2>
               </div>
             </div>
 
-            <p className="text-white text-sm leading-relaxed">
+            <p className="text-white text-base leading-relaxed">
               RightTrade Capital gives great support and personal attention to
               clients all over the world. We make sure everything goes smoothly
               on the best forex trading platform, from setup to execution.
             </p>
 
-            <ul className="text-white text-sm space-y-2 pl-5 list-disc mt-2">
+            <ul className="text-white text-base space-y-2 pl-5 list-disc mt-2">
               <li>Customer support in many languages 24/5</li>
               <li>Several ways to pay around the world</li>
               <li>Information about local and global markets</li>

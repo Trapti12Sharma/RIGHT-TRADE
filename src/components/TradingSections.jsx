@@ -35,7 +35,7 @@ const TradingSections = () => {
               global trading community.
             </p>
 
-            <ul className="text-lg mb-4 leading-relaxed list-disc list-inside space-y-2 text-gray-300 max-w-md">
+            <ul className="text-base mb-4 leading-relaxed list-disc list-inside space-y-2 text-gray-300 max-w-md">
               <li>You can open an account in minutes</li>
               <li>You can fund with the methods you like.</li>
               <li>Start trading with full control</li>

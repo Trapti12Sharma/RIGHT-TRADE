@@ -20,7 +20,7 @@ import { FaBookOpen } from "react-icons/fa";
  * - className: string (optional extra classes for the section)
  */
 const LatestNews = ({
-  heading = "LATEST NEWS",
+  heading = "How to Use RightTrade Capital's MarketView",
   articles = [],
   accentColor = "#FABF16",
   allText = "All articles",
@@ -34,7 +34,7 @@ const LatestNews = ({
     >
       {/* Heading */}
       <h2
-        className="text-center font-semibold mb-2"
+        className="text-center text-4xl font-semibold mb-2"
         style={{ color: accentColor }}
       >
         {heading}

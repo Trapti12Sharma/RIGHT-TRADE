@@ -8,7 +8,7 @@ const PartnerSection = () => {
         Forex With Confidence.
       </h1>
 
-      <p className="mt-6 text-[#212529] max-w-4xl mx-auto text-justify md:text-center leading-relaxed">
+      <p className="mt-6 text-[#212529] text-[20px] max-w-4xl mx-auto text-justify md:text-center leading-relaxed">
         Welcome to RightTrade Capital, your safe and reliable way to get to
         global markets. We are a regulated forex broker, and we offer an online
         trading platform that is easy to use and focused on performance for

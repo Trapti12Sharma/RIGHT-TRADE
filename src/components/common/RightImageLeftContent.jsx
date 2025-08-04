@@ -6,10 +6,10 @@ const RightImageLeftContent = ({ heading, content, listItems, image }) => {
       <div className="flex flex-col md:flex-row">
         {/* Left Content */}
         <div className="flex-1 py-12 px-6 md:px-12 flex flex-col justify-center">
-          <h2 className="text-[32px] md:text-[36px] lg:text-[40px] font-semibold mb-6 leading-snug">
+          <h2 className="text-[32px] md:text-[36px] text-4xl font-semibold mb-6 leading-snug">
             {heading}
           </h2>
-          <p className="text-[20px] leading-relaxed mb-6">{content}</p>
+          <p className="text-base leading-relaxed mb-6">{content}</p>
           {listItems && (
             <ul className="list-disc list-inside space-y-3 text-[16px]">
               {listItems.map((item, index) => (

@@ -6,7 +6,7 @@ const SideImageTextSection = ({
   paragraphs,
   bgColor,
   textcolor,
-  paragraphTextColor = "text-white", // default is white
+  paragraphTextColor,
 }) => {
   return (
     <section
@@ -22,7 +22,7 @@ const SideImageTextSection = ({
         className="w-full md:w-1/2 p-8 md:p-12 lg:p-20"
         style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
       >
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4">{title}</h2>
+        <h2 className="text-4xl sm:text-3xl font-bold mb-4">{title}</h2>
         {paragraphs.map((para, index) => (
           <p key={index} className={`mb-4 ${paragraphTextColor}`}>
             {para}

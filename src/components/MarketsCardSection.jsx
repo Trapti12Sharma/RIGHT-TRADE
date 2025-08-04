@@ -87,12 +87,12 @@ const MarketsCardSection = () => {
             <FaChartLine size={24} className="text-[#FABF16]" />
           </div>
 
-          <h1 className="font-bold mb-6 text-3xl sm:text-4xl lg:text-5xl leading-tight">
+          <h2 className="font-bold mb-6 text-3xl sm:text-4xl lg:text-4xl leading-tight">
             Markets You Can Buy And Sell On Our{" "}
             <span className="text-[#FABF16]">Online Trading Platform</span>
-          </h1>
+          </h2>
 
-          <p className="max-w-3xl mx-auto mb-8 text-gray-300 text-lg leading-relaxed">
+          <p className="max-w-3xl mx-auto mb-8 text-gray-300 text-base leading-relaxed">
             With just one login, you can access more than{" "}
             <span className="text-[#FABF16] font-semibold">
               500 global markets
@@ -140,9 +140,9 @@ const MarketsCardSection = () => {
                     </div>
                   </div>
 
-                  <h2 className="mb-6 text-2xl text-white group-hover:text-[#FABF16] transition-colors duration-300">
+                  <h3 className="mb-6 text-[20px] text-white group-hover:text-[#FABF16] transition-colors duration-300">
                     {market.title}
-                  </h2>
+                  </h3>
 
                   {/* Description List */}
                   <ul className="space-y-4">
@@ -185,7 +185,7 @@ const MarketsCardSection = () => {
             <h3 className="text-2xl font-semibold mb-4">
               Ready to Start Trading?
             </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            <p className="text-gray-300 mb-6 max-w-2xl mx-auto text-base">
               Join thousands of traders who trust our platform for their trading
               needs. Get started with a demo account or open a live account
               today.

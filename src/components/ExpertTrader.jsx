@@ -23,17 +23,17 @@ const ExpertTrader = ({
             }}
             className="max-w-xl"
           >
-            <h1 className="text-[#FABF16] mb-3 text-4xl">{tag}</h1>
+            <h2 className="text-[#FABF16] mb-3 text-4xl">{tag}</h2>
 
-            <h2 className="text-white mb-4 leading-tight break-keep">
+            <h3 className="text-white mb-4 leading-tight break-keep">
               {heading}
-            </h2>
+            </h3>
 
             <p
               style={{
                 textAlign: "justify",
               }}
-              className="text-white leading-relaxed mb-4"
+              className="text-white leading-relaxed mb-4 text-base"
             >
               {description}
             </p>

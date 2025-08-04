@@ -152,7 +152,7 @@ const Navbar = () => {
           <span className="cursor-pointer flex items-center gap-1">
             EN <FaChevronDown size={10} />
           </span>
-          <button className="bg-[#ff4c1b] text-white px-5 py-2 rounded-full font-semibold hover:bg-[#e03f10] transition text-sm">
+          <button className="bg-[#FBBD15] text-black px-5 py-2 rounded-full font-semibold hover:bg-[#FBBD15] transition text-sm">
             OPEN ACCOUNT
           </button>
           <span className="cursor-pointer">LOGIN</span>
@@ -216,7 +216,7 @@ const Navbar = () => {
                         onMouseLeave={() => setIsDropdownHovered(false)}
                       >
                         <span
-                          className="absolute top-0 h-1 bg-[#ff4c1b] transition-all duration-300"
+                          className="absolute top-0 h-1 bg-[#FBBD15] transition-all duration-300"
                           style={{
                             left: underlineStyle.left,
                             width: underlineStyle.width,
@@ -227,7 +227,7 @@ const Navbar = () => {
                           {item.dropdown.map((section, idx) => (
                             <div key={idx}>
                               {section.heading && (
-                                <h4 className="text-[#ff4c1b] font-bold mb-4 text-base">
+                                <h4 className="text-[#FBBD15] font-bold mb-4 text-base">
                                   {section.heading}
                                 </h4>
                               )}

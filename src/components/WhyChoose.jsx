@@ -51,9 +51,9 @@ const WhyChoose = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+          <h2 className="font-semibold text-4xl sm:text-4xl  leading-tight mb-4">
             Different Types Of Accounts For All Traders
-          </h1>
+          </h2>
           <div className="w-24 h-1 bg-[#FABF16] mx-auto mt-6"></div>
         </div>
 
@@ -78,9 +78,9 @@ const WhyChoose = () => {
 
               {/* Content */}
               <div className="relative z-10 text-center">
-                <h2 className="font-semibold text-xl mb-4 text-white group-hover:text-[#FABF16] transition-colors duration-300">
+                <h3 className="font-semibold text-xl mb-4 text-white group-hover:text-[#FABF16] transition-colors duration-300">
                   {account.title}
-                </h2>
+                </h3>
 
                 <div className="space-y-3 text-left">
                   {account.description.map((line, index) => (
@@ -103,7 +103,7 @@ const WhyChoose = () => {
 
         {/* Bottom CTA section */}
         <div className="text-center mt-16">
-          <p className="text-gray-300 text-lg mb-6">
+          <p className="text-gray-300 mb-6 text-base">
             Choose the account type that best fits your trading style
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

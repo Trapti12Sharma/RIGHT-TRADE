@@ -23,14 +23,14 @@ const DemoAccountSection = () => {
         {/* Right Text Content */}
         <div className="md:w-1/2 w-full md:pl-16 text-white">
           {/* Subheading */}
-          <h1 className="text-[#FABF16] text-4xl font-semibold mb-2">
+          <h2 className="text-[#FABF16] text-4xl font-semibold mb-2">
             Sign Up For Alerts, Deals, And Learning
-          </h1>
+          </h2>
 
           {/* Main Heading */}
 
           {/* List */}
-          <ul className="list-disc pl-5 text-gray-300 mb-6 space-y-2 text-base">
+          <ul className="list-disc pl-5  text-gray-300 mb-6 space-y-2 text-base">
             <li>Weekly ideas for trading</li>
             <li>Updates to the platform</li>
             <li>Invites to live sessions</li>
@@ -38,7 +38,7 @@ const DemoAccountSection = () => {
           </ul>
 
           {/* Paragraph */}
-          <p className="text-gray-300 mb-6 leading-relaxed">
+          <p className="text-gray-300 mb-6  text-base leading-relaxed">
             Get news. Stay ahead. Be smarter when you trade.
           </p>
 

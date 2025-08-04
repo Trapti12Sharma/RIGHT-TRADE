@@ -26,11 +26,12 @@ const SeminarBanner = () => {
       {/* Content Container */}
       <div className="relative z-20 h-full flex items-center text-center md:text-left">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl lg:max-w-1/2">
+          <div>
             {/* Content */}
             <div className="animate-in slide-in-from-left-8 duration-800 ease-out">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                {slide.heading}
+                Trade Futures CFDs with
+                <br /> RightTrade Capital
               </h1>
               <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8 sm:mb-10 leading-relaxed max-w-xl">
                 {slide.subText}
