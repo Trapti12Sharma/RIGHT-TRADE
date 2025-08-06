@@ -8,14 +8,129 @@ import FourStepSection from "../common/FourStepSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
 import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
 import FaqSection from "../common/FaqSection2";
+import DepositMethodsTable from "../common/DepositMethodsTable";
+import SupportedRegions from "../common/SupportedRegions";
+import MarketViewFeatureSection from "../common/MarketViewFeatureSection";
+import SecurityRegulationSection from "../common/SecurityRegulationSection";
+import RightImageLeftContent from "../common/RightImageLeftContent";
 
 import depositImg from "../../assets/deposits1.png";
 import manageFundsImg from "../../assets/deposits2.png";
 import safetyIcon from "../../assets/safety.svg";
 import regulationIcon from "../../assets/regulation.svg";
 import choiceIcon from "../../assets/choice.svg";
+import home6 from "../../assets/sign-up.png";
 
 const DepositsWithdrawals = () => {
+  const heading = "Put Money in with Trust.";
+  const content =
+    "Managing your money should be the simplest part of trading, according to RightTradeCapital. We want you to feel free, trust us, and be in charge of your trade by not having any hidden costs, processing quickly, and having top-notch security. Open your account now and experience how simple it is. In code. Only RightTrade Capital.";
+
+  const otherNotesData = {
+    title: "Other Important Notes",
+
+    features: [
+      {
+        icon: "script",
+        heading: "You must confirm your account:",
+        paragraph:
+          "You must confirm your account. You can't add or withdraw money until your KYC is fully verified.",
+      },
+      {
+        icon: "chart",
+        heading: "Currency Conversion",
+        paragraph:
+          "Conversions are made using current FX rates, which are clearly shown during your transaction.",
+      },
+      {
+        icon: "bell",
+        heading: "Inactivity Fee",
+        paragraph:
+          "Accounts inactive for 180 days may incur a small maintenance fee to remain active.",
+      },
+      {
+        icon: "calendar",
+        heading: "Deposit/Withdrawal Method Match",
+        paragraph:
+          "Withdrawals must use the same method as the original deposit for security and compliance.",
+      },
+      {
+        icon: "layout",
+        heading: "Card Refund Delays",
+        paragraph:
+          "Refunds to cards may take longer due to bank processing — unfortunately, this is out of our control.",
+      },
+    ],
+  };
+  const withdrawData = [
+    {
+      method: "Visa or Mastercard",
+      time: "1 to 5 business days",
+      fees: "—",
+      minDeposit: "$20",
+    },
+    {
+      method: "Bank Transfer",
+      time: "Two to five business days",
+      fees: "The bank may charge you",
+      minDeposit: "$100",
+    },
+    {
+      method: "Neteller and Skrill",
+      time: "In less than 24 hours",
+      fees: "None",
+      minDeposit: "$10",
+    },
+    {
+      method: "Wallets for Digital Currencies",
+      time: "30 minutes to 2 hours",
+      fees: "$50 for Blockchain Only",
+      minDeposit: "—",
+    },
+  ];
+
+  const actionSpeedData = [
+    { method: "Deposits by Card", time: "Instant" },
+    { method: "Deposits into an e-wallet", time: "Less than two hours" },
+    { method: "Crypto Deposits", time: "Less than an hour" },
+    { method: "Bank Deposits", time: "1 to 3 business days" },
+    { method: "E-wallet Withdrawals", time: "Same day" },
+    { method: "Bank Withdrawals", time: "2 to 5 business days" },
+    { method: "Crypto Withdrawals", time: "30 minutes to 2 hours" },
+  ];
+
+  const depositData = [
+    {
+      method: "Visa and Mastercard",
+      time: "Instant",
+      fees: "No",
+      minDeposit: "$10",
+    },
+    {
+      method: "Bank Transfer (SWIFT/SEPA)",
+      time: "One to three business days",
+      fees: "There might be fees from the bank",
+      minDeposit: "$100",
+    },
+    {
+      method: "Neteller/Skrill",
+      time: "2 hours",
+      fees: "None",
+      minDeposit: "$10",
+    },
+    {
+      method: "Cryptocurrency Wallets",
+      time: "In one hour",
+      fees: "Blockchain costs are just",
+      minDeposit: "$50",
+    },
+    {
+      method: "Payment Gateways Near You",
+      time: "1–2 Business Days",
+      fees: "The minimum amount varies per region",
+      minDeposit: "—",
+    },
+  ];
   const withdrawSteps = [
     "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
     "Choose your payment method and click ‘Withdraw’.",
@@ -25,22 +140,59 @@ const DepositsWithdrawals = () => {
   const steps = [
     {
       number: 1,
-      description:
-        "Open the Deposits page within the 'My Money' section in MyRightTrade Capital.",
+      description: "Please sign in to your client site.",
     },
     {
       number: 2,
-      description: "Choose your preferred deposit method and click ‘Deposit’.",
+      description: "Click on ‘Deposit’  and then  ‘Withdraw.’",
     },
     {
       number: 3,
-      description:
-        "Choose the trading account you’d like to deposit funds into and complete the necessary fields.",
+      description: "Choose how you wish to put your money down.",
     },
     {
       number: 4,
       description:
-        "Confirm your deposit details in the next page – and you’re good to go!",
+        "Choose the account you want to trade with and type in the amount of the deposit.",
+    },
+    {
+      number: 5,
+      description:
+        "Follow the on-screen instructions to complete the purchase.",
+    },
+    {
+      number: 6,
+      description:
+        "Get an email or text message straight immediately to be sure.",
+    },
+  ];
+
+  const steps1 = [
+    {
+      number: 1,
+      description: "Log in to your RightTradeCapital client dashboard.",
+    },
+    {
+      number: 2,
+      description: "Click on ‘Funds’ and then ‘Deposit’.",
+    },
+    {
+      number: 3,
+      description:
+        "Pick a method (it has to be the same as the way you put money in).",
+    },
+    {
+      number: 4,
+      description: "Enter the amount you wish to take out.",
+    },
+    {
+      number: 5,
+      description: "Confirm the request by sending an OTP (by email or text).",
+    },
+    {
+      number: 6,
+      description:
+        "You can view your transaction history in the ‘Transaction History’ section.",
     },
   ];
   const features = [
@@ -63,63 +215,35 @@ const DepositsWithdrawals = () => {
 
   const faqs = [
     {
-      question: "What payment methods do RightTrade Capital support?",
+      question: "Are there any hidden costs for deposits or withdrawals?",
       answer:
-        "We offer a wide variety of payment methods including credit and debit cards, e-Wallets, bank wire transfers and local payment solutions.",
+        " No, RightTradeCapital does not charge anything for deposits or withdrawals. For example, banks and crypto wallets may levy their own fees.",
     },
     {
-      question: "What countries do you support payment methods in?",
+      question: "When will I receive my money back?",
       answer:
-        "We accept payment methods from hundreds of countries. Register or log in to MyFXTM to see the available methods in your region.",
+        " Most withdrawals made using e-wallets or cryptocurrencies are done within a day. Depending on your bank, it can take longer for bank transfers to go through.",
     },
     {
-      question:
-        "What are the minimum and maximum deposit amounts for RightTrade Capital?",
+      question: "Can I use someone else's way to pay?",
       answer:
-        "The limits for these are set by each individual payment provider. You can find the minimum and maximum for each method in MyRightTrade Capital.",
+        "No. You must use methods that are registered in your name to make deposits and withdrawals for your own protection and to meet anti-money laundering requirements.",
     },
     {
-      question:
-        "What are the minimum and maximum withdrawal amounts from RightTrade Capital?",
+      question: "What if my deposit hasn't come through yet?",
 
       answer:
-        "You can withdraw as much as like, as you long as you use the same payment method that you used to deposit with. A quick note here – if you still have open positions, you’ll need to leave enough free margin in your account to cover the withdrawal and any extra fees that may occur. You can calculate this amount here.",
+        " Please contact our support staff and provide them your transaction ID. Most issues can be addressed in a few hours.",
     },
     {
-      question: "How do you withdraw from RightTrade Capital?",
+      question: " Is it safe to put money in and take out cryptocurrency?",
       answer:
-        "Scroll further up the page – we’ve broken it right down for you in 4 simple steps. Let us know if you need a hand with this.",
+        " Yes, we support wallets that are secure and employ blockchain-level encryption to protect your money.",
     },
     {
-      question:
-        "Can I make internal transfers between trading accounts within MyRightTrade Capital",
+      question: "Can I revoke a request to withdraw?",
       answer:
-        "This is data that reveals the efficiency, speed and other features of a company's performance. We're proud to show our performance statistics and our traders love to see them.",
-    },
-    {
-      question: "Why are you introducing a new transaction fee?",
-      answer:
-        "To optimise our customer service efforts and offer high-quality support when you need it most, we’ll be introducing a $3 transaction fee for any deposits or withdrawals less than $30 or equivalent.",
-    },
-    {
-      question: "How much is the transaction fee?",
-      answer:
-        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
-    },
-    {
-      question: "Will you charge a fee for transactions of more than $30?",
-      answer:
-        "No, we won’t. The transaction fee won’t apply to deposits or withdrawals equal to $30 (or equivalent) or more.",
-    },
-    {
-      question: "Does the transaction fee apply to IBs and partners?",
-      answer:
-        "Yes. Transaction fees apply to all clients, including clients under Partnership or IB agreements.",
-    },
-    {
-      question: "Will I be notified of the fee when I withdraw/deposit?",
-      answer:
-        "Yes. If you go to make a deposit or withdrawal less than $30 or equivalent, you’ll see a notification in MyFXTM letting you know the transaction will incur a $3 fee and asking you to confirm.",
+        " Yes, as long as it isn't done yet. You may cancel it from the section that displays your past transactions.",
     },
   ];
 
@@ -127,62 +251,132 @@ const DepositsWithdrawals = () => {
     <div>
       {/* 🔶 Section 1 - Hero Banner */}
       <StatsSection
-        title="Deposits and Withdrawal methods"
-        subtitle="Choose from local payment methods, cards, E-wallets and more."
+        title="Deposits & Withdrawals – RightTradeCapital"
+        subtitle="It is simple to add and take out money with RightTradeCapital. Locked. Right immediately."
         buttonText="Get started"
         image={depositImg}
-        note=""
+        note="Quick, easy, and safe ways to pay for your deals."
       />
 
-      {/* 🔗 Section 2 - Breadcrumb */}
-      <div
-        className="bg-white py-4 px-6 sm:px-10 lg:px-24 text-sm"
-        style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
-      >
-        <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
-          <span className="text-blue-500">RightTrade Capital</span>
-          <span className="text-[#FABF16]">❯</span>
-          <span className="text-black font-medium">Deposit and Withdrawal</span>
-        </nav>
-      </div>
-
-      {/*  Section 3 - Easy deposits. Fast withdrawals. */}
+      {/*  Section 2 - Easy deposits. Fast withdrawals. */}
       <FeatureSection
-        title="Easy deposits. Fast withdrawals."
-        features={features}
+        title="How To Deposit Money At RightTradeCapital"
+        paragraph="It's straightforward and fast to add money to your trading account. You can make deposits in a variety of various methods, both in your neighbourhood and throughout the globe, so you'll always have a decent option."
+        // features={features}
       />
 
-      {/*  Section 4 - Manage funds your way */}
+      {/*  Section 3 - Manage funds your way */}
       <SideImageTextSection
         image={manageFundsImg}
-        title="Manage funds your way"
-        paragraphTextColor="text-black" // 👈 black text only for this section
+        title="What Are The Benefits Of Using RightTrade Capital To Deposit And Withdraw Money?"
+        paragraphTextColor="text-black"
         paragraphs={[
-          "Deposit and withdraw quickly and easily with Mastercard, Visa and a host of local payment providers. You can even choose to pay in and withdraw with cryptocurrency.",
-          "Forex trading entails speculating on currency prices to earn potential profits. By trading currencies in pairs, traders predict the rise or fall in value of one currency against another.",
+          "We made every process simpler so you can trade more and pay less.",
+        ]}
+        listItems={[
+          "A lot of methods to pay, both in your area and beyond the world",
+          "Transactions are processed quickly",
+          "No extra costs",
+          "Real-time updates on transactions",
+          "Data and money are well protected",
+          "Help for users 24 hours a day, five days a week",
         ]}
       />
 
-      {/*  Section 5 - Important Information */}
-      <ImportantInfoSection text="Important information about deposits and withdrawals" />
-
-      {/*  Section 7 - Four Step Section */}
+      {/*  Section 4 - Four Step Section */}
       <FourStepSection
-        title="How to make a deposit in 4 simple steps"
+        title="How To Get Money Out"
         steps={steps}
+        bgcolor="bg-[#121733]"
       />
 
-      {/*  8th Section - How to make a withdrawal */}
-      <HowToWithdrawSection
-        title="How to make a withdrawal in 4 simple steps"
-        steps={withdrawSteps}
+      <DepositMethodsTable
+        heading="Ways to Make a Deposit"
+        subtext="Choose your preferred deposit method below:"
+        data={depositData}
+        bgColor="#ffffff"
+        textColor="#111827"
       />
 
-      {/*  9th Section - Get more from the markets */}
-      <GetMoreMarketsSection />
+      {/*  5th Section - How to make a withdrawal */}
+      <FourStepSection
+        title="How to Deposit Money"
+        steps={steps1}
+        bgcolor="bg-[#121733]"
+      />
 
-      {/*  10th Section */}
+      {/*  6th Section - Get more from the markets */}
+
+      <GetMoreMarketsSection
+        title="Withdrawal Options from RightTradeCapital"
+        paragraphs={[
+          "Our secure and simple withdrawal mechanism makes sure that money transfers happen fast and without any hidden costs when you need it.",
+          "There is no hiding anything when it comes to withdrawals.",
+          "Need a hand?",
+          "Our Customer Support team are more than happy to answer your questions.",
+        ]}
+        bgColor="#f9fafb"
+        textColor="#111827"
+      />
+
+      <DepositMethodsTable
+        heading="Supported Ways to Withdraw"
+        subtext="You have to use the same technique to take out money as you used to put it in for safety and legal reasons."
+        data={withdrawData}
+        columns={["Method", "Processing Time", "Fees", "Minimum Withdrawal"]}
+        bgColor="#ffffff"
+        textColor="#111827"
+      />
+
+      <MarketViewFeatureSection
+        title={otherNotesData.title}
+        description={otherNotesData.description}
+        features={otherNotesData.features}
+        bgcolor="bg-[#121733]"
+        titlecolor="text-white"
+      />
+
+      {/*  7th Section */}
+
+      <DepositMethodsTable
+        heading="Action Speed: An Overview of Processing Time"
+        subtext="RightTradeCapital is fully honest and transparent. You can always find out where your money is and when it will get there."
+        data={actionSpeedData}
+        columns={["Action", "Speed"]}
+        bgColor="#f9fafb"
+        textColor="#111827"
+      />
+
+      <SecurityRegulationSection
+        image={home6}
+        title="Safety and Trust in the Regulations"
+        introParagraph="Your money and personal information are protected thanks to a top-notch security system:"
+        bulletPoints={[
+          "All transactions are encrypted using SSL",
+          "Two-Factor Authentication (2FA)",
+          "Stopping fraud and keeping an eye on things in real time",
+        ]}
+        closingParagraph="Regulators in several areas keep a close check on RightTradeCapital, which is properly licenced."
+      />
+
+      <RightImageLeftContent
+        heading={heading}
+        content={content}
+        // image={trustImage}
+      />
+      <SupportedRegions />
+
+      {/*  8th Section */}
       <FaqSection faqs={faqs} />
+
+      <DepositMethodsTable
+        heading="Supported Ways to Withdraw"
+        subtext="You have to use the same technique to take out money as you used to put it in for safety and legal reasons."
+        data={withdrawData}
+        columns={["Method", "Processing Time", "Fees", "Minimum Withdrawal"]}
+        bgColor="#ffffff"
+        textColor="#111827"
+      />
     </div>
   );
 };

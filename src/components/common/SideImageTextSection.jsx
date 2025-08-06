@@ -4,6 +4,7 @@ const SideImageTextSection = ({
   image,
   title,
   paragraphs,
+  listItems,
   bgColor,
   textcolor,
   paragraphTextColor,
@@ -23,11 +24,24 @@ const SideImageTextSection = ({
         style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
       >
         <h2 className="text-4xl sm:text-3xl font-bold mb-4">{title}</h2>
+
+        {/* Paragraphs */}
         {paragraphs.map((para, index) => (
           <p key={index} className={`mb-4 ${paragraphTextColor}`}>
             {para}
           </p>
         ))}
+
+        {/* ✅ List Items */}
+        {listItems && listItems.length > 0 && (
+          <ul className="list-disc pl-5 space-y-2">
+            {listItems.map((item, index) => (
+              <li key={index} className={`${paragraphTextColor}`}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </section>
   );

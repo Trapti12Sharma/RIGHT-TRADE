@@ -17,12 +17,20 @@ const iconMap = {
   script: Lightbulb,
 };
 
-const MarketViewFeatureSection = ({ title, description, features }) => {
+const MarketViewFeatureSection = ({
+  title,
+  description,
+  features,
+  bgcolor,
+  titlecolor,
+}) => {
   return (
-    <section className="bg-[#f9fafb] py-16 px-4 sm:px-6 lg:px-20">
+    <section className={`${bgcolor} py-16 px-4 sm:px-6 lg:px-20`}>
       <div className="max-w-7xl mx-auto">
         {/* Main Heading */}
-        <h2 className="text-4xl font-bold text-[#10162f] mb-4 font-['Source Sans Pro']">
+        <h2
+          className={`text-4xl font-bold ${titlecolor} mb-4 font-['Source Sans Pro']`}
+        >
           {title}
         </h2>
 
