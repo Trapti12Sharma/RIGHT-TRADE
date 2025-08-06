@@ -319,15 +319,6 @@ const DepositsWithdrawals = () => {
         textColor="#111827"
       />
 
-      <DepositMethodsTable
-        heading="Supported Ways to Withdraw"
-        subtext="You have to use the same technique to take out money as you used to put it in for safety and legal reasons."
-        data={withdrawData}
-        columns={["Method", "Processing Time", "Fees", "Minimum Withdrawal"]}
-        bgColor="#ffffff"
-        textColor="#111827"
-      />
-
       <MarketViewFeatureSection
         title={otherNotesData.title}
         description={otherNotesData.description}
