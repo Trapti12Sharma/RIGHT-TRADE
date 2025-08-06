@@ -4,7 +4,9 @@ const DepositMethodsTable = ({
   heading,
   subtext,
   data,
-  columns = ["Method", "Processing Time", "Fees", "Minimum Deposit"],
+  columns,
+  columnKeys, // must match the structure of the data
+  note, // Optional bottom note
   bgColor = "#f9fafb",
   textColor = "#111827",
 }) => {
@@ -15,9 +17,15 @@ const DepositMethodsTable = ({
     >
       <div className="max-w-7xl mx-auto">
         {heading && (
-          <h2 className="text-2xl md:text-4xl font-bold mb-2">{heading}</h2>
+          <h2 className="text-2xl md:text-4xl text-center font-bold mb-2">
+            {heading}
+          </h2>
         )}
-        {subtext && <p className="mb-6 text-[24px] text-gray-600">{subtext}</p>}
+        {subtext && (
+          <p className="mb-6 text-center text-[20px] text-gray-600">
+            {subtext}
+          </p>
+        )}
 
         <div className="overflow-x-auto rounded-xl shadow-lg">
           <table className="min-w-full divide-y divide-gray-200">
@@ -34,36 +42,22 @@ const DepositMethodsTable = ({
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 bg-white text-base">
-              {data.map((item, index) => (
-                <tr key={index} className="hover:bg-gray-50">
-                  {columns.map((col, idx) => {
-                    const key =
-                      col === "Method" || col === "Action"
-                        ? "method"
-                        : col === "Processing Time" || col === "Speed"
-                        ? "time"
-                        : col === "Fees"
-                        ? "fees"
-                        : col === "Minimum Deposit"
-                        ? "minDeposit"
-                        : "";
-                    return (
-                      <td key={idx} className="px-4 py-3">
-                        {item[key] || "—"}
-                      </td>
-                    );
-                  })}
+              {data.map((row, rowIndex) => (
+                <tr key={rowIndex} className="hover:bg-gray-50">
+                  {columnKeys.map((key, colIndex) => (
+                    <td key={colIndex} className="px-4 py-3">
+                      {row[key] || "—"}
+                    </td>
+                  ))}
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        {columns.length > 3 && (
-          <p className="mt-6 text-base text-gray-700">
-            Remember that <strong>RightTrade Capital never charges you</strong>{" "}
-            to make a deposit. However, your payment processor might charge for
-            currency conversion or processing.
+        {note && (
+          <p className="mt-6 text-base text-gray-700 text-center max-w-4xl mx-auto">
+            {note}
           </p>
         )}
       </div>

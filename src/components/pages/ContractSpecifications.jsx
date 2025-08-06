@@ -6,10 +6,96 @@ import ExpertTrader from "../ExpertTrader";
 import FaqSection from "../common/FaqSection2";
 import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
 import TradingInstrumentsTable from "../common/TradingInstrumentsTable";
+import FeatureSection from "../common/FeatureSection";
+import SideImageTextSection from "../common/SideImageTextSection";
+import SecurityRegulationSection from "../common/SecurityRegulationSection";
+import HelpSupportSectionlist from "../common/HelpSupportSectionlist";
+import ExpertSupportSection from "../common/ExpertSupportSection";
 
+import {
+  FaComments,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaChartLine,
+  FaGlobe,
+  FaAndroid,
+  FaApple,
+} from "react-icons/fa";
+
+import manageFundsImg from "../../assets/deposits2.png";
 import statsBg from "../../assets/contract1.png";
+import home6 from "../../assets/sign-up.png";
+import {
+  FaBalanceScale,
+  FaBolt,
+  FaShieldAlt,
+  FaPercentage,
+} from "react-icons/fa";
 
 const ContractSpecifications = () => {
+  const platformFeatures = [
+    {
+      icon: <FaChartLine size={32} className="text-[#FABF16]" />,
+      title: "MetaTrader 4",
+      description: "All contract specs are optimized for MetaTrader 4.",
+    },
+    {
+      icon: <FaGlobe size={32} className="text-[#FABF16]" />,
+      title: "WebTrader",
+      description: "Seamless trading via your browser with WebTrader.",
+    },
+    {
+      icon: <FaAndroid size={32} className="text-[#FABF16]" />,
+      title: "Android App",
+      description: "Trade on the go with our Android application.",
+    },
+    {
+      icon: <FaApple size={32} className="text-[#FABF16]" />,
+      title: "iPhone App",
+      description: "Use our iOS app to monitor and trade easily.",
+    },
+  ];
+
+  const contractFeatures = [
+    {
+      icon: <FaBalanceScale />,
+      title: "Clear Contracts",
+      description: "Terms of the contract are clear and easy to understand.",
+    },
+    {
+      icon: <FaBolt />,
+      title: "Fast Execution",
+      description: "Quick forex order execution with minimal delay.",
+    },
+    {
+      icon: <FaPercentage />,
+      title: "Low Spreads",
+      description: "Enjoy competitive spreads for Forex trading.",
+    },
+    {
+      icon: <FaShieldAlt />,
+      title: "Secure Platform",
+      description: "A regulated and safe environment to trade confidently.",
+    },
+  ];
+  const supportData = [
+    {
+      icon: <FaComments />,
+      title: "Live Chat",
+      description: "Get help in real-time with our 24/5 support agents.",
+    },
+    {
+      icon: <FaEnvelope />,
+      title: "Email",
+      description: "Send your queries and receive detailed responses.",
+    },
+    {
+      icon: <FaPhoneAlt />,
+      title: "Call for Help",
+      description: "Talk to our experts and get all your doubts cleared.",
+    },
+  ];
+
   const instrumentsData = [
     {
       ticker: "AUDUSD",
@@ -170,24 +256,76 @@ const ContractSpecifications = () => {
       {/* Section 1 */}
       <StatsSection {...statsData} />
       {/* Section 2 */}
-      <BreadcrumbAndDescription {...breadcrumbData} />
-      {/* Section 3 */}
-      <TradingInstrumentsTable
-        instruments={instrumentsData}
-        accentColor="#FABF16"
+      <FeatureSection
+        title="The Forex Contract Specifications from RightTrade Capital"
+        paragraph="We value honesty at RightTrade Capital and make sure our clients have all the information they need to trade with confidence. Our detailed forex contract specifications make sure you know everything about the trading instrument, like the lot size, margin, swap rates, trading hours, and leverage. This is true whether you're trading forex, commodities, indices, or CFDs. Our comprehensive forex specification chart helps you plan your trades more accurately with reliable data."
+        // features={features}
+        paragraph2="You can make a good trading plan with correct information and tight spreads by looking at all of our contract specifications on this page. We cover every critical detail to help you succeed, from trading instrument specifications to leverage and margin requirements.
+"
       />
-      {/* Section 4 */}
-      <ExpertTrader
-        heading="Trade the world's markets"
-        description="Take a deeper dive into the markets we offer and get in on the trading action today."
-        buttonText="Instruments overview"
-        // backgroundImage={bgImage}
-      />
-      {/* Section 5 */}
-      <FaqSection faqs={faqItems} />
 
-      {/* Section 6 */}
-      <GetMoreMarketsSection />
+      <SideImageTextSection
+        image={manageFundsImg}
+        title="Why Are the Details of a Forex Contract Important?"
+        paragraphTextColor="text-black"
+        paragraphs={[
+          "To do the following, it's very important to know the details of a contract:",
+        ]}
+        listItems={[
+          "Getting the right size for trades",
+          "Managing risk well",
+          "Costs that come up out of nowhere, like swaps or commissions, should be avoided",
+          "How to use high-volatility trades wisely",
+          "Following the rules for when to trade and when to roll over",
+          "Help for users 24 hours a day, five days a week",
+        ]}
+        paragraphs2={[
+          "At RightTrade Capital, we always keep these settings up to date and easy to find. This way, you can always count on clear trading instrument specifications with no surprises.",
+        ]}
+      />
+
+      <ExpertSupportSection
+        icon={<FaChartLine size={32} />}
+        title="Are you ready to trade with full confidence and knowledge?"
+        description="You can open a live account with RightTrade Capital and explore the markets using fully transparent forex contract specifications tailored to support your success."
+        buttonText="Open Live Account"
+        buttonLink="/open-account"
+      />
+
+      <HelpSupportSectionlist
+        title="Works with Other Platforms"
+        paragraph="All of the specifications in our contracts are meant to work perfectly on all major trading platforms, ensuring consistent execution conditions and spreads."
+        supportOptions={platformFeatures}
+      />
+
+      <SecurityRegulationSection
+        image={home6}
+        title="Why should you choose RightTrade Capital for clear contract terms?"
+        // introParagraph="Your money and personal information are protected thanks to a top-notch security system:"
+        bulletPoints={[
+          "Detailed specifications for each instrument",
+          "Leverage that can be changed and tight spreads",
+          "Choices for Islamic traders that don't include swaps",
+          "No fees or commissions that aren't clear",
+          "Execution in real time on all platforms",
+          "People who trade all over the world trust us",
+        ]}
+        closingParagraph="We align our values with the industry standards seen in brokers who offer transparent FXTM contract specifications, ensuring you get a world-class experience."
+      />
+
+      <HelpSupportSectionlist
+        title="Do you need help figuring out what the specs mean?"
+        paragraph="Our support team is available 24/5 to help you understand the terms and conditions of our forex contracts. We want to help you make better trading choices by giving you full access to all the important data through our forex specification chart and detailed contract documents."
+        supportOptions={supportData}
+      />
+
+      <HelpSupportSectionlist
+        title="A clear trading experience"
+        paragraph="We want to be a reliable forex broker at RightTrade Capital, so we offer:"
+        supportOptions={contractFeatures}
+        bgcolor="bg-[#121733]"
+        textcolor="text-[#fff]"
+      />
     </>
   );
 };

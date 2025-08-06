@@ -95,10 +95,13 @@ const App = () => {
         <div className="mt-20">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/why-righttrade-capital" element={<WhyRightTrade />} />
+            <Route path="/about-us" element={<WhyRightTrade />} />
             {/* <Route path="/awards" element={<Award />} />
             <Route path="/fund-safety" element={<FundSafety />} /> */}
-            <Route path="/trading-statistics" element={<TradingStatistics />} />
+            <Route
+              path="/why-choose-righttrade-capital"
+              element={<TradingStatistics />}
+            />
             <Route
               path="/deposits-and-withdrawals"
               element={<DepositsWithdrawals />}

@@ -64,16 +64,16 @@ const Navbar = () => {
       name: "ABOUT",
       dropdown: [
         {
-          heading: "ABOUT US",
+          heading: "About Us",
           links: [
-            "ABOUT US",
+            "About Us",
             // "Awards",
             // "Fund Safety",
             "Why Choose RightTrade Capital",
           ],
         },
         {
-          heading: "COSTS",
+          heading: "Costs",
           links: ["Deposits and Withdrawals", "Trading Commissions and Fees"],
         },
       ],
@@ -82,20 +82,20 @@ const Navbar = () => {
       name: "MARKETS",
       dropdown: [
         {
-          heading: "INSTRUMENTS",
+          heading: "Instruments",
           links: ["Markets Overview", "Contract Specifications"],
         },
         { heading: "FX", links: ["Forex", "Major Currency pairs"] },
         {
-          heading: "METALS AND COMMODITIES",
+          heading: "Metals And Commodities",
           links: ["Spot Metals", "CFD Commodities"],
         },
         {
-          heading: "STOCKS AND INDICES",
+          heading: "Stocks And Indices",
           links: ["Stocks Trading", "Stocks CFDs", "CFD on Indices"],
         },
-        { heading: "CRYPTO", links: ["Crypto CFDs"] },
-        { heading: "FUTURE CFDS", links: ["Futures"] },
+        { heading: "Crypto", links: ["Crypto CFDs"] },
+        { heading: "Futures CFDS", links: ["Futures"] },
       ],
     },
     {

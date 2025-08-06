@@ -1,9 +1,9 @@
 import React from "react";
 
-const FeatureSection = ({ title, features, paragraph }) => {
+const FeatureSection = ({ title, features, paragraph, paragraph2 }) => {
   return (
     <section
-      className="bg-[#1a1d30] text-white py-16 px-4"
+      className="bg-[#1a1d30] text-white py-16 px-4 "
       style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
     >
       <div className="max-w-7xl mx-auto text-center">
@@ -11,11 +11,15 @@ const FeatureSection = ({ title, features, paragraph }) => {
 
         {/* ✅ Optional paragraph */}
         {paragraph && (
-          <p className="max-w-3xl mx-auto text-base sm:text-lg text-white opacity-90 mb-12 leading-relaxed">
+          <p className="max-w-3xl mx-auto text-base sm:text-base text-white opacity-90 mb-12 leading-relaxed">
             {paragraph}
           </p>
         )}
-
+        {paragraph && (
+          <p className="max-w-3xl mx-auto text-base sm:text-base text-white opacity-90 mb-12 leading-relaxed">
+            {paragraph2}
+          </p>
+        )}
         {/* Features grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           {features?.map((feature, index) => (
@@ -29,6 +33,7 @@ const FeatureSection = ({ title, features, paragraph }) => {
                 className="mb-4 w-14 h-14 object-contain"
               />
               <h3 className="text-lg font-semibold mb-2">{feature.heading}</h3>
+
               <p className="text-sm opacity-80">{feature.text}</p>
             </div>
           ))}

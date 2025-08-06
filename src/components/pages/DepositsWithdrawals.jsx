@@ -14,6 +14,8 @@ import MarketViewFeatureSection from "../common/MarketViewFeatureSection";
 import SecurityRegulationSection from "../common/SecurityRegulationSection";
 import RightImageLeftContent from "../common/RightImageLeftContent";
 
+import { FaGlobeEurope, FaBuilding, FaExchangeAlt } from "react-icons/fa";
+
 import depositImg from "../../assets/deposits1.png";
 import manageFundsImg from "../../assets/deposits2.png";
 import safetyIcon from "../../assets/safety.svg";
@@ -62,6 +64,45 @@ const DepositsWithdrawals = () => {
       },
     ],
   };
+
+  const supportedRegionData = {
+    title: "Supported Global Payment Regions",
+    subtitle:
+      "We aid a number of nations in many ways, both locally and globally.",
+    ctaNote:
+      "Log in to your RightTradeCapital account to view the several ways you may trade in your area or nation.",
+    ctaText: "Log In Now",
+    regions: [
+      {
+        icon: <FaGlobeEurope size={40} className="text-[#FABF16]" />,
+        title: "Europe",
+        points: [
+          "Visa/Mastercard, SEPA, and Skrill",
+          "Withdrawal: Skrill, bank transfer",
+          "Following the rules and processing quickly",
+        ],
+      },
+      {
+        icon: <FaBuilding size={40} className="text-[#FABF16]" />,
+        title: "Middle East",
+        points: [
+          "Deposit/withdraw: local bank transfers, crypto wallets, and cards",
+          "Arabic support and upgrades in some areas",
+        ],
+      },
+      {
+        icon: <FaExchangeAlt size={40} className="text-[#FABF16]" />,
+        title: "Global Coverage",
+        points: [
+          "Skrill and Neteller",
+          "Visa and Mastercard",
+          "Cryptocurrency wallets",
+          "Bank wires (SWIFT and SEPA)",
+        ],
+      },
+    ],
+  };
+
   const withdrawData = [
     {
       method: "Visa or Mastercard",
@@ -289,23 +330,30 @@ const DepositsWithdrawals = () => {
         steps={steps}
         bgcolor="bg-[#121733]"
       />
-
+      {/*  Section 5 - */}
       <DepositMethodsTable
         heading="Ways to Make a Deposit"
         subtext="Choose your preferred deposit method below:"
+        columnKeys={["method", "time", "fees", "minDeposit"]}
+        columns={[
+          "Method",
+          "Processing Time",
+          "RightTradeCapital Fees",
+          "Minimum Deposi",
+        ]}
         data={depositData}
-        bgColor="#ffffff"
-        textColor="#111827"
+        // bgColor="#ffffff"
+        // textColor="#111827"
       />
 
-      {/*  5th Section - How to make a withdrawal */}
+      {/*  Section 6 - */}
       <FourStepSection
         title="How to Deposit Money"
         steps={steps1}
         bgcolor="bg-[#121733]"
       />
 
-      {/*  6th Section - Get more from the markets */}
+      {/*  Section 7 - */}
 
       <GetMoreMarketsSection
         title="Withdrawal Options from RightTradeCapital"
@@ -319,6 +367,7 @@ const DepositsWithdrawals = () => {
         textColor="#111827"
       />
 
+      {/*  Section 8 - */}
       <MarketViewFeatureSection
         title={otherNotesData.title}
         description={otherNotesData.description}
@@ -327,17 +376,17 @@ const DepositsWithdrawals = () => {
         titlecolor="text-white"
       />
 
-      {/*  7th Section */}
+      {/*  9th Section */}
 
       <DepositMethodsTable
         heading="Action Speed: An Overview of Processing Time"
         subtext="RightTradeCapital is fully honest and transparent. You can always find out where your money is and when it will get there."
+        columnKeys={["method", "time"]}
         data={actionSpeedData}
         columns={["Action", "Speed"]}
-        bgColor="#f9fafb"
-        textColor="#111827"
       />
 
+      {/*  Section 10 - */}
       <SecurityRegulationSection
         image={home6}
         title="Safety and Trust in the Regulations"
@@ -350,23 +399,33 @@ const DepositsWithdrawals = () => {
         closingParagraph="Regulators in several areas keep a close check on RightTradeCapital, which is properly licenced."
       />
 
+      {/*  Section 11 - */}
       <RightImageLeftContent
         heading={heading}
         content={content}
         // image={trustImage}
       />
-      <SupportedRegions />
 
-      {/*  8th Section */}
+      {/*  13th Section */}
+      <SupportedRegions
+        title={supportedRegionData.title}
+        subtitle={supportedRegionData.subtitle}
+        ctaText={supportedRegionData.ctaText}
+        ctaNote={supportedRegionData.ctaNote}
+        regions={supportedRegionData.regions}
+      />
+
+      {/*  14th Section */}
       <FaqSection faqs={faqs} />
 
       <DepositMethodsTable
         heading="Supported Ways to Withdraw"
         subtext="You have to use the same technique to take out money as you used to put it in for safety and legal reasons."
         data={withdrawData}
+        columnKeys={["method", "time", "fees", "minDeposit"]}
         columns={["Method", "Processing Time", "Fees", "Minimum Withdrawal"]}
-        bgColor="#ffffff"
-        textColor="#111827"
+        // bgColor="#ffffff"
+        // textColor="#111827"
       />
     </div>
   );

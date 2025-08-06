@@ -1,53 +1,15 @@
 import React from "react";
-import {
-  FaGlobeEurope,
-  FaMoneyBillWave,
-  FaBuilding,
-  FaExchangeAlt,
-} from "react-icons/fa";
 
-const regions = [
-  {
-    icon: <FaGlobeEurope size={40} className="text-[#FABF16]" />,
-    title: "Europe",
-    points: [
-      "Visa/Mastercard, SEPA, and Skrill",
-      "Withdrawal: Skrill, bank transfer",
-      "Following the rules and processing quickly",
-    ],
-  },
-  {
-    icon: <FaBuilding size={40} className="text-[#FABF16]" />,
-    title: "Middle East",
-    points: [
-      "Deposit/withdraw: local bank, crypto wallets, cards",
-      "Arabic support and upgrades in some areas",
-    ],
-  },
-  {
-    icon: <FaExchangeAlt size={40} className="text-[#FABF16]" />,
-    title: "Global Coverage",
-    points: [
-      "Skrill and Neteller",
-      "Visa and Mastercard",
-      "Cryptocurrency wallets",
-      "Bank wires (SWIFT and SEPA)",
-    ],
-  },
-];
-
-const SupportedRegions = () => {
+const SupportedRegions = ({ title, subtitle, regions, ctaText, ctaNote }) => {
   return (
     <section className="bg-[#121733] text-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-semibold text-4xl sm:text-4xl leading-tight mb-4">
-            Supported Global Payment Regions
+            {title}
           </h2>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-            We aid a number of nations in many ways, both locally and globally.
-          </p>
+          <p className="text-gray-300 text-lg max-w-3xl mx-auto">{subtitle}</p>
           <div className="w-24 h-1 bg-[#FABF16] mx-auto mt-6"></div>
         </div>
 
@@ -58,10 +20,7 @@ const SupportedRegions = () => {
               key={idx}
               className="group relative bg-gradient-to-br from-[#1a1f3a] to-[#0f1229] rounded-2xl p-8 border border-gray-700/30 hover:border-[#FABF16]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-[#FABF16]/10"
             >
-              {/* Top accent */}
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#FABF16]/5 to-transparent rounded-bl-3xl"></div>
-
-              {/* Icon */}
               <div className="relative z-10 flex justify-center mb-6">
                 <div className="w-20 h-20 bg-gradient-to-br from-[#FABF16]/10 to-[#FABF16]/5 rounded-2xl flex items-center justify-center group-hover:from-[#FABF16]/20 group-hover:to-[#FABF16]/10 transition-all duration-300">
                   <div className="transform group-hover:scale-110 transition-transform duration-300">
@@ -70,7 +29,6 @@ const SupportedRegions = () => {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="relative z-10 text-center">
                 <h3 className="font-semibold text-xl mb-4 text-white group-hover:text-[#FABF16] transition-colors duration-300">
                   {region.title}
@@ -89,7 +47,6 @@ const SupportedRegions = () => {
                 </ul>
               </div>
 
-              {/* Bottom accent */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FABF16]/20 to-transparent group-hover:via-[#FABF16]/40 transition-all duration-300"></div>
             </div>
           ))}
@@ -97,12 +54,9 @@ const SupportedRegions = () => {
 
         {/* CTA */}
         <div className="text-center mt-16 max-w-3xl mx-auto">
-          <p className="text-gray-300 mb-6 text-base">
-            Log in to your <strong>RightTradeCapital</strong> account to view
-            the several ways you may trade in your area or nation.
-          </p>
+          <p className="text-gray-300 mb-6 text-base">{ctaNote}</p>
           <button className="px-8 py-3 bg-[#FABF16] text-[#121733] font-semibold rounded-lg hover:bg-[#FABF16]/90 transition-colors duration-300 transform hover:scale-105">
-            Log In Now
+            {ctaText}
           </button>
         </div>
       </div>

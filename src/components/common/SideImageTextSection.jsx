@@ -4,6 +4,7 @@ const SideImageTextSection = ({
   image,
   title,
   paragraphs,
+  paragraphs2,
   listItems,
   bgColor,
   textcolor,
@@ -42,6 +43,12 @@ const SideImageTextSection = ({
             ))}
           </ul>
         )}
+        <br />
+        {paragraphs.map((para, index) => (
+          <p key={index} className={`mb-4 ${paragraphTextColor}`}>
+            {paragraphs2}
+          </p>
+        ))}
       </div>
     </section>
   );
