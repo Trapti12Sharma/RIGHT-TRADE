@@ -10,6 +10,7 @@ const ImageTextSections = ({
   noButton,
   bgcolor,
   textcolor,
+  paragraph,
 }) => {
   return (
     <section
@@ -23,6 +24,7 @@ const ImageTextSections = ({
       >
         <h2 className="text-4xl font-semibold mb-4">{title}</h2>
         <p className="text-base mb-6 whitespace-pre-line">{description}</p>
+        <p className="text-base mb-6 whitespace-pre-line">{paragraph}</p>
         {!noButton && buttonText && (
           <a
             href={buttonLink}

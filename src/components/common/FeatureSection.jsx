@@ -1,22 +1,29 @@
 import React from "react";
 
-const FeatureSection = ({ title, features, paragraph, paragraph2 }) => {
+const FeatureSection = ({
+  title,
+  features,
+  paragraph,
+  paragraph2,
+  bgcolor,
+  textcolor,
+}) => {
   return (
     <section
-      className="bg-[#1a1d30] text-white py-16 px-4 "
+      className={` ${bgcolor}  ${textcolor} py-16 px-4 `}
       style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
     >
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6">{title}</h2>
+        <h2 className="text-4xl sm:text-4xl font-bold mb-6">{title}</h2>
 
         {/* ✅ Optional paragraph */}
         {paragraph && (
-          <p className="max-w-3xl mx-auto text-base sm:text-base text-white opacity-90 mb-12 leading-relaxed">
+          <p className="max-w-3xl mx-auto text-base sm:text-base  opacity-90 mb-12 leading-relaxed">
             {paragraph}
           </p>
         )}
         {paragraph && (
-          <p className="max-w-3xl mx-auto text-base sm:text-base text-white opacity-90 mb-12 leading-relaxed">
+          <p className="max-w-3xl mx-auto text-base sm:text-base  opacity-90 mb-12 leading-relaxed">
             {paragraph2}
           </p>
         )}

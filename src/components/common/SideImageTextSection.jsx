@@ -9,6 +9,7 @@ const SideImageTextSection = ({
   bgColor,
   textcolor,
   paragraphTextColor,
+  description,
 }) => {
   return (
     <section
@@ -49,6 +50,7 @@ const SideImageTextSection = ({
             {paragraphs2}
           </p>
         ))}
+        <p className="text-base mb-6 whitespace-pre-line">{description}</p>
       </div>
     </section>
   );

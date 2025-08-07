@@ -1,7 +1,14 @@
 // ✅ VideoSection.jsx
 import React from "react";
 
-const VideoSection = ({ videoUrl, title, description, linkText, linkHref }) => {
+const VideoSection = ({
+  videoUrl,
+  title,
+  description,
+  linkText,
+  linkHref,
+  paragraph,
+}) => {
   return (
     <section
       className="bg-[#2a2d45] py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-20 text-white"
@@ -27,8 +34,19 @@ const VideoSection = ({ videoUrl, title, description, linkText, linkHref }) => {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
             {title}
           </h2>
-          <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
+          <p className="text-base sm:text-base lg:text-lg leading-relaxed">
             {description}{" "}
+            {linkText && linkHref && (
+              <a
+                href={linkHref}
+                className="text-[#3fb7fe] underline hover:text-blue-400 transition"
+              >
+                {linkText}
+              </a>
+            )}
+          </p>
+          <p className="text-base sm:text-base lg:text-lg leading-relaxed">
+            {paragraph}{" "}
             {linkText && linkHref && (
               <a
                 href={linkHref}
