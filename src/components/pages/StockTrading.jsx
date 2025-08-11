@@ -7,10 +7,72 @@ import CurrencyInfoSection from "../common/CurrencyInfoSection";
 import VideoSection from "../common/VideoSection";
 import FaqSection from "../common/FaqSection2";
 import TrustCTASection from "../common/TrustCTASection";
+import FeatureListSection from "../common/FeatureListSection";
+import MarketViewFeatures from "../common/MarketViewFeatures";
 import statsBg from "../../assets/stock1.png";
 import globeImg from "../../assets/globe.svg";
 
 const StockTrading = () => {
+  const featuresData = [
+    "A platform that’s fast",
+    "Easy to understand",
+    "Packed with useful tools",
+    "Transparent with pricing",
+    "Backed by real support",
+    "And safe for long-term use...",
+  ];
+  const features = [
+    {
+      heading: "It Doesn’t Feel Like Rocket Science",
+      description:
+        "Some platforms are way too complex. Right Trade Capital keeps it simple—everything’s laid out clearly. Want to check your portfolio? One tap. Place a trade? Two taps. Done.",
+    },
+    {
+      heading: "Speed = Confidence",
+      description:
+        "Speed matters, especially when markets are bouncing. Right Trade Capital executes trades quickly, making the difference between profit and regret.",
+    },
+    {
+      heading: "Mobile Trading That Doesn’t Suck",
+      description:
+        "Right Trade Capital’s mobile app actually works. It’s stable, fast, and lets you check watchlists, open charts, and trade in under 30 seconds.",
+    },
+    {
+      heading: "Global Markets, Open to You",
+      description:
+        "Access shares from the U.S., Europe, Asia, and more. More strategies, more opportunities, more diversification.",
+    },
+    {
+      heading: "Security That Doesn’t Keep You Up at Night",
+      description:
+        "Multiple layers of protection like 2FA, encryption, and session controls keep your info and funds safe without making login complicated.",
+    },
+    {
+      heading: "You Don’t Get Charged for Breathing",
+      description:
+        "Right Trade Capital keeps pricing clean and upfront. No hidden fees, no surprise charges.",
+    },
+    {
+      heading: "You Can Actually Learn While Using It",
+      description:
+        "Includes guides, FAQs, and tutorials inside the platform—helpful for beginners, while offering advanced features for pros.",
+    },
+    {
+      heading: "Data That Helps—Not Overwhelms",
+      description:
+        "You get real-time data, clean charts, and tools you'll actually use—no fluff, no filler.",
+    },
+    {
+      heading: "Customer Support That Talks Like a Human",
+      description:
+        "Real human support via chat, email, or voice—no endless hold music or unhelpful bots.",
+    },
+    {
+      heading: "Built for Real People, Not Just Pros",
+      description:
+        "Whether you're investing $100 or $100,000, Right Trade Capital meets you where you are.",
+    },
+  ];
   // ✅ First section data
   const statsData = {
     title: "Start Stock Trading trading with RightTrade Capital",
@@ -23,13 +85,14 @@ const StockTrading = () => {
 
   // ✅ Second section data
   const StockTradingContent = {
-    title: "Trade major, minor and exotic currency pairs.",
+    title: "What Makes a Trading Platform The Best?",
     description:
-      "The foreign exchange market has a daily trading volume of over $5 trillion, making it the most liquid in the world and an exciting place to trade. FX? It's in our name.",
+      "Let’s be real for a second: everyone throws around the term best stock trading platform, but no one seems to agree on what that means. Is it low fees? Slick design? Advanced tools?Honestly, it’s a mix of a few things:",
     benefits: [
-      "The most popular choice for every kind of trader, start with a few dollars or tens of thousands.",
-      "Massive liquidity means massive opportunity",
-      "The market is open 24/5 so trade anytime during the week",
+      "Is it easy to use?",
+      "Are your trades executed fast?",
+      "Can you access real-time data?",
+      "Does it offer help when you need it?",
     ],
   };
 
@@ -63,23 +126,23 @@ const StockTrading = () => {
 
   // ✅ Fourth section data (new reusable)
   const currencySectionData = {
-    title: "What is currency trading and why do traders love it?",
+    title:
+      "What Smart Investors Look for in the Best Stock Trading Platforms Today",
     paragraphs: [
-      "Currencies are always traded in pairs. The first currency in the pair is called the base currency and the second the quote currency. Stock Trading traders buy one currency in the pair and sell the other at the same time, depending on how they think their values will change in relation to each other.",
-      "Currency values can be affected by a number of factors that impact the strength of a nation's economy, including inflation, interest rates and political stability to name a few. Typically, Stock Trading traders see the greatest volatility before and after key economic or political events as they speculate how this could affect the markets.",
-      "Currency pairs are split into three categories. Major currency pairs are the most traded pairs in the Stock Trading industry. They usually include the US dollar as one half of the pair, like the EUR/USD and the USD/JPY. Other commonly traded major pairs include EUR/JPY and the EUR/GBP.",
+      "Let’s not sugarcoat it: finding the best stock trading platform these days can feel like scrolling through Netflix — too many options, too many features, and no clue where to start.",
+      "Some platforms promise no fees. Others throw fancy charts at you. But when it comes down to it, what really matters is: Can you trade confidently and without drama",
+      "That’s exactly what we’re diving into today. Whether you’re brand new to investing or already checking your trades between lunch meetings, this guide will help you figure out which platform suits your needs—and why Right Trade Capital is catching attention from serious traders in 2025.",
     ],
     image: globeImg,
   };
 
   // ✅ Fifth section data (Video)
   const videoData = {
-    videoUrl: "https://player.vimeo.com/video/76979871", // Replace with actual video
-    title: "What is Stock Trading?",
-    description:
-      "Stock Trading (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to",
-    linkText: "Stock Trading trading for beginners.",
-    linkHref: "#", // Update link to the actual page
+    videoUrl: "https://www.fxtm.com/trading-instruments/stocks-trading/",
+    title: "Want to Check It Out?",
+    description: "Visit  to explore what Right Trade Capital offers.",
+
+    linkHref: "#",
   };
 
   //  Sixth section data
@@ -124,9 +187,10 @@ const StockTrading = () => {
         benefits={StockTradingContent.benefits}
       />
       {/*  3 Section */}
-      <WhyTradeForexSection
-        title="Why trade Stock Trading currency pairs with RightTrade Capital?"
-        features={whyTradeFeatures}
+      <FeatureListSection
+        title="Why Right Trade Capital Stands Out"
+        subtitle="So let’s talk about Right Trade Capital. It’s not the loudest name out there, but more and more traders are picking it up—and not looking back. And for good reason."
+        items={features}
       />
       {/*  4 (New Reusable) */}
       <CurrencyInfoSection {...currencySectionData} />
@@ -134,14 +198,11 @@ const StockTrading = () => {
       {/* 5 (New Reusable) */}
       <VideoSection {...videoData} />
 
-      {/* Section 6 */}
-      <FaqSection faqs={faqItems} />
-
-      {/* Section 7 */}
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital."
-        buttonText="Open account"
+      <MarketViewFeatures
+        title="Final Thoughts: Is This Your Best Stock Trading Platform?"
+        description="Choosing a platform isn’t about finding “the most advanced” or “the biggest brand.” It’s about finding one that fits your style—and supports your goals.
+If you're looking for:"
+        features={featuresData}
       />
     </div>
   );
