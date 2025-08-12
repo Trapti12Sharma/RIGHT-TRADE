@@ -14,12 +14,12 @@ const TrustCTASection = ({ title, subtitle, buttonText, buttonLink }) => {
           <h3 className="text-2xl sm:text-3xl font-bold mb-3">{title}</h3>
           <p className="text-sm sm:text-base">{subtitle}</p>
         </div>
-        <a
+        {/* <a
           href={buttonLink}
           className="bg-lime-400 hover:bg-lime-500 text-[#1d1d1d] font-semibold text-sm px-6 py-2 rounded-full transition duration-300"
         >
           {buttonText}
-        </a>
+        </a> */}
       </div>
     </section>
   );
