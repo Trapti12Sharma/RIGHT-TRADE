@@ -3,9 +3,9 @@ import StatsSection from "../../components/common/StatsSection";
 import BreadcrumbAndDescription from "../common/BreadcrumbAndDescription";
 import SideImageTextSection from "../common/SideImageTextSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
-import TextImageSection from "../common/TextImageSection"; // 🆕
+import TextImageSection from "../common/TextImageSection";
 import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
-import FaqSection from "../common/FaqSection2"; // ⬅️ new import
+import FaqSection from "../common/FaqSection2";
 import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
 import TradingAccountComparison from "../common/TradingAccountComparison";
@@ -76,7 +76,7 @@ const LeverageAndMargin = () => {
     {
       question: "Can I trade forex without a broker?",
       answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like FXTM also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like RightTrade Capital also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
     },
     {
       question: "How much is the transaction fee?",

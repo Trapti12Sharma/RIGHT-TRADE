@@ -18,7 +18,7 @@ const TradingSignals = () => {
       icon: icon1,
       title: "Up-to-date",
       description:
-        "Get quality trade ideas three times a day, directly in MyFXTM.",
+        "Get quality trade ideas three times a day, directly in My RightTrade Capital.",
     },
     {
       icon: icon2,
@@ -49,7 +49,7 @@ const TradingSignals = () => {
     {
       title: "Forex trading signals straight to your inbox",
       description:
-        "We know that finding trading opportunities can be difficult and time-consuming. Receive expertly crafted forex trading signals directly to your inbox with Acuity’s Signal Centre, available exclusively through MyFXTM, making it easier to spot and act on trading opportunities quickly.",
+        "We know that finding trading opportunities can be difficult and time-consuming. Receive expertly crafted forex trading signals directly to your inbox with Acuity’s Signal Centre, available exclusively through My RightTrade Capital, making it easier to spot and act on trading opportunities quickly.",
     },
     {
       title: "What is a trading signal?",

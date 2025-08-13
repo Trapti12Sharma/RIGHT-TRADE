@@ -72,7 +72,7 @@ const MT5 = () => {
     {
       question: "Can I trade forex without a broker?",
       answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like FXTM also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like RightTrade Capital also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
     },
     {
       question: "How much is the transaction fee?",

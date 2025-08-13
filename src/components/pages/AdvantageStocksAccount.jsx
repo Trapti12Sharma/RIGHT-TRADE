@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../../components/common/StatsSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
 import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
@@ -16,49 +17,8 @@ import fund12 from "../../assets/fund12.svg";
 import bannerImage from "../../assets/advantagestocks1.png";
 
 const AdvantageStocksAccount = () => {
-  const accountData = [
-    {
-      name: "Advantage Stocks",
-      minDeposit: "$200",
-      spreads: "From 6 cents",
-      commissions: "Zero",
-      instruments: ["Stocks"],
-      highlighted: false,
-    },
-    {
-      name: "Advantage",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 0.0",
-      commissions:
-        "$3.5 per lot on FX\n$2 per million on Spot Metals\n$2.5 per million on CFDs\n0.03% for Crypto\n$0.02/lot on ETFs/Stocks",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (MT5)",
-        "ETFs (MT5)",
-      ],
-      highlighted: true,
-    },
-    {
-      name: "Advantage Plus",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 1.5",
-      commissions: "Zero",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (only MT5)",
-        "ETFs (only MT5)",
-      ],
-      highlighted: false,
-    },
-  ];
+  const pageURLA =
+    "https://www.righttradecapital.com/advantage-stocks-trading-account";
 
   const faqItems = [
     {
@@ -74,7 +34,7 @@ const AdvantageStocksAccount = () => {
     {
       question: "Can I trade forex without a broker?",
       answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like FXTM also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like RightTrade Capital also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
     },
     {
       question: "How much is the transaction fee?",
@@ -82,13 +42,7 @@ const AdvantageStocksAccount = () => {
         "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
     },
   ];
-  const awardsItems = [
-    // ✅ Place it here before return
-    { imageSrc: fund9 },
-    { imageSrc: fund10 },
-    { imageSrc: fund11 },
-    { imageSrc: fund12 },
-  ];
+
   const withdrawSteps = [
     "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
     "Choose your payment method and click ‘Withdraw’.",
@@ -97,6 +51,20 @@ const AdvantageStocksAccount = () => {
   ];
   return (
     <>
+      <Helmet>
+        <title>Advantage Stocks Trading Account</title>
+
+        <meta
+          name="description"
+          content="Trade Tesla, Apple & more with zero commission. Tight spreads, $200 min deposit. RightTrade Capital Advantage Stocks Account."
+        />
+
+        <link rel="canonical" href={pageURLA} />
+
+        <meta property="og:url" content={pageURLA} />
+        <meta property="og:title" content="Advantage Stocks Trading Account" />
+      </Helmet>
+
       <StatsSection
         title="Advantage Stocks trading account"
         subtitle="Trade Tesla, Apple, Microsoft and more with zero commission."
@@ -105,21 +73,12 @@ const AdvantageStocksAccount = () => {
         image={bannerImage}
       />
 
-      <WhyTradeWithFXTM />
-      <TradingAccountComparison accountData={accountData} />
-
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital"
-        buttonText="Open Account"
-      />
       <HowToWithdrawSection
         title="How to make a withdrawal in 4 simple steps"
         steps={withdrawSteps}
       />
-      <GetMoreMarketsSection />
+
       <FaqSection faqs={faqItems} />
-      <AwardsSection awards={awardsItems} />
     </>
   );
 };

@@ -91,12 +91,28 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
           <h2 className="text-lg font-medium">Join our community</h2>
           <div className="flex gap-4 text-xl">
-            <FaPaperPlane className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
-            <FaTwitter className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
-            <FaLinkedinIn className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
-            <FaYoutube className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
-            <FaInstagram className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
-            <FaFacebookF className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
+            <a
+              href="https://x.com/righttradecap"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/righttradecapital/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61577896359870"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
+            </a>
           </div>
         </div>
       </div>

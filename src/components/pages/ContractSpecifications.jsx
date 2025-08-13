@@ -310,7 +310,7 @@ const ContractSpecifications = () => {
           "Execution in real time on all platforms",
           "People who trade all over the world trust us",
         ]}
-        closingParagraph="We align our values with the industry standards seen in brokers who offer transparent FXTM contract specifications, ensuring you get a world-class experience."
+        closingParagraph="We align our values with the industry standards seen in brokers who offer transparent RightTrade Capital contract specifications, ensuring you get a world-class experience."
       />
 
       <HelpSupportSectionlist

@@ -1,5 +1,3 @@
-// src/components/common/WhyTradeWithFXTM.jsx
-
 import React from "react";
 
 const WhyTradeWithFXTM = ({ title, features }) => {
