@@ -52,7 +52,7 @@ const TradingCommissions = () => {
         icon: "script",
         heading: "Costs for Deposits",
         paragraph:
-          "You don't have to pay anything to make deposits to RightTradeCapital. Your payment processor could charge you to change currencies.",
+          "You don't have to pay anything to make deposits to RightTrade Capital. Your payment processor could charge you to change currencies.",
       },
     ],
   };
@@ -64,7 +64,7 @@ const TradingCommissions = () => {
       "RightTrade Capital features a variety of accounts to meet the needs of various traders. Every account is set up to provide you the perfect balance of spreads, commissions, and ways to trade.",
     ctaText: "Compare All Accounts",
     ctaNote:
-      "Log in to your RightTradeCapital account to see which account fits your trading style.",
+      "Log in to your RightTrade Capital account to see which account fits your trading style.",
     regions: [
       {
         title: "List the pros",
@@ -124,7 +124,7 @@ const TradingCommissions = () => {
     {
       question: "Do I need to put down a deposit?",
       answer:
-        "No, there are no costs for adding money to your RightTradeCapital account.",
+        "No, there are no costs for adding money to your RightTrade Capital account.",
     },
     {
       question: "Are there any costs that aren't clear?",
@@ -181,8 +181,8 @@ const TradingCommissions = () => {
         // image={commissionsImage}
         title="RightTrade Capital Pricing & Commissions"
         paragraphs={[
-          "RightTradeCapital pricing and commissions are straightforward, reasonable, and geared towards traders.",
-          "We at RightTradeCapital believe that being honest is the first step to building trust. That's why our prices and charges are clear, fair, and work with your trading style.",
+          "RightTrade Capital pricing and commissions are straightforward, reasonable, and geared towards traders.",
+          "We at RightTrade Capital believe that being honest is the first step to building trust. That's why our prices and charges are clear, fair, and work with your trading style.",
           "Our pricing structure makes sure that you always know what you're paying and what you're receiving, whether you're new to the markets or an experienced trader who uses high-volume methods.",
         ]}
         bgColor="bg-white" // or any Tailwind class like bg-[#f9f9f9]
@@ -193,7 +193,7 @@ const TradingCommissions = () => {
       {/* Section 3- ImageTextSection for Spreads */}
       <ImageTextSections
         title="Why Our Fees Matter"
-        description={`The expenses of trading are quite essential for how much money you make. Even tiny discrepancies in spreads or costs may build up over time, particularly for traders who do a lot of trading. RightTradeCapital's pricing are aimed to help you beat the competition:
+        description={`The expenses of trading are quite essential for how much money you make. Even tiny discrepancies in spreads or costs may build up over time, particularly for traders who do a lot of trading. RightTrade Capital's pricing are aimed to help you beat the competition:
 
         • Spreads that are very small, starting at 0.0 pips
 
@@ -262,7 +262,7 @@ const TradingCommissions = () => {
 
       <SideImageTextSection
         // image={trustImage}
-        title="Why Should You Choose RightTradeCapital for Costs That Are Easy to Understand?"
+        title="Why Should You Choose RightTrade Capital for Costs That Are Easy to Understand?"
         paragraphs={[
           "We have high-quality infrastructure at reasonable pricing, which makes it simple and cheap to do business with us.",
         ]}
@@ -279,7 +279,7 @@ const TradingCommissions = () => {
 
       <FeatureSection
         title="In Conclusion"
-        paragraph="It's crucial to know what you're doing when you trade. We provide you both at RightTradeCapital. Our fees and commissions are straightforward, simple, and geared to help you trade effectively. We thought about you when we made them.
+        paragraph="It's crucial to know what you're doing when you trade. We provide you both at RightTrade Capital. Our fees and commissions are straightforward, simple, and geared to help you trade effectively. We thought about you when we made them.
 We made it easy to figure out how much it costs to trade. Our pricing help you keep in command of your financial strategy from start to finish, whether you're interested in FX, indices, commodities, or crypto."
         // features={features}
       />

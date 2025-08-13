@@ -161,7 +161,7 @@ const AccountsOverview = () => {
     { imageSrc: fund12 },
   ];
   const withdrawSteps = [
-    "Log in to MyRightTradeCapital and click on 'My Money'.",
+    "Log in to MyRightTrade Capital and click on 'My Money'.",
     "Choose your payment method and click 'Withdraw'.",
     "Pick the account or wallet you want to take money out of.",
     "Fill out the form and submit it.",
@@ -175,7 +175,7 @@ const AccountsOverview = () => {
 
         <meta
           name="description"
-          content="Trade confidently with RightTradeCapital. Enjoy transparent pricing, ultra-fast execution, and competitive spreads. Choose the best trading account to achieve your financial goals."
+          content="Trade confidently with RightTrade Capital. Enjoy transparent pricing, ultra-fast execution, and competitive spreads. Choose the best trading account to achieve your financial goals."
         />
 
         <link rel="canonical" href={pageURL} />
@@ -207,7 +207,7 @@ const AccountsOverview = () => {
           "With Commission-Free Forex Trading choices, you may trade with confidence.",
           "Match the features to the trading platform you like best: MetaTrader 4 or MetaTrader 5.",
         ]}
-        description="At RightTradeCapital, you may choose an account that fits your trading ambitions."
+        description="At RightTrade Capital, you may choose an account that fits your trading ambitions."
       />
 
       <TradingAccountComparison accountData={accountData} />
@@ -218,7 +218,7 @@ const AccountsOverview = () => {
       />
       <TrustCTASection
         title="Start Trading Now"
-        subtitle="The markets are ready. Are you? RightTradeCapital provides the Best Forex Trading Account for your needs, whether you desire the Lowest Spread Trading Account for accuracy or Commission-Free Forex Trading for ease."
+        subtitle="The markets are ready. Are you? RightTrade Capital provides the Best Forex Trading Account for your needs, whether you desire the Lowest Spread Trading Account for accuracy or Commission-Free Forex Trading for ease."
       />
 
       <MarketViewFeaturen
@@ -230,7 +230,7 @@ const AccountsOverview = () => {
       />
       <TextImageSection
         imgSrc={imgn}
-        title="Why Do Business with RightTradeCapital?"
+        title="Why Do Business with RightTrade Capital?"
         listItems={[
           "Costs that can't be beat – From the Lowest Spread Trading Account to Commission-Free Forex Trading, we provide the best prices.",
           "Open and honest – We share our performance stats (spreads, execution speed, slippage) so you can be sure you are using the Best Forex Trading Account.",

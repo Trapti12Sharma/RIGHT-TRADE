@@ -110,10 +110,10 @@ const AdvantageAccount = () => {
 
       <SideImageTextSection
         image={manageFundsImg}
-        title="Trade with the RightTradeCapital Advantage Account"
+        title="Trade with the RightTrade Capital Advantage Account"
         paragraphTextColor="text-black"
         paragraphs={[
-          "At RightTradeCapital, we believe that traders should have an account that allows them the finest trading circumstances and the most flexibility. The Advantage Account is for serious traders who demand low spreads, quick execution, and complete openness. With our cutting-edge technology and access to markets all around the globe, you can trade with confidence knowing you're receiving the greatest FX trading platform experience.",
+          "At RightTrade Capital, we believe that traders should have an account that allows them the finest trading circumstances and the most flexibility. The Advantage Account is for serious traders who demand low spreads, quick execution, and complete openness. With our cutting-edge technology and access to markets all around the globe, you can trade with confidence knowing you're receiving the greatest FX trading platform experience.",
         ]}
       />
 

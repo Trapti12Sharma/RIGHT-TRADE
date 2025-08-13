@@ -38,7 +38,7 @@ const WhyRightTrade = () => {
           className="text-[16px] text-center leading-relaxed max-w-4xl mx-auto text-[#1c1c1c]"
           style={{ lineHeight: "1.8" }}
         >
-          RightTradeCapital is a regulated and trusted forex broker around the
+          RightTrade Capital is a regulated and trusted forex broker around the
           world that wants to make it easy for traders to access financial
           markets. We have years of experience and are in more than 100
           countries. Our online trading platform is safe, clear, and focused on
@@ -390,7 +390,7 @@ const WhyRightTrade = () => {
               Come With Us
             </h1>
             <h2 className="text-[20px] font-normal text-[#1c1f3c] mb-3 leading-snug tracking-tight">
-              When you trade with RightTradeCapital
+              When you trade with RightTrade Capital
               <br />
               , you're part of a global community <br />
               that cares, has experience, and uses <br />

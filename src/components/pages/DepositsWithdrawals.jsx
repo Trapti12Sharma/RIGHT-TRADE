@@ -26,7 +26,7 @@ import home6 from "../../assets/sign-up.png";
 const DepositsWithdrawals = () => {
   const heading = "Put Money in with Trust.";
   const content =
-    "Managing your money should be the simplest part of trading, according to RightTradeCapital. We want you to feel free, trust us, and be in charge of your trade by not having any hidden costs, processing quickly, and having top-notch security. Open your account now and experience how simple it is. In code. Only RightTrade Capital.";
+    "Managing your money should be the simplest part of trading, according to RightTrade Capital. We want you to feel free, trust us, and be in charge of your trade by not having any hidden costs, processing quickly, and having top-notch security. Open your account now and experience how simple it is. In code. Only RightTrade Capital.";
 
   const otherNotesData = {
     title: "Other Important Notes",
@@ -70,7 +70,7 @@ const DepositsWithdrawals = () => {
     subtitle:
       "We aid a number of nations in many ways, both locally and globally.",
     ctaNote:
-      "Log in to your RightTradeCapital account to view the several ways you may trade in your area or nation.",
+      "Log in to your RightTrade Capital account to view the several ways you may trade in your area or nation.",
     ctaText: "Log In Now",
     regions: [
       {
@@ -211,7 +211,7 @@ const DepositsWithdrawals = () => {
   const steps1 = [
     {
       number: 1,
-      description: "Log in to your RightTradeCapital client dashboard.",
+      description: "Log in to your RightTrade Capital client dashboard.",
     },
     {
       number: 2,
@@ -258,7 +258,7 @@ const DepositsWithdrawals = () => {
     {
       question: "Are there any hidden costs for deposits or withdrawals?",
       answer:
-        " No, RightTradeCapital does not charge anything for deposits or withdrawals. For example, banks and crypto wallets may levy their own fees.",
+        " No, RightTrade Capital does not charge anything for deposits or withdrawals. For example, banks and crypto wallets may levy their own fees.",
     },
     {
       question: "When will I receive my money back?",
@@ -292,8 +292,8 @@ const DepositsWithdrawals = () => {
     <div>
       {/* 🔶 Section 1 - Hero Banner */}
       <StatsSection
-        title="Deposits & Withdrawals – RightTradeCapital"
-        subtitle="It is simple to add and take out money with RightTradeCapital. Locked. Right immediately."
+        title="Deposits & Withdrawals – RightTrade Capital"
+        subtitle="It is simple to add and take out money with RightTrade Capital. Locked. Right immediately."
         buttonText="Get started"
         image={depositImg}
         note="Quick, easy, and safe ways to pay for your deals."
@@ -301,7 +301,7 @@ const DepositsWithdrawals = () => {
 
       {/*  Section 2 - Easy deposits. Fast withdrawals. */}
       <FeatureSection
-        title="How To Deposit Money At RightTradeCapital"
+        title="How To Deposit Money At RightTrade Capital"
         paragraph="It's straightforward and fast to add money to your trading account. You can make deposits in a variety of various methods, both in your neighbourhood and throughout the globe, so you'll always have a decent option."
         // features={features}
       />
@@ -338,7 +338,7 @@ const DepositsWithdrawals = () => {
         columns={[
           "Method",
           "Processing Time",
-          "RightTradeCapital Fees",
+          "RightTrade Capital Fees",
           "Minimum Deposi",
         ]}
         data={depositData}
@@ -356,7 +356,7 @@ const DepositsWithdrawals = () => {
       {/*  Section 7 - */}
 
       <GetMoreMarketsSection
-        title="Withdrawal Options from RightTradeCapital"
+        title="Withdrawal Options from RightTrade Capital"
         paragraphs={[
           "Our secure and simple withdrawal mechanism makes sure that money transfers happen fast and without any hidden costs when you need it.",
           "There is no hiding anything when it comes to withdrawals.",
@@ -380,7 +380,7 @@ const DepositsWithdrawals = () => {
 
       <DepositMethodsTable
         heading="Action Speed: An Overview of Processing Time"
-        subtext="RightTradeCapital is fully honest and transparent. You can always find out where your money is and when it will get there."
+        subtext="RightTrade Capital is fully honest and transparent. You can always find out where your money is and when it will get there."
         columnKeys={["method", "time"]}
         data={actionSpeedData}
         columns={["Action", "Speed"]}
@@ -396,7 +396,7 @@ const DepositsWithdrawals = () => {
           "Two-Factor Authentication (2FA)",
           "Stopping fraud and keeping an eye on things in real time",
         ]}
-        closingParagraph="Regulators in several areas keep a close check on RightTradeCapital, which is properly licenced."
+        closingParagraph="Regulators in several areas keep a close check on RightTrade Capital, which is properly licenced."
       />
 
       {/*  Section 11 - */}
