@@ -11,6 +11,9 @@ import TradingAccountComparison from "../common/TradingAccountComparison";
 import SideImageTextSection from "../common/SideImageTextSection";
 import ImageTextSections from "../common/ImageTextSections";
 import FeatureSection from "../common/FeatureSection";
+import MarketViewFeaturen from "../common/MarketViewFeaturen";
+import MarketViewFeatures from "../common/MarketViewFeatures";
+import { FaChartLine, FaLayerGroup, FaSignal } from "react-icons/fa";
 import img from "../../assets/account2.png";
 import imgn from "../../assets/account3.png";
 import fund9 from "../../assets/fund9.svg";
@@ -22,6 +25,26 @@ import depositImg from "../../assets/deposits1.png";
 import commissionsImage from "../../assets/deposits1.png";
 
 const AdvantageStocksAccount = () => {
+  const featureData = [
+    {
+      icon: <FaChartLine />,
+      heading: "1. The best prices for trading",
+      paragraph:
+        "We know that low prices can have a big impact on your profits. That's why our Advantage Stocks Trading Account has spreads that start at only 6 cents and lets you trade stocks of the best companies in the world without paying a fee.This means you get to keep more of your money, whether you day trade Tesla, swing trade Apple, or hold Microsoft for a long time.The less you pay in fees, the more money you can put into new opportunities.",
+    },
+    {
+      icon: <FaLayerGroup />,
+      heading: "2. Total openness",
+      paragraph:
+        "In any business deal, trust is the most important thing. We at RightTradeCapital are proud to show you our real-time trading stats, execution speeds, and past performance.You won't have to pay any extra fees or be surprised; you'll always know what you're getting.Key Benefit: You can trade with full confidence because everything is clear.",
+    },
+    {
+      icon: <FaSignal />,
+      heading: "3. Our performance is what sets us apart",
+      paragraph:
+        "Every trader wants to work with the best people. Our trading infrastructure has a lot of market liquidity, fast execution speeds, and reliable uptime.You get the tools and space you need to carry out your strategy well, no matter what big stock you trade, like Microsoft, Tesla, or Apple.Key Benefit: Faster execution means less slippage and better trade results.",
+    },
+  ];
   const pageURLA =
     "https://www.righttradecapital.com/advantage-stocks-trading-account";
 
@@ -128,6 +151,16 @@ RightTrade Capital: Trust More. More Access. More Value.
       <HowToWithdrawSection
         title="Four Simple Steps to Withdraw"
         steps={withdrawSteps}
+      />
+
+      <MarketViewFeaturen
+        title="What are the good things about the Advantage Stocks Trading Account?"
+        subtitle="When you buy and sell stocks, every penny matters from the time you enter until the time you leave. The Advantage Stocks Trading Account is designed to help you make the most money while spending the least. Here are some reasons why traders pick us as their Best Stock Trading Platform:"
+        features={featureData}
+        bgColor="bg-[#121733]"
+        textcolor="text-[#fff]"
+        titleColor="text-white"
+        subtitleColor="text-white"
       />
 
       <FaqSection faqs={faqItems} />
