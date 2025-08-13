@@ -40,7 +40,7 @@ const ImageTextSections = ({
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover m-0 p-0" // ensured no margin/padding
+          className="w-full h-full object-cover m-0 p-0"
         />
       </div>
     </section>

@@ -95,7 +95,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
+              <FaTwitter className="text-[#FBBD15] cursor-pointer hover:text-gray-300 transition-colors duration-200" />
             </a>
 
             <a
@@ -103,14 +103,15 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
+              <FaInstagram className="text-[#FBBD15] cursor-pointer hover:text-gray-300 transition-colors duration-200" />
             </a>
+
             <a
               href="https://www.facebook.com/profile.php?id=61577896359870"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookF className="cursor-pointer hover:text-gray-300 transition-colors duration-200" />
+              <FaFacebookF className="text-[#FBBD15] cursor-pointer hover:text-gray-300 transition-colors duration-200" />
             </a>
           </div>
         </div>
