@@ -12,6 +12,7 @@ import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
 import MarketViewFeaturen from "../common/MarketViewFeaturen";
 import TradingAccountComparison from "../common/TradingAccountComparison";
+import FeatureSection from "../common/FeatureSection";
 import { FaChartLine, FaLayerGroup, FaSignal } from "react-icons/fa";
 import img from "../../assets/account2.png";
 import imgn from "../../assets/account3.png";
@@ -194,6 +195,11 @@ const AccountsOverview = () => {
         image={bannerImage}
       />
 
+      <FeatureSection
+        title="Start Trading Now"
+        paragraph="The markets are ready. Are you? RightTrade Capital provides the Best Forex Trading Account for your needs, whether you desire the Lowest Spread Trading Account for accuracy or Commission-Free Forex Trading for ease.."
+      />
+
       <SideImageTextSection
         image={img}
         bgColor="bg-[#2a2d45]"
@@ -215,10 +221,6 @@ const AccountsOverview = () => {
       <HowToWithdrawSection
         title="Easy to Get Money and Take It Out"
         steps={withdrawSteps}
-      />
-      <TrustCTASection
-        title="Start Trading Now"
-        subtitle="The markets are ready. Are you? RightTrade Capital provides the Best Forex Trading Account for your needs, whether you desire the Lowest Spread Trading Account for accuracy or Commission-Free Forex Trading for ease."
       />
 
       <MarketViewFeaturen

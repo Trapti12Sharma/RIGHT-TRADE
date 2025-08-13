@@ -17,10 +17,10 @@ const StatsSection = ({ title, subtitle, buttonText, note, image }) => {
       {/* Animated Polygon Overlay - Responsive */}
       <div className="absolute inset-0 transition-all duration-1000">
         {/* Mobile: Full overlay */}
-        <div className="block md:hidden bg-[#f7421e]/95 absolute inset-0" />
+        <div className="block md:hidden bg-[#121733] absolute inset-0" />
         {/* Desktop: Polygon overlay */}
         <div
-          className="hidden md:block absolute inset-0 bg-[#f7421e]/95"
+          className="hidden md:block absolute inset-0 bg-[#121733]"
           style={{
             clipPath:
               "polygon(0 0, min(65%, 900px) 0, min(45%, 600px) 100%, 0 100%)",

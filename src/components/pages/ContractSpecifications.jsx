@@ -267,7 +267,9 @@ const ContractSpecifications = () => {
       <SideImageTextSection
         image={manageFundsImg}
         title="Why Are the Details of a Forex Contract Important?"
-        paragraphTextColor="text-black"
+        paragraphTextColor="text-white"
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
         paragraphs={[
           "To do the following, it's very important to know the details of a contract:",
         ]}

@@ -12,6 +12,7 @@ import email from "../../assets/email.png";
 import doc from "../../assets/doc.png";
 import message from "../../assets/message.png";
 import whatWeDoImage from "../../assets/WhatWeDo.png";
+import educationImage from "../../assets/account1.png";
 
 const WhyRightTrade = () => {
   return (
@@ -91,12 +92,12 @@ const WhyRightTrade = () => {
 
       {/* RightTrade Capital in Numbers Section */}
       <section
-        className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-20 text-[#1c1c1c]"
+        className="bg-white px-0 sm:px-0 lg:px-0 text-[#1c1c1c]"
         style={{ fontFamily: '"Source Sans Pro", sans-serif', lineHeight: 1.6 }}
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch w-full">
           {/* Text Block */}
-          <div className="text-left max-w-[600px] w-full">
+          <div className="text-left max-w-[600px] w-full flex flex-col justify-start pt-8 px-4 sm:px-6 lg:px-20">
             <h1 className="text-[36px] font-semibold mb-4 leading-tight">
               Learning and Understanding
             </h1>
@@ -116,11 +117,11 @@ const WhyRightTrade = () => {
           </div>
 
           {/* Image Block */}
-          <div className="w-full">
+          <div className="w-full h-full">
             <img
-              // src={educationImage}
+              src={educationImage}
               alt="Education Illustration"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-full object-cover m-0 p-0"
             />
           </div>
         </div>
@@ -409,200 +410,6 @@ const WhyRightTrade = () => {
               alt="Come With Us"
               className="w-full h-auto object-contain rounded-lg"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* More Reasons Section */}
-      <section
-        className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6 text-center text-[#1c1c1c]"
-        style={{ fontFamily: '"Source Sans Pro"', lineHeight: 1.4 }}
-      >
-        <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold mb-8 sm:mb-12 lg:mb-14">
-          More reasons to trade with RightTrade Capital
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 max-w-6xl mx-auto">
-          {/* Box 1 */}
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img
-                src={fxtm2}
-                alt="Account icon"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              />
-            </div>
-            <h3 className="font-bold text-sm sm:text-base mb-2">
-              Accounts to suit your trading needs
-            </h3>
-            <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
-              Choose from two accounts, each one made to help you find your
-              opportunity. All three are available in demo mode, too.
-            </p>
-          </div>
-
-          {/* Box 2 */}
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img
-                src={fxtm2}
-                alt="Spread icon"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              />
-            </div>
-            <h3 className="font-bold text-sm sm:text-base mb-2">
-              Spreads as low as zero
-            </h3>
-            <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
-              On the Advantage account we offer typically zero spreads on FX
-              majors, and spreads that can go as low as zero on gold.
-            </p>
-          </div>
-
-          {/* Box 3 */}
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img
-                src={fxtm3}
-                alt="Platform icon"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              />
-            </div>
-            <h3 className="font-bold text-sm sm:text-base mb-2">
-              The most popular trading platform
-            </h3>
-            <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
-              Choose MetaTrader4 or MetaTrader5 on mobile, desktop or web, and
-              enjoy trading with superfast trading execution.
-            </p>
-          </div>
-
-          {/* Box 4 */}
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 sm:w-14 sm:h-14 mb-4 bg-gray-200 rounded-lg flex items-center justify-center">
-              <img
-                src={fxtm4}
-                alt="Education icon"
-                className="w-8 h-8 sm:w-10 sm:h-10"
-              />
-            </div>
-            <h3 className="font-bold text-sm sm:text-base mb-2">
-              A wealth of free educational content
-            </h3>
-            <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
-              To get started or improve your trading skills, we offer
-              <a href="#" className="text-sky-500">
-                {" "}
-                education for beginners{" "}
-              </a>
-              and
-              <a href="#" className="text-sky-500">
-                {" "}
-                advanced traders{" "}
-              </a>
-              in a variety of formats.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* How to Start Trading Section */}
-
-      <section
-        className="bg-[#262a43] py-12 sm:py-16 lg:py-20 text-white"
-        style={{ fontFamily: '"Source Sans Pro", sans-serif', lineHeight: 1.4 }}
-      >
-        <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-center mb-8 sm:mb-12 lg:mb-14 font-semibold px-4">
-          How to start trading with RightTrade Capital
-        </h2>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-4 lg:gap-10 px-4 sm:px-6 max-w-6xl mx-auto">
-          {[
-            { num: 1, text: "Create a MyRightTrade Capital profile" },
-            { num: 2, text: "Choose your account type" },
-            { num: 3, text: "Fund your trading account" },
-            { num: 4, text: "Log in to your MT platform" },
-            { num: 5, text: "Start trading!" },
-          ].map((item, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              {/* Circle with number */}
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full border-4 border-[#262a43] bg-[#3a3f5a] flex items-center justify-center text-xl sm:text-2xl font-semibold">
-                <span className="z-10">{item.num}</span>
-                {/* Yellow ring */}
-                <div
-                  className="absolute inset-0 rounded-full border-t-4"
-                  style={{ borderColor: "#FABF16", transform: "rotate(50deg)" }}
-                ></div>
-              </div>
-              {/* Text under circle */}
-              <p className="mt-3 sm:mt-4 text-xs sm:text-sm max-w-[120px] sm:max-w-none">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Final Contact Section */}
-      <section
-        className="bg-[#f8f8f8] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-32 text-[#1c1c1c]"
-        style={{ fontFamily: '"Source Sans Pro", sans-serif', lineHeight: 1.4 }}
-      >
-        <div className="max-w-5xl mx-auto text-center">
-          {/* Heading */}
-          <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl mb-4 sm:mb-6 leading-tight font-semibold">
-            Get more from the markets when <br className="hidden sm:block" />
-            you join RightTrade Capital
-          </h2>
-
-          {/* Paragraph */}
-          <p className="text-xs sm:text-sm lg:text-base text-[#1c1c1c] text-center leading-relaxed mb-8 sm:mb-12 lg:mb-14 max-w-3xl mx-auto">
-            We are a globally regulated broker, and for the safety of all our
-            clients we offer segregated funds protection. If you can't decide
-            which account is right for you, you're wondering how to get started
-            as a complete beginner, or you'd like to ask us anything about our
-            products or services, please get in touch. We're here to help.
-          </p>
-
-          {/* Icons Row */}
-          <div className="flex flex-col sm:flex-row justify-center gap-6 sm:gap-10 lg:gap-20 items-center">
-            {/* Raise Request */}
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white shadow-md flex items-center justify-center">
-                <img
-                  src={email}
-                  alt="Raise Request"
-                  className="w-6 h-6 sm:w-8 sm:h-8"
-                />
-              </div>
-              <p className="mt-3 text-sm sm:text-base font-medium">
-                Raise Request
-              </p>
-            </div>
-
-            {/* Help Centre */}
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white shadow-md flex items-center justify-center">
-                <img
-                  src={doc}
-                  alt="Help Centre"
-                  className="w-6 h-6 sm:w-8 sm:h-8"
-                />
-              </div>
-              <p className="mt-3 text-sm sm:text-base font-medium">
-                Help Centre
-              </p>
-            </div>
-
-            {/* Chat */}
-            <div className="flex flex-col items-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white shadow-md flex items-center justify-center">
-                <img
-                  src={message}
-                  alt="Chat"
-                  className="w-6 h-6 sm:w-8 sm:h-8"
-                />
-              </div>
-              <p className="mt-3 text-sm sm:text-base font-medium">Chat</p>
-            </div>
           </div>
         </div>
       </section>

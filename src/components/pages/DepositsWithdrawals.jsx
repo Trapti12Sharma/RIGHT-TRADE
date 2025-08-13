@@ -309,8 +309,10 @@ const DepositsWithdrawals = () => {
       {/*  Section 3 - Manage funds your way */}
       <SideImageTextSection
         image={manageFundsImg}
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
         title="What Are The Benefits Of Using RightTrade Capital To Deposit And Withdraw Money?"
-        paragraphTextColor="text-black"
+        paragraphTextColor="text-white"
         paragraphs={[
           "We made every process simpler so you can trade more and pay less.",
         ]}
@@ -328,7 +330,7 @@ const DepositsWithdrawals = () => {
       <FourStepSection
         title="How To Get Money Out"
         steps={steps}
-        bgcolor="bg-[#121733]"
+        bgcolor="bg-sky-950"
       />
       {/*  Section 5 - */}
       <DepositMethodsTable

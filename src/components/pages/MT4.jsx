@@ -116,14 +116,8 @@ const MT4 = () => {
         </nav>
       </div>
 
-      <WhyTradeWithFXTM />
       <TradingAccountComparison accountData={accountData} />
 
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital"
-        buttonText="Open Account"
-      />
       <HowToWithdrawSection
         title="How to make a withdrawal in 4 simple steps"
         steps={withdrawSteps}

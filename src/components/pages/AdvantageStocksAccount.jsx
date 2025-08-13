@@ -8,6 +8,9 @@ import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
 import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
 import TradingAccountComparison from "../common/TradingAccountComparison";
+import SideImageTextSection from "../common/SideImageTextSection";
+import ImageTextSections from "../common/ImageTextSections";
+import FeatureSection from "../common/FeatureSection";
 import img from "../../assets/account2.png";
 import imgn from "../../assets/account3.png";
 import fund9 from "../../assets/fund9.svg";
@@ -15,6 +18,8 @@ import fund10 from "../../assets/fund10.svg";
 import fund11 from "../../assets/fund11.svg";
 import fund12 from "../../assets/fund12.svg";
 import bannerImage from "../../assets/advantagestocks1.png";
+import depositImg from "../../assets/deposits1.png";
+import commissionsImage from "../../assets/deposits1.png";
 
 const AdvantageStocksAccount = () => {
   const pageURLA =
@@ -22,32 +27,40 @@ const AdvantageStocksAccount = () => {
 
   const faqItems = [
     {
-      question: "What is the best account for forex?",
+      question: " What is the Advantage Stocks Trading Account?",
       answer:
-        "You can trade forex on all of our account types but many of our traders prefer to do so on our Advantage account, thanks to the fact that it offers the best value - with typically zero spreads on popular FX pairs. For information, check out our handy guide to choosing the best trading account.",
+        " You can trade global stocks like Tesla, Apple, and Microsoft with no commission and tight spreads in a special account at RightTrade Capital.",
     },
     {
-      question: "What  kind of account do I need to trade forex?",
+      question:
+        " Is this the best place for people who are new to trading stocks?",
       answer:
-        "You can trade forex on all of our account types. They all come with slightly different conditions, so do make sure you have a good look through the details to settle on the account that best suits your own goals.",
+        " Yes. Our platform is good for both new and experienced traders because it has low fees, educational materials, and tools that are easy to use.",
     },
     {
-      question: "Can I trade forex without a broker?",
+      question: " What is the smallest amount you can put down?",
       answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like RightTrade Capital also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+        "You have to put at least $200 in the Advantage Stocks Trading Account.",
     },
     {
-      question: "How much is the transaction fee?",
+      question:
+        "Can you buy and sell Tesla, Apple, and Microsoft stocks online?",
       answer:
-        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
+        " Yes, for sure. You can get instant access to these and hundreds of other stocks from all over the world.",
+    },
+
+    {
+      question: " How fast can I get my money out?",
+      answer:
+        " Most withdrawals happen in one to three business days, but this depends on the payment provider you use.",
     },
   ];
 
   const withdrawSteps = [
-    "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
-    "Choose your payment method and click ‘Withdraw’.",
-    "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
-    "Complete the necessary fields and click 'Submit.'",
+    "Go to the 'My Money' section in My RightTrade Capital and click on 'Withdraw'.",
+    "Choose your payment method and click 'Withdraw'.",
+    "Pick the account or wallet you want to take money out of.",
+    "Fill out the required fields and hit 'Submit'.",
   ];
   return (
     <>
@@ -73,8 +86,47 @@ const AdvantageStocksAccount = () => {
         image={bannerImage}
       />
 
+      <FeatureSection
+        title="Are you ready to go?"
+        paragraph="Open your Advantage Stocks Trading Account today and start trading stocks like Tesla, Apple, Microsoft, and others. You won't have to pay a lot of money.
+RightTrade Capital: Trust More. More Access. More Value.
+"
+      />
+      <SideImageTextSection
+        image={depositImg}
+        title="RightTrade Capital: A Trading Account for Advantage Stocks"
+        paragraphTextColor="text-white"
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        paragraphs={[
+          "With Zero Commission, you can trade stocks like Tesla, Apple, Microsoft, and more. It's a smarter way to buy and sell stocks.",
+        ]}
+        paragraphs2="At RightTradeCapital, we believe that every trader should have an advantage over the others. People who want to trade the most popular stocks in the world, like Tesla, Apple, and Microsoft, without having to pay high commissions can use the Advantage Stocks Trading Account.
+        You can now take charge of your portfolio like never before with Zero Commission Stock Trading, which has tight spreads, cutting-edge technology, and full transparency."
+      />
+
+      <ImageTextSections
+        title="You can trade stocks with RightTrade Capital"
+        description={`At RightTrade Capital, we're more than just a platform. We are here to help you achieve your trading goals. With the Advantage Stocks Trading Account, you get:
+
+
+        • No Fees for Stock Trading.
+        • Getting in touch with world leaders like Microsoft, Apple, and Tesla.
+        • Low costs of trading and tight spreads.
+         • Data on performance that is clear.
+         • Learning materials for free.
+         • Fast and safe withdrawals.`}
+        image={commissionsImage}
+        reverse={false}
+        noButton={true}
+        bgcolor="bg-white"
+        textcolor="text-[#121733]"
+        paragraph="No matter if you are a day trader, a swing trader, or a long-term investor, our platform is made to give you the best possible stock trading experience.
+"
+      />
+
       <HowToWithdrawSection
-        title="How to make a withdrawal in 4 simple steps"
+        title="Four Simple Steps to Withdraw"
         steps={withdrawSteps}
       />
 

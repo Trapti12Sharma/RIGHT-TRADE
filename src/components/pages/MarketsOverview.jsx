@@ -10,6 +10,7 @@ import MarketViewFeaturen from "../common/MarketViewFeaturen";
 import { FaChartLine, FaLayerGroup, FaSignal } from "react-icons/fa";
 import MarketViewFeatureSection from "../common/MarketViewFeatureSection";
 import MarketInsightCard from "../common/MarketInsightCard";
+import FeatureSection from "../common/FeatureSection";
 import MarketViewSteps from "../common/MarketViewSteps";
 // import insight1 from "../../assets/insight1.jpg";
 // import insight2 from "../../assets/insight2.jpg";
@@ -257,20 +258,16 @@ const MarketOverview = () => {
         note={statsData.note}
         image={statsData.image}
       />
-      <SideImageTextSection
-        image={img}
-        bgColor="bg-[#fff]"
-        textcolor="text-black"
+
+      <FeatureSection
         title="MarketView for Forex Trading: Get Live Analysis from RightTrade Capital"
-        subtitle="Give yourself an advantage with our most popular account."
-        paragraphs={[
-          "You can't just trust your intuition to stay up with changes in the currency market these days. You need charting systems that are powerful, data that is up to date, and tools that are accurate. We at RightTrade Capital use the newest tools, including Forex Market Trading MarketView, to improve your trading experience and offer you an edge over your competitors. Our ecosystem links market data to the choices you can make, whether you're just starting out with currency trading or you're an experienced investor who wants to be sure of their choices.",
-          "This post will show you how RightTrade Capital can help you make smarter judgements, trade better in TradingView markets, and back up your transactions with world-class data.",
-        ]}
-        paragraphTextColor="text-black"
+        paragraph="You can't just trust your intuition to stay up with changes in the currency market these days. You need charting systems that are powerful, data that is up to date, and tools that are accurate. We at RightTrade Capital use the newest tools, including Forex Market Trading MarketView, to improve your trading experience and offer you an edge over your competitors. Our ecosystem links market data to the choices you can make, whether you're just starting out with currency trading or you're an experienced investor who wants to be sure of their choices."
+        // features={features}
       />
+
       <TextImageSection
         imgSrc={imgn}
+        textcolor="text-white"
         title="The Good Things About Trading in the Forex Market MarketView Helps You Trade Better"
         listItems={[
           "Visual charting makes it easy to see where to enter and exit, which cuts down on guesswork and trading based on emotions.",

@@ -52,7 +52,6 @@ const Footer = () => {
         { label: "Demo Accounts", path: "/demo-accounts" },
         { label: "Platforms Overview", path: "/platforms-overview" },
         { label: "MT4", path: "/mt4" },
-        { label: "MT5", path: "/mt5" },
         { label: "Mobile Trading", path: "/mobile-trading" },
         { label: "Leverage and Margin", path: "/leverage-margin" },
         { label: "Dividends", path: "/dividends" },

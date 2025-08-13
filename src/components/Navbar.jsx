@@ -113,7 +113,7 @@ const Navbar = () => {
         },
         {
           heading: "Platforms",
-          links: ["Platforms Overview", "MT4", "MT5", "Mobile Trading"],
+          links: ["Platforms Overview", "MT4", "Mobile Trading"],
         },
         {
           heading: "Terms",

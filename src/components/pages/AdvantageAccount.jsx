@@ -108,12 +108,17 @@ const AdvantageAccount = () => {
         image={bannerImage}
       />
 
+      <FeatureSection
+        title="Leverage That Works for You"
+        paragraph="The Advantage Account provides you the greatest leverage for FX trading, so you can make the most of the market while still being in control of your risk. Choose an amount of leverage that fits your trading style — whether you want to be safe or take risks for big rewards."
+      />
+
       <SideImageTextSection
         image={manageFundsImg}
         title="Trade with the RightTrade Capital Advantage Account"
         paragraphTextColor="text-black"
         paragraphs={[
-          "At RightTrade Capital, we believe that traders should have an account that allows them the finest trading circumstances and the most flexibility. The Advantage Account is for serious traders who demand low spreads, quick execution, and complete openness. With our cutting-edge technology and access to markets all around the globe, you can trade with confidence knowing you're receiving the greatest FX trading platform experience.",
+          "At RightTradeCapital, we believe that traders should have an account that allows them the finest trading circumstances and the most flexibility. The Advantage Account is for serious traders who demand low spreads, quick execution, and complete openness. With our cutting-edge technology and access to markets all around the globe, you can trade with confidence knowing you're receiving the greatest FX trading platform experience.",
         ]}
       />
 
@@ -128,12 +133,6 @@ const AdvantageAccount = () => {
         ]}
         closingParagraph="You may trade Forex, indices, commodities, or cryptocurrencies on an online trading platform that is quick, precise, and performs effectively.
 "
-      />
-
-      <FeatureSection
-        title="Leverage That Works for You"
-        paragraph="The Advantage Account provides you the greatest leverage for FX trading, so you can make the most of the market while still being in control of your risk. Choose an amount of leverage that fits your trading style — whether you want to be safe or take risks for big rewards."
-        // features={features}
       />
 
       <ImageTextSections

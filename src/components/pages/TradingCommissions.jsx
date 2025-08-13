@@ -272,9 +272,9 @@ const TradingCommissions = () => {
           "Quick Execution: All platforms (MT4/MT5/Web) process orders at lightning speed.",
           "Help When You Need It: You may get help in several languages 24/5 to help you comprehend all the fees.",
         ]}
-        bgColor="bg-white"
-        textcolor="text-black"
-        paragraphTextColor="text-gray-600"
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        paragraphTextColor="text-white"
       />
 
       <FeatureSection
