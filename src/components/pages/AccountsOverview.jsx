@@ -185,10 +185,6 @@ const AccountsOverview = () => {
           property="og:title"
           content="Best Forex Trading Account | Commission-Free Forex Trading"
         />
-        <meta
-          property="og:description"
-          content="Open the best forex trading account with zero commissions and tight spreads. Trade with confidence using our secure and fast platform."
-        />
       </Helmet>
 
       <StatsSection

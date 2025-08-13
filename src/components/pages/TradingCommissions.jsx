@@ -26,7 +26,7 @@ const TradingCommissions = () => {
     title: "Things to Keep in Mind About Other Fees",
     description:
       "We want all of our costs to be easy to understand and cheap. The only additional costs you could have to pay are:",
-    bgcolor: "bg-[#F9FAFB]", // light background
+    bgcolor: "bg-[#F9FAFB]",
     titlecolor: "text-[#10162f]",
 
     features: [
