@@ -26,6 +26,9 @@ import commissionsImage from "../../assets/deposits1.png";
 import home6 from "../../assets/sign-up.png";
 
 const MajorCurrencyPairs = () => {
+  const pageURLA =
+    "https://www.righttradecapital.com/major-currency-pairs-in-forex";
+
   const stepsData = [
     {
       image:
@@ -56,40 +59,6 @@ const MajorCurrencyPairs = () => {
         "We acquire liquidity from top-tier institutions, which helps us offer you the best pricing on all major currency pairings in forex.",
     },
   ];
-  const pageURLA =
-    "https://www.righttradecapital.com/major-currency-pairs-in-forex";
-
-  const awardsItems = [
-    // ✅ Place it here before return
-    { imageSrc: fund9 },
-    { imageSrc: fund10 },
-    { imageSrc: fund11 },
-    { imageSrc: fund12 },
-  ];
-  // ✅ Fifth section data (Video)
-
-  const faqItems = [
-    {
-      question: "What are currency pairs in Major Currency Pair trading?",
-      answer:
-        "Currency pairs are the quotation of two different currencies traded in the Major Currency Pair market. The first currency is the base currency and the second is the quote currency. For example, in EUR/USD, EUR is the base and USD is the quote currency.",
-    },
-    {
-      question: "How is the value of a currency pair determined?",
-      answer:
-        "The value of a currency pair is determined by how much of the quote currency is needed to buy one unit of the base currency. For example, if EUR/USD is 1.2000, it means 1 Euro = 1.20 US Dollars.",
-    },
-    {
-      question: "Which currency is the easiest to trade?",
-      answer:
-        "Major currency pairs such as EUR/USD, USD/JPY, and GBP/USD are considered easiest to trade due to high liquidity and tight spreads.",
-    },
-    {
-      question: "What are the 7 major currency pairs?",
-      answer:
-        "The 7 major currency pairs are EUR/USD, USD/JPY, GBP/USD, USD/CHF, USD/CAD, AUD/USD, and NZD/USD.",
-    },
-  ];
 
   const statsData = {
     title: "Major currency pairs: most traded currencies",
@@ -109,11 +78,6 @@ const MajorCurrencyPairs = () => {
       "People who buy and sell things and pay attention to news about the international economy and interest rates",
       "High-frequency traders who want trades to happen rapidly and with a lot of volume",
     ],
-  };
-
-  const textSectionData = {
-    heading: "Trading currency pairs",
-    subtext: `Currency trading, also known as Major Currency Pair, foreign exchange or FX trading, is the conversion of one currency into another. Roughly $6.5 trillion worth of currency transactions are carried out every single day – whether by individuals, banks or companies. This makes forex one of the most actively traded markets in the world.\n\nForeign exchange is often done for practical purposes. For example, you might exchange your local currency for US dollars before going on holiday to the United States. However, the vast majority of currency conversion is done by forex traders looking to turn a profit.\n\nThe amount of currency converted every day means that the market is highly liquid, but also makes some currencies extremely volatile. While this can offer exciting and potentially lucrative trading opportunities, it comes with additional risk, too.`,
   };
 
   const currencyDiagramSection = {
@@ -145,10 +109,10 @@ const MajorCurrencyPairs = () => {
       </Helmet>
 
       <StatsSection {...statsData} />
+
       <FeatureSection
         title="Major Currency Pairs in Forex Trading  RightTrade Capital"
         paragraph="At RightTrade Capital, we empower traders to navigate the global currency markets with ease and precision. One of the most essential foundations of forex trading is understanding the major currency pairs in forex — these are the most traded and most liquid combinations in the market. Whether you’re a beginner or an advanced trader, focusing on these pairs can give you access to tighter spreads, higher liquidity, and more consistent volatility."
-        // features={features}
       />
 
       <SideImageTextSection
