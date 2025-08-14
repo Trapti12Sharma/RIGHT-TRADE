@@ -211,8 +211,7 @@ const MarketOverview = () => {
       icon: <FaChartLine />,
       heading:
         "1. Tools for making charts that are more advanced It works with TradingView.",
-      paragraph:
-        "The best online chart-making programme is TradingView. Our Forex Market Trading MarketView brings together TradingView's simple features into one spot so traders can see trends, create indicators, and keep an eye on strategies over a range of time frames.",
+
       points: [
         "Over 100 built-in indicators",
         "Tools for making Fibonacci retracements, trend lines, and other things",
@@ -224,8 +223,7 @@ const MarketOverview = () => {
     {
       icon: <FaLayerGroup />,
       heading: "2. TradingView has a variety of markets where you can trade.",
-      paragraph:
-        "MarketView is different from other software since it lets you trade in more than one TradingView market. These are some of the markets:",
+
       points: [
         "Major, minor, and exotic currencies in pairs",
         "People trade gold, silver, and crude oil.",
@@ -237,8 +235,7 @@ const MarketOverview = () => {
     {
       icon: <FaSignal />,
       heading: "3. Forex TradingView Signals in Real Time",
-      paragraph:
-        "MarketView is a Forex TradingView platform that delivers traders real-time advise and setups from analysts from all over the world.",
+
       points: [
         "Indications that tell you when to purchase or sell",
         "Setups for trading in the community",
@@ -290,6 +287,8 @@ const MarketOverview = () => {
         features={featureData}
         bgColor="bg-[#121733]"
         textcolor="text-[#fff]"
+        titleColor="text-[#fff]"
+        subtitleColor="text-[#fff]"
       />
       <MarketViewFeatureSection
         title="Here are some of the things that RightTrade Capital's Forex Market Trading MarketView can do:"

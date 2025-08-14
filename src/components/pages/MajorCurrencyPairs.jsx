@@ -1,15 +1,20 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../common/StatsSection";
 import SimpleCenteredTextSection from "../common/SimpleCenteredTextSection";
 import ImageWithTextCenterSection from "../common/ImageWithTextCenterSection";
 import ForexTradeSection from "../common/ForexTradeSection";
 import ImageLeftTextRightSection from "../common/ImageLeftTextRightSection";
+import ImageTextSections from "../common/ImageTextSections";
 import VideoSection from "../common/VideoSection";
 import FaqSection from "../common/FaqSection2";
 import TrustCTASection from "../common/TrustCTASection";
 import AwardsSection from "../common/AwardsSection";
 import ContactOptions from "../common/ContactOptions";
-
+import FeatureSection from "../common/FeatureSection";
+import SideImageTextSection from "../common/SideImageTextSection";
+import SecurityRegulationSection from "../common/SecurityRegulationSection";
+import MarketViewSteps from "../common/MarketViewSteps";
 import statsBg from "../../assets/currency1.png";
 import diagramImg from "../../assets/currency2.png";
 import fxTradingImg from "../../assets/currency3.png";
@@ -17,8 +22,43 @@ import fund9 from "../../assets/fund9.svg";
 import fund10 from "../../assets/fund10.svg";
 import fund11 from "../../assets/fund11.svg";
 import fund12 from "../../assets/fund12.svg";
+import commissionsImage from "../../assets/deposits1.png";
+import home6 from "../../assets/sign-up.png";
 
 const MajorCurrencyPairs = () => {
+  const stepsData = [
+    {
+      image:
+        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      heading: "Big currency pairs with small spreads",
+      description:
+        "In forex, we provide tight spreads on all major currencies. This means you get to keep more of your earnings on each deal.",
+    },
+    {
+      image:
+        "https://images.pexels.com/photos/6802046/pexels-photo-6802046.jpeg",
+      heading: "Quick execution",
+      description:
+        "You may trade the most volatile and liquid main forex pairs by volume straight away, thanks to lightning-fast execution speeds.This is perfect for folks who do day trading and scalp trading.",
+    },
+    {
+      image:
+        "https://images.pexels.com/photos/6802047/pexels-photo-6802047.jpeg",
+      heading: "Tools for Advanced Trading",
+      description:
+        "You may see quotations, sophisticated charts, and smart indicators for every major currency pair in real time.",
+    },
+    {
+      image:
+        "https://images.pexels.com/photos/6802047/pexels-photo-6802047.jpeg",
+      heading: "You can trust this liquidity",
+      description:
+        "We acquire liquidity from top-tier institutions, which helps us offer you the best pricing on all major currency pairings in forex.",
+    },
+  ];
+  const pageURLA =
+    "https://www.righttradecapital.com/major-currency-pairs-in-forex";
+
   const awardsItems = [
     // ✅ Place it here before return
     { imageSrc: fund9 },
@@ -27,14 +67,7 @@ const MajorCurrencyPairs = () => {
     { imageSrc: fund12 },
   ];
   // ✅ Fifth section data (Video)
-  const videoData = {
-    videoUrl: "https://player.vimeo.com/video/76979871", // Replace with actual video
-    title: "What is Major Currency Pair?",
-    description:
-      "Major Currency Pair (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to",
-    linkText: "Major Currency Pair trading for beginners.",
-    linkHref: "#", // Update link to the actual page
-  };
+
   const faqItems = [
     {
       question: "What are currency pairs in Major Currency Pair trading?",
@@ -68,13 +101,13 @@ const MajorCurrencyPairs = () => {
   };
 
   const forexTradeData = {
-    title: "What are the base and quote currencies?",
-    description: `The ‘base’ currency is always listed first in a Major Currency Pair pair, with the ‘quote’ currency listed second. The base currency is always equal to one, while the quote currency represents the current price of the pair.\n\nThe quote represents how much it’ll cost to buy one of the base currency.\n\nSo, if the price of GBP/USD is quoted as 1.13490, it would cost you 1.13490 US dollars to buy one British pound.\n\nWhen you are trading forex, you are always buying one currency and selling another at the same time. Learn more about base and quote currencies.`,
+    title: "Which currency pairs are the most important in Forex?",
+    description: `In forex, the US dollar (USD) is always on one side of a major currency pair. These pairs are made up of the strongest and most stable currencies in the world.These pairs are the most popular in the forex market and around the world.`,
     benefits: [
-      "The base currency is listed first, followed by the quote currency.",
-      "The base currency always equals one unit.",
-      "The quote shows how much of the quote currency is needed to buy one unit of the base currency.",
-      "You simultaneously buy one and sell the other in every Major Currency Pair trade.",
+      "If you're a beginning trader who wants to minimize your risk and acquire tighter spreads, it's a smart idea to focus on key currency pairings in forex.",
+      "Technical traders who study how prices have changed over time",
+      "People who buy and sell things and pay attention to news about the international economy and interest rates",
+      "High-frequency traders who want trades to happen rapidly and with a lot of volume",
     ],
   };
 
@@ -90,62 +123,99 @@ const MajorCurrencyPairs = () => {
     image: diagramImg,
   };
 
-  const fxTradingSection = {
-    imgSrc: fxTradingImg,
-
-    paragraph:
-      "When you trade currencies with RightTrade Capital, you’re making a call on whether the price of a currency pair will rise or fall. If you’re correct, you’ll make a profit. That’s because you’re trading a CFD, which means you can go long or short, and benefit from leverage. Let’s look at how it works.",
-  };
-
   return (
     <>
+      <Helmet>
+        <title>
+          Major Currency Pairs in Forex | Trade Major Forex Pairs by Volume
+        </title>
+
+        <meta
+          name="description"
+          content="Explore  the most traded major currency pairs in forex with RightTrade Capital. Trade top major currencies in forex like EUR/USD, USD/JPY, and more.."
+        />
+
+        <link rel="canonical" href={pageURLA} />
+
+        <meta property="og:url" content={pageURLA} />
+        <meta
+          property="og:title"
+          content="Major Currency Pairs in Forex | Trade Major Forex Pairs by Volume"
+        />
+      </Helmet>
+
       <StatsSection {...statsData} />
-      <SimpleCenteredTextSection {...textSectionData} />
-      <ImageWithTextCenterSection {...currencyDiagramSection} />
-      <ForexTradeSection {...forexTradeData} />
-      <ImageLeftTextRightSection {...fxTradingSection} bgColor="bg-[#1f213f]" />
-      <SimpleCenteredTextSection
-        heading="TRADING STRATEGIES"
-        subtext="Dive deeper into strategies that FX and CFD traders love to work with"
-        buttonText="Read more"
-        style={{
-          container: {
-            backgroundColor: "#f9f9f9",
-            padding: "60px 20px",
-            textAlign: "center",
-          },
-          heading: {
-            fontSize: "2rem",
-            fontWeight: "600",
-            marginBottom: "20px",
-          },
-          subtext: {
-            fontSize: "1rem",
-            color: "#555",
-            lineHeight: "1.6",
-            whiteSpace: "pre-line",
-            maxWidth: "800px",
-            margin: "0 auto",
-          },
-        }}
+      <FeatureSection
+        title="Major Currency Pairs in Forex Trading  RightTrade Capital"
+        paragraph="At RightTrade Capital, we empower traders to navigate the global currency markets with ease and precision. One of the most essential foundations of forex trading is understanding the major currency pairs in forex — these are the most traded and most liquid combinations in the market. Whether you’re a beginner or an advanced trader, focusing on these pairs can give you access to tighter spreads, higher liquidity, and more consistent volatility."
+        // features={features}
       />
-      <VideoSection {...videoData} />
 
-      {/* Section 7 */}
+      <SideImageTextSection
+        image={fxTradingImg}
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        title="RightTrade Capital: The Most Important Currency Pairs for Forex Trading"
+        paragraphTextColor="text-white"
+        paragraphs={[
+          "We give traders everything they need to trade swiftly and correctly on the global currency markets at RightTrade Capital.One of the most fundamental things to know about trading forex is how the major currency pairings function.",
+        ]}
+        description=" People trade these pairs the most, and the market has the most money in them.If you focus on these pairings, you'll obtain tighter spreads, higher liquidity, and more steady volatility, no matter how long you've been trading."
+      />
 
-      {/*  Section 6 - Contact CTA */}
-      <ContactOptions />
+      <ForexTradeSection {...forexTradeData} />
 
-      {/* Section 10: Awards Section */}
-      <AwardsSection awards={awardsItems} />
+      <ImageWithTextCenterSection {...currencyDiagramSection} />
 
-      {/* Section 6 */}
-      <FaqSection faqs={faqItems} />
+      <ImageTextSections
+        title="RightTrade Capital lets you trade major currency pairs"
+        description={`Are you ready to trade the currency pairs that have the most money in the world?
+        Sign up for RightTrade Capital today and get instant access to:
 
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital."
-        buttonText="Open account"
+        • Big forex pairs with modest spreads
+        • MetaTrader 4 and 5 have won prizes
+        • Things that can help you understand how to trade and cope with risk
+        • Support for more than one language and protection for your money`}
+        image={commissionsImage}
+        reverse={false}
+        noButton={true}
+        bgcolor="bg-white"
+        textcolor="text-[#121733]"
+      />
+
+      <SideImageTextSection
+        image={fxTradingImg}
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        title="Important currency pairs and how they effect the economy"
+        paragraphTextColor="text-white"
+        paragraphs={[
+          "The economics, interest rates, and politics of a country all have an effect on its major currency pairs.",
+        ]}
+        listItems={[
+          "For instance, the choices made by the ECB and the Fed have a considerable effect on EUR/USD.",
+          "The USD/JPY pair moves in response to U.S. inflation data and BOJ policies.",
+          "News concerning Brexit and rising prices in the UK can have an effect on the GBP/USD.",
+        ]}
+        description="RightTrade Capital's Market Insights will help you stay up to date on the news and make better decisions when trading the most popular FX pairs by volume."
+      />
+
+      <MarketViewSteps
+        title="Why should you choose RightTrade Capital to trade the most important currency pairs?"
+        steps={stepsData}
+      />
+
+      <SecurityRegulationSection
+        image={home6}
+        title="The Advantages of Trading Major Currencies in Forex"
+        introParagraph="There are a lot of beneficial benefits about trading big currencies in forex:"
+        bulletPoints={[
+          "A lot of money: Orders are easier to fill, and there is less slippage.",
+          "Lower transaction costs: Transactions cost less when spreads are lower.",
+          "Predictable volatility: Obvious prospects for technical analysis",
+          "Plenty of information: Like economic news and reports that assist you guess how prices may change",
+          "Strategic flexibility: Works for scalping, day trading, swing trading, and long-term investing.",
+        ]}
       />
     </>
   );
