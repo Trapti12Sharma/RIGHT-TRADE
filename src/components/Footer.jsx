@@ -155,15 +155,15 @@ const Footer = () => {
               <h3 className="font-bold text-base text-white mb-4">OFFICES</h3>
               <ul className="space-y-3 text-md text-gray-300 leading-relaxed">
                 <li>
-                  <strong className="text-white">Exinity Limited:</strong>
+                  <strong className="text-white">
+                    RightTrade Capital Limited:
+                  </strong>
                   <br />
                   5th Floor, 355 NEX Tower, Rue du Savoir, Cybercity, Ebene
                   72201, Mauritius
                 </li>
                 <li>
-                  <strong className="text-white">
-                    Exinity Capital East Africa Ltd:
-                  </strong>
+                  <strong className="text-white">RightTrade Capital :</strong>
                   <br />
                   West End Towers, Waiyaki Way, 6th Floor, P.O. Box 1896-00606,
                   Nairobi, Kenya
@@ -183,30 +183,26 @@ const Footer = () => {
             authorized and regulated in various jurisdictions.
           </p>
           <p>
-            <strong className="text-white">Exinity Limited</strong>{" "}
+            <strong className="text-white">RightTrade Capital Limited</strong>{" "}
             (www.RightTradeCapital.com) is regulated by the Financial Services
             Commission of the Republic of Mauritius, FSCA of South Africa, and
             is a licensed Over the Counter Derivative Provider.
           </p>
           <p>
-            <strong className="text-white">
-              Exinity Global Financial Services L.L.C
-            </strong>{" "}
-            is regulated by the Securities and Commodities Authority of the UAE.
+            <strong className="text-white">RightTrade Capital</strong> is
+            regulated by the Securities and Commodities Authority of the UAE.
+          </p>
+          <p>
+            <strong className="text-white">RightTrade Capital Ltd</strong> is
+            regulated by the Capital Markets Authority of Kenya.
+          </p>
+          <p>
+            <strong className="text-white">RightTrade Capital Limited</strong>{" "}
+            is authorized and regulated by the Financial Conduct Authority, UK.
           </p>
           <p>
             <strong className="text-white">
-              Exinity Capital East Africa Ltd
-            </strong>{" "}
-            is regulated by the Capital Markets Authority of Kenya.
-          </p>
-          <p>
-            <strong className="text-white">Exinity UK Limited</strong> is
-            authorized and regulated by the Financial Conduct Authority, UK.
-          </p>
-          <p>
-            <strong className="text-white">
-              Risk Warning (Exinity Limited):
+              Risk Warning (RightTrade Capital Limited):
             </strong>{" "}
             Trading leveraged instruments carries risk. You may lose more than
             you invest. Please ensure you fully understand the risks or seek
