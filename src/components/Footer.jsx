@@ -147,7 +147,7 @@ const Footer = () => {
                   <NavLink to="/contact-us">Contact Us</NavLink>
                 </li>
                 <li>Customer Support:</li>
-                <li className="font-medium">+44 20 3734 1025</li>
+                <li className="font-medium"></li>
               </ul>
             </div>
 
@@ -159,14 +159,10 @@ const Footer = () => {
                     RightTrade Capital Limited:
                   </strong>
                   <br />
-                  5th Floor, 355 NEX Tower, Rue du Savoir, Cybercity, Ebene
-                  72201, Mauritius
                 </li>
                 <li>
                   <strong className="text-white">RightTrade Capital :</strong>
                   <br />
-                  West End Towers, Waiyaki Way, 6th Floor, P.O. Box 1896-00606,
-                  Nairobi, Kenya
                 </li>
               </ul>
             </div>

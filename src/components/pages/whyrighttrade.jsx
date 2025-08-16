@@ -256,7 +256,6 @@ const WhyRightTrade = () => {
         </div>
       </section>
 
-      {/* Exinity Group Section */}
       <section
         className="relative w-full text-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 text-center bg-cover bg-center bg-no-repeat"
         style={{

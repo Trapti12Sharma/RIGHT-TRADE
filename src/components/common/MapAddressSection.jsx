@@ -37,17 +37,12 @@ const MapAddressSection = () => {
         ></iframe>
 
         <div className="flex flex-col lg:flex-row justify-between gap-10 p-6">
-          <AddressCard
-            title="Address"
-            address="71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UNITED KINGDOM"
-            phone="+91 7979758661"
-            email="support@finflymarkets.com"
-          />
+          <AddressCard title="Address" address="" phone="" email="" />
           <AddressCard
             title="Registered Address"
-            address="71-75, Shelton Street, Covent Garden, London, WC2H 9JQ, UNITED KINGDOM"
-            phone="+91 7979758661"
-            email="support@finflymarkets.com"
+            address=""
+            phone=""
+            email=""
           />
         </div>
       </div>
