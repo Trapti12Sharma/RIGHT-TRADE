@@ -14,11 +14,11 @@ const SupportedRegions = ({ title, subtitle, regions, ctaText, ctaNote }) => {
         </div>
 
         {/* Region Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center">
           {regions.map((region, idx) => (
             <div
               key={idx}
-              className="group relative bg-gradient-to-br from-[#1a1f3a] to-[#0f1229] rounded-2xl p-8 border border-gray-700/30 hover:border-[#FABF16]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-[#FABF16]/10"
+              className="group relative bg-gradient-to-br from-[#1a1f3a] to-[#0f1229] rounded-2xl p-8 border border-gray-700/30 hover:border-[#FABF16]/30 transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-[#FABF16]/10 w-full max-w-sm"
             >
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#FABF16]/5 to-transparent rounded-bl-3xl"></div>
               <div className="relative z-10 flex justify-center mb-6">

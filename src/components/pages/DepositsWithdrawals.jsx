@@ -2,10 +2,7 @@ import React from "react";
 import StatsSection from "../common/StatsSection";
 import FeatureSection from "../common/FeatureSection";
 import SideImageTextSection from "../common/SideImageTextSection";
-import ImportantInfoSection from "../common/ImportantInfoSection";
-import JoinUsBanner from "../common/JoinUsBanner";
 import FourStepSection from "../common/FourStepSection";
-import HowToWithdrawSection from "../common/HowToWithdrawSection";
 import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
 import FaqSection from "../common/FaqSection2";
 import DepositMethodsTable from "../common/DepositMethodsTable";
@@ -13,9 +10,7 @@ import SupportedRegions from "../common/SupportedRegions";
 import MarketViewFeatureSection from "../common/MarketViewFeatureSection";
 import SecurityRegulationSection from "../common/SecurityRegulationSection";
 import RightImageLeftContent from "../common/RightImageLeftContent";
-
 import { FaGlobeEurope, FaBuilding, FaExchangeAlt } from "react-icons/fa";
-
 import depositImg from "../../assets/deposits1.png";
 import manageFundsImg from "../../assets/deposits2.png";
 import safetyIcon from "../../assets/safety.svg";
@@ -172,12 +167,14 @@ const DepositsWithdrawals = () => {
       minDeposit: "—",
     },
   ];
+
   const withdrawSteps = [
     "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
     "Choose your payment method and click ‘Withdraw’.",
     "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
     "Complete the necessary fields and click 'Submit.'",
   ];
+
   const steps = [
     {
       number: 1,
@@ -236,6 +233,7 @@ const DepositsWithdrawals = () => {
         "You can view your transaction history in the ‘Transaction History’ section.",
     },
   ];
+
   const features = [
     {
       image: safetyIcon,

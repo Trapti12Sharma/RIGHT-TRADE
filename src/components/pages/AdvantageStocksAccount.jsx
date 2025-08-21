@@ -112,9 +112,9 @@ const AdvantageStocksAccount = () => {
       <FeatureSection
         title="Are you ready to go?"
         paragraph="Open your Advantage Stocks Trading Account today and start trading stocks like Tesla, Apple, Microsoft, and others. You won't have to pay a lot of money.
-RightTrade Capital: Trust More. More Access. More Value.
-"
+        RightTrade Capital: Trust More. More Access. More Value."
       />
+
       <SideImageTextSection
         image={depositImg}
         title="RightTrade Capital: A Trading Account for Advantage Stocks"
@@ -144,8 +144,7 @@ RightTrade Capital: Trust More. More Access. More Value.
         noButton={true}
         bgcolor="bg-white"
         textcolor="text-[#121733]"
-        paragraph="No matter if you are a day trader, a swing trader, or a long-term investor, our platform is made to give you the best possible stock trading experience.
-"
+        paragraph="No matter if you are a day trader, a swing trader, or a long-term investor, our platform is made to give you the best possible stock trading experience."
       />
 
       <HowToWithdrawSection

@@ -29,7 +29,7 @@ const MarketViewFeatureSection = ({
       <div className="max-w-7xl mx-auto">
         {/* Main Heading */}
         <h2
-          className={`text-4xl font-bold ${titlecolor} mb-4 font-['Source Sans Pro']`}
+          className={`text-4xl text-center font-bold ${titlecolor} mb-4 font-['Source Sans Pro']`}
         >
           {title}
         </h2>

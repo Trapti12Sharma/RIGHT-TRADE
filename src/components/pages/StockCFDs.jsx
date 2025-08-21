@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FaDollarSign, FaBolt, FaGlobe, FaUniversity } from "react-icons/fa";
 import StatsSection from "../common/StatsSection";
 import ForexTradeSection from "../common/ForexTradeSection";
@@ -7,11 +8,21 @@ import CurrencyInfoSection from "../common/CurrencyInfoSection";
 import VideoSection from "../common/VideoSection";
 import FaqSection from "../common/FaqSection2";
 import TrustCTASection from "../common/TrustCTASection";
+import FeatureSection from "../common/FeatureSection";
+import SideImageTextSection from "../common/SideImageTextSection";
+import ImageTextSections from "../common/ImageTextSections";
+import SecurityRegulationSection from "../common/SecurityRegulationSection";
+import MarketViewSteps from "../common/MarketViewSteps";
+import fxTradingImg from "../../assets/currency3.png";
+import commissionsImage from "../../assets/deposits1.png";
 import statsBg from "../../assets/stockCDF1.png";
 import globeImg from "../../assets/globe.svg";
+import home6 from "../../assets/sign-up.png";
 
 const StockCFDs = () => {
-  // ✅ First section data
+  const pageURLA =
+    "https://www.righttradecapital.com/best-stocks-for-cfd-trading";
+
   const statsData = {
     title: "Start Stock CFDs trading with RightTrade Capital",
     subtitle: "Trade the most popular Stock CFDs majors with spreads from zero",
@@ -20,129 +31,135 @@ const StockCFDs = () => {
     image: statsBg,
   };
 
-  // ✅ Second section data
-  const StockCFDsContent = {
-    title: "Trade major, minor and exotic currency pairs.",
-    description:
-      "The foreign exchange market has a daily trading volume of over $5 trillion, making it the most liquid in the world and an exciting place to trade. FX? It's in our name.",
-    benefits: [
-      "The most popular choice for every kind of trader, start with a few dollars or tens of thousands.",
-      "Massive liquidity means massive opportunity",
-      "The market is open 24/5 so trade anytime during the week",
-    ],
-  };
-
-  // ✅ Third section data (Why Trade Stock CFDs)
-  const whyTradeFeatures = [
+  const stepsData = [
     {
-      icon: <FaDollarSign size={40} className="text-[#FABF16]" />,
-      title: "Unbeatable pricing on major FX Pairs",
+      image:
+        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      heading: "Low Prices and Small Spreads",
       description:
-        "We offer typically 0.0 spreads on major FX Pairs like EURUSD and USDJPY on our most popular account, Advantage.",
+        "The best stocks for CFD trading have prices that are easy to understand, low fees, and small spreads. This way, you can get the most out of your money.",
     },
     {
-      icon: <FaBolt size={40} className="text-[#FABF16]" />,
-      title: "Faster execution for a better price",
+      image:
+        "https://images.pexels.com/photos/6802046/pexels-photo-6802046.jpeg",
+      heading: "Advanced Trading Platforms",
       description:
-        "We execute your trades in milliseconds, so you'll always get the best market price.",
+        "Trade from anywhere with MetaTrader 4, MetaTrader 5, and our own web and mobile platforms. Get fast, reliable performance and advanced charting tools.",
     },
     {
-      icon: <FaGlobe size={40} className="text-[#FABF16]" />,
-      title: "Globally trusted",
+      image:
+        "https://images.pexels.com/photos/6802047/pexels-photo-6802047.jpeg",
+      heading: "Fast Execution with Little Slippage",
       description:
-        "We're regulated and licensed under the FSC of the Republic of Mauritius and the UK's FCA, among others.",
+        "Orders are filled in milliseconds, so you can take advantage of market opportunities instantly.",
     },
     {
-      icon: <FaUniversity size={40} className="text-[#FABF16]" />,
-      title: "Total fund security",
+      image:
+        "https://images.pexels.com/photos/6802047/pexels-photo-6802047.jpeg",
+      heading: "Safe and Regulated",
       description:
-        "Trade with peace of mind. Your funds are fully segregated from our own and insured up to $1m.",
-    },
-  ];
-
-  // ✅ Fourth section data (new reusable)
-  const currencySectionData = {
-    title: "What is currency trading and why do traders love it?",
-    paragraphs: [
-      "Currencies are always traded in pairs. The first currency in the pair is called the base currency and the second the quote currency. Stock CFDs traders buy one currency in the pair and sell the other at the same time, depending on how they think their values will change in relation to each other.",
-      "Currency values can be affected by a number of factors that impact the strength of a nation's economy, including inflation, interest rates and political stability to name a few. Typically, Stock CFDs traders see the greatest volatility before and after key economic or political events as they speculate how this could affect the markets.",
-      "Currency pairs are split into three categories. Major currency pairs are the most traded pairs in the Stock CFDs industry. They usually include the US dollar as one half of the pair, like the EUR/USD and the USD/JPY. Other commonly traded major pairs include EUR/JPY and the EUR/GBP.",
-    ],
-    image: globeImg,
-  };
-
-  // ✅ Fifth section data (Video)
-  const videoData = {
-    videoUrl: "https://player.vimeo.com/video/76979871", // Replace with actual video
-    title: "What is Stock CFDs?",
-    description:
-      "Stock CFDs (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to",
-    linkText: "Stock CFDs trading for beginners.",
-    linkHref: "#", // Update link to the actual page
-  };
-
-  //  Sixth section data
-
-  const faqItems = [
-    {
-      question:
-        "How much do I need to start trading Stock CFDs with RightTrade Capital?",
-      answer:
-        "The minimum deposit depends on the account type you choose. It can be as low as $10. Check account details on the RightTrade Capital website.",
-    },
-    {
-      question: "Which account type is best for trading Stock CFDs?",
-      answer:
-        "RightTrade Capital offers various account types to suit different traders. Standard and ECN accounts are popular options depending on your strategy.",
-    },
-    {
-      question: "Is Stock CFDs trading safe?",
-      answer:
-        "Stock CFDs trading involves risks. It is important to trade with a regulated broker and have a solid risk management plan in place.",
-    },
-    {
-      question: "What is leverage and how does it work when trading FX?",
-      answer:
-        "Leverage allows you to control larger positions with a smaller amount of capital. It amplifies both profits and losses.",
-    },
-    {
-      question: "What currency pairs can I trade with RightTrade Capital?",
-      answer:
-        "RightTrade Capital offers a wide range of currency pairs including majors, minors, and exotics. Visit the RightTrade Capital website for the full list.",
+        "As a fully regulated broker, we put your money and trades first.",
     },
   ];
 
   return (
-    <div className="w-full">
+    <>
+      <Helmet>
+        <title>Best Stocks for CFD Trading | RightTrade Capital</title>
+
+        <meta
+          name="description"
+          content="Get the best stocks for CFD trading platform with RightTrade Capital. Access top-performing global stocks, competitive spreads, and expert trading tools."
+        />
+
+        <link rel="canonical" href={pageURLA} />
+
+        <meta property="og:url" content={pageURLA} />
+        <meta
+          property="og:title"
+          content="Best Stocks for CFD Trading | RightTrade Capital"
+        />
+      </Helmet>
+
       {/*  1 Section */}
       <StatsSection {...statsData} />
+
       {/*  2 Section */}
-      <ForexTradeSection
-        title={StockCFDsContent.title}
-        description={StockCFDsContent.description}
-        benefits={StockCFDsContent.benefits}
+      <FeatureSection
+        title="Why Should You Use RightTrade Capital for Stock CFDs?"
+        paragraph="You need more than just access to the market to find the best stock CFD broker. You need a partner who is trustworthy, open, and knows a lot about tech. That's exactly what RightTrade Capital does."
       />
-      {/*  3 Section */}
-      <WhyTradeForexSection
-        title="Why trade Stock CFDs currency pairs with RightTrade Capital?"
-        features={whyTradeFeatures}
+
+      <SideImageTextSection
+        image={fxTradingImg}
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        title="What Does It Mean to Trade Stock CFDs?"
+        paragraphTextColor="text-white"
+        paragraphs={[
+          "You can bet on how the prices of publicly traded companies will change with Contracts for Difference (CFDs) without having to own their shares. You just have to choose whether you think a stock's price will go up (go long) or down (go short), and then you can make money off the difference.",
+        ]}
+        listItems={[
+          "If you think Apple's stock price will go up, you can open a long CFD position.",
+          "If you think the price will go down, you can open a short CFD position.",
+        ]}
+        description="The difference between the opening and closing prices times the size of your trade is your profit or loss."
       />
-      {/*  4 (New Reusable) */}
-      <CurrencyInfoSection {...currencySectionData} />
 
-      {/* 5 (New Reusable) */}
-      <VideoSection {...videoData} />
-
-      {/* Section 6 */}
-      <FaqSection faqs={faqItems} />
-
-      {/* Section 7 */}
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital."
-        buttonText="Open account"
+      <MarketViewSteps
+        title="How to Choose the Best Stocks for CFD Trading"
+        steps={stepsData}
       />
-    </div>
+
+      <SideImageTextSection
+        image={fxTradingImg}
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        title="What Traders Like About RightTrade Capital"
+        paragraphTextColor="text-white"
+        paragraphs={[
+          "When picking the best stock CFD broker, it’s about more than low fees:",
+        ]}
+        listItems={[
+          "Global Market Access – Trade the best stocks for CFD trading from the US, UK, EU, and Asia.",
+          "Flexible Leverage – Adjust leverage to suit your risk appetite.",
+          "Education & Insights – Learn to spot the best online stock CFD opportunities.",
+          "Expert Support 24/5 – Multilingual team ready to help.",
+        ]}
+      />
+
+      <ImageTextSections
+        title="How to Use RightTrade Capital to Buy the Best Stocks for CFDs"
+        description={`Are you ready to trade the currency pairs that have the most money in the world?
+        Sign up for RightTrade Capital today and get instant access to:
+
+        • Make an Account – It doesn't take long to sign up.
+        • Put Money in Your Account – Multiple safe payment methods available.
+        • Choose Your Stock – Browse our list of the best stocks for CFD trading.
+        • Start a Position – Buy if you think the price will go up, sell (short) if you think it will go down.
+        • Limit Your Risk – Use stop-loss and take-profit orders.
+        • Monitor Your Trade – Close when your target is met or adjust as needed.`}
+        image={commissionsImage}
+        reverse={false}
+        noButton={true}
+        bgcolor="bg-white"
+        textcolor="text-[#121733]"
+      />
+
+      <SecurityRegulationSection
+        image={home6}
+        title="How to Deal with Risk When Trading CFDs on Stocks"
+        introParagraph="CFD trading can be profitable, but leverage and volatile markets increase risk.
+        That’s why we give you tools to protect yourself:"
+        bulletPoints={[
+          "Stop-loss orders",
+          "Trailing stops",
+          "Take-profit orders",
+          "Negative balance protection",
+        ]}
+        closingParagraph="These safeguards will help you to trade the best stocks for CFD trading with confidence."
+      />
+    </>
   );
 };
 

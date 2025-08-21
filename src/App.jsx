@@ -63,6 +63,7 @@ import ProTradingTools from "./components/pages/ProTradingTools";
 import TradingSignals from "./components/pages/TradingSignals";
 import ProfitCalculator from "./components/pages/ProfitCalculator";
 import MarginCalculator from "./components/pages/MarginCalculator";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 // Home Page Grouped as Component
 const Home = () => {
@@ -91,6 +92,7 @@ const App = () => {
   return (
     <div className="overflow-x-hidden">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <div className="mt-20">
           <Routes>

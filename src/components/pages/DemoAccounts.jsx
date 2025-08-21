@@ -1,134 +1,151 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../../components/common/StatsSection";
-import BreadcrumbAndDescription from "../common/BreadcrumbAndDescription";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
-import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
 import FaqSection from "../common/FaqSection2";
-import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
-import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
-import TradingAccountComparison from "../common/TradingAccountComparison";
+import ImageTextSections from "../common/ImageTextSections";
+import SupportedRegions from "../common/SupportedRegions";
+import commissionsImage from "../../assets/deposits1.png";
 import bannerImage from "../../assets/demo1.png";
-import fund9 from "../../assets/fund9.svg";
-import fund10 from "../../assets/fund10.svg";
-import fund11 from "../../assets/fund11.svg";
-import fund12 from "../../assets/fund12.svg";
+import { FaGlobeEurope, FaBuilding, FaExchangeAlt } from "react-icons/fa";
 
 const DemoAccounts = () => {
-  const accountData = [
-    {
-      name: "Advantage Stocks",
-      minDeposit: "$200",
-      spreads: "From 6 cents",
-      commissions: "Zero",
-      instruments: ["Stocks"],
-      highlighted: false,
-    },
-    {
-      name: "Advantage",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 0.0",
-      commissions:
-        "$3.5 per lot on FX\n$2 per million on Spot Metals\n$2.5 per million on CFDs\n0.03% for Crypto\n$0.02/lot on ETFs/Stocks",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (MT5)",
-        "ETFs (MT5)",
-      ],
-      highlighted: true,
-    },
-    {
-      name: "Advantage Plus",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 1.5",
-      commissions: "Zero",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (only MT5)",
-        "ETFs (only MT5)",
-      ],
-      highlighted: false,
-    },
-  ];
+  const pageURL =
+    "https://www.righttradecapital.com /forex-demo-trading-account";
 
   const faqItems = [
     {
-      question: "What is the best account for forex?",
+      question: " What kind of account is better for trading FX?",
       answer:
-        "You can trade forex on all of our account types but many of our traders prefer to do so on our Advantage account, thanks to the fact that it offers the best value - with typically zero spreads on popular FX pairs. For information, check out our handy guide to choosing the best trading account.",
+        "What you wish to accomplish will determine which account is best for you. If you're just starting off, pick Advantage Plus so you don't have to pay any fees. Active traders often prefer the Advantage Account since it has lower fees and raw spreads.",
     },
     {
-      question: "What  kind of account do I need to trade forex?",
+      question: "What kind of account do I need to trade forex?",
       answer:
-        "You can trade forex on all of our account types. They all come with slightly different conditions, so do make sure you have a good look through the details to settle on the account that best suits your own goals.",
+        "You need a forex trading account that enables you trade in markets all around the globe, has small spreads, and makes deals promptly. RightTrade Capital provides a lot of different types of accounts to meet your requirements.",
     },
     {
-      question: "Can I trade forex without a broker?",
+      question: "Can you trade FX without a broker?",
       answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like FXTM also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+        "You need a registered broker like RightTrade Capital to go to forex liquidity providers and place transactions.",
     },
     {
-      question: "How much is the transaction fee?",
+      question: "How much does the transaction cost?",
       answer:
-        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
+        "The costs of transactions depend on the kind of account. Advantage Plus doesn't charge a fee, however Advantage accounts do offer raw spreads and minimal commissions on certain goods.",
     },
   ];
-  const awardsItems = [
-    { imageSrc: fund9 },
-    { imageSrc: fund10 },
-    { imageSrc: fund11 },
-    { imageSrc: fund12 },
-  ];
+
   const withdrawSteps = [
-    "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
-    "Choose your payment method and click ‘Withdraw’.",
-    "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
-    "Complete the necessary fields and click 'Submit.'",
+    "After checking in to MyRightTrade Capital, click on 'My Money' and then 'Withdraw'.",
+    "Click 'Withdraw' once you choose how you wish to pay.",
+    "Choose the account or wallet you wish to take money from.",
+    "Fill in the required fields and hit 'Submit'.",
   ];
+
+  const supportedRegionData = {
+    title: "Check Out All the Many Kinds of Trading Accounts We Offer",
+
+    ctaText: "Log In Now",
+    regions: [
+      {
+        icon: <FaGlobeEurope size={40} className="text-[#FABF16]" />,
+        title: "Stocks that have an Edge",
+        points: [
+          "Minimum deposit: $200",
+          "Spreads: Starting at 6 cents",
+          "Commissions: No commissions",
+          "Best for: People who buy and sell stocks",
+        ],
+      },
+      {
+        icon: <FaBuilding size={40} className="text-[#FABF16]" />,
+        title: "Benefit",
+        points: [
+          "Minimum deposit: $/€/£200",
+          "Spreads: 0.0 to 0.0",
+          "Commissions:",
+          "Best for: Active traders who work",
+          "Tools for Trading:",
+        ],
+      },
+      {
+        icon: <FaExchangeAlt size={40} className="text-[#FABF16]" />,
+        title: "Plus",
+        points: [
+          "Minimum deposit: $/€/£200",
+          "Spreads: The spreads start at 1.5",
+          "Commissions: No fees",
+          "Best for: People who are new to trading",
+          "Tools for Trading:",
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <Helmet>
+        <title>Forex Demo Trading Account | Trade Global Markets</title>
+
+        <meta
+          name="description"
+          content="Trade forex, stocks, indices, commodities & crypto online with fast execution, low spreads, and secure trading experience."
+        />
+
+        <link rel="canonical" href={pageURL} />
+
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="Forex Demo Trading Account | Trade Global Markets"
+        />
+      </Helmet>
+
       <StatsSection
-        title="Free Forex Demo Trading Account"
-        subtitle="Skill up and practice zero-risk trading on our free demo account."
+        title="Forex Demo Trading Account for Free"
+        subtitle="You may practice and become better at trading with our free trial trading account."
         buttonText="Open Demo account"
-        note="Trading is risky."
+        note="Make a Practice Account"
         image={bannerImage}
       />
 
-      <BreadcrumbAndDescription
-        breadcrumbs={[
-          { label: "RightTrade Capital", href: "#" },
-          { label: " Account Overview", href: "#" },
-          { label: "Open Demo Account", href: "#" },
-        ]}
-        description="Open a forex demo account and utilise a variety of trading tools, such as MT4 and MT5. Learn to interpret charts, candlestick patterns, and master technical indicators in real market conditions. Build confidence before moving to live trading.
+      <ImageTextSections
+        title="Why Choose a Demo Account?"
+        description={`Try out the markets without putting your money at risk. With our free forex demo account, you may use the MT4 and MT5 platforms to practice, look at real-time market data, and try out your trading strategies with fake money.
 
-A free forex demo account lets you practice trading in real-time with virtual funds, perfect for beginners who want to learn without financial risk. Experience live market conditions with a demo trading account that builds confidence."
+
+        • Learn how to read charts
+        • Recognize candlestick patterns
+        • Use technical indicators to your advantage`}
+        image={commissionsImage}
+        reverse={false}
+        noButton={true}
+        bgcolor="bg-white"
+        textcolor="text-[#121733]"
+        paragraph="Take your time and develop your confidence before you start trading for real. The demo account is ideal for both novice and experienced traders since it lets you practice trading without risking your own money."
       />
 
-      <WhyTradeWithFXTM />
-      <TradingAccountComparison accountData={accountData} />
+      <SupportedRegions
+        title={supportedRegionData.title}
+        subtitle={supportedRegionData.subtitle}
+        ctaText={supportedRegionData.ctaText}
+        ctaNote={supportedRegionData.ctaNote}
+        regions={supportedRegionData.regions}
+      />
 
       <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital"
-        buttonText="Open Account"
+        title="Join Us"
+        subtitle="RightTrade Capital is the place to go if you want to start trading smarter now."
       />
+
       <HowToWithdrawSection
-        title="How to make a withdrawal in 4 simple steps"
+        title="Four Simple Steps to Take Money Out"
         steps={withdrawSteps}
       />
-      <GetMoreMarketsSection />
+
       <FaqSection faqs={faqItems} />
-      <AwardsSection awards={awardsItems} />
     </>
   );
 };

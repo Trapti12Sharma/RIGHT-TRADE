@@ -66,6 +66,7 @@ const AccountsOverview = () => {
       ],
     },
   ];
+
   const featuresData = [
     {
       icon: <Scale size={40} strokeWidth={2} className="text-[#FABF16]" />,

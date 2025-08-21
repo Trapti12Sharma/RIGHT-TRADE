@@ -209,7 +209,7 @@ Choose a broker that lets you move between commodities, indices, forex, and mayb
         title="Final Thoughts: Don’t Rush This Decision"
         introParagraph="Forex trading already involves risk. Don’t add to it by choosing the wrong broker. Whether you’re diving into cfd commodity trading to catch trends in gold and oil, or refining a cfd indices trading strategy for consistent long-term performance, your broker can either support your success—or sabotage it. "
         closingParagraph="Take your time. Don’t go by what’s popular—go by what works for your needs. Read reviews, test the platform, verify regulation, and always double-check the fine print.
-Brokers like Right Trade Capital, for instance, offer regulated access, flexible platforms, a wide range of CFDs, and funding options that suit Indian traders. If you're serious about growing as a trader, choosing the right broker is the first—and possibly most important—step."
+        Brokers like Right Trade Capital, for instance, offer regulated access, flexible platforms, a wide range of CFDs, and funding options that suit Indian traders. If you're serious about growing as a trader, choosing the right broker is the first—and possibly most important—step."
       />
     </div>
   );

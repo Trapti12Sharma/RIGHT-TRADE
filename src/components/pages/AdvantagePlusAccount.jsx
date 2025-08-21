@@ -1,19 +1,66 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../../components/common/StatsSection";
+import FeatureSection from "../common/FeatureSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
-import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
 import FaqSection from "../common/FaqSection2";
-import AwardsSection from "../common/AwardsSection";
-import TrustCTASection from "../common/TrustCTASection";
-import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
+import ImageTextSections from "../common/ImageTextSections";
 import TradingAccountComparison from "../common/TradingAccountComparison";
-import fund9 from "../../assets/fund9.svg";
-import fund10 from "../../assets/fund10.svg";
-import fund11 from "../../assets/fund11.svg";
-import fund12 from "../../assets/fund12.svg";
+import SideImageTextSection from "../common/SideImageTextSection";
+import SecurityRegulationSection from "../common/SecurityRegulationSection";
+import MarketViewFeatureSection from "../common/MarketViewFeatureSection";
 import bannerImage from "../../assets/advantageplus.png";
+import commissionsImage from "../../assets/deposits1.png";
+import img from "../../assets/futures2.png";
+import home6 from "../../assets/sign-up.png";
 
 const AdvantagePlusAccount = () => {
+  const pageURL =
+    "https://www.righttradecapital.com/advantage-plus-trading-account";
+
+  const otherNotesData = {
+    title: "Important Features of an Advantage Plus Account",
+
+    features: [
+      {
+        icon: "script",
+        heading: "1. No Commission",
+        paragraph:
+          " Don't worry about additional fees when you trade. You just pay spreads, so you know exactly how much your trades will cost.",
+      },
+      {
+        icon: "chart",
+        heading: "2. Easy to Get In",
+        paragraph:
+          " You may start trading with just $200. Great for both new and seasoned traders.",
+      },
+      {
+        icon: "bell",
+        heading: "3. Spreads that are competitive",
+        paragraph:
+          " Enjoy spreads of at least 1.5 pips on most major instruments.",
+      },
+      {
+        icon: "calendar",
+        heading: "4. Access to a variety of markets",
+        paragraph:
+          " You may trade Forex, metals, commodities, indices, cryptocurrencies, stocks, and ETFs all from one account.",
+      },
+      {
+        icon: "layout",
+        heading: "5. The Advanced MT5 Platform",
+        paragraph:
+          " MetaTrader 5 has enhanced features, one-click trading, and access from several devices.",
+      },
+      {
+        icon: "layout",
+        heading: "6. Safe and Dependable",
+        paragraph:
+          " RightTrade Capital's open and regulated trading environment lets you trade with confidence.",
+      },
+    ],
+  };
+
   const accountData = [
     {
       name: "Advantage Stocks",
@@ -25,34 +72,34 @@ const AdvantagePlusAccount = () => {
     },
     {
       name: "Advantage",
-      minDeposit: "$/€/£ 200",
+      minDeposit: "$200",
       spreads: "From 0.0",
       commissions:
-        "$3.5 per lot on FX\n$2 per million on Spot Metals\n$2.5 per million on CFDs\n0.03% for Crypto\n$0.02/lot on ETFs/Stocks",
+        "$3.5/lot FX\n$2 commodities\n$2.5 CFDs\n0.03% Crypto\n$0.02 Stocks/ETFs",
       instruments: [
         "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (MT5)",
-        "ETFs (MT5)",
+        "Metals",
+        "Indices",
+        "Commodities",
+        "Crypto",
+        "Stocks",
+        "ETFs",
       ],
       highlighted: true,
     },
     {
       name: "Advantage Plus",
-      minDeposit: "$/€/£ 200",
+      minDeposit: "$200",
       spreads: "From 1.5",
       commissions: "Zero",
       instruments: [
         "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (only MT5)",
-        "ETFs (only MT5)",
+        "Metals",
+        "Indices",
+        "Commodities",
+        "Crypto",
+        "Stocks (MT5)",
+        "ETFs (MT5)",
       ],
       highlighted: false,
     },
@@ -60,41 +107,59 @@ const AdvantagePlusAccount = () => {
 
   const faqItems = [
     {
-      question: "What is the best account for forex?",
+      question: "What kind of account is appropriate for trading forex?",
       answer:
-        "You can trade forex on all of our account types but many of our traders prefer to do so on our Advantage account, thanks to the fact that it offers the best value - with typically zero spreads on popular FX pairs. For information, check out our handy guide to choosing the best trading account.",
+        "The Advantage Plus Account is great for new traders and those who want to trade in a balanced way since it has no fees and is simple to use.",
     },
     {
-      question: "What  kind of account do I need to trade forex?",
+      question:
+        "Is it possible to trade in more than one market with this account?",
       answer:
-        "You can trade forex on all of our account types. They all come with slightly different conditions, so do make sure you have a good look through the details to settle on the account that best suits your own goals.",
+        " Yes, Forex, metals, commodities, indices, cryptos, stocks, and ETFs are all included.",
     },
     {
-      question: "Can I trade forex without a broker?",
-      answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like RightTrade Capital also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+      question: "What is the minimum amount that may be deposited?",
+      answer: " You just need $200 to start.",
     },
     {
-      question: "How much is the transaction fee?",
+      question: "Are there further costs?",
       answer:
-        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
+        "No, Advantage Plus does not charge a commission. You simply have to pay the spreads.",
     },
   ];
-  const awardsItems = [
-    // ✅ Place it here before return
-    { imageSrc: fund9 },
-    { imageSrc: fund10 },
-    { imageSrc: fund11 },
-    { imageSrc: fund12 },
-  ];
+
   const withdrawSteps = [
-    "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
-    "Choose your payment method and click ‘Withdraw’.",
-    "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
-    "Complete the necessary fields and click 'Submit.'",
+    "Go to MyRightTrade Capital and click 'Withdraw'.",
+    "Choose the method you want and then click 'Withdraw'.",
+    "Pick the account or wallet and type in the amount.",
+    "Please confirm and send.",
+  ];
+
+  const withdrawSteps1 = [
+    "1. Sign up for RightTrade Capital.",
+    "2. KYC will let you prove who you are.",
+    "3. Put at least $200 in your account.",
+    "4. You may start trading right now on MT5.",
   ];
   return (
     <>
+      <Helmet>
+        <title>Advantage Plus Trading Account | Zero Commission Trading</title>
+
+        <meta
+          name="description"
+          content="Trade commission-free with the Advantage Plus Account. Enjoy competitive spreads, global markets, and seamless MT5 execution."
+        />
+
+        <link rel="canonical" href={pageURL} />
+
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="Advantage Plus Trading Account  | Zero Commission Trading"
+        />
+      </Helmet>
+
       <StatsSection
         title="Advantage Plus trading account"
         subtitle="Trade on our commission-free ECN account with competitive spreads"
@@ -102,35 +167,84 @@ const AdvantagePlusAccount = () => {
         note="Trading is risky"
         image={bannerImage}
       />
-      {/*  2 Section */}
-      <div
-        className="bg-white py-4 px-6 sm:px-10 lg:px-24 text-sm"
-        style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
-      >
-        <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
-          <span className="text-blue-500">RightTrade Capital</span>
-          <span className="text-[#e74728]">❯</span>
-          <span className="text-black font-medium">Account Overview</span>
-          <span className="text-[#e74728]">❯</span>
-          <span className="text-black font-medium">Advantage Plus Account</span>
-        </nav>
-      </div>
 
-      <WhyTradeWithFXTM />
+      <FeatureSection
+        title="Welcome"
+        paragraph="RightTrade Capital's Advantage Plus Trading Account is for traders who desire a straightforward, commission-free trading experience with tight spreads and quick execution.
+        You may trade Forex, metals, indices, commodities, crypto, and stocks (MT5) all in one safe and easy-to-use account with a minimum deposit of just $200."
+      />
+
+      <ImageTextSections
+        title="Advantage Plus Trading Account: Trade Without Paying a Fee"
+        description={`Account for Advantage Plus Trading
+      You may trade on our ECN account without paying any fees and with spreads that are competitive.
+
+        • No Commission — Keep All of Your Profits
+        • Spreads that start at 1.5 pips
+        • Trade Forex, metals, indices, commodities, crypto, and stocks (MT5)
+        • Minimum Deposit: $200`}
+        image={commissionsImage}
+        reverse={false}
+        noButton={true}
+        bgcolor="bg-[#121733]"
+        textcolor="text-white"
+      />
+
+      <SideImageTextSection
+        image={img}
+        bgColor="bg-[#fff]"
+        textcolor="text-black"
+        title="Overview of the Account"
+        paragraphTextColor="text-black"
+        paragraphs={[
+          "The Advantage Plus Account is a good choice since it is both cheap and flexible. It lets you trade without paying any additional costs and gives you access to a wide range of instruments.",
+        ]}
+        listItems={[
+          "Minimum deposit: $200",
+          "Pips: From 1.5",
+          "No commissions",
+          "You may trade Forex, spot metals, indices, commodities, crypto CFDs, stocks, and ETFs (MT5).",
+        ]}
+      />
+
+      <MarketViewFeatureSection
+        title={otherNotesData.title}
+        description={otherNotesData.description}
+        features={otherNotesData.features}
+        bgcolor="bg-[#121733]"
+        titlecolor="text-white"
+      />
+
+      <SecurityRegulationSection
+        image={home6}
+        title="Why Get the Advantage Plus Account?"
+        introParagraph="The Advantage Plus Account is great for traders who:"
+        bulletPoints={[
+          "Want to trade without paying any fees.",
+          "Want prices that are easy to understand and don't include any hidden expenses.",
+          "Look for access to several assets without having to transfer accounts.",
+          "Need quick and sure execution.",
+          "Value low-cost entrance with a minimum deposit of $200.",
+        ]}
+      />
+
       <TradingAccountComparison accountData={accountData} />
 
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital"
-        buttonText="Open Account"
-      />
       <HowToWithdrawSection
-        title="How to make a withdrawal in 4 simple steps"
+        title="4 Simple Steps to Get Your Money Out:"
         steps={withdrawSteps}
       />
-      <GetMoreMarketsSection />
+
+      <FeatureSection
+        title="Conclusion: Start trading with Advantage Plus right now!"
+        paragraph="With the Advantage Plus Trading Account, you may trade in worldwide markets for a minimal cost. It has no fee, excellent spreads, and a $200 minimum deposit, making it the best alternative for traders who seek both low prices and good performance.
+        Start your adventure with RightTradeCapital now. With a broker that cares about your success, you can trade with confidence.
+        Open your Advantage Plus account now and start trading without paying any fees!"
+      />
+
+      <HowToWithdrawSection title="How to Get Started" steps={withdrawSteps1} />
+
       <FaqSection faqs={faqItems} />
-      <AwardsSection awards={awardsItems} />
     </>
   );
 };
