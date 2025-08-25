@@ -1,103 +1,102 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../../components/common/StatsSection";
-import BreadcrumbAndDescription from "../common/BreadcrumbAndDescription";
+import FeatureSection from "../common/FeatureSection";
 import SideImageTextSection from "../common/SideImageTextSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
-import TextImageSection from "../common/TextImageSection";
-import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
+import ImageTextSections from "../common/ImageTextSections";
+import SupportedRegions from "../common/SupportedRegions";
 import FaqSection from "../common/FaqSection2";
-import AwardsSection from "../common/AwardsSection";
 import TrustCTASection from "../common/TrustCTASection";
-import TradingAccountComparison from "../common/TradingAccountComparison";
 import bannerImage from "../../assets/platformoverview1.png";
 import img from "../../assets//platformoverview2.png";
-import imgn from "../../assets//platformoverview3.png";
-import fund9 from "../../assets/fund9.svg";
-import fund10 from "../../assets/fund10.svg";
-import fund11 from "../../assets/fund11.svg";
-import fund12 from "../../assets/fund12.svg";
+import commissionsImage from "../../assets/deposits1.png";
+import { FaGlobeEurope, FaBuilding, FaExchangeAlt } from "react-icons/fa";
 
 const PlatformsOverview = () => {
-  const accountData = [
-    {
-      name: "Advantage Stocks",
-      minDeposit: "$200",
-      spreads: "From 6 cents",
-      commissions: "Zero",
-      instruments: ["Stocks"],
-      highlighted: false,
-    },
-    {
-      name: "Advantage",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 0.0",
-      commissions:
-        "$3.5 per lot on FX\n$2 per million on Spot Metals\n$2.5 per million on CFDs\n0.03% for Crypto\n$0.02/lot on ETFs/Stocks",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (MT5)",
-        "ETFs (MT5)",
-      ],
-      highlighted: true,
-    },
-    {
-      name: "Advantage Plus",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 1.5",
-      commissions: "Zero",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (only MT5)",
-        "ETFs (only MT5)",
-      ],
-      highlighted: false,
-    },
-  ];
+  const pageURL = "https://www.righttradecapital.com/trusted-forex-broker";
 
   const faqItems = [
     {
-      question: "What is the best account for forex?",
+      question: "What is the best account for Forex trading?",
       answer:
-        "You can trade forex on all of our account types but many of our traders prefer to do so on our Advantage account, thanks to the fact that it offers the best value - with typically zero spreads on popular FX pairs. For information, check out our handy guide to choosing the best trading account.",
+        "The Advantage Plus Account is great for beginners since it doesn’t charge fees and is easy to use. For more experienced traders, the Advantage Account features raw spreads and low fees.",
     },
     {
-      question: "What  kind of account do I need to trade forex?",
+      question: " What sort of account do I need to trade Forex?",
       answer:
-        "You can trade forex on all of our account types. They all come with slightly different conditions, so do make sure you have a good look through the details to settle on the account that best suits your own goals.",
+        "You need a forex trading account that enables you trade on markets all around the globe, has tight spreads, and makes deals promptly. We provide accounts for traders with different degrees of experience.",
     },
     {
-      question: "Can I trade forex without a broker?",
+      question: "Can you trade Forex without a broker?",
       answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like RightTrade Capital also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+        "No. You need a licensed broker like us to connect with liquidity providers and do business.",
     },
     {
-      question: "How much is the transaction fee?",
+      question: "How much does the transaction cost?",
       answer:
-        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
+        "It all depends on the kind of account you have. Advantage Plus doesn’t charge a commission, however Advantage does have raw spreads and other fees.",
     },
   ];
-  const awardsItems = [
-    { imageSrc: fund9 },
-    { imageSrc: fund10 },
-    { imageSrc: fund11 },
-    { imageSrc: fund12 },
-  ];
+
+  const supportedRegionData = {
+    title: "Compare Our Trading Accounts",
+    subtitle:
+      "Account type – Minimum amount to deposit – Spreads, commissions, and best for instruments",
+
+    regions: [
+      {
+        icon: <FaGlobeEurope size={40} className="text-[#FABF16]" />,
+        title: "Advantage Shares",
+        points: ["$200 from 6 cents", "No stocks, no traders, no benefit"],
+      },
+      {
+        icon: <FaBuilding size={40} className="text-[#FABF16]" />,
+        title: "Advantage",
+        points: [
+          "$200 from 0.0",
+          "$3.5 per lot for FX, $2 for commodities, $2.5 for CFDs, 0.03% for crypto, and $0.02 for ETFs/stocks",
+          "Advanced traders use raw spreads CFDs for stocks (MT5), ETFs (MT5), FX, metals, indices, commodities, and crypto",
+        ],
+      },
+      {
+        icon: <FaExchangeAlt size={40} className="text-[#FABF16]" />,
+        title: "Advantage Plus",
+        points: [
+          "$200 from 1.5",
+          "Zero",
+          "Traders who want to trade without paying a cost",
+          "MT5: equities, ETFs, FX, metals, indexes, commodities, and crypto",
+        ],
+      },
+    ],
+  };
+
   const withdrawSteps = [
-    "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
-    "Choose your payment method and click ‘Withdraw’.",
-    "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
-    "Complete the necessary fields and click 'Submit.'",
+    "Log in to MyRightTrade Capital. Then, click on the Withdraw page under My Money.",
+    "Choose a payment method and click “Withdraw.”",
+    "Pick the account or wallet you wish to withdraw money out of.",
+    "Fill out the required fields and click Submit.",
   ];
   return (
     <>
+      <Helmet>
+        <title>MetaTrader Trading Platforms | MT5 Trading Platforms</title>
+
+        <meta
+          name="description"
+          content="Discover the key differences between MT4 and MT5 platforms. Learn which trading platform suits your strategy with insights on features, tools, and benefits."
+        />
+
+        <link rel="canonical" href={pageURL} />
+
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="MetaTrader Trading Platforms | MT5 Trading Platforms"
+        />
+      </Helmet>
+
       <StatsSection
         title="MetaTrader trading platforms"
         subtitle="Explore the differences between MetaTrader 4 and MetaTrader 5"
@@ -105,54 +104,64 @@ const PlatformsOverview = () => {
         image={bannerImage}
       />
 
-      <BreadcrumbAndDescription
-        breadcrumbs={[
-          { label: "RightTrade Capital", href: "#" },
-          { label: "Account Overview", href: "#" },
-        ]}
-        description="Simply choose the account which fits you best. And trade how you want, wherever you want."
+      <FeatureSection
+        title="MetaTrader Trading Platforms"
+        paragraph="Find the MetaTrader trading platform that works best for you and learn how to utilise it.You can use both MetaTrader 4 (MT4) and MetaTrader 5 (MT5) to quickly execute trades, see charts in real time, and use advanced trading tools. You may select MT4 since it is easy to use or MT5 because it has more advanced features."
       />
 
       <SideImageTextSection
         image={img}
-        bgColor="bg-[#2a2d45]"
-        textcolor="text-[#ffffff]"
-        title="Advantage trading accounts"
-        subtitle="Give yourself an advantage with our most popular account."
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        title="Advantage Trading Accounts"
+        paragraphTextColor="text-white"
         paragraphs={[
-          "No wonder RightTrade Capital traders love our Advantage account with zero spreads, commission-free trading on Stock CFDs and lightning-fast execution. Sharpen your trading edge with free learning and stay ahead of the trend with expert analysis and updates.",
+          "The Advantage Account is for traders who want no spreads, low costs, and orders that are completed immediately away. You can buy and sell stocks, commodities, indices, bitcoin, and Forex at reasonable prices and with better tools.",
         ]}
-        note="Advantage gives you more."
+        listItems={[
+          "No spreads make trading easier to understand",
+          "No commission on stock CFDs",
+          "Very quick execution with no additional costs",
+          "Free school and expert market research to help you become better at what you do",
+        ]}
+        description="It’s hardly surprising that so many traders utilise the Advantage account to stay ahead of the market."
       />
 
-      <TextImageSection
-        imgSrc={imgn}
-        title="Advantage Plus trading accounts"
-        paragraph="Choose from hundreds of instruments and trade on MetaTrader 4 or MetaTrader 5.
+      <ImageTextSections
+        title="Advantage Plus Trading Accounts"
+        description={`Advantage Plus will help you improve your trading. You may trade on MT4 or MT5 and use hundreds of tools without paying any fees.
 
-Advantage Plus gives you everything that makes Advantage account so popular, with the added benefit of zero commissions. That’s right: it’s commission-free trading. You should know that spreads are wider, check the details out in the comparison tables below."
+        • There are no fees for trading (spreads start at 1.5 pips).
+        • You can trade equities, ETFs, Forex, indices, commodities, and crypto.
+        • Good for traders who desire simple, low-cost trading.
+        • It is easy to use and works for both beginners and professionals.`}
+        image={commissionsImage}
+        reverse={false}
+        noButton={true}
+        bgcolor="bg-[#fff]"
+        textcolor="text-black"
       />
-      <TradingAccountComparison accountData={accountData} />
+
+      <SupportedRegions
+        title={supportedRegionData.title}
+        subtitle={supportedRegionData.subtitle}
+        ctaText={supportedRegionData.ctaText}
+        ctaNote={supportedRegionData.ctaNote}
+        regions={supportedRegionData.regions}
+      />
 
       <HowToWithdrawSection
-        title="How to make a withdrawal in 4 simple steps"
+        title="Four Simple Steps to Take Money Out"
         steps={withdrawSteps}
       />
+
       <TrustCTASection
-        title="Choose your account and start trading"
-        subtitle="Still not sure which account is right for you? Check out our handy guide to choosing the best trading account to explore our range of accounts and discover which fits you best."
-        buttonText="Choose account"
+        title="Choose an Account and Begin Trading"
+        subtitle="Are you not sure which account is best?
+        Use our guide to look at several accounts and choose the one that works best for your trade.We have the right account for you, whether you want raw spreads with fees or no fees at all."
       />
 
       <FaqSection faqs={faqItems} />
-      <WhyTradeWithFXTM />
-
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital"
-        buttonText="Open Account"
-      />
-      <AwardsSection awards={awardsItems} />
     </>
   );
 };

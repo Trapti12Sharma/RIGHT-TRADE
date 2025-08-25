@@ -1,130 +1,85 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../../components/common/StatsSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
-import WhyTradeWithFXTM from "../common/WhyTradeWithFXTM";
+import FeatureSection from "../common/FeatureSection";
 import FaqSection from "../common/FaqSection2";
-import AwardsSection from "../common/AwardsSection";
-import TrustCTASection from "../common/TrustCTASection";
-import GetMoreMarketsSection from "../common/GetMoreMarketsSection";
-import TradingAccountComparison from "../common/TradingAccountComparison";
-import fund9 from "../../assets/fund9.svg";
-import fund10 from "../../assets/fund10.svg";
-import fund11 from "../../assets/fund11.svg";
-import fund12 from "../../assets/fund12.svg";
 import bannerImage from "../../assets/mt4n.png";
 
 const MT4 = () => {
-  const accountData = [
-    {
-      name: "Advantage Stocks",
-      minDeposit: "$200",
-      spreads: "From 6 cents",
-      commissions: "Zero",
-      instruments: ["Stocks"],
-      highlighted: false,
-    },
-    {
-      name: "Advantage",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 0.0",
-      commissions:
-        "$3.5 per lot on FX\n$2 per million on Spot Metals\n$2.5 per million on CFDs\n0.03% for Crypto\n$0.02/lot on ETFs/Stocks",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (MT5)",
-        "ETFs (MT5)",
-      ],
-      highlighted: true,
-    },
-    {
-      name: "Advantage Plus",
-      minDeposit: "$/€/£ 200",
-      spreads: "From 1.5",
-      commissions: "Zero",
-      instruments: [
-        "FX",
-        "Spot Metals",
-        "Index CFDs",
-        "Commodity CFDs",
-        "Cryptocurrency CFDs",
-        "Stocks CFDs (only MT5)",
-        "ETFs (only MT5)",
-      ],
-      highlighted: false,
-    },
-  ];
+  const pageURL =
+    "https://www.righttradecapital.com /forex-demo-trading-account";
 
   const faqItems = [
     {
-      question: "What is the best account for forex?",
+      question: "What is the best Forex trading account?",
       answer:
-        "You can trade forex on all of our account types but many of our traders prefer to do so on our Advantage account, thanks to the fact that it offers the best value - with typically zero spreads on popular FX pairs. For information, check out our handy guide to choosing the best trading account.",
+        "The Advantage Account is suited for Forex traders, since it provides tight spreads beginning at 0.0 and cheap fees.",
     },
     {
-      question: "What  kind of account do I need to trade forex?",
+      question: " What sort of account do I need to trade Forex?",
       answer:
-        "You can trade forex on all of our account types. They all come with slightly different conditions, so do make sure you have a good look through the details to settle on the account that best suits your own goals.",
+        "You may select from Advantage, Advantage Plus, or Advantage Stocks based on your trading objectives.",
     },
     {
-      question: "Can I trade forex without a broker?",
+      question: "Can I trade Forex without a broker?",
       answer:
-        "You can by exchanging currencies at a bank or local currency exchange (at the airport for example). The downside of this is you won't have access to leverage or risk management tools like Stop Loss and Take Profit. Trading forex with an online broker like RightTrade Capital also offers other benefits including customer support, rapid execution and educational resources to help you on your way.",
+        "No, you need a licensed Forex broker to access worldwide markets.",
     },
     {
       question: "How much is the transaction fee?",
       answer:
-        "We’ll charge a flat $3 transaction fee for any deposit or withdrawal less than $30 or equivalent.",
+        "Depending on the kind of account you have, transaction costs may be different. However, with Advantage Plus and Advantage Stocks, you may trade without paying a commission.",
     },
   ];
-  const awardsItems = [
-    // ✅ Place it here before return
-    { imageSrc: fund9 },
-    { imageSrc: fund10 },
-    { imageSrc: fund11 },
-    { imageSrc: fund12 },
-  ];
+
   const withdrawSteps = [
-    "Log in to MyRightTrade Capital  and open the Withdraw page under ‘My Money’.",
-    "Choose your payment method and click ‘Withdraw’.",
-    "Choose the MyRightTrade Capital account or wallet you wish to withdraw funds from",
-    "Complete the necessary fields and click 'Submit.'",
+    "Log in to MyRightTrade Capital and click the Withdraw page under ‘My Money’.",
+    "Choose your desired payment method and click Withdraw.",
+    "Choose the wallet or trading account you wish to take money out of.",
+    "Fill in the following data and click Submit.",
   ];
+
   return (
     <>
+      <Helmet>
+        <title>
+          MetaTrader 4 Trading Accounts | Best Forex Trading Account
+        </title>
+
+        <meta
+          name="description"
+          content="RightTrade Capital offers MT4 Advantage, Plus & Stocks accounts with fast execution, low spreads & zero commission trading."
+        />
+
+        <link rel="canonical" href={pageURL} />
+
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="MetaTrader 4 Trading Accounts | Best Forex Trading Account"
+        />
+      </Helmet>
+
       <StatsSection
-        title="Trade with MetaTrader 4"
-        subtitle="Start trading with the platform of choice for millions of traders across the world"
+        title="MetaTrader 4 Trading"
+        subtitle="Start trading on the most trusted platform in the world, which millions of traders across the world have selected."
         buttonText="Why MetaTrader 4?"
         image={bannerImage}
       />
 
-      {/*  2 Section */}
-      <div
-        className="bg-white py-4 px-6 sm:px-10 lg:px-24 text-sm"
-        style={{ fontFamily: '"Source Sans Pro", sans-serif' }}
-      >
-        <nav className="text-gray-500 flex flex-wrap gap-2 items-center">
-          <span className="text-blue-500">RightTrade Capital</span>
-          <span className="text-[#e74728]">❯</span>
-          <span className="text-black font-medium">Account Overview</span>
-          <span className="text-[#e74728]">❯</span>
-          <span className="text-black font-medium">Advantage Plus Account</span>
-        </nav>
-      </div>
-
-      <TradingAccountComparison accountData={accountData} />
+      <FeatureSection
+        title="Why you should use MetaTrader 4 (MT4)"
+        paragraph="MetaTrader 4 (MT4) is one of the most popular online trading platforms because it is fast, flexible, and has powerful charting features.
+ MT4 makes it easy to trade Forex, Commodities, Indices, and other things, no matter how experienced you are as a trader."
+      />
 
       <HowToWithdrawSection
-        title="How to make a withdrawal in 4 simple steps"
+        title="Four Easy Steps to Make a Withdrawal"
         steps={withdrawSteps}
       />
-      <GetMoreMarketsSection />
+
       <FaqSection faqs={faqItems} />
-      <AwardsSection awards={awardsItems} />
     </>
   );
 };

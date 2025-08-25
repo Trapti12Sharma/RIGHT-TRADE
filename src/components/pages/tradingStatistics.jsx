@@ -55,7 +55,7 @@ const TradingStatistics = () => {
         title="A Forex Broker with a Good Repute for Being Honest That You Can Trust"
         paragraphTextColor="text-white"
         paragraphs={[
-          "The most crucial thing to look for in a broker is that they are trustworthy. RightTrade Capital's brand is based on trustworthiness, transparency, and fair trade. RightTradeCapital is a well-known and renowned forex broker that looks out for the interests of traders all around the globe.",
+          "The most crucial thing to look for in a broker is that they are trustworthy. RightTrade Capital's brand is based on trustworthiness, transparency, and fair trade. RightTrade Capital is a well-known and renowned forex broker that looks out for the interests of traders all around the globe.",
         ]}
         listItems={[
           "Prices and execution are clear",
@@ -67,7 +67,7 @@ const TradingStatistics = () => {
 
       <ImageTextSections
         title="A Forex Broker That Is Fully Regulated — You Can Trade With Confidence"
-        description={`One of the key things that develops confidence is rules. RightTradeCapital is a registered forex broker that has to follow rigorous guidelines about how it handles money and runs its company. The government keeps an eye on things to make sure that all commerce is done fairly and openly.
+        description={`One of the key things that develops confidence is rules. RightTrade Capital is a registered forex broker that has to follow rigorous guidelines about how it handles money and runs its company. The government keeps an eye on things to make sure that all commerce is done fairly and openly.
 
         • Licensed by well-known financial groups
         • Subject to frequent reviews for compliance
@@ -88,7 +88,7 @@ const TradingStatistics = () => {
         title="Low Prices and Spreads That Are Competitive"
         paragraphTextColor="text-white"
         paragraphs={[
-          "Cost is a big factor in trading forex. RightTradeCapital is the top forex broker for affordable pricing and some of the best trading conditions on the market.",
+          "Cost is a big factor in trading forex. RightTrade Capital is the top forex broker for affordable pricing and some of the best trading conditions on the market.",
         ]}
         listItems={[
           "Most pairs have spreads that start at 0.0 pips",
@@ -96,13 +96,13 @@ const TradingStatistics = () => {
           "Clear and unchanging fee structures",
           "Forex, indices, and commodities all have narrow spreads",
         ]}
-        description=" RightTradeCapital lowers expenses so you may retain more of your earnings on every transaction that goes well."
+        description=" RightTrade Capital lowers expenses so you may retain more of your earnings on every transaction that goes well."
       />
 
       <SecurityRegulationSection
         image={home6}
-        title="What Makes Thousands of People Trust RightTradeCapital"
-        introParagraph="Thousands of traders from over 100 countries use RightTradeCapital as their trading partner. This is why:"
+        title="What Makes Thousands of People Trust RightTrade Capital"
+        introParagraph="Thousands of traders from over 100 countries use RightTrade Capital as their trading partner. This is why:"
         bulletPoints={[
           "A forex broker that respects all the rules",
           "A forex broker you can trust with a good track record",
@@ -119,7 +119,7 @@ const TradingStatistics = () => {
 
       <FeatureSection
         title="This Is the Broker You Can Trust in the End"
-        paragraph="When you join RightTradeCapital, you're not simply joining another trading platform. You can trust the forex broker you're dealing with since they care about your long-term success, safety, and development. RightTradeCapital is more than simply a broker; it's the key to trading that is smart, long-term, and profitable. They offer the greatest spreads, platforms, and expert assistance in the industry, and they have a reputation of being honest and upfront."
+        paragraph="When you join RightTrade Capital, you're not simply joining another trading platform. You can trust the forex broker you're dealing with since they care about your long-term success, safety, and development. RightTradeCapital is more than simply a broker; it's the key to trading that is smart, long-term, and profitable. They offer the greatest spreads, platforms, and expert assistance in the industry, and they have a reputation of being honest and upfront."
       />
 
       <SideImageTextSection
@@ -129,7 +129,7 @@ const TradingStatistics = () => {
         title="Opportunities to Trade More Than One Asset"
         paragraphTextColor="text-white"
         paragraphs={[
-          "RightTradeCapital enables customers spread out their investments by giving them access to a broad variety of trading tools, even if FX is the major emphasis.",
+          "RightTrade Capital enables customers spread out their investments by giving them access to a broad variety of trading tools, even if FX is the major emphasis.",
         ]}
         listItems={[
           "Forex (large, little, and rare)",
@@ -143,7 +143,7 @@ const TradingStatistics = () => {
 
       <ImageTextSections
         title="A Secure and Efficient Method to Put Money In and Take It Out"
-        description={`A good forex broker should make it simple and safe to put money in and take it out. RightTradeCapital uses industry-standard security measures to make sure that all transactions are secure.
+        description={`A good forex broker should make it simple and safe to put money in and take it out. RightTrade Capital uses industry-standard security measures to make sure that all transactions are secure.
 
         • You may make a deposit in a number of methods, including using a card, a bank transfer, or an e-wallet
         • Fast processing times for getting money out
@@ -154,7 +154,7 @@ const TradingStatistics = () => {
         noButton={true}
         bgcolor="bg-[#fff]"
         textcolor="text-black"
-        paragraph="You should be able to retrieve your money right immediately, and RightTradeCapital makes that happen quickly and openly."
+        paragraph="You should be able to retrieve your money right immediately, and RightTrade Capital makes that happen quickly and openly."
       />
     </>
   );
