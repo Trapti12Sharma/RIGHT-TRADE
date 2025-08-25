@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import home6 from "../assets/sign-up.png";
 
 const DemoAccountSection = () => {
@@ -47,9 +48,11 @@ const DemoAccountSection = () => {
             <button className="bg-[#FABF16] hover:bg-[#FABF16] text-white px-6 py-3 rounded-full font-semibold">
               Sign Up Now
             </button>
-            <button className="bg-white text-[#10162f] px-6 py-3 rounded-full font-semibold">
-              Explore RightTrade
-            </button>
+            <Link to="/about-us">
+              <button className="bg-white text-[#10162f] px-6 py-3 rounded-full font-semibold">
+                Explore RightTrade Capital
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaBookOpen } from "react-icons/fa";
 import home10 from "../assets/mt4.avif";
 import home11 from "../assets/web-trading.png";
@@ -39,10 +40,14 @@ const LatestNewsSection = () => {
     <section className="bg-[#1c1f3c] py-16 px-4 md:px-20 text-white">
       <h2 className="text-center text-[#FABF16] font-bold mb-2 text-2xl md:text-4xl">
         You Can Trade From Anywhere
+        <br />
+        <Link
+          to="/platforms-overview"
+          className="text-center text-blue-400 mb-10 cursor-pointer hover:underline text-sm md:text-[24px]"
+        >
+          Explore our platforms
+        </Link>
       </h2>
-      <p className="text-center text-blue-400 mb-10 cursor-pointer hover:underline text-sm md:text-[24px]">
-        Explore our platforms
-      </p>
 
       <div className="space-y-8 max-w-5xl mx-auto">
         {newsData.map((news, index) => (

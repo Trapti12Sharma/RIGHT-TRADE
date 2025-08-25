@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaGem } from "react-icons/fa";
 
 export default function ExpertTraderSection() {
@@ -38,13 +39,11 @@ export default function ExpertTraderSection() {
 
           {/* Right Content - Buttons */}
           <div className="flex flex-col items-center md:items-end md:w-1/2 gap-4">
-            <a
-              href="#"
-              className="text-white text-sm hover:underline flex items-center"
-            ></a>
-            <button className="bg-[#FABF16] text-[#1f2239] font-bold text-sm py-3 px-6 rounded-full hover:opacity-90 transition duration-300">
-              Open Advantage Account
-            </button>
+            <Link to="/advantage-account">
+              <button className="bg-[#FABF16] text-[#1f2239] font-bold text-sm py-3 px-6 rounded-full hover:opacity-90 transition duration-300">
+                Open Advantage Account
+              </button>
+            </Link>
           </div>
         </div>
       </div>

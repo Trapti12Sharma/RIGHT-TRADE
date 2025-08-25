@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import home4 from "../assets/RightTradeCapitalSpecial.jpg";
 
 const ForexIntro = () => {
@@ -39,16 +40,13 @@ const ForexIntro = () => {
               </li>
               <li>You make the plan. We provide the platform.</li>
             </ul>
-
-            <a
-              style={{
-                textAlign: "left",
-              }}
-              href="#"
+            <Link
+              to="/forex"
+              style={{ textAlign: "left" }}
               className="text-[#4CB1FF]"
             >
               Learn more about forex trading with our beginners guide.
-            </a>
+            </Link>
           </div>
         </div>
       </div>

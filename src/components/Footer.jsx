@@ -14,15 +14,18 @@ const Footer = () => {
       title: "ABOUT",
       links: [
         {
-          label: "Why RightTrade Capital",
-          path: "/why-righttrade-capital",
+          label: "Why Choose RightTrade Capital",
+          path: "/why-choose-righttrade-capital",
         },
-        { label: "Trading Statistics", path: "-statistics" },
+        { label: "About Us", path: "/about-us" },
         {
           label: "Deposits and Withdrawals",
           path: "/deposits-and-withdrawals",
         },
-        { label: "Trading Commissions and Fees", path: "-fees" },
+        {
+          label: "Trading Commissions and Fees",
+          path: "/trading-commissions-and-fees",
+        },
       ],
     },
     {
@@ -53,7 +56,7 @@ const Footer = () => {
         { label: "Platforms Overview", path: "/platforms-overview" },
         { label: "MT4", path: "/mt4" },
         { label: "Mobile Trading", path: "/mobile-trading" },
-        { label: "Leverage and Margin", path: "/leverage-margin" },
+        { label: "Leverage and Margin", path: "/leverage-and-margin" },
         { label: "Dividends", path: "/dividends" },
       ],
     },
@@ -61,7 +64,7 @@ const Footer = () => {
     {
       title: "MARKETS",
       links: [
-        { label: "Markets Overview", path: "/overview" },
+        { label: "Markets Overview", path: "/markets-overview" },
         {
           label: "Contract Specifications",
           path: "/contract-specifications",
@@ -72,10 +75,10 @@ const Footer = () => {
           path: "/major-currency-pairs",
         },
         { label: "Spot Metals", path: "/spot-metals" },
-        { label: "CFD Commodities", path: "/commodities" },
+        { label: "CFD Commodities", path: "/cfd-commodities" },
         { label: "Stocks Trading", path: "/stocks-trading" },
         { label: "Stocks CFDs", path: "/stocks-cfds" },
-        { label: "CFD on Indices", path: "/indices" },
+        { label: "CFD on Indices", path: "/cfd-on-indices" },
         { label: "Crypto CFDs", path: "/crypto-cfds" },
         { label: "Futures", path: "/futures" },
       ],
