@@ -13,11 +13,11 @@ const Footer = () => {
     {
       title: "ABOUT",
       links: [
+        { label: "About Us", path: "/about-us" },
         {
           label: "Why Choose RightTrade Capital",
           path: "/why-choose-righttrade-capital",
         },
-        { label: "About Us", path: "/about-us" },
         {
           label: "Deposits and Withdrawals",
           path: "/deposits-and-withdrawals",
