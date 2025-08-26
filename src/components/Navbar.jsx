@@ -65,11 +65,25 @@ const Navbar = () => {
       dropdown: [
         {
           heading: "About Us",
-          links: ["About Us", "Why Choose RightTrade Capital"],
+          links: [
+            "About Us",
+            // "Awards",
+            // "Fund Safety",
+            "Why Choose RightTrade Capital",
+          ],
         },
         {
           heading: "Costs",
-          links: ["Deposits and Withdrawals", "Trading Commissions and Fees"],
+          links: [
+            {
+              title: "Deposits and Withdrawals",
+              link: "/deposits-and-withdrawals",
+            },
+            {
+              title: "Trading Commissions and Fees",
+              link: "/trading-commissions-and-fees",
+            },
+          ],
         },
       ],
     },
@@ -78,19 +92,44 @@ const Navbar = () => {
       dropdown: [
         {
           heading: "Instruments",
-          links: ["Markets Overview", "Contract Specifications"],
+          links: [
+            { title: "Markets Overview", link: "/markets-overview" },
+            {
+              title: "Contract Specifications",
+              link: "/contract-specifications",
+            },
+          ],
         },
-        { heading: "FX", links: ["Forex", "Major Currency pairs"] },
+        {
+          heading: "FX",
+          links: [
+            { title: "Forex", link: "/forex" },
+            { title: "Major Currency pairs", link: "/major-currency-pairs" },
+          ],
+        },
         {
           heading: "Metals And Commodities",
-          links: ["Spot Metals", "CFD Commodities"],
+          links: [
+            { title: "Spot Metals", link: "/spot-metals" },
+            { title: "CFD Commodities", link: "/cfd-commodities" },
+          ],
         },
         {
           heading: "Stocks And Indices",
-          links: ["Stocks Trading", "Stocks CFDs", "CFD on Indices"],
+          links: [
+            { title: "Stocks Trading", link: "/stocks-trading" },
+            { title: "Stocks CFDs", link: "/stocks-cfds" },
+            { title: "CFD on Indices", link: "/cfd-on-indices" },
+          ],
         },
-        { heading: "Crypto", links: ["Crypto CFDs"] },
-        { heading: "Futures CFDS", links: ["Futures"] },
+        {
+          heading: "Crypto",
+          links: [{ title: "Crypto CFDs", link: "/crypto-cfds" }],
+        },
+        {
+          heading: "Futures CFDS",
+          links: [{ title: "Futures", link: "/futures" }],
+        },
       ],
     },
     {
@@ -99,20 +138,33 @@ const Navbar = () => {
         {
           heading: "Accounts",
           links: [
-            "Accounts Overview",
-            "Advantage Account",
-            "Advantage Stocks Account",
-            "Advantage Plus Account",
-            "Demo Accounts",
+            { title: "Accounts Overview", link: "/accounts-overview" },
+            { title: "Advantage Account", link: "/advantage-account" },
+            {
+              title: "Advantage Stocks Account",
+              link: "/advantage-stocks-account",
+            },
+            {
+              title: "Advantage Plus Account",
+              link: "/advantage-plus-account",
+            },
+            { title: "Demo Accounts", link: "/demo-accounts" },
           ],
         },
         {
           heading: "Platforms",
-          links: ["Platforms Overview", "MT4", "Mobile Trading"],
+          links: [
+            { title: "Platforms Overview", link: "/platforms-overview" },
+            { title: "MT4", link: "/mt4" },
+            { title: "Mobile Trading", link: "/mobile-trading" },
+          ],
         },
         {
           heading: "Terms",
-          links: ["Leverage and Margin", "Dividends"],
+          links: [
+            { title: "Leverage and Margin", link: "/leverage-and-margin" },
+            { title: "Dividends", link: "/dividends" },
+          ],
         },
       ],
     },
@@ -121,11 +173,18 @@ const Navbar = () => {
       dropdown: [
         {
           heading: "Tools",
-          links: ["Tools Overview", "Pro Trading Tools", "Trading Signals"],
+          links: [
+            { title: "Tools Overview", link: "/tools-overview" },
+            { title: "Pro Trading Tools", link: "/pro-trading-tools" },
+            { title: "Trading Signals", link: "/trading-signals" },
+          ],
         },
         {
           heading: "Calculators",
-          links: ["Profit Calculator", "Margin Calculator"],
+          links: [
+            { title: "Profit Calculator", link: "/profit-calculator" },
+            { title: "Margin Calculator", link: "/margin-calculator" },
+          ],
         },
       ],
     },
@@ -232,13 +291,7 @@ const Navbar = () => {
                                     key={index}
                                     className="cursor-pointer py-1 rounded-md hover:bg-gray-600"
                                   >
-                                    <Link
-                                      to={`/${link
-                                        .toLowerCase()
-                                        .replace(/\s+/g, "-")}`}
-                                    >
-                                      {link}
-                                    </Link>
+                                    <Link to={link.link}>{link.title}</Link>
                                   </li>
                                 ))}
                               </ul>
@@ -325,12 +378,10 @@ const Navbar = () => {
                                   className="cursor-pointer px-3 py-1 rounded-md hover:bg-gray-600"
                                 >
                                   <Link
-                                    to={`/${link
-                                      .toLowerCase()
-                                      .replace(/\s+/g, "-")}`}
+                                    to={link.link}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                   >
-                                    {link}
+                                    {link.title}
                                   </Link>
                                 </li>
                               ))}
