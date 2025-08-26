@@ -66,10 +66,11 @@ const Navbar = () => {
         {
           heading: "About Us",
           links: [
-            "About Us",
-            // "Awards",
-            // "Fund Safety",
-            "Why Choose RightTrade Capital",
+            { title: "About Us", link: "/about-us" },
+            {
+              title: "Why Choose RightTrade Capital",
+              link: "/trusted-forex-broker",
+            },
           ],
         },
         {
@@ -77,7 +78,7 @@ const Navbar = () => {
           links: [
             {
               title: "Deposits and Withdrawals",
-              link: "/deposits-and-withdrawals",
+              link: "/forex-deposits-and-withdrawals",
             },
             {
               title: "Trading Commissions and Fees",
