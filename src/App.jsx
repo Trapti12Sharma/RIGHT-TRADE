@@ -101,7 +101,7 @@ const App = () => {
             {/* <Route path="/awards" element={<Award />} />
             <Route path="/fund-safety" element={<FundSafety />} /> */}
             <Route
-              path="/why-choose-righttrade-capital"
+              path="/trusted-forex-broker"
               element={<TradingStatistics />}
             />
             <Route
