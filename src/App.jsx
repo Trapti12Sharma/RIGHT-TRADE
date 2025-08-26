@@ -105,7 +105,7 @@ const App = () => {
               element={<TradingStatistics />}
             />
             <Route
-              path="/deposits-and-withdrawals"
+              path="/deposit-and-withdrawal"
               element={<DepositsWithdrawals />}
             />
             <Route
