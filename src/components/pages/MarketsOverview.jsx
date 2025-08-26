@@ -1,9 +1,7 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../common/StatsSection";
-import ExpertTrader from "../ExpertTrader";
-import FaqSection from "../common/FaqSection2";
-import AwardsSection from "../common/AwardsSection";
-import SideImageTextSection from "../common/SideImageTextSection";
+
 import TextImageSection from "../common/TextImageSection";
 import MarketViewFeatures from "../common/MarketViewFeatures";
 import MarketViewFeaturen from "../common/MarketViewFeaturen";
@@ -245,65 +243,86 @@ const MarketOverview = () => {
     },
   ];
 
+  const pageURL = "https://www.righttradecapital.com/forex-market-tradingview";
+
   return (
-    <div className="w-full">
-      {/*  Section 1 */}
-      <StatsSection
-        title={statsData.title}
-        subtitle={statsData.subtitle}
-        buttonText={statsData.buttonText}
-        note={statsData.note}
-        image={statsData.image}
-      />
+    <>
+      <Helmet>
+        <title>Forex Market TradingView | Live Charts & Market Insights</title>
 
-      <FeatureSection
-        title="MarketView for Forex Trading: Get Live Analysis from RightTrade Capital"
-        paragraph="You can't just trust your intuition to stay up with changes in the currency market these days. You need charting systems that are powerful, data that is up to date, and tools that are accurate. We at RightTrade Capital use the newest tools, including Forex Market Trading MarketView, to improve your trading experience and offer you an edge over your competitors. Our ecosystem links market data to the choices you can make, whether you're just starting out with currency trading or you're an experienced investor who wants to be sure of their choices."
-        // features={features}
-      />
+        <meta
+          name="description"
+          content="Master the forex market using TradingView's live charts and trading tools. Explore forex tradingView features and market data for accurate trade setups."
+        />
 
-      <TextImageSection
-        imgSrc={imgn}
-        textcolor="text-white"
-        title="The Good Things About Trading in the Forex Market MarketView Helps You Trade Better"
-        listItems={[
-          "Visual charting makes it easy to see where to enter and exit, which cuts down on guesswork and trading based on emotions.",
-          "Encourages people to create arrangements.",
-          "MarketView is the ideal place to practice and get better at trading because it incorporates data from the present and the history.",
-          "More to teach beginners.",
-          "The execution went off without a hitch.",
-          "RightTrade Capital's trading platform works with MarketView, and you may place trades immediately from your analysis window.",
-        ]}
-        bgColor="bg-[#121733]"
-      />
-      <MarketViewFeatures
-        title="How does MarketView help customers trade in the Forex market?"
-        description="How to Trade on the Forex Market MarketView is a complete trading platform that gives traders a lot of information on how currencies move throughout the world. It has current data feeds, powerful graphing tools, and information from the community. MarketView can see, analyse, and guess how the market will act since it works with Forex TradingView. MarketView gives you the following:"
-        features={featuresData}
-      />
-      <MarketViewFeaturen
-        title="Why is RightTrade Capital the Best Place to Get MarketView?"
-        subtitle="Explore cutting-edge tools, real-time data, and unmatched trading insights—all in one place."
-        features={featureData}
-        bgColor="bg-[#121733]"
-        textcolor="text-[#fff]"
-        titleColor="text-[#fff]"
-        subtitleColor="text-[#fff]"
-      />
-      <MarketViewFeatureSection
-        title="Here are some of the things that RightTrade Capital's Forex Market Trading MarketView can do:"
-        description="These are the primary reasons why FX traders find our MarketView interface useful today."
-        features={features}
-      />
-      <MarketInsightCard
-        title={forexInsights.title}
-        sections={forexInsights.sections}
-      />
-      <MarketViewSteps
-        title="How To Use RightTrade Capital's MarketView"
-        steps={stepsData}
-      />
-    </div>
+        <link rel="canonical" href={pageURL} />
+
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="Forex Market TradingView | Live Charts & Market Insights"
+        />
+      </Helmet>
+
+      <div className="w-full">
+        {/*  Section 1 */}
+        <StatsSection
+          title={statsData.title}
+          subtitle={statsData.subtitle}
+          buttonText={statsData.buttonText}
+          note={statsData.note}
+          image={statsData.image}
+        />
+
+        <FeatureSection
+          title="MarketView for Forex Trading: Get Live Analysis from RightTrade Capital"
+          paragraph="You can't just trust your intuition to stay up with changes in the currency market these days. You need charting systems that are powerful, data that is up to date, and tools that are accurate. We at RightTrade Capital use the newest tools, including Forex Market Trading MarketView, to improve your trading experience and offer you an edge over your competitors. Our ecosystem links market data to the choices you can make, whether you're just starting out with currency trading or you're an experienced investor who wants to be sure of their choices."
+          // features={features}
+        />
+
+        <TextImageSection
+          imgSrc={imgn}
+          textcolor="text-white"
+          title="The Good Things About Trading in the Forex Market MarketView Helps You Trade Better"
+          listItems={[
+            "Visual charting makes it easy to see where to enter and exit, which cuts down on guesswork and trading based on emotions.",
+            "Encourages people to create arrangements.",
+            "MarketView is the ideal place to practice and get better at trading because it incorporates data from the present and the history.",
+            "More to teach beginners.",
+            "The execution went off without a hitch.",
+            "RightTrade Capital's trading platform works with MarketView, and you may place trades immediately from your analysis window.",
+          ]}
+          bgColor="bg-[#121733]"
+        />
+        <MarketViewFeatures
+          title="How does MarketView help customers trade in the Forex market?"
+          description="How to Trade on the Forex Market MarketView is a complete trading platform that gives traders a lot of information on how currencies move throughout the world. It has current data feeds, powerful graphing tools, and information from the community. MarketView can see, analyse, and guess how the market will act since it works with Forex TradingView. MarketView gives you the following:"
+          features={featuresData}
+        />
+        <MarketViewFeaturen
+          title="Why is RightTrade Capital the Best Place to Get MarketView?"
+          subtitle="Explore cutting-edge tools, real-time data, and unmatched trading insights—all in one place."
+          features={featureData}
+          bgColor="bg-[#121733]"
+          textcolor="text-[#fff]"
+          titleColor="text-[#fff]"
+          subtitleColor="text-[#fff]"
+        />
+        <MarketViewFeatureSection
+          title="Here are some of the things that RightTrade Capital's Forex Market Trading MarketView can do:"
+          description="These are the primary reasons why FX traders find our MarketView interface useful today."
+          features={features}
+        />
+        <MarketInsightCard
+          title={forexInsights.title}
+          sections={forexInsights.sections}
+        />
+        <MarketViewSteps
+          title="How To Use RightTrade Capital's MarketView"
+          steps={stepsData}
+        />
+      </div>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FaDollarSign, FaBolt, FaGlobe, FaUniversity } from "react-icons/fa";
 import StatsSection from "../common/StatsSection";
 import ForexTradeSection from "../common/ForexTradeSection";
@@ -123,95 +124,116 @@ const CFDCommodities = () => {
     },
   ];
 
+  const pageURL = "https://www.righttradecapital.com/cfd-commodity-trading";
+
   return (
-    <div className="w-full">
-      {/*  1 Section */}
-      <StatsSection {...statsData} />
-      {/*  2 Section */}
-      <ForexTradeSection
-        title={CFDCommoditiesContent.title}
-        description={CFDCommoditiesContent.description}
-        benefits={CFDCommoditiesContent.benefits}
-        paragraph={CFDCommoditiesContent.paragraph}
-        bgcolor="bg-[#121733]"
-        textcolor="text-white"
-      />
+    <>
+      <Helmet>
+        <title>CFD Commodity Trading | RightTrade Capital Official</title>
 
-      {/*  3 (New Reusable) */}
-      <CurrencyInfoSection {...currencySectionData} />
+        <meta
+          name="description"
+          content="Trade global markets with RightTrade Capital’s CFD commodity trading. Tight spreads, fast execution & a trusted CFD trading platform."
+        />
 
-      {/* 5 (New Reusable) */}
-      <VideoSection {...videoData} />
+        <link rel="canonical" href={pageURL} />
 
-      <SideImageTextSection
-        image={manageFundsImg}
-        title="Deposits and Withdrawals Shouldn’t Be a Nightmare"
-        paragraphTextColor="text-black"
-        paragraphs={[
-          "You’re in India. Your broker should know that. That means UPI, net banking, maybe even Paytm. Deposits should be instant or close to it. Withdrawals should take 24–48 hours at most, and the process should be simple.",
-          "It’s shocking how many people ignore this part—until they can’t get their money out.",
-          "Fast deposits are great, but fast withdrawals are non-negotiable. If you’re trading cfd commodity trading positions with tight capital, slow withdrawals could block your next trade. Confirm payment methods. Ask about withdrawal times. Don’t leave it until later.",
-        ]}
-      />
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="CFD Commodity Trading | RightTrade Capital Official"
+        />
+      </Helmet>
 
-      <ImageTextSections
-        title="Good Support Isn’t a Luxury—It’s a Lifeline"
-        description={`You’ll have questions. Everyone does. Whether it’s setting up your cfd indices trading strategy, verifying your documents, or figuring out margin calls, you’ll eventually need help.
+      <div className="w-full">
+        {/*  1 Section */}
+        <StatsSection {...statsData} />
+        {/*  2 Section */}
+        <ForexTradeSection
+          title={CFDCommoditiesContent.title}
+          description={CFDCommoditiesContent.description}
+          benefits={CFDCommoditiesContent.benefits}
+          paragraph={CFDCommoditiesContent.paragraph}
+          bgcolor="bg-[#121733]"
+          textcolor="text-white"
+        />
+
+        {/*  3 (New Reusable) */}
+        <CurrencyInfoSection {...currencySectionData} />
+
+        {/* 5 (New Reusable) */}
+        <VideoSection {...videoData} />
+
+        <SideImageTextSection
+          image={manageFundsImg}
+          title="Deposits and Withdrawals Shouldn’t Be a Nightmare"
+          paragraphTextColor="text-black"
+          paragraphs={[
+            "You’re in India. Your broker should know that. That means UPI, net banking, maybe even Paytm. Deposits should be instant or close to it. Withdrawals should take 24–48 hours at most, and the process should be simple.",
+            "It’s shocking how many people ignore this part—until they can’t get their money out.",
+            "Fast deposits are great, but fast withdrawals are non-negotiable. If you’re trading cfd commodity trading positions with tight capital, slow withdrawals could block your next trade. Confirm payment methods. Ask about withdrawal times. Don’t leave it until later.",
+          ]}
+        />
+
+        <ImageTextSections
+          title="Good Support Isn’t a Luxury—It’s a Lifeline"
+          description={`You’ll have questions. Everyone does. Whether it’s setting up your cfd indices trading strategy, verifying your documents, or figuring out margin calls, you’ll eventually need help.
 The best brokers offer 24/5 or even 24/7 support, with real people who understand trading—not scripted bots reading from a sheet.
 
        `}
-        paragraph="If possible, test support before opening an account. Ask a complex question. Gauge how fast and helpful the response is. If they can’t explain basic trading terms or delay responses for hours, walk away."
-        // image={commissionsImage}
-        reverse={false}
-        noButton={true}
-        bgcolor="bg-[#121733]"
-        textcolor="text-white"
-      />
+          paragraph="If possible, test support before opening an account. Ask a complex question. Gauge how fast and helpful the response is. If they can’t explain basic trading terms or delay responses for hours, walk away."
+          // image={commissionsImage}
+          reverse={false}
+          noButton={true}
+          bgcolor="bg-[#121733]"
+          textcolor="text-white"
+        />
 
-      <FeatureSection
-        title="Regulation Isn’t Boring—It’s Essential"
-        paragraph="This part might not sound exciting, but it’s where most new traders make their first mistake. You see a broker offering a huge bonus or promising insane leverage, and it looks tempting—but they’re not regulated.
+        <FeatureSection
+          title="Regulation Isn’t Boring—It’s Essential"
+          paragraph="This part might not sound exciting, but it’s where most new traders make their first mistake. You see a broker offering a huge bonus or promising insane leverage, and it looks tempting—but they’re not regulated.
 Stop right there.
 If your broker isn’t licensed by a serious regulatory authority—like the FCA in the UK, CySEC in Europe, or ASIC in Australia—you’re taking a huge risk. In India, forex is technically allowed only under strict guidelines. Many Indian traders go with international brokers for access to global CFD markets, which is fine—as long as those brokers are properly regulated.
 Platforms like Right Trade Capital, for example, operate under international compliance and give Indian traders safe access to global markets, including cfd commodity trading and a wide range of CFDs on indices, currencies, and even stocks.
 ."
-        // features={features}
-        bgcolor="bg-[#fff]"
-        textcolor="text-black"
-      />
+          // features={features}
+          bgcolor="bg-[#fff]"
+          textcolor="text-black"
+        />
 
-      <ImageTextSections
-        title="Asset Variety Gives You Flexibility"
-        description={`Markets don’t move the same way all the time. Sometimes gold is trending. Sometimes the US30 is showing momentum. And other times, it’s a slow week across the board. `}
-        paragraph="The more instruments your broker offers, the more ways you have to pivot your strategy.
+        <ImageTextSections
+          title="Asset Variety Gives You Flexibility"
+          description={`Markets don’t move the same way all the time. Sometimes gold is trending. Sometimes the US30 is showing momentum. And other times, it’s a slow week across the board. `}
+          paragraph="The more instruments your broker offers, the more ways you have to pivot your strategy.
 For example, if your cfd indices trading strategy isn’t working due to low volatility, you might shift into cfd commodity trading to catch a move in natural gas or silver. But if your broker only offers forex pairs and one or two indices, you’re stuck.
 Choose a broker that lets you move between commodities, indices, forex, and maybe even crypto—without needing to switch platforms."
-        // image={commissionsImage}
-        reverse={false}
-        noButton={true}
-        bgcolor="bg-[#121733]"
-        textcolor="text-white"
-      />
+          // image={commissionsImage}
+          reverse={false}
+          noButton={true}
+          bgcolor="bg-[#121733]"
+          textcolor="text-white"
+        />
 
-      <SideImageTextSection
-        image={manageFundsImg}
-        title="First Know Why You’re Trading"
-        paragraphTextColor="text-black"
-        paragraphs={[
-          "Most people skip this part. They jump in because they see a few influencers talking about forex wins or someone mentioned gold skyrocketing last week. But you can’t choose the right broker until you know what you’re looking to trade—and how you plan to trade it.",
-          "If you’re planning to trade oil, silver, gold, or even natural gas, you’re stepping into the world of cfd commodity trading. These markets move differently compared to currency pairs—they’re more sensitive to global news, supply chain disruptions, and political tension. On the other hand, if your focus is broader and you’re looking at overall market movements—think S&P 500, FTSE 100, or even the Indian Nifty—you’ll need a more structured cfd indices trading strategy, one that involves studying trends, economic indicators, and using tools like Fibonacci retracements or moving averages.",
-          "So before you get dazzled by “0.1 pip spreads,” ask yourself: are you more interested in commodities, currencies, or indices? Because that one decision shapes the entire search for your broker.",
-        ]}
-      />
+        <SideImageTextSection
+          image={manageFundsImg}
+          title="First Know Why You’re Trading"
+          paragraphTextColor="text-black"
+          paragraphs={[
+            "Most people skip this part. They jump in because they see a few influencers talking about forex wins or someone mentioned gold skyrocketing last week. But you can’t choose the right broker until you know what you’re looking to trade—and how you plan to trade it.",
+            "If you’re planning to trade oil, silver, gold, or even natural gas, you’re stepping into the world of cfd commodity trading. These markets move differently compared to currency pairs—they’re more sensitive to global news, supply chain disruptions, and political tension. On the other hand, if your focus is broader and you’re looking at overall market movements—think S&P 500, FTSE 100, or even the Indian Nifty—you’ll need a more structured cfd indices trading strategy, one that involves studying trends, economic indicators, and using tools like Fibonacci retracements or moving averages.",
+            "So before you get dazzled by “0.1 pip spreads,” ask yourself: are you more interested in commodities, currencies, or indices? Because that one decision shapes the entire search for your broker.",
+          ]}
+        />
 
-      <SecurityRegulationSection
-        image={home6}
-        title="Final Thoughts: Don’t Rush This Decision"
-        introParagraph="Forex trading already involves risk. Don’t add to it by choosing the wrong broker. Whether you’re diving into cfd commodity trading to catch trends in gold and oil, or refining a cfd indices trading strategy for consistent long-term performance, your broker can either support your success—or sabotage it. "
-        closingParagraph="Take your time. Don’t go by what’s popular—go by what works for your needs. Read reviews, test the platform, verify regulation, and always double-check the fine print.
+        <SecurityRegulationSection
+          image={home6}
+          title="Final Thoughts: Don’t Rush This Decision"
+          introParagraph="Forex trading already involves risk. Don’t add to it by choosing the wrong broker. Whether you’re diving into cfd commodity trading to catch trends in gold and oil, or refining a cfd indices trading strategy for consistent long-term performance, your broker can either support your success—or sabotage it. "
+          closingParagraph="Take your time. Don’t go by what’s popular—go by what works for your needs. Read reviews, test the platform, verify regulation, and always double-check the fine print.
         Brokers like Right Trade Capital, for instance, offer regulated access, flexible platforms, a wide range of CFDs, and funding options that suit Indian traders. If you're serious about growing as a trader, choosing the right broker is the first—and possibly most important—step."
-      />
-    </div>
+        />
+      </div>
+    </>
   );
 };
 

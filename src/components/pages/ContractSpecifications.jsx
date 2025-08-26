@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../common/StatsSection";
 import BreadcrumbAndDescription from "../common/BreadcrumbAndDescription";
 import SimpleCenteredTextSection from "../common/SimpleCenteredTextSection";
@@ -251,8 +252,30 @@ const ContractSpecifications = () => {
       "We aim higher than just resetting the standards within the forex industry - we also deliver the highest levels of transparency to all our clients. The statistics below show exactly why we're so proud of our trading conditions, which include some of the best spreads in the business.",
   };
 
+  const pageURL =
+    "https://www.righttradecapital.com/forex-contract-specifications";
+
   return (
     <>
+      <Helmet>
+        <title>
+          Forex Contract Specifications | Trading Instrument Details
+        </title>
+
+        <meta
+          name="description"
+          content="Explore detailed forex contract specifications at RightTrade Capital. Check lot sizes, leverage and margin requirements and swap rates for all instruments."
+        />
+
+        <link rel="canonical" href={pageURL} />
+
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="Forex Contract Specifications | Trading Instrument Details"
+        />
+      </Helmet>
+
       {/* Section 1 */}
       <StatsSection {...statsData} />
       {/* Section 2 */}
