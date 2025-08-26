@@ -78,7 +78,7 @@ const Navbar = () => {
           links: [
             {
               title: "Deposits and Withdrawals",
-              link: "/deposits-and-withdrawal",
+              link: "/deposits-and-withdrawals",
             },
             {
               title: "Trading Commissions and Fees",
