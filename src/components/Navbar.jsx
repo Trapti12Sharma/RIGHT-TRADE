@@ -69,7 +69,7 @@ const Navbar = () => {
             { title: "About Us", link: "/about-us" },
             {
               title: "Why Choose RightTrade Capital",
-              link: "/why-choose-righttrade-capital",
+              link: "/trusted-forex-broker",
             },
           ],
         },
