@@ -1,6 +1,6 @@
 // src/pages/WhyRightTrade.jsx
 import React from "react";
-import StatsSection from "../../components/common/StatsSection";
+import StatsSection from "../common/StatsSection";
 import fxtm1 from "../../assets/Compare.jpg";
 import fxtm2 from "../../assets/fxtm2.svg";
 import fxtm3 from "../../assets/fxtm3.svg";

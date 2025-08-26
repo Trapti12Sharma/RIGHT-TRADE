@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../common/StatsSection";
 import FeatureSection from "../common/FeatureSection";
 import SideImageTextSection from "../common/SideImageTextSection";
@@ -286,148 +287,168 @@ const DepositsWithdrawals = () => {
     },
   ];
 
+  const pageURL =
+    "https://www.righttradecapital.com/forex-deposit-and-withdrawal";
+
   return (
-    <div>
-      {/* 🔶 Section 1 - Hero Banner */}
-      <StatsSection
-        title="Deposits & Withdrawals – RightTrade Capital"
-        subtitle="It is simple to add and take out money with RightTrade Capital. Locked. Right immediately."
-        buttonText="Get started"
-        image={depositImg}
-        note="Quick, easy, and safe ways to pay for your deals."
-      />
+    <>
+      <Helmet>
+        <title>Secure Deposits & Fast Withdrawals for Traders</title>
 
-      {/*  Section 2 - Easy deposits. Fast withdrawals. */}
-      <FeatureSection
-        title="How To Deposit Money At RightTrade Capital"
-        paragraph="It's straightforward and fast to add money to your trading account. You can make deposits in a variety of various methods, both in your neighbourhood and throughout the globe, so you'll always have a decent option."
-        // features={features}
-      />
+        <meta
+          name="description"
+          content="Deposit and withdraw funds instantly with RightTradeCapital. Enjoy fast, secure, and fee-free transactions using global payment methods. Trade with confidence.
+"
+        />
 
-      {/*  Section 3 - Manage funds your way */}
-      <SideImageTextSection
-        image={manageFundsImg}
-        bgColor="bg-[#121733]"
-        textcolor="text-white"
-        title="What Are The Benefits Of Using RightTrade Capital To Deposit And Withdraw Money?"
-        paragraphTextColor="text-white"
-        paragraphs={[
-          "We made every process simpler so you can trade more and pay less.",
-        ]}
-        listItems={[
-          "A lot of methods to pay, both in your area and beyond the world",
-          "Transactions are processed quickly",
-          "No extra costs",
-          "Real-time updates on transactions",
-          "Data and money are well protected",
-          "Help for users 24 hours a day, five days a week",
-        ]}
-      />
+        <link rel="canonical" href={pageURL} />
 
-      {/*  Section 4 - Four Step Section */}
-      <FourStepSection
-        title="How To Get Money Out"
-        steps={steps}
-        bgcolor="bg-sky-950"
-      />
-      {/*  Section 5 - */}
-      <DepositMethodsTable
-        heading="Ways to Make a Deposit"
-        subtext="Choose your preferred deposit method below:"
-        columnKeys={["method", "time", "fees", "minDeposit"]}
-        columns={[
-          "Method",
-          "Processing Time",
-          "RightTrade Capital Fees",
-          "Minimum Deposi",
-        ]}
-        data={depositData}
-        // bgColor="#ffffff"
-        // textColor="#111827"
-      />
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="Secure Deposits & Fast Withdrawals for Traders"
+        />
+      </Helmet>
 
-      {/*  Section 6 - */}
-      <FourStepSection
-        title="How to Deposit Money"
-        steps={steps1}
-        bgcolor="bg-[#121733]"
-      />
+      <div>
+        {/* 🔶 Section 1 - Hero Banner */}
+        <StatsSection
+          title="Deposits & Withdrawals – RightTrade Capital"
+          subtitle="It is simple to add and take out money with RightTrade Capital. Locked. Right immediately."
+          buttonText="Get started"
+          image={depositImg}
+          note="Quick, easy, and safe ways to pay for your deals."
+        />
 
-      {/*  Section 7 - */}
+        {/*  Section 2 - Easy deposits. Fast withdrawals. */}
+        <FeatureSection
+          title="How To Deposit Money At RightTrade Capital"
+          paragraph="It's straightforward and fast to add money to your trading account. You can make deposits in a variety of various methods, both in your neighbourhood and throughout the globe, so you'll always have a decent option."
+        />
 
-      <GetMoreMarketsSection
-        title="Withdrawal Options from RightTrade Capital"
-        paragraphs={[
-          "Our secure and simple withdrawal mechanism makes sure that money transfers happen fast and without any hidden costs when you need it.",
-          "There is no hiding anything when it comes to withdrawals.",
-          "Need a hand?",
-          "Our Customer Support team are more than happy to answer your questions.",
-        ]}
-        bgColor="#f9fafb"
-        textColor="#111827"
-      />
+        {/*  Section 3 - Manage funds your way */}
+        <SideImageTextSection
+          image={manageFundsImg}
+          bgColor="bg-[#121733]"
+          textcolor="text-white"
+          title="What Are The Benefits Of Using RightTrade Capital To Deposit And Withdraw Money?"
+          paragraphTextColor="text-white"
+          paragraphs={[
+            "We made every process simpler so you can trade more and pay less.",
+          ]}
+          listItems={[
+            "A lot of methods to pay, both in your area and beyond the world",
+            "Transactions are processed quickly",
+            "No extra costs",
+            "Real-time updates on transactions",
+            "Data and money are well protected",
+            "Help for users 24 hours a day, five days a week",
+          ]}
+        />
 
-      {/*  Section 8 - */}
-      <MarketViewFeatureSection
-        title={otherNotesData.title}
-        description={otherNotesData.description}
-        features={otherNotesData.features}
-        bgcolor="bg-[#121733]"
-        titlecolor="text-white"
-      />
+        {/*  Section 4 - Four Step Section */}
+        <FourStepSection
+          title="How To Get Money Out"
+          steps={steps}
+          bgcolor="bg-sky-950"
+        />
+        {/*  Section 5 - */}
+        <DepositMethodsTable
+          heading="Ways to Make a Deposit"
+          subtext="Choose your preferred deposit method below:"
+          columnKeys={["method", "time", "fees", "minDeposit"]}
+          columns={[
+            "Method",
+            "Processing Time",
+            "RightTrade Capital Fees",
+            "Minimum Deposi",
+          ]}
+          data={depositData}
+        />
 
-      {/*  9th Section */}
+        {/*  Section 6 - */}
+        <FourStepSection
+          title="How to Deposit Money"
+          steps={steps1}
+          bgcolor="bg-[#121733]"
+        />
 
-      <DepositMethodsTable
-        heading="Action Speed: An Overview of Processing Time"
-        subtext="RightTrade Capital is fully honest and transparent. You can always find out where your money is and when it will get there."
-        columnKeys={["method", "time"]}
-        data={actionSpeedData}
-        columns={["Action", "Speed"]}
-      />
+        {/*  Section 7 - */}
 
-      {/*  Section 10 - */}
-      <SecurityRegulationSection
-        image={home6}
-        title="Safety and Trust in the Regulations"
-        introParagraph="Your money and personal information are protected thanks to a top-notch security system:"
-        bulletPoints={[
-          "All transactions are encrypted using SSL",
-          "Two-Factor Authentication (2FA)",
-          "Stopping fraud and keeping an eye on things in real time",
-        ]}
-        closingParagraph="Regulators in several areas keep a close check on RightTrade Capital, which is properly licenced."
-      />
+        <GetMoreMarketsSection
+          title="Withdrawal Options from RightTrade Capital"
+          paragraphs={[
+            "Our secure and simple withdrawal mechanism makes sure that money transfers happen fast and without any hidden costs when you need it.",
+            "There is no hiding anything when it comes to withdrawals.",
+            "Need a hand?",
+            "Our Customer Support team are more than happy to answer your questions.",
+          ]}
+          bgColor="#f9fafb"
+          textColor="#111827"
+        />
 
-      {/*  Section 11 - */}
-      <RightImageLeftContent
-        heading={heading}
-        content={content}
-        // image={trustImage}
-      />
+        {/*  Section 8 - */}
+        <MarketViewFeatureSection
+          title={otherNotesData.title}
+          description={otherNotesData.description}
+          features={otherNotesData.features}
+          bgcolor="bg-[#121733]"
+          titlecolor="text-white"
+        />
 
-      {/*  13th Section */}
-      <SupportedRegions
-        title={supportedRegionData.title}
-        subtitle={supportedRegionData.subtitle}
-        ctaText={supportedRegionData.ctaText}
-        ctaNote={supportedRegionData.ctaNote}
-        regions={supportedRegionData.regions}
-      />
+        {/*  9th Section */}
 
-      {/*  14th Section */}
-      <FaqSection faqs={faqs} />
+        <DepositMethodsTable
+          heading="Action Speed: An Overview of Processing Time"
+          subtext="RightTrade Capital is fully honest and transparent. You can always find out where your money is and when it will get there."
+          columnKeys={["method", "time"]}
+          data={actionSpeedData}
+          columns={["Action", "Speed"]}
+        />
 
-      <DepositMethodsTable
-        heading="Supported Ways to Withdraw"
-        subtext="You have to use the same technique to take out money as you used to put it in for safety and legal reasons."
-        data={withdrawData}
-        columnKeys={["method", "time", "fees", "minDeposit"]}
-        columns={["Method", "Processing Time", "Fees", "Minimum Withdrawal"]}
-        // bgColor="#ffffff"
-        // textColor="#111827"
-      />
-    </div>
+        {/*  Section 10 - */}
+        <SecurityRegulationSection
+          image={home6}
+          title="Safety and Trust in the Regulations"
+          introParagraph="Your money and personal information are protected thanks to a top-notch security system:"
+          bulletPoints={[
+            "All transactions are encrypted using SSL",
+            "Two-Factor Authentication (2FA)",
+            "Stopping fraud and keeping an eye on things in real time",
+          ]}
+          closingParagraph="Regulators in several areas keep a close check on RightTrade Capital, which is properly licenced."
+        />
+
+        {/*  Section 11 - */}
+        <RightImageLeftContent
+          heading={heading}
+          content={content}
+          // image={trustImage}
+        />
+
+        {/*  13th Section */}
+        <SupportedRegions
+          title={supportedRegionData.title}
+          subtitle={supportedRegionData.subtitle}
+          ctaText={supportedRegionData.ctaText}
+          ctaNote={supportedRegionData.ctaNote}
+          regions={supportedRegionData.regions}
+        />
+
+        {/*  14th Section */}
+        <FaqSection faqs={faqs} />
+
+        <DepositMethodsTable
+          heading="Supported Ways to Withdraw"
+          subtext="You have to use the same technique to take out money as you used to put it in for safety and legal reasons."
+          data={withdrawData}
+          columnKeys={["method", "time", "fees", "minDeposit"]}
+          columns={["Method", "Processing Time", "Fees", "Minimum Withdrawal"]}
+          // bgColor="#ffffff"
+          // textColor="#111827"
+        />
+      </div>
+    </>
   );
 };
 

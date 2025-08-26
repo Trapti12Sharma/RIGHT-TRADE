@@ -22,7 +22,7 @@ const TradingStatistics = () => {
 
         <meta
           name="description"
-          content="Choose RightTradeCapital, a trusted and regulated forex broker offering low spreads, fast execution, and secure platforms. Trade with best forex trading broker"
+          content="Choose RightTrade Capital, a trusted and regulated forex broker offering low spreads, fast execution, and secure platforms. Trade with best forex trading broker"
         />
 
         <link rel="canonical" href={pageURL} />

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import StatsSection from "../common/StatsSection";
 import BreadcrumbAndDescription from "../common/BreadcrumbAndDescription";
 import ImageTextSections from "../common/ImageTextSections";
@@ -165,35 +166,58 @@ const TradingCommissions = () => {
   const description =
     "We’re proud to offer great pricing and we’re honest about the fees we charge. Have a read through the below and let us know if anything isn’t clear.";
 
+  const pageURL =
+    "https://www.righttradecapital.com//trading-commission-calculator";
+
   return (
-    <div>
-      {/* Section 1 - Stats Section with orange overlay */}
-      <StatsSection
-        title="Trading commissions and fees"
-        subtitle="We’re proud of our low trading costs. See for yourself."
-        buttonText="Learn more"
-        image={tradingImage}
-      />
+    <>
+      <Helmet>
+        <title>
+          Trading Commission Calculator | Stock Broker Fee Estimator
+        </title>
 
-      {/* Section 2 - Breadcrumb and Description */}
+        <meta
+          name="description"
+          content="Use our trading commission calculator to estimate your trading costs with Righttrade Capital and analyze stock broker commission fees."
+        />
 
-      <SideImageTextSection
-        // image={commissionsImage}
-        title="RightTrade Capital Pricing & Commissions"
-        paragraphs={[
-          "RightTrade Capital pricing and commissions are straightforward, reasonable, and geared towards traders.",
-          "We at RightTrade Capital believe that being honest is the first step to building trust. That's why our prices and charges are clear, fair, and work with your trading style.",
-          "Our pricing structure makes sure that you always know what you're paying and what you're receiving, whether you're new to the markets or an experienced trader who uses high-volume methods.",
-        ]}
-        bgColor="bg-white" // or any Tailwind class like bg-[#f9f9f9]
-        textcolor="text-black"
-        paragraphTextColor="text-gray-600"
-      />
+        <link rel="canonical" href={pageURL} />
 
-      {/* Section 3- ImageTextSection for Spreads */}
-      <ImageTextSections
-        title="Why Our Fees Matter"
-        description={`The expenses of trading are quite essential for how much money you make. Even tiny discrepancies in spreads or costs may build up over time, particularly for traders who do a lot of trading. RightTrade Capital's pricing are aimed to help you beat the competition:
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="Trading Commission Calculator | Stock Broker Fee Estimator"
+        />
+      </Helmet>
+
+      <div>
+        {/* Section 1 - Stats Section with orange overlay */}
+        <StatsSection
+          title="Trading commissions and fees"
+          subtitle="We’re proud of our low trading costs. See for yourself."
+          buttonText="Learn more"
+          image={tradingImage}
+        />
+
+        {/* Section 2 - Breadcrumb and Description */}
+
+        <SideImageTextSection
+          // image={commissionsImage}
+          title="RightTrade Capital Pricing & Commissions"
+          paragraphs={[
+            "RightTrade Capital pricing and commissions are straightforward, reasonable, and geared towards traders.",
+            "We at RightTrade Capital believe that being honest is the first step to building trust. That's why our prices and charges are clear, fair, and work with your trading style.",
+            "Our pricing structure makes sure that you always know what you're paying and what you're receiving, whether you're new to the markets or an experienced trader who uses high-volume methods.",
+          ]}
+          bgColor="bg-white" // or any Tailwind class like bg-[#f9f9f9]
+          textcolor="text-black"
+          paragraphTextColor="text-gray-600"
+        />
+
+        {/* Section 3- ImageTextSection for Spreads */}
+        <ImageTextSections
+          title="Why Our Fees Matter"
+          description={`The expenses of trading are quite essential for how much money you make. Even tiny discrepancies in spreads or costs may build up over time, particularly for traders who do a lot of trading. RightTrade Capital's pricing are aimed to help you beat the competition:
 
         • Spreads that are very small, starting at 0.0 pips
 
@@ -204,86 +228,92 @@ const TradingCommissions = () => {
         • Models of commissions that are clear
 
         • We are here to assist you with your money, not take it away.`}
-        // image={commissionsImage}
-        reverse={false}
-        noButton={true} // hides the button
-        bgcolor="bg-[#121733]"
-        textcolor="text-white"
-      />
+          // image={commissionsImage}
+          reverse={false}
+          noButton={true} // hides the button
+          bgcolor="bg-[#121733]"
+          textcolor="text-white"
+        />
 
-      {/*  Section 4 - */}
+        {/*  Section 4 - */}
 
-      <MarketViewFeatureSection
-        title={otherFeesSectionData.title}
-        description={otherFeesSectionData.description}
-        bgcolor={otherFeesSectionData.bgcolor}
-        titlecolor={otherFeesSectionData.titlecolor}
-        features={otherFeesSectionData.features}
-      />
+        <MarketViewFeatureSection
+          title={otherFeesSectionData.title}
+          description={otherFeesSectionData.description}
+          bgcolor={otherFeesSectionData.bgcolor}
+          titlecolor={otherFeesSectionData.titlecolor}
+          features={otherFeesSectionData.features}
+        />
 
-      {/*  Section 5 -  */}
-      <SupportedRegions
-        title={tradingAccountsRegionsData.title}
-        subtitle={tradingAccountsRegionsData.subtitle}
-        ctaText={tradingAccountsRegionsData.ctaText}
-        ctaNote={tradingAccountsRegionsData.ctaNote}
-        regions={tradingAccountsRegionsData.regions}
-      />
-      {/*  Section 6 -  */}
-      <DepositMethodsTable
-        heading="More Information About the Fees in the Table"
-        // subtext="Explore various methods to deposit funds."
-        columns={["Type of Account", "Cost", "Spreads (Major FX)", "Best For"]}
-        columnKeys={["method", "time", "fees", "minDeposit"]}
-        data={[
-          {
-            method: "Pro",
-            time: "$4 for each lot (round trip)",
-            fees: "From 0.0 pips",
-            minDeposit: "Scalping and trading a lot at once",
-          },
-          {
-            method: "Regular",
-            time: "No Commission",
-            fees: "Beginning at 1.2 pips",
-            minDeposit:
-              "People who are new to trading and those who do it on the side",
-          },
-          {
-            method: "Top",
-            time: "Rates That Are One of a Kind",
-            fees: "Very tigh",
-            minDeposit: "VIP clientele and businesses",
-          },
-        ]}
-      />
+        {/*  Section 5 -  */}
+        <SupportedRegions
+          title={tradingAccountsRegionsData.title}
+          subtitle={tradingAccountsRegionsData.subtitle}
+          ctaText={tradingAccountsRegionsData.ctaText}
+          ctaNote={tradingAccountsRegionsData.ctaNote}
+          regions={tradingAccountsRegionsData.regions}
+        />
+        {/*  Section 6 -  */}
+        <DepositMethodsTable
+          heading="More Information About the Fees in the Table"
+          // subtext="Explore various methods to deposit funds."
+          columns={[
+            "Type of Account",
+            "Cost",
+            "Spreads (Major FX)",
+            "Best For",
+          ]}
+          columnKeys={["method", "time", "fees", "minDeposit"]}
+          data={[
+            {
+              method: "Pro",
+              time: "$4 for each lot (round trip)",
+              fees: "From 0.0 pips",
+              minDeposit: "Scalping and trading a lot at once",
+            },
+            {
+              method: "Regular",
+              time: "No Commission",
+              fees: "Beginning at 1.2 pips",
+              minDeposit:
+                "People who are new to trading and those who do it on the side",
+            },
+            {
+              method: "Top",
+              time: "Rates That Are One of a Kind",
+              fees: "Very tigh",
+              minDeposit: "VIP clientele and businesses",
+            },
+          ]}
+        />
 
-      {/*  Section 7 - Image Left & Text Right: Commissions */}
+        {/*  Section 7 - Image Left & Text Right: Commissions */}
 
-      <SideImageTextSection
-        // image={trustImage}
-        title="Why Should You Choose RightTrade Capital for Costs That Are Easy to Understand?"
-        paragraphs={[
-          "We have high-quality infrastructure at reasonable pricing, which makes it simple and cheap to do business with us.",
-        ]}
-        listItems={[
-          "Safe and regulated: Fully licenced and following the standards imposed by financial authorities across the world.",
-          "Real-Time Cost Visibility: You can see fees, spreads, and swap rates live on your trading dashboard.",
-          "Quick Execution: All platforms (MT4/MT5/Web) process orders at lightning speed.",
-          "Help When You Need It: You may get help in several languages 24/5 to help you comprehend all the fees.",
-        ]}
-        bgColor="bg-[#121733]"
-        textcolor="text-white"
-        paragraphTextColor="text-white"
-      />
+        <SideImageTextSection
+          // image={trustImage}
+          title="Why Should You Choose RightTrade Capital for Costs That Are Easy to Understand?"
+          paragraphs={[
+            "We have high-quality infrastructure at reasonable pricing, which makes it simple and cheap to do business with us.",
+          ]}
+          listItems={[
+            "Safe and regulated: Fully licenced and following the standards imposed by financial authorities across the world.",
+            "Real-Time Cost Visibility: You can see fees, spreads, and swap rates live on your trading dashboard.",
+            "Quick Execution: All platforms (MT4/MT5/Web) process orders at lightning speed.",
+            "Help When You Need It: You may get help in several languages 24/5 to help you comprehend all the fees.",
+          ]}
+          bgColor="bg-[#121733]"
+          textcolor="text-white"
+          paragraphTextColor="text-white"
+        />
 
-      <FeatureSection
-        title="In Conclusion"
-        paragraph="It's crucial to know what you're doing when you trade. We provide you both at RightTrade Capital. Our fees and commissions are straightforward, simple, and geared to help you trade effectively. We thought about you when we made them.
+        <FeatureSection
+          title="In Conclusion"
+          paragraph="It's crucial to know what you're doing when you trade. We provide you both at RightTrade Capital. Our fees and commissions are straightforward, simple, and geared to help you trade effectively. We thought about you when we made them.
 We made it easy to figure out how much it costs to trade. Our pricing help you keep in command of your financial strategy from start to finish, whether you're interested in FX, indices, commodities, or crypto."
-        // features={features}
-      />
-    </div>
+          // features={features}
+        />
+      </div>
+    </>
   );
 };
 

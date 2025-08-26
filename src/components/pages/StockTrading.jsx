@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FaDollarSign, FaBolt, FaGlobe, FaUniversity } from "react-icons/fa";
 import StatsSection from "../common/StatsSection";
 import ForexTradeSection from "../common/ForexTradeSection";
@@ -176,35 +177,60 @@ const StockTrading = () => {
     },
   ];
 
+  const pageURL =
+    "https://www.righttradecapital.com/best-stock-trading-platform";
+
   return (
-    <div className="w-full">
-      {/*  1 Section */}
-      <StatsSection {...statsData} />
-      {/*  2 Section */}
-      <ForexTradeSection
-        title={StockTradingContent.title}
-        description={StockTradingContent.description}
-        benefits={StockTradingContent.benefits}
-      />
-      {/*  3 Section */}
-      <FeatureListSection
-        title="Why Right Trade Capital Stands Out"
-        subtitle="So let’s talk about Right Trade Capital. It’s not the loudest name out there, but more and more traders are picking it up—and not looking back. And for good reason."
-        items={features}
-      />
-      {/*  4 (New Reusable) */}
-      <CurrencyInfoSection {...currencySectionData} />
+    <>
+      <Helmet>
+        <title>
+          Best Stock Trading Platform | Trade with Confidence at RightTrade
+          Capital
+        </title>
 
-      {/* 5 (New Reusable) */}
-      <VideoSection {...videoData} />
+        <meta
+          name="description"
+          content="Find the best stock trading platform with RightTrade Capital. Enjoy secure, fast, and user-friendly stock trading with advanced tools."
+        />
 
-      <MarketViewFeatures
-        title="Final Thoughts: Is This Your Best Stock Trading Platform?"
-        description="Choosing a platform isn’t about finding “the most advanced” or “the biggest brand.” It’s about finding one that fits your style—and supports your goals.
+        <link rel="canonical" href={pageURL} />
+
+        <meta property="og:url" content={pageURL} />
+        <meta
+          property="og:title"
+          content="Best Stock Trading Platform | Trade with Confidence at RightTrade Capital"
+        />
+      </Helmet>
+
+      <div className="w-full">
+        {/*  1 Section */}
+        <StatsSection {...statsData} />
+        {/*  2 Section */}
+        <ForexTradeSection
+          title={StockTradingContent.title}
+          description={StockTradingContent.description}
+          benefits={StockTradingContent.benefits}
+        />
+        {/*  3 Section */}
+        <FeatureListSection
+          title="Why Right Trade Capital Stands Out"
+          subtitle="So let’s talk about Right Trade Capital. It’s not the loudest name out there, but more and more traders are picking it up—and not looking back. And for good reason."
+          items={features}
+        />
+        {/*  4 (New Reusable) */}
+        <CurrencyInfoSection {...currencySectionData} />
+
+        {/* 5 (New Reusable) */}
+        <VideoSection {...videoData} />
+
+        <MarketViewFeatures
+          title="Final Thoughts: Is This Your Best Stock Trading Platform?"
+          description="Choosing a platform isn’t about finding “the most advanced” or “the biggest brand.” It’s about finding one that fits your style—and supports your goals.
 If you're looking for:"
-        features={featuresData}
-      />
-    </div>
+          features={featuresData}
+        />
+      </div>
+    </>
   );
 };
 

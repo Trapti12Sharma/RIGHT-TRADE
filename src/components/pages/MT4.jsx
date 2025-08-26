@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 import StatsSection from "../../components/common/StatsSection";
 import HowToWithdrawSection from "../common/HowToWithdrawSection";
 import FeatureSection from "../common/FeatureSection";
+import SupportedRegions from "../common/SupportedRegions";
+import { FaGlobeEurope, FaBuilding, FaExchangeAlt } from "react-icons/fa";
 import FaqSection from "../common/FaqSection2";
 import bannerImage from "../../assets/mt4n.png";
 
@@ -40,6 +42,46 @@ const MT4 = () => {
     "Fill in the following data and click Submit.",
   ];
 
+  const supportedRegionData = {
+    title: "Our Trading Accounts",
+
+    regions: [
+      {
+        icon: <FaGlobeEurope size={40} className="text-[#FABF16]" />,
+        title: "Advantage Stocks Account",
+        points: [
+          "Minimum Deposit: $200",
+          "Spreads: Start at 6 cents",
+          "Commissions: Zero",
+          "Best For: Buying and selling stocks",
+          "Trading Instruments: Leading global stocks",
+        ],
+      },
+      {
+        icon: <FaBuilding size={40} className="text-[#FABF16]" />,
+        title: "Advantage Account",
+        points: [
+          "Minimum Deposit: $/€/£ 200",
+          "Spreads: From 0.0",
+          "Commissions:",
+          "Best For: Professional traders",
+          "Tools for trading:",
+        ],
+      },
+      {
+        icon: <FaExchangeAlt size={40} className="text-[#FABF16]" />,
+        title: "Advantage Plus Account",
+        points: [
+          "Minimum Deposit: $/€/£ 200",
+          "Spreads: From 1.5",
+          "Commissions: Zero",
+          "Best For: Beginners & intermediate traders",
+          "Trading Instruments:",
+        ],
+      },
+    ],
+  };
+
   return (
     <>
       <Helmet>
@@ -72,6 +114,14 @@ const MT4 = () => {
         title="Why you should use MetaTrader 4 (MT4)"
         paragraph="MetaTrader 4 (MT4) is one of the most popular online trading platforms because it is fast, flexible, and has powerful charting features.
  MT4 makes it easy to trade Forex, Commodities, Indices, and other things, no matter how experienced you are as a trader."
+      />
+
+      <SupportedRegions
+        title={supportedRegionData.title}
+        subtitle={supportedRegionData.subtitle}
+        ctaText={supportedRegionData.ctaText}
+        ctaNote={supportedRegionData.ctaNote}
+        regions={supportedRegionData.regions}
       />
 
       <HowToWithdrawSection
