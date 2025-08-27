@@ -78,11 +78,11 @@ const Navbar = () => {
           links: [
             {
               title: "Deposits and Withdrawals",
-              link: "/deposit-and-withdrawal",
+              link: "/forex-deposit-and-withdrawal",
             },
             {
               title: "Trading Commissions and Fees",
-              link: "/trading-commissions-and-fees",
+              link: "/trading-commission-calculator",
             },
           ],
         },
@@ -94,10 +94,10 @@ const Navbar = () => {
         {
           heading: "Instruments",
           links: [
-            { title: "Markets Overview", link: "/markets-overview" },
+            { title: "Markets Overview", link: "/forex-market-tradingview" },
             {
               title: "Contract Specifications",
-              link: "/contract-specifications",
+              link: "/forex-contract-specifications",
             },
           ],
         },
@@ -105,31 +105,39 @@ const Navbar = () => {
           heading: "FX",
           links: [
             { title: "Forex", link: "/forex" },
-            { title: "Major Currency pairs", link: "/major-currency-pairs" },
+            {
+              title: "Major Currency pairs",
+              link: "/major-currency-pairs-in-forex",
+            },
           ],
         },
         {
           heading: "Metals And Commodities",
           links: [
-            { title: "Spot Metals", link: "/spot-metals" },
-            { title: "CFD Commodities", link: "/cfd-commodities" },
+            { title: "Spot Metals", link: "/spot-metals-trading" },
+            { title: "CFD Commodities", link: " /cfd-commodity-trading" },
           ],
         },
         {
           heading: "Stocks And Indices",
           links: [
-            { title: "Stocks Trading", link: "/stocks-trading" },
-            { title: "Stocks CFDs", link: "/stocks-cfds" },
-            { title: "CFD on Indices", link: "/cfd-on-indices" },
+            { title: "Stocks Trading", link: "/best-stock-trading-platform" },
+            { title: "Stocks CFDs", link: "/best-stocks-for-cfd-trading" },
+            { title: "CFD on Indices", link: "/cfd-index-trading" },
           ],
         },
         {
           heading: "Crypto",
-          links: [{ title: "Crypto CFDs", link: "/crypto-cfds" }],
+          links: [
+            {
+              title: "Crypto CFDs",
+              link: "/best-cryptocurrency-trading-platform",
+            },
+          ],
         },
         {
           heading: "Futures CFDS",
-          links: [{ title: "Futures", link: "/futures" }],
+          links: [{ title: "Futures", link: "/best-futures-trading-platform" }],
         },
       ],
     },
@@ -139,31 +147,37 @@ const Navbar = () => {
         {
           heading: "Accounts",
           links: [
-            { title: "Accounts Overview", link: "/accounts-overview" },
+            { title: "Accounts Overview", link: "/best-forex-trading-account" },
             { title: "Advantage Account", link: "/advantage-account" },
             {
               title: "Advantage Stocks Account",
-              link: "/advantage-stocks-account",
+              link: "/advantage-stocks-trading-account",
             },
             {
               title: "Advantage Plus Account",
-              link: "/advantage-plus-account",
+              link: "/advantage-plus-trading-account",
             },
-            { title: "Demo Accounts", link: "/demo-accounts" },
+            { title: "Demo Accounts", link: "/forex-demo-trading-account" },
           ],
         },
         {
           heading: "Platforms",
           links: [
-            { title: "Platforms Overview", link: "/platforms-overview" },
-            { title: "MT4", link: "/mt4" },
-            { title: "Mobile Trading", link: "/mobile-trading" },
+            {
+              title: "Platforms Overview",
+              link: "/MetaTrader-Trading-Platforms",
+            },
+            { title: "MT4", link: "/Best-Forex-Trading-Account" },
+            { title: "Mobile Trading", link: "/advantage-trading-accounts" },
           ],
         },
         {
           heading: "Terms",
           links: [
-            { title: "Leverage and Margin", link: "/leverage-and-margin" },
+            {
+              title: "Leverage and Margin",
+              link: "/leverage-margin-requirements",
+            },
             { title: "Dividends", link: "/dividends" },
           ],
         },
@@ -175,16 +189,16 @@ const Navbar = () => {
         {
           heading: "Tools",
           links: [
-            { title: "Tools Overview", link: "/tools-overview" },
-            { title: "Pro Trading Tools", link: "/pro-trading-tools" },
-            { title: "Trading Signals", link: "/trading-signals" },
+            { title: "Tools Overview", link: "/Trading-Tools" },
+            { title: "Pro Trading Tools", link: "/Pro-Trading-Tools" },
+            { title: "Trading Signals", link: "/Trading-Signals" },
           ],
         },
         {
           heading: "Calculators",
           links: [
-            { title: "Profit Calculator", link: "/profit-calculator" },
-            { title: "Margin Calculator", link: "/margin-calculator" },
+            { title: "Profit Calculator", link: "/Forex-Profit-Calculator" },
+            { title: "Margin Calculator", link: "/Forex-Margin-Calculator" },
           ],
         },
       ],

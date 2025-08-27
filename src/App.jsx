@@ -98,63 +98,101 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<WhyRightTrade />} />
-            {/* <Route path="/awards" element={<Award />} />
-            <Route path="/fund-safety" element={<FundSafety />} /> */}
+
             <Route
               path="/trusted-forex-broker"
               element={<TradingStatistics />}
             />
             <Route
-              path="/deposit-and-withdrawal"
+              path="/forex-deposit-and-withdrawal"
               element={<DepositsWithdrawals />}
             />
             <Route
-              path="/trading-commissions-and-fees"
+              path="/trading-commission-calculator"
               element={<TradingCommissions />}
             />
-            <Route path="/markets-overview" element={<MarketsOverview />} />
             <Route
-              path="/contract-specifications"
+              path="/forex-market-tradingview"
+              element={<MarketsOverview />}
+            />
+            <Route
+              path="/forex-contract-specifications"
               element={<ContractSpecifications />}
             />
             <Route path="/forex" element={<Forex />} />
             <Route
-              path="/major-currency-pairs"
+              path="/major-currency-pairs-in-forex"
               element={<MajorCurrencyPairs />}
             />
-            <Route path="/spot-metals" element={<SpotMetals />} />
-            <Route path="/cfd-commodities" element={<CFDCommodities />} />
-            <Route path="/stocks-trading" element={<StockTrading />} />
-            <Route path="/stocks-cfds" element={<StockCFDs />} />
-            <Route path="/cfd-on-indices" element={<CFDOnIndices />} />
-            <Route path="/crypto-cfds" element={<CryptoCFDs />} />
-            <Route path="/futures" element={<Futures />} />
-            <Route path="/accounts-overview" element={<AccountsOverview />} />
+            <Route path="/spot-metals-trading" element={<SpotMetals />} />
+            <Route
+              path=" /cfd-commodity-trading"
+              element={<CFDCommodities />}
+            />
+            <Route
+              path="/best-stock-trading-platform"
+              element={<StockTrading />}
+            />
+            <Route
+              path="/best-stocks-for-cfd-trading"
+              element={<StockCFDs />}
+            />
+            <Route path="/cfd-index-trading" element={<CFDOnIndices />} />
+            <Route
+              path="/best-cryptocurrency-trading-platform"
+              element={<CryptoCFDs />}
+            />
+            <Route
+              path="/best-futures-trading-platform"
+              element={<Futures />}
+            />
+            <Route
+              path="/best-forex-trading-account"
+              element={<AccountsOverview />}
+            />
             <Route path="/advantage-account" element={<AdvantageAccount />} />
             <Route
-              path="/advantage-stocks-account"
+              path="/advantage-stocks-trading-account"
               element={<AdvantageStocksAccount />}
             />
             <Route
-              path="/advantage-plus-account"
+              path="/advantage-plus-trading-account"
               element={<AdvantagePlusAccount />}
             />
-            <Route path="/demo-accounts" element={<DemoAccounts />} />
+            <Route
+              path="/forex-demo-trading-account"
+              element={<DemoAccounts />}
+            />
 
-            <Route path="/platforms-overview" element={<PlatformsOverview />} />
-            <Route path="/mt4" element={<MT4 />} />
+            <Route
+              path="/MetaTrader-Trading-Platforms"
+              element={<PlatformsOverview />}
+            />
+            <Route path="/Best-Forex-Trading-Account" element={<MT4 />} />
             <Route path="/mt5" element={<MT5 />} />
-            <Route path="/mobile-trading" element={<MobileTrading />} />
+            <Route
+              path="/advantage-trading-accounts"
+              element={<MobileTrading />}
+            />
 
-            <Route path="/leverage-and-margin" element={<LeverageMargin />} />
+            <Route
+              path="/leverage-margin-requirements"
+              element={<LeverageMargin />}
+            />
             <Route path="/dividends" element={<Dividends />} />
             <Route path="/contact-us" element={<ContactUs />} />
 
-            <Route path="/tools-overview" element={<ToolsOverview />} />
-            <Route path="/pro-trading-tools" element={<ProTradingTools />} />
-            <Route path="/trading-signals" element={<TradingSignals />} />
-            <Route path="/profit-calculator" element={<ProfitCalculator />} />
-            <Route path="/margin-calculator" element={<MarginCalculator />} />
+            <Route path="/Trading-Tools" element={<ToolsOverview />} />
+            <Route path="/Pro-Trading-Tools" element={<ProTradingTools />} />
+            <Route path="/Trading-Signals" element={<TradingSignals />} />
+            <Route
+              path="/Forex-Profit-Calculator"
+              element={<ProfitCalculator />}
+            />
+            <Route
+              path="/Forex-Margin-Calculator"
+              element={<MarginCalculator />}
+            />
           </Routes>
         </div>
         <Footer />
