@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { FaDollarSign, FaBolt, FaGlobe, FaUniversity } from "react-icons/fa";
 import StatsSection from "../common/StatsSection";
 import ForexTradeSection from "../common/ForexTradeSection";
@@ -11,8 +12,45 @@ import SideImageTextSection from "../common/SideImageTextSection";
 import statsBg from "../../assets/forexs1.png";
 import globeImg from "../../assets/globe.svg";
 import img from "../../assets/forexs2.png";
+import FeatureSection from "../common/FeatureSection";
+import ImageTextSections from "../common/ImageTextSections";
+import commissionsImage from "../../assets/deposits1.png";
+import MarketViewSteps from "../common/MarketViewSteps";
 
 const Forex = () => {
+  const pageURLA = "https://www.righttradecapital.com/Forex-Trading-Platform";
+
+  const stepsData = [
+    {
+      image:
+        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      heading: "1. Prices that can't be beat",
+      description:
+        "With our Advantage Account, which is the best alternative for professional traders, you may get spreads as low as 0.0 pips on popular forex pairs like EUR/USD and USD/JPY.",
+    },
+    {
+      image:
+        "https://images.pexels.com/photos/6802046/pexels-photo-6802046.jpeg",
+      heading: "2. Better prices and faster execution",
+      description:
+        "Our forex trading software processes deals in milliseconds, so you always get the best price on the market when you trade forex online.",
+    },
+    {
+      image:
+        "https://images.pexels.com/photos/6802047/pexels-photo-6802047.jpeg",
+      heading: "3. A broker that people all throughout the world trust",
+      description:
+        "To trade safely and openly, choose a forex trading broker that is registered and regulated by the FSC of the Republic of Mauritius and the FCA of the UK.",
+    },
+    {
+      image:
+        "https://images.pexels.com/photos/6802047/pexels-photo-6802047.jpeg",
+      heading: "4. Safety of the whole fund",
+      description:
+        "Your money is completely separate from the company's accounts and is insured for up to $1 million, so you can always feel comfortable trading forex online.",
+    },
+  ];
+
   // ✅ First section data
   const statsData = {
     title: "Start forex trading with RightTrade Capital",
@@ -38,21 +76,21 @@ const Forex = () => {
   const whyTradeFeatures = [
     {
       icon: <FaDollarSign size={40} className="text-[#FABF16]" />,
-      title: "Unbeatable pricing on major FX Pairs",
+      title: "Major Currency pairings:",
       description:
-        "We offer typically 0.0 spreads on major FX Pairs like EURUSD and USDJPY on our most popular account, Advantage.",
+        "The most traded pairings, such as EUR/USD, USD/JPY, EUR/JPY, and EUR/GBP.",
     },
     {
       icon: <FaBolt size={40} className="text-[#FABF16]" />,
-      title: "Faster execution for a better price",
+      title: "Minor Currency pairings:",
       description:
-        "We execute your trades in milliseconds, so you'll always get the best market price.",
+        " Popular currency pairings that don't have the US dollar in them.",
     },
     {
       icon: <FaGlobe size={40} className="text-[#FABF16]" />,
-      title: "Globally trusted",
+      title: "Exotic Currency Pairs: ",
       description:
-        "We're regulated and licensed under the FSC of the Republic of Mauritius and the UK's FCA, among others.",
+        "These are pairs of a major currency with a currency from a developing market.",
     },
     {
       icon: <FaUniversity size={40} className="text-[#FABF16]" />,
@@ -64,12 +102,13 @@ const Forex = () => {
 
   // ✅ Fourth section data (new reusable)
   const currencySectionData = {
-    title: "What is currency trading and why do traders love it?",
+    title: "Open Your Account Now",
     paragraphs: [
-      "Currencies are always traded in pairs. The first currency in the pair is called the base currency and the second the quote currency. Forex traders buy one currency in the pair and sell the other at the same time, depending on how they think their values will change in relation to each other.",
-      "Currency values can be affected by a number of factors that impact the strength of a nation's economy, including inflation, interest rates and political stability to name a few. Typically, forex traders see the greatest volatility before and after key economic or political events as they speculate how this could affect the markets.",
-      "Currency pairs are split into three categories. Major currency pairs are the most traded pairs in the forex industry. They usually include the US dollar as one half of the pair, like the EUR/USD and the USD/JPY. Other commonly traded major pairs include EUR/JPY and the EUR/GBP.",
+      "It's easy and fast to start trading FX online with RightTrade Capital. You may start trading with just a few dollars or go all the way up to thousands. It's up to you.",
+      "The world's biggest financial market, with a daily trading volume of over $5 trillion, lets you trade major, minor, and exotic currency pairings.",
+      "FX online are split into three categories. Forex are the most traded pairs in the forex industry. They usually include the US dollar as one half of the pair, like the EUR/USD and the USD/JPY. Other commonly traded major pairs include EUR/JPY and the EUR/GBP.",
     ],
+
     image: globeImg,
   };
 
@@ -112,44 +151,86 @@ const Forex = () => {
   ];
 
   return (
-    <div className="w-full">
-      {/*  1 Section */}
-      <StatsSection {...statsData} />
-      {/*  2 Section */}
-      <ForexTradeSection
-        title={forexContent.title}
-        description={forexContent.description}
-        benefits={forexContent.benefits}
-      />
-      {/*  3 Section */}
-      <WhyTradeForexSection
-        title="Why trade forex currency pairs with RightTrade Capital?"
-        features={whyTradeFeatures}
-      />
-      {/*  4 (New Reusable) */}
-      <CurrencyInfoSection {...currencySectionData} />
+    <>
+      <Helmet>
+        <title>Forex Trading Platform | Online FX Trading</title>
 
-      {/* 5 (New Reusable) */}
-      <SideImageTextSection
-        image={img}
-        bgColor="bg-[#2a2d45]"
-        textcolor="text-[#ffffff]"
-        title="What is Forex?"
-        paragraphs={[
-          "Forex (or FX) means Foreign Exchange, the place where currencies are traded. To learn more, check out our complete guide to forex trading for beginners.",
-        ]}
-      />
+        <meta
+          name="description"
+          content="Start your forex journey with RightTrade Capital — a trusted broker offering low spreads, fast execution, and a powerful trading platform"
+        />
 
-      {/* Section 6 */}
-      <FaqSection faqs={faqItems} />
+        <link rel="canonical" href={pageURLA} />
 
-      {/* Section 7 */}
-      <TrustCTASection
-        title="Join us"
-        subtitle="Start trading with RightTrade Capital."
-        buttonText="Open account"
-      />
-    </div>
+        <meta property="og:url" content={pageURLA} />
+        <meta
+          property="og:title"
+          content="Forex Trading Platform | Online FX Trading"
+        />
+      </Helmet>
+
+      <div className="w-full">
+        {/*  1 Section */}
+        <StatsSection {...statsData} />
+        {/*  2 Section */}
+        <FeatureSection
+          title="Start forex trading with RightTrade Capital"
+          paragraph="You may trade the most popular forex currency pairs with spreads as low as 0.0 pips. You can also use an innovative forex trading platform that is suitable for all types of traders, from beginners to experts."
+        />
+        {/*  3 Section */}
+        <WhyTradeForexSection
+          title="Different kinds of currency pairs"
+          features={whyTradeFeatures}
+        />
+
+        <MarketViewSteps
+          title="What makes forex the best choice?"
+          steps={stepsData}
+        />
+
+        {/*  4 (New Reusable) */}
+        <CurrencyInfoSection {...currencySectionData} />
+
+        {/* 5 (New Reusable) */}
+        <SideImageTextSection
+          image={img}
+          bgColor="bg-[#2a2d45]"
+          textcolor="text-[#ffffff]"
+          title="What is Forex and why do traders love it?"
+          paragraphs={[
+            "Forex, which stands for foreign exchange or FX trading, is the worldwide market where people buy and sell currencies. When you trade currencies, you always trade them in pairs. The first currency is the base currency, and the second is the quote currency. Traders purchase one currency and sell the other in order to make money when the value changes.",
+          ]}
+        />
+
+        <ImageTextSections
+          title="What traders like about online FX trading:"
+          description={`
+
+        • High volatility makes it possible to make money during economic and political events.
+
+        • You may trade practically any time since the market is open 24 hours a day, five days a week.
+
+        • It has the highest liquidity of any market in the world, which means that our forex trading platform lets you get in and out of trades quickl`}
+          image={commissionsImage}
+          reverse={false}
+          noButton={true}
+          bgcolor="bg-white"
+          textcolor="text-[#121733]"
+          paragraph="We have the tools and help you need to trade precious metals for short-term profits or to protect your money over the long term."
+        />
+
+        {/* Section 6 */}
+        <FaqSection faqs={faqItems} />
+
+        {/* Section 7 */}
+        <TrustCTASection
+          title="Begin Trading Now"
+          subtitle="RightTrade Capital is the forex trading broker you can trust, whether you're new to online forex trading or an experienced trader making significant transactions.
+Open your account today and see how different it is to trade on a forex trading platform that thousands of traders across the globe trust."
+          buttonText="Open account"
+        />
+      </div>
+    </>
   );
 };
 

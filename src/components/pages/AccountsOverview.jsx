@@ -230,7 +230,9 @@ const AccountsOverview = () => {
         features={featureData}
         bgColor="bg-[#121733]"
         textcolor="text-[#fff]"
+        titleColor="text-white"
       />
+
       <TextImageSection
         imgSrc={imgn}
         title="Why Do Business with RightTrade Capital?"

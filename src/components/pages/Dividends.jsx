@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import DownloadSection from "../common/DownloadSection";
 import DividendExplanation from "../common/DividendExplanation";
 import beforeImg from "../../assets/before.png"; // replace with correct images
@@ -10,8 +11,27 @@ import StatsSection from "../../components/common/StatsSection";
 import bannerImage from "../../assets/demo1.png";
 
 const AnyPage = () => {
+  const pageURLA = "https://www.righttradecapital.com/dividends";
+
   return (
     <>
+      <Helmet>
+        <title>Weekly Dividend Adjustments for US Stock CFDs & Indices</title>
+
+        <meta
+          name="description"
+          content="Stay updated on weekly dividend adjustments with RightTrade Capital for balanced and smarter trading decisions."
+        />
+
+        <link rel="canonical" href={pageURLA} />
+
+        <meta property="og:url" content={pageURLA} />
+        <meta
+          property="og:title"
+          content="Weekly Dividend Adjustments for US Stock CFDs & Indices"
+        />
+      </Helmet>
+
       <StatsSection
         title="Free Forex Demo Trading Account"
         subtitle="Skill up and practice zero-risk trading on our free demo account."
@@ -33,11 +53,9 @@ const AnyPage = () => {
       />
 
       <DividendExplanation
-        title="What is a dividend adjustment?"
+        title="Weekly Changes to Dividends at RightTrade Capital"
         content={[
-          "A dividend adjustment is a change made to a company’s stock price to balance a dividend payment to shareholders.",
-          "Once the dividend allocation for shareholders has been confirmed, the stock price of the company decreases by roughly the amount of the dividend. This is known as the ex-dividend date.",
-          "In the case of an index, individual stock adjustments will cause the total index value to fall too, depending on the weighting of the adjusted stocks.",
+          "To make sure that trading goes smoothly and clearly, keep an eye on the newest weekly dividend changes at RightTrade Capital. We provide you reliable and fast information so you can make smart choices, whether you trade US Stock CFDs or Stock Indices.",
         ]}
         beforeImage={beforeImg}
         afterImage={afterImg}

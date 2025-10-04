@@ -104,7 +104,7 @@ const Navbar = () => {
         {
           heading: "FX",
           links: [
-            { title: "Forex", link: "/forex" },
+            { title: "Forex", link: "/Forex-Trading-Platform" },
             {
               title: "Major Currency pairs",
               link: "/major-currency-pairs-in-forex",
@@ -190,7 +190,7 @@ const Navbar = () => {
           heading: "Tools",
           links: [
             { title: "Tools Overview", link: "/Trading-Tools" },
-            { title: "Pro Trading Tools", link: "/Pro-Trading-Tools" },
+
             { title: "Trading Signals", link: "/Trading-Signals" },
           ],
         },

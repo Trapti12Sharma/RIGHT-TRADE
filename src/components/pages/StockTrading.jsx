@@ -22,6 +22,7 @@ const StockTrading = () => {
     "Backed by real support",
     "And safe for long-term use...",
   ];
+
   const features = [
     {
       heading: "It Doesn’t Feel Like Rocket Science",
@@ -74,6 +75,7 @@ const StockTrading = () => {
         "Whether you're investing $100 or $100,000, Right Trade Capital meets you where you are.",
     },
   ];
+
   // ✅ First section data
   const statsData = {
     title: "Start Stock Trading trading with RightTrade Capital",

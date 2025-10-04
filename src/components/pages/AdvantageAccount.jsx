@@ -148,6 +148,7 @@ const AdvantageAccount = () => {
         bgcolor="bg-[#121733]"
         textcolor="text-white"
       />
+
       <SideImageTextSection
         image={manageFundsImg}
         title="Tools and Platforms for More Advanced Trading"

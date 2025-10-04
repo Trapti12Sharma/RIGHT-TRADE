@@ -1,6 +1,5 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { FaDollarSign, FaBolt, FaGlobe, FaUniversity } from "react-icons/fa";
 import StatsSection from "../common/StatsSection";
 import FaqSection from "../common/FaqSection2";
 import FeatureSection from "../common/FeatureSection";
@@ -10,7 +9,6 @@ import SecurityRegulationSection from "../common/SecurityRegulationSection";
 import fxTradingImg from "../../assets/currency3.png";
 import statsBg from "../../assets/spotmetals1.png";
 import commissionsImage from "../../assets/deposits1.png";
-import globeImg from "../../assets/globe.svg";
 import home6 from "../../assets/sign-up.png";
 
 const SpotMetals = () => {

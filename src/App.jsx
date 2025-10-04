@@ -119,7 +119,7 @@ const App = () => {
               path="/forex-contract-specifications"
               element={<ContractSpecifications />}
             />
-            <Route path="/forex" element={<Forex />} />
+            <Route path="/Forex-Trading-Platform" element={<Forex />} />
             <Route
               path="/major-currency-pairs-in-forex"
               element={<MajorCurrencyPairs />}
