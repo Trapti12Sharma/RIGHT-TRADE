@@ -25,28 +25,27 @@ const DemoAccountSection = () => {
         <div className="md:w-1/2 w-full md:pl-16 text-white">
           {/* Subheading */}
           <h2 className="text-[#FABF16] text-4xl font-semibold mb-2">
-            Sign Up For Alerts, Deals, And Learning
+            Structured trading guides for all levels
           </h2>
 
           {/* Main Heading */}
 
           {/* List */}
           <ul className="list-disc pl-5  text-gray-300 mb-6 space-y-2 text-base">
-            <li>Weekly ideas for trading</li>
-            <li>Updates to the platform</li>
-            <li>Invites to live sessions</li>
-            <li>Deals just for members</li>
+            <li>Online webinars and special consultations with experts</li>
+            <li>Interpretation of charts and risk managing procedures</li>
+            <li>Access to weekly insights and market blogs</li>
           </ul>
 
           {/* Paragraph */}
           <p className="text-gray-300 mb-6  text-base leading-relaxed">
-            Get news. Stay ahead. Be smarter when you trade.
+            Become A Smarter Member Today
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-4">
             <button className="bg-[#FABF16] hover:bg-[#FABF16] text-white px-6 py-3 rounded-full font-semibold">
-              Sign Up Now
+              Trade Now
             </button>
             <Link to="/about-us">
               <button className="bg-white text-[#10162f] px-6 py-3 rounded-full font-semibold">

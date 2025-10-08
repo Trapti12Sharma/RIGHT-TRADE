@@ -11,37 +11,36 @@ const WhyChoose = () => {
       icon: <FaUserAlt size={40} className="text-[#FABF16]" />,
       title: "Standard Account",
       description: [
-        "No commissions, making it ideal for low-cost trading.",
-        "1.3 pips and up",
-        "Direct access to Web, Mobile, and MT4",
+        "No-commission-cfds for buying and selling.",
+        "Spreads from 1.3 p",
+        "Full access from Web, Mobile, and MT4",
       ],
     },
     {
       icon: <FaMoneyCheckAlt size={40} className="text-[#FABF16]" />,
       title: "ECN Account",
       description: [
-        "Institutional pricing with very tight spreads.",
-        "Spreads in the raw market",
-        "Low fees",
-        "Lightning-fast execution",
+        "Institutional pricing",
+        "Extremely narrow and tightly packed raw spreads",
+        "Lightning-fast execution of trades",
       ],
     },
     {
       icon: <FaPrayingHands size={40} className="text-[#FABF16]" />,
-      title: "Swap-Free Islamic Account",
+      title: "No-Swap-Free Islamic Account",
       description: [
-        "100% interest-free for traders who follow Sharia law.",
-        "No overnight swaps",
-        "Real-time order flow",
+        "100% interest-free",
+        "No change over night",
+        "Real-time actuals and payables follow-ups",
       ],
     },
     {
       icon: <FaLaptop size={40} className="text-[#FABF16]" />,
       title: "Demo Account",
       description: [
-        "Practice trading with virtual funds on our live platform.",
-        "Regulated broker ecosystem",
-        "Transparency, safety, and control",
+        "The Practice trading with virtual money",
+        "Experience real world markets",
+        "Risk-free atmosphere",
       ],
     },
   ];
@@ -52,7 +51,7 @@ const WhyChoose = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-semibold text-4xl sm:text-4xl  leading-tight mb-4">
-            Different Types Of Accounts For All Traders
+            Different Types of Trading Accounts
           </h2>
           <div className="w-24 h-1 bg-[#FABF16] mx-auto mt-6"></div>
         </div>

@@ -2,9 +2,9 @@ import React from "react";
 import traderBg from "../assets/join-us.jpg";
 
 const ExpertTrader = ({
-  tag = "Join Us To Learn And Grow",
+  tag = "Tools and Analytical Resources for Professional Trading",
   heading = "Confident. Informed. Ready.",
-  description = "We want to build a trading community that is confident and well-informed. That's why our online trading platform has free built-in learning tools.",
+  description = "Our carefully designed tools were created with the intention of giving traders a tremendous competitive advantage as they wade through the nuances of the best online forex trading platform out there",
 }) => {
   return (
     <section
@@ -39,11 +39,15 @@ const ExpertTrader = ({
             </p>
 
             <ul className="list-disc list-inside text-white space-y-1 text-sm md:text-base">
-              <li>Guides for structured trading</li>
-              <li>Video lessons with examples from the market</li>
-              <li>Webinars and sessions that are live</li>
-              <li>Tips for reading charts and managing risk</li>
-              <li>The best forex trading platform to improve your skills</li>
+              <li>
+                Calendar of Economics for tracking important economic
+                developments
+              </li>
+              <li>Up-to-date news from the market and in-depth analysis.</li>
+              <li>Notifications and alerts regarding prices</li>
+              <li>Sophisticated risk calculation tools</li>
+              <li>Technical indicators and charting tools</li>
+              <li>Trading alerts as a decision-making guide</li>
             </ul>
           </div>
         </div>

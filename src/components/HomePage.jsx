@@ -5,15 +5,15 @@ import tradingImage from "../assets/right-choice.jpg";
 const HomePage = () => {
   return (
     <RightImageLeftContent
-      heading="Why Traders Make The Choice RightTrade Capital"
-      content="We don't just give you access to trading at RightTrade Capital. Our best forex trading platform gives you an edge by being completely open, having powerful tools, and having infrastructure that is as good as what big institutions use."
+      heading="Why Traders Choose RightTrade Capital:
+"
+      content="The founder of Right Safe and regulated operations of forex brokers."
       listItems={[
-        "Forex broker operations that are safe and legal",
-        "Very low spreads and a lot of liquidity",
-        "A cutting-edge online trading platform for mobile and web",
-        "24/5 support in many languages",
-        "You can deposit money in different ways and get it back quickly.",
-        "You set your own trading goals. We give them the best experience on a forex trading platform.",
+        "Very tight spreads with a high degree of liquidity.",
+        "Prompt execution is vital in making timely entries and exits in trading.",
+        "Access to overseas markets with high-end forex online trading systems",
+        "Compatibility across different devices is also assured, from phone devices and web programs up and beyond.",
+        "24/5 multilingual customer services",
       ]}
       image={tradingImage}
     />

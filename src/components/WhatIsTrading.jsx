@@ -16,28 +16,30 @@ const WhatIsTrading = () => {
       {/* Right content side */}
       <div className="md:w-1/2 w-full bg-white p-8 md:p-16 flex flex-col justify-center">
         <h2 className="md:text-3xl lg:text-4xl mb-6 text-[#10162f] text-left">
-          Tools For Trading That Are Made To Work
+          Education and Community
         </h2>
 
         <p className="text-[#10162f] mb-4 leading-relaxed text-left text-base">
-          We give you more than just a place to work. We let you take charge.
+          The school also emphasizes that Our prime aim is assisting traders in
+          developing and progressing with a full range of educational materials,
+          and valuable insights from qualified industry experts.We want to
+          support traders to increase their profits by offering them educational
+          materials and offering them an expert insight.
         </p>
 
         {/* List Items */}
         <ul className="text-[#10162f] mb-4 leading-relaxed list-disc list-inside space-y-2  text-base text-left">
-          <li>
-            Economic Calendar: Keep an eye on financial events around the world
-          </li>
-          <li>News and analysis of the market as it happens</li>
-          <li>Price Alerts</li>
-          <li>Tools for Advanced Risk Management</li>
-          <li>Calculators that work in real time and technical information</li>
+          <li>Guides on detailed trading for all skill levels</li>
+          <li>Tutorial videos with actual market examples</li>
+          <li>Real-time webcasts and experts' sessions</li>
+          <li>Learning to read charts and manage risks</li>
+          <li>Obtaining market blogs and weekly insights</li>
         </ul>
 
-        <p className="text-[#10162f] leading-relaxed text-left text-base">
+        {/* <p className="text-[#10162f] leading-relaxed text-left text-base">
           Our online trading platform has everything you need to trade,
           including world-class infrastructure.
-        </p>
+        </p> */}
       </div>
     </section>
   );

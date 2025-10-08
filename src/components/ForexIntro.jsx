@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import home4 from "../assets/RightTradeCapitalSpecial.jpg";
 
 const ForexIntro = () => {
@@ -19,7 +18,7 @@ const ForexIntro = () => {
         <div className="order-2 md:order-1 flex items-center px-6 py-10 md:px-16">
           <div>
             <h1 className="text-[#1A1D30] text-4xl mb-6">
-              What Makes RightTrade Capital special?
+              Why Choose RightTrade Capital
             </h1>
 
             <ul
@@ -28,25 +27,33 @@ const ForexIntro = () => {
               }}
               className="text-[#1A1D30] leading-8 mb-4 list-disc list-inside space-y-2"
             >
-              <li>A safe and global online trading platform</li>
-              <li>100% Safe & Trusted Forex Broker with Rules</li>
-              <li>Get into more than 500 markets</li>
+              <li>100% regulated and trusted forex broker</li>
               <li>
-                Best forex trading platform that works well on mobile devices
+                Access to a vast array of over 500 distinct world markets.
+              </li>
+              <li>Low spreads and high depth of liquidity</li>
+              <li>
+                A fast trading platform that carries out transactions promptly.{" "}
               </li>
               <li>
-                Made for traders who want to trade forex online with power and
-                control
+                Sophisticated trading technologies that can work and
+                inter-operate on multiple devices.{" "}
               </li>
-              <li>You make the plan. We provide the platform.</li>
+              <li>
+                Financial assistance for academic activity and use of community
+                facilities
+              </li>
             </ul>
-            <Link
-              to="/forex"
-              style={{ textAlign: "left" }}
+
+            <a
+              style={{
+                textAlign: "left",
+              }}
+              href="#"
               className="text-[#4CB1FF]"
             >
               Learn more about forex trading with our beginners guide.
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -5,10 +5,10 @@ import { Play } from "lucide-react";
 const SeminarBanner = () => {
   const slide = {
     image: "/cfds.jpg",
-    heading: "Trade Futures CFDs with RightTrade Capital",
+    heading: "Trade with Confidence on the Best Forex Trading Platform.",
     subText:
-      "Diversify your trades and hedge against market volatility with CFD futures trading.",
-    buttonText: "Trade Now",
+      "Experience seamless global markets access, powerful tools, and secure execution — all on a trusted forex trading platform built for serious traders.",
+    buttonText: "Open Live Account",
   };
 
   return (

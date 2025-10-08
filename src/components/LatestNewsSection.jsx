@@ -9,27 +9,21 @@ const newsData = [
   {
     title: "MetaTrader 4 (MT4)",
     desc: [
-      "Charts, indicators, and automated strategies that work in real time",
-      "Execution with one click",
-      "An interface that works in more than one language",
+      "The industry’s most popular forex trading platform featuring live charts, indicators, automated strategies, one-click execution, and multi-language support.",
     ],
     img: home10,
   },
   {
     title: "WebTrader",
     desc: [
-      "Log in through your browser; no download is needed.",
-      "View of an all-in-one online trading platform",
-      "Syncing across devices in real time",
+      "Engage in trading operations right from within your web browser without the need for any downloads or other installations of software. Rejoice at having access to harmonized information and having total functionality of trading at your fingertips.",
     ],
     img: home11,
   },
   {
-    title: "Mobile App (Android and iOS)",
+    title: "MOBILE APPS",
     desc: [
-      "Trade while you're on the go",
-      "Instant alerts and push notifications",
-      "You can control all of your trades from your phone.",
+      "Trade at any time that you wish using mobile apps accessible on both iOS and Android devices. Be issued instant notifications and have full control over your trades at all points, as you move around and attend to your daily schedule.",
     ],
     img: home12,
   },
@@ -39,15 +33,12 @@ const LatestNewsSection = () => {
   return (
     <section className="bg-[#1c1f3c] py-16 px-4 md:px-20 text-white">
       <h2 className="text-center text-[#FABF16] font-bold mb-2 text-2xl md:text-4xl">
-        You Can Trade From Anywhere
-        <br />
-        <Link
-          to="/platforms-overview"
-          className="text-center text-blue-400 mb-10 cursor-pointer hover:underline text-sm md:text-[24px]"
-        >
-          Explore our platforms
-        </Link>
+        Strong Forex Trading Platforms
       </h2>
+      <Link
+        to="/platforms-overview"
+        className="text-center text-blue-400 mb-10 cursor-pointer hover:underline text-sm md:text-[24px]"
+      ></Link>
 
       <div className="space-y-8 max-w-5xl mx-auto">
         {newsData.map((news, index) => (

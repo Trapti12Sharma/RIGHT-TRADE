@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaChartLine,
   FaGlobe,
@@ -183,16 +184,16 @@ const MarketsCardSection = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-[#1a1f3a] to-[#0f1229] rounded-2xl p-8 border border-gray-700/30">
             <h3 className="text-2xl font-semibold mb-4">
-              Ready to Start Trading?
+              Smooth account opening process
             </h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto text-base">
-              Join thousands of traders who trust our platform for their trading
-              needs. Get started with a demo account or open a live account
-              today.
+              Best Forex broker in India for Traders seeking both high
+              performance as well as a trusted partner for their trading
+              operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-[#FABF16] text-[#121733] font-semibold rounded-lg hover:bg-[#FABF16]/90 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-[#FABF16]/20">
-                Open Live Account
+                Get Started Today
               </button>
               <button className="px-8 py-4 border-2 border-[#FABF16] text-[#FABF16] font-semibold rounded-lg hover:bg-[#FABF16] hover:text-[#121733] transition-all duration-300 transform hover:scale-105">
                 Try Demo Account

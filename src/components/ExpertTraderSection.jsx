@@ -18,23 +18,28 @@ export default function ExpertTraderSection() {
               </div>
               <div>
                 <h2 className="text-white text-4xl font-semibold">
-                  Support Around The World With A Personal Touch
+                  Secure Transactions for Deposit and Withdrawal of Amounts
                 </h2>
               </div>
             </div>
 
             <p className="text-white text-base leading-relaxed">
-              RightTrade Capital gives great support and personal attention to
-              clients all over the world. We make sure everything goes smoothly
-              on the best forex trading platform, from setup to execution.
+              RightTrade Capital offers an array of deposit and withdrawal
+              functions that have been tailored to be not just speedy but safe
+              and clear for everyone. Traders can use multiple payment systems,
+              which have the added advantage of no extra fees so that trading
+              remains seamless for everyone. In addition, each and every
+              transaction performed on the site is protected within a regulated
+              broker environment that ensures transparency and control for each
+              party that is concerned.
             </p>
 
-            <ul className="text-white text-base space-y-2 pl-5 list-disc mt-2">
+            {/* <ul className="text-white text-base space-y-2 pl-5 list-disc mt-2">
               <li>Customer support in many languages 24/5</li>
               <li>Several ways to pay around the world</li>
               <li>Information about local and global markets</li>
               <li>People, not bots, help</li>
-            </ul>
+            </ul> */}
           </div>
 
           {/* Right Content - Buttons */}
