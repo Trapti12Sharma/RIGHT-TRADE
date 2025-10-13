@@ -3,13 +3,17 @@ import { Helmet } from "react-helmet";
 import { FaDollarSign, FaBolt, FaGlobe, FaUniversity } from "react-icons/fa";
 import StatsSection from "../common/StatsSection";
 import ForexTradeSection from "../common/ForexTradeSection";
-import WhyTradeForexSection from "../common/WhyTradeForexSection";
 import CurrencyInfoSection from "../common/CurrencyInfoSection";
-import VideoSection from "../common/VideoSection";
 import FaqSection from "../common/FaqSection2";
-import TrustCTASection from "../common/TrustCTASection";
 import FeatureListSection from "../common/FeatureListSection";
-import MarketViewFeatures from "../common/MarketViewFeatures";
+import SideImageTextSection from "../common/SideImageTextSection";
+import ImageTextSections from "../common/ImageTextSections";
+import FeatureSection from "../common/FeatureSection";
+import SecurityRegulationSection from "../common/SecurityRegulationSection";
+import home6 from "../../assets/sign-up.png";
+import commissionsImage from "../../assets/deposits1.png";
+import fxTradingImg from "../../assets/currency3.png";
+// import manageFundsImg from "../../assets/deposits2.png";
 import statsBg from "../../assets/stock1.png";
 import globeImg from "../../assets/globe.svg";
 
@@ -25,62 +29,62 @@ const StockTrading = () => {
 
   const features = [
     {
-      heading: "It Doesn’t Feel Like Rocket Science",
+      heading: "1. Simple & Intuitive Platform",
       description:
-        "Some platforms are way too complex. Right Trade Capital keeps it simple—everything’s laid out clearly. Want to check your portfolio? One tap. Place a trade? Two taps. Done.",
+        "Many stock market trading platforms are overly complicated. RightTrade Capital is built with the focus on clarity and ease of use. You want to take a peek at your portfolio? One click. Want to place a trade? Two clicks. It's done.",
     },
     {
-      heading: "Speed = Confidence",
+      heading: "2. Speed = Confidence",
       description:
-        "Speed matters, especially when markets are bouncing. Right Trade Capital executes trades quickly, making the difference between profit and regret.",
+        "Quick trade execution is very important, especially when markets are volatile. RightTrade Capital guarantees that trades are carried out in real time which allows you to act swiftly with confidence.",
     },
     {
-      heading: "Mobile Trading That Doesn’t Suck",
+      heading: "3. Mobile Trading That Works",
       description:
-        "Right Trade Capital’s mobile app actually works. It’s stable, fast, and lets you check watchlists, open charts, and trade in under 30 seconds.",
+        "The mobile app is reliable, quick, and comes loaded with features. Through the app, you can do all these activities in less than half a minute: watchlist checking, chart opening, and trade executing.",
     },
     {
-      heading: "Global Markets, Open to You",
+      heading: "4. Access to Global Markets",
       description:
-        "Access shares from the U.S., Europe, Asia, and more. More strategies, more opportunities, more diversification.",
+        "You can trade shares of companies from the U.S., Europe, Asia, and many other regions. You can not only do this to diversify your portfolio but also to use multiple strategies and tap into foreign market opportunities.",
     },
     {
-      heading: "Security That Doesn’t Keep You Up at Night",
+      heading: "5. Secure & Transparent Trading",
       description:
-        "Multiple layers of protection like 2FA, encryption, and session controls keep your info and funds safe without making login complicated.",
+        "Two-factor authentication, encryption, and session controls protect your information and funds. Transparent pricing is the guarantee of no hidden fees or unexpected charges.",
     },
     {
-      heading: "You Don’t Get Charged for Breathing",
+      heading: "6. Trade and Learn Simultaneously",
       description:
-        "Right Trade Capital keeps pricing clean and upfront. No hidden fees, no surprise charges.",
+        "Beginners are guided by the built-in tutorials, FAQs, and walkthroughs as they practice real trades. Meanwhile, advanced traders also gain from the presence of complex tools which do not take up much space.",
     },
     {
-      heading: "You Can Actually Learn While Using It",
+      heading: "7. Real-Time Data That Matters",
       description:
-        "Includes guides, FAQs, and tutorials inside the platform—helpful for beginners, while offering advanced features for pros.",
+        "No one is bombarded with lots of unnecessary information while having easy access to clean charts, live quotes, and actionable insights.",
     },
     {
-      heading: "Data That Helps—Not Overwhelms",
+      heading: "8. Human Customer Support",
       description:
-        "You get real-time data, clean charts, and tools you'll actually use—no fluff, no filler.",
+        "Powered by chat, email, or voice, real people will assist you when you need them. You do not have to wait for a long time before getting your turn with a human or dealing with robots.",
     },
     {
-      heading: "Customer Support That Talks Like a Human",
+      heading: "9. best investing platforms",
       description:
-        "Real human support via chat, email, or voice—no endless hold music or unhelpful bots.",
+        "Regardless of whether you invest $100 or $100,000, the platform will be your trading style's best friend.",
     },
     {
-      heading: "Built for Real People, Not Just Pros",
+      heading: "10. Powerful Analytical Tools",
       description:
-        "Whether you're investing $100 or $100,000, Right Trade Capital meets you where you are.",
+        "Economic Calendar for key global events.Fully supports the best online stock trading experience.",
     },
   ];
 
   // ✅ First section data
   const statsData = {
-    title: "Start Stock Trading trading with RightTrade Capital",
+    title: "India’s Best Stock Market Trading Platform",
     subtitle:
-      "Trade the most popular Stock Trading majors with spreads from zero",
+      "Access global markets, real-time tools, and secure trading — all on a trusted stock market trading platform built for confident investors.",
     buttonText: "Open account",
     note: "Trading is risky",
     image: statsBg,
@@ -129,12 +133,12 @@ const StockTrading = () => {
 
   // ✅ Fourth section data (new reusable)
   const currencySectionData = {
-    title:
-      "What Smart Investors Look for in the Best Stock Trading Platforms Today",
+    title: "Benefits of a Reliable Stock Market Trading Platform",
     paragraphs: [
-      "Let’s not sugarcoat it: finding the best stock trading platform these days can feel like scrolling through Netflix — too many options, too many features, and no clue where to start.",
-      "Some platforms promise no fees. Others throw fancy charts at you. But when it comes down to it, what really matters is: Can you trade confidently and without drama",
-      "That’s exactly what we’re diving into today. Whether you’re brand new to investing or already checking your trades between lunch meetings, this guide will help you figure out which platform suits your needs—and why Right Trade Capital is catching attention from serious traders in 2025.",
+      "Enhanced Trading Speed and Efficiency – You can execute your trades instantly with almost no delay, and this will reduce your slippage and increase your profits.",
+      "Accurate Market Data – Anyone can get real-time charts, quotes, and analytics for their trading decisions.",
+      "Comprehensive Risk Management – Just a few of the many features are stop-loss, take-profit, and hedging strategies that aim to help you secure your investments.",
+      "User-Friendly Interface – No registration or subscription is required to use the intuitive dashboards and navigation designed for traders of all levels.",
     ],
     image: globeImg,
   };
@@ -150,32 +154,57 @@ const StockTrading = () => {
 
   //  Sixth section data
 
-  const faqItems = [
+  const faqs = [
     {
-      question:
-        "How much do I need to start trading Stock Trading with RightTrade Capital?",
+      question: "Is RightTrade Capital regulated?",
       answer:
-        "The minimum deposit depends on the account type you choose. It can be as low as $10. Check account details on the RightTrade Capital website.",
+        "Yes, it is a fully regulated stock market trading platform that offers safe trades worldwide.",
     },
     {
-      question: "Which account type is best for trading Stock Trading?",
+      question: "What markets can I trade on?",
       answer:
-        "RightTrade Capital offers various account types to suit different traders. Standard and ECN accounts are popular options depending on your strategy.",
+        "Stocks, ETFs, indices, commodities, crypto CFDs, futures, and options.",
     },
     {
-      question: "Is Stock Trading trading safe?",
+      question: "Can I try a demo account?",
       answer:
-        "Stock Trading trading involves risks. It is important to trade with a regulated broker and have a solid risk management plan in place.",
+        "Yes, the demo account on our platform allows risk-free practice of online stock trading.",
     },
     {
-      question: "What is leverage and how does it work when trading FX?",
-      answer:
-        "Leverage allows you to control larger positions with a smaller amount of capital. It amplifies both profits and losses.",
+      question: "What is the minimum deposit?",
+
+      answer: "This varies depending on the type of account selected.",
     },
     {
-      question: "What currency pairs can I trade with RightTrade Capital?",
+      question: "Are Islamic accounts provided?",
       answer:
-        "RightTrade Capital offers a wide range of currency pairs including majors, minors, and exotics. Visit the RightTrade Capital website for the full list.",
+        "Yes, in fact, we offer swap-free and Shariah-compliant accounts.",
+    },
+    {
+      question: "Can I trade on my mobile?",
+      answer:
+        "Correct, in fact, we have totally working iOS and Android apps that can be used whenever and wherever.",
+    },
+    {
+      question: "How fast are withdrawals processed?",
+      answer:
+        "The majority of withdrawal requests are fulfilled within 24 hours.",
+    },
+    {
+      question: "What spreads and fees apply?",
+
+      answer:
+        "For ECN accounts spreads are zero as low as 0.0 pips are available. Account fees differ by account.",
+    },
+    {
+      question: "Do you provide learning materials?",
+      answer:
+        "Yes, education materials are included, such as trading guides, webinars, tutorials, and market insights.",
+    },
+    {
+      question: "Why choose RightTrade Capital over other brokers?",
+      answer:
+        "Is it because of the top features that include complete trust, professional tools, prompt trade, availability of global market, and resources for self-learning that makes us one of the top Indian stock trading platforms?",
     },
   ];
 
@@ -208,30 +237,110 @@ const StockTrading = () => {
         {/*  1 Section */}
         <StatsSection {...statsData} />
         {/*  2 Section */}
-        <ForexTradeSection
-          title={StockTradingContent.title}
-          description={StockTradingContent.description}
-          benefits={StockTradingContent.benefits}
+        <FeatureSection
+          title="Safe Transactions & Easy Withdrawals"
+          paragraph="RightTrade Capital makes sure that deposits and withdrawals are done quickly, safely, and transparently. Multiple payment methods and a regulated environment are what guarantee that all users will have safe and smooth trading."
+        />
+
+        <SideImageTextSection
+          image={fxTradingImg}
+          bgColor="bg-[#121733]"
+          textcolor="text-white"
+          title="Why Traders Choose RightTrade Capital"
+          paragraphTextColor="text-white"
+          paragraphs={[
+            "We give traders everything they need to trade swiftly and correctly on the global currency markets at RightTrade Capital.One of the most fundamental things to know about trading forex is how the major currency pairings function.",
+          ]}
+          listItems={[
+            "Secure and regulated stock market trading platform",
+            "Ultra-low spreads and deep market liquidity",
+            "High-speed execution for timely trades",
+            "Global market access across 500+ instruments",
+            "Web, mobile, and desktop compatibility",
+            "24/5 multilingual customer support",
+          ]}
+        />
+
+        <ImageTextSections
+          title="Markets Available on Our Online Stock Trading Platform"
+          description={`Trade with ease and flexibility across multiple asset classes to maximize returns and implement the best online stock trading strategies:
+
+        • Stocks & Equities &ndash; Real-time access to global leaders.
+        • Indices &ndash; Trade NASDAQ, Dow Jones, S&P 500, NIFTY50.
+        • ETFs & Mutual Funds &ndash; Diversified portfolios with risk management.
+        • Commodities &ndash; Gold, silver, oil for long-term investment and hedging.
+        • Crypto CFDs &ndash; Bitcoin, Ethereum, and more without wallets.
+        • Futures & Options &ndash; Hedge or speculate with flexible leverage.`}
+          image={commissionsImage}
+          reverse={false}
+          noButton={true}
+          bgcolor="bg-white"
+          textcolor="text-[#121733]"
+          paragraph="We have the tools and help you need to trade precious metals for short-term profits or to protect your money over the long term."
         />
         {/*  3 Section */}
         <FeatureListSection
-          title="Why Right Trade Capital Stands Out"
-          subtitle="So let’s talk about Right Trade Capital. It’s not the loudest name out there, but more and more traders are picking it up—and not looking back. And for good reason."
+          title="Why RightTrade Capital Is the Best Stock Market Trading Platform"
+          subtitle="RightTrade Capital operates under full authority and is a stock market trading platform that clients can depend on to get safe and reliable access to the different market instruments all over the world. As a stock trading platform that can be trusted and one of the top platforms for stock trading, we unite state-of-the-art technology, rapid execution, and secure infrastructure for traders and investors regardless of their knowledge level."
           items={features}
         />
         {/*  4 (New Reusable) */}
         <CurrencyInfoSection {...currencySectionData} />
-
-        {/* 5 (New Reusable) */}
-        <VideoSection {...videoData} />
-
-        <MarketViewFeatures
-          title="Final Thoughts: Is This Your Best Stock Trading Platform?"
-          description="Choosing a platform isn’t about finding “the most advanced” or “the biggest brand.” It’s about finding one that fits your style—and supports your goals.
-If you're looking for:"
-          features={featuresData}
-        />
       </div>
+
+      <SideImageTextSection
+        image={fxTradingImg}
+        bgColor="bg-[#121733]"
+        textcolor="text-white"
+        title="Future of Online Stock Market Trading Platforms"
+        paragraphTextColor="text-white"
+        paragraphs={[
+          "AI & Machine Learning Integration – The use of AI led to predictive analytics, robotic trading, and tailor-made suggestions.",
+        ]}
+        listItems={[
+          "Blockchain & Digital Ledger Technology – Technology embracing transparency and certified records aiding trust and regulation.",
+          "Global Access & Connectivity – Customers have the opportunity to trade across borders and access international markets through the internet.",
+          "Enhanced Mobile Trading Experiences – Traders can have their mobile devices equipped with real-time alerts, analytics, and trade execution on mobile apps.",
+          "Cloud-Based Platforms – The advantages are high scalability, reliability, and uninterrupted access to market information.",
+          "Education & Community Integration – Continuous learning with the help of the Embedded tutorials, webinars and the social trading features.",
+        ]}
+      />
+
+      <ImageTextSections
+        title="Why You Should Choose RightTrade Capital"
+        description={`Trade with ease and flexibility across multiple asset classes to maximize returns and implement the best online stock trading strategies:
+
+        • A Step by Step regulated Trusted Stock Trading Platform
+        • Quick execution with tight spreads
+        • Take a chance on any of the world's largest shares, mixing, and futures.
+        • Comes with a web, mobile, and desktop which are all compatible with multiple-device.
+        • Adds up a trader's feelings with an Analytics team, backed by an educational resource.
+        • Futures & Work on your account is very smooth and fast.`}
+        image={commissionsImage}
+        reverse={false}
+        noButton={true}
+        bgcolor="bg-white"
+        textcolor="text-[#121733]"
+        paragraph="We have the tools and help you need to trade precious metals for short-term profits or to protect your money over the long term."
+      />
+
+      <SecurityRegulationSection
+        image={home6}
+        title="Advanced Trading Platforms"
+        introParagraph="There are a lot of good reasons to trade gold and silver:"
+        bulletPoints={[
+          "MetaTrader 4 (MT4) – Full-featured platform with live charts, expert advisors, one-click trading, multiple languages supported.",
+          "WebTrader – Simply trade directly in your browser, no installation needed.",
+          "Mobile Apps – iOS and Android apps that allow you to trade anytime and anywhere with the push notifications of the latest updates.",
+        ]}
+      />
+
+      <FeatureSection
+        title="Conclusion"
+        paragraph="In short, a reliable stock trading platform is doing wonders for traders. Fast decision-making, reliability, and security come along with advanced tools that allow one to be friendly with the trading world. Moreover, with the ever-evolving technologies like AI, blockchain, and cloud-based solutions, the online trading platform keeps getting smarter, more efficient, and being accessible from any part of the globe which in turn allows trading to thrive."
+      />
+
+      <FaqSection faqs={faqs} />
     </>
   );
 };
