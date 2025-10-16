@@ -10,6 +10,7 @@ import SideImageTextSection from "../common/SideImageTextSection";
 import ImageTextSections from "../common/ImageTextSections";
 import FeatureSection from "../common/FeatureSection";
 import SecurityRegulationSection from "../common/SecurityRegulationSection";
+import MarketViewFeatureSection from "../common/MarketViewFeatureSection";
 import home6 from "../../assets/sign-up.png";
 import commissionsImage from "../../assets/deposits1.png";
 import fxTradingImg from "../../assets/currency3.png";
@@ -29,62 +30,63 @@ const StockTrading = () => {
 
   const features = [
     {
-      heading: "1. Simple & Intuitive Platform",
+      heading: "1. Instant Market Access:",
       description:
-        "Many stock market trading platforms are overly complicated. RightTrade Capital is built with the focus on clarity and ease of use. You want to take a peek at your portfolio? One click. Want to place a trade? Two clicks. It's done.",
+        "Real-time stock prices can be accessed, charts can be analyzed, and trades can be conducted immediately without any intermediaries or waiting.",
     },
     {
       heading: "2. Speed = Confidence",
       description:
-        "Quick trade execution is very important, especially when markets are volatile. RightTrade Capital guarantees that trades are carried out in real time which allows you to act swiftly with confidence.",
+        "Actually, it is this very direct market access that endows traders with decision-making capacity in real-time.",
     },
     {
-      heading: "3. Mobile Trading That Works",
+      heading: "3. Global Trading Opportunities:",
       description:
-        "The mobile app is reliable, quick, and comes loaded with features. Through the app, you can do all these activities in less than half a minute: watchlist checking, chart opening, and trade executing.",
+        "One is able to trade stocks, CFDs, and ETFs in any international market just by using a single account, which not only simplifies but also makes more efficient the diversification of investments.",
     },
     {
-      heading: "4. Access to Global Markets",
+      heading: "4. Lower Transaction Costs:",
       description:
-        "You can trade shares of companies from the U.S., Europe, Asia, and many other regions. You can not only do this to diversify your portfolio but also to use multiple strategies and tap into foreign market opportunities.",
+        "The online stock trading platform lowers commissions and fees to almost zero in comparison with traditional brokers, which means that traders will be able to keep a larger portion of their profits.",
     },
     {
-      heading: "5. Secure & Transparent Trading",
+      heading: "5. User-Friendly Interface:",
       description:
-        "Two-factor authentication, encryption, and session controls protect your information and funds. Transparent pricing is the guarantee of no hidden fees or unexpected charges.",
+        " <a href=https://www.righttrade.com>RightTrade</a> and similar platforms, for instance, have been developed on the premise of ease of use and they are equipped with a quality dashboard and features that are suitable for the needs of both new and experienced users",
     },
     {
-      heading: "6. Trade and Learn Simultaneously",
+      heading: "6. Transparency and Control:",
       description:
-        "Beginners are guided by the built-in tutorials, FAQs, and walkthroughs as they practice real trades. Meanwhile, advanced traders also gain from the presence of complex tools which do not take up much space.",
+        "Traders are given access to information about pricing, order status, and portfolio performance in total. Those responsible for each trade can be located without any difficulty by using the option trace which in turn, results in a higher level of trust among the players.",
     },
     {
-      heading: "7. Real-Time Data That Matters",
+      heading: "7. Advanced Research Tools: ",
       description:
-        "No one is bombarded with lots of unnecessary information while having easy access to clean charts, live quotes, and actionable insights.",
+        "Just to mention a few, the services offered by RightTrade include comprehensive research reports, screening tools for stocks as well as technical indicators for charts to help customers become smarter investors.",
     },
     {
-      heading: "8. Human Customer Support",
+      heading: "8. Secure and Reliable Infrastructure:",
       description:
-        "Powered by chat, email, or voice, real people will assist you when you need them. You do not have to wait for a long time before getting your turn with a human or dealing with robots.",
+        "RightTrade, being a trustworthy trading platform, boasts security features like bank-level encryption, multiple-factor authentication, and impenetrable firewalls that prevent any harm to users’ private data and funds.",
     },
     {
-      heading: "9. best investing platforms",
+      heading: "9. 24/7 Accessibility:",
       description:
-        "Regardless of whether you invest $100 or $100,000, the platform will be your trading style's best friend.",
+        "Mobile access, besides desktop, gives the opportunity to users to log in anywhere, anytime. The convenience of rapid and on-the-fly trading is one of the main tempting features of working with the best online stock trading platforms.",
     },
     {
-      heading: "10. Powerful Analytical Tools",
+      heading: "10. Education and Support:",
       description:
-        "Economic Calendar for key global events.Fully supports the best online stock trading experience.",
+        "RightTrade is fully prepared to provide a complete package of training, live online classes, and, above all, very sincere customer service which has made it possible for the traders to remain involved and improve their skills over time.",
     },
   ];
 
   // ✅ First section data
   const statsData = {
-    title: "India’s Best Stock Market Trading Platform",
+    title:
+      "Best Stock Market Trading Platform | Trusted Online Stock Trading by RightTrade",
     subtitle:
-      "Access global markets, real-time tools, and secure trading — all on a trusted stock market trading platform built for confident investors.",
+      "Go ahead and make your debut trade with confidence on the highest quality online stock trading platform today.",
     buttonText: "Open account",
     note: "Trading is risky",
     image: statsBg,
@@ -133,12 +135,11 @@ const StockTrading = () => {
 
   // ✅ Fourth section data (new reusable)
   const currencySectionData = {
-    title: "Benefits of a Reliable Stock Market Trading Platform",
+    title: "Advanced Technology and Security",
     paragraphs: [
-      "Enhanced Trading Speed and Efficiency – You can execute your trades instantly with almost no delay, and this will reduce your slippage and increase your profits.",
-      "Accurate Market Data – Anyone can get real-time charts, quotes, and analytics for their trading decisions.",
-      "Comprehensive Risk Management – Just a few of the many features are stop-loss, take-profit, and hedging strategies that aim to help you secure your investments.",
-      "User-Friendly Interface – No registration or subscription is required to use the intuitive dashboards and navigation designed for traders of all levels.",
+      "The technology and security are the main pillars of a stock trading platform that can be trusted. RightTrade Capital has invested in building its infrastructure on fast, low-latency servers to the extent that every trade is put into effect without waiting any time.",
+      "The data is encrypted with SSL, and accounts of users are protected with two-factor authentication. Security audits and checks for compliance that are done regularly are part of the client data and funds protection system.",
+      "Moreover, the platform installs security measures such as the use of firewalls, DDoS protection, and redundant systems to provide uptime even when there is a high volume of trade. Because of such powerful technology, the traders are able to concentrate on their trading strategies while RightTrade is handling security and stability for them.",
     ],
     image: globeImg,
   };
@@ -156,57 +157,83 @@ const StockTrading = () => {
 
   const faqs = [
     {
-      question: "Is RightTrade Capital regulated?",
+      question:
+        "What features make RightTrade a reliable stock trading platform?",
       answer:
-        "Yes, it is a fully regulated stock market trading platform that offers safe trades worldwide.",
+        "One of the most important features of a trusted trading platform is RightTrade’s transparency commitment, use of advanced technology and top-tier security. Every encryption protects each trade and precision is reached on the regulated infrastructure.",
     },
     {
-      question: "What markets can I trade on?",
+      question:
+        "Is it possible to execute stock and CFD trades on the RightTrade platform?",
       answer:
-        "Stocks, ETFs, indices, commodities, crypto CFDs, futures, and options.",
+        "RightTrade offers the possibility to trade a variety of assets such as stocks, CFDs, ETFs, and derivatives at the same time by the use of one brokerage account.",
     },
     {
-      question: "Can I try a demo account?",
+      question:
+        "How does RightTrade compare with the best stock trading platforms?",
       answer:
-        "Yes, the demo account on our platform allows risk-free practice of online stock trading.",
+        "RightTrade is one of the leading stock trading platforms and offers a wide range of benefits such as: Competitive fees, access to global markets, fast order execution, and comprehensive courses and webinars.",
     },
     {
-      question: "What is the minimum deposit?",
-
-      answer: "This varies depending on the type of account selected.",
-    },
-    {
-      question: "Are Islamic accounts provided?",
-      answer:
-        "Yes, in fact, we offer swap-free and Shariah-compliant accounts.",
-    },
-    {
-      question: "Can I trade on my mobile?",
-      answer:
-        "Correct, in fact, we have totally working iOS and Android apps that can be used whenever and wherever.",
-    },
-    {
-      question: "How fast are withdrawals processed?",
-      answer:
-        "The majority of withdrawal requests are fulfilled within 24 hours.",
-    },
-    {
-      question: "What spreads and fees apply?",
+      question: "Are there resources for a beginner in trading?",
 
       answer:
-        "For ECN accounts spreads are zero as low as 0.0 pips are available. Account fees differ by account.",
+        "The answer is yes. The platform provides the users with the possibility of using a demo account, tutorials, webinars, and customer service to learn step by step how to trade and increase skills.",
     },
     {
-      question: "Do you provide learning materials?",
+      question: "Could I use automated trading or other tools in my trading?",
       answer:
-        "Yes, education materials are included, such as trading guides, webinars, tutorials, and market insights.",
+        "You may combine RightTrade with algorithmic trading APIs along with backtesting tools to make your trading system automated and easily reachable.",
     },
     {
-      question: "Why choose RightTrade Capital over other brokers?",
+      question: "What devices can I trade on?",
       answer:
-        "Is it because of the top features that include complete trust, professional tools, prompt trade, availability of global market, and resources for self-learning that makes us one of the top Indian stock trading platforms?",
+        "The web-based stock trading platform of RightTrade is compatible with all desktop, tablet, and mobile applications. So, you have the privilege of following up and managing your trades at any time and from any place.",
     },
   ];
+
+  const otherNotesData = {
+    title: "Key Features of the Best Stock Market Trading Platforms",
+
+    features: [
+      {
+        icon: "script",
+        heading: "Real-Time Market Data:",
+        paragraph:
+          "One of the main tools for a trader is the access to the market with real-time unerring prices from which he will take his decisions. RightTrade distributes live quotes, charts, and analytical tools for instantaneous market insights.",
+      },
+      {
+        icon: "chart",
+        heading: "Fast Execution:",
+        paragraph:
+          "If the execution were delayed for a second only, the result of the trade would be different. So, the stock trading platform of RightTrade is absolutely reliable as it ensures operations at the speed of light with the least possible lag.",
+      },
+      {
+        icon: "bell",
+        heading: "Comprehensive Order Types:",
+        paragraph:
+          "Market, limit, and stop-loss orders are tools that allow users to reduce risk in a proper manner. The platform lets traders decide which and when they will go in/out of positions.",
+      },
+      {
+        icon: "calendar",
+        heading: "Multi-Asset Support:",
+        paragraph:
+          "The users are allowed to trade multiple instruments such as stocks, CFDs, ETFs, and derivatives all in one platform. This not only broadens one’s portfolio, but also the possibility to explore different markets at the same time.",
+      },
+      {
+        icon: "layout",
+        heading: "User-Friendly Interface:",
+        paragraph:
+          "The clean and simple dashboard lets the users, no matter the level of the experience, to navigate the platform easily. The accessibility that is guaranteed by RightTrade’s interface comes without the loss of the functionality.",
+      },
+      {
+        icon: "layout",
+        heading: "Advanced Security:",
+        paragraph:
+          "By adopting methods such as encryption and multi-factor authentication security is ensured for your investments. In fact, security is an integral part of RightTrade’s short trading platform.",
+      },
+    ],
+  };
 
   const pageURL =
     "https://www.righttradecapital.com/best-stock-trading-platform";
@@ -238,50 +265,47 @@ const StockTrading = () => {
         <StatsSection {...statsData} />
         {/*  2 Section */}
         <FeatureSection
-          title="Safe Transactions & Easy Withdrawals"
-          paragraph="RightTrade Capital makes sure that deposits and withdrawals are done quickly, safely, and transparently. Multiple payment methods and a regulated environment are what guarantee that all users will have safe and smooth trading."
+          title="What Is a Stock Market Trading Platform?"
+          paragraph="A stock market trading platform is an online portal through which investors are allowed to buy, sell, and monitor stocks and other financial instruments in real time. What it basically does is it directly connects traders to the markets, thus providing them with the possibility to instantly carry out their trades without the need for intervention by brokers.
+RightTrade Capital signifies a reliable stock trading platform that is designed to make market trading less complicated while giving all users the same level of trust, safety, and high performance."
         />
 
         <SideImageTextSection
           image={fxTradingImg}
           bgColor="bg-[#121733]"
           textcolor="text-white"
-          title="Why Traders Choose RightTrade Capital"
+          title="Trade Multiple Stocks and CFDs in One Place"
           paragraphTextColor="text-white"
           paragraphs={[
-            "We give traders everything they need to trade swiftly and correctly on the global currency markets at RightTrade Capital.One of the most fundamental things to know about trading forex is how the major currency pairings function.",
+            "A great feature of current trading platforms is the convenience of handling multiple assets accounts. In addition to stocks, RightTrade gives you access to commodities, indices, forex, and crypto markets.",
           ]}
           listItems={[
-            "Secure and regulated stock market trading platform",
-            "Ultra-low spreads and deep market liquidity",
-            "High-speed execution for timely trades",
-            "Global market access across 500+ instruments",
-            "Web, mobile, and desktop compatibility",
-            "24/5 multilingual customer support",
+            "Global Stocks: Get shares from the world's biggest stock exchanges and sell them.",
+            "CFDs (Contracts for Difference): Speculate on the prices of the assets rather than buying them directly.",
+            "ETFs and Derivatives: Get exposure to the market through cheap funds and also through risk-hedging instruments.",
           ]}
+          paragraphs2="This multi-asset accessibility helps traders build balanced portfolios and take advantage of opportunities across markets. Having all in one platform, RightTrade allows for an easy trading experience, where users can conveniently and efficiently manage all their investments."
         />
 
         <ImageTextSections
-          title="Markets Available on Our Online Stock Trading Platform"
-          description={`Trade with ease and flexibility across multiple asset classes to maximize returns and implement the best online stock trading strategies:
+          title="Why Trade with RightTrade Capital’s Stock Market Platform"
+          description={`RightTrade Capital is a solution that allows you to do more than just trade with other providers—it’s a project for traders who value performance, trust, and education out of which the best stock trading platforms are made. Its features make it stand apart from the rest of the top stock trading platforms:
 
-        • Stocks & Equities &ndash; Real-time access to global leaders.
-        • Indices &ndash; Trade NASDAQ, Dow Jones, S&P 500, NIFTY50.
-        • ETFs & Mutual Funds &ndash; Diversified portfolios with risk management.
-        • Commodities &ndash; Gold, silver, oil for long-term investment and hedging.
-        • Crypto CFDs &ndash; Bitcoin, Ethereum, and more without wallets.
-        • Futures & Options &ndash; Hedge or speculate with flexible leverage.`}
+        • Seamless Trading Experience: The interface has the main characteristics of being quick, precise, and comfortable. There are no difficulties when you are monitoring the markets, placing orders, or tracking your portfolio.
+        • Security and Reliability: Bank-level encryption technology, as well as multiple layers of security, are employed to safeguard every transaction.
+        • Transparency in Pricing: Gotcha-free fees or no tricky costs. You are perfectly aware of what each trade costs you, thus making RightTrade a fairly dealing stock trading platform.
+        • Learning and Support: From trade seminars to customized coaching, our clients are always updated and feel empowered when making decisions.`}
           image={commissionsImage}
           reverse={false}
           noButton={true}
           bgcolor="bg-white"
           textcolor="text-[#121733]"
-          paragraph="We have the tools and help you need to trade precious metals for short-term profits or to protect your money over the long term."
+          paragraph="RightTrade Capital mashes up these features to provide users with a user-friendly trading system, which makes investors get their goals easily and confidently."
         />
         {/*  3 Section */}
         <FeatureListSection
-          title="Why RightTrade Capital Is the Best Stock Market Trading Platform"
-          subtitle="RightTrade Capital operates under full authority and is a stock market trading platform that clients can depend on to get safe and reliable access to the different market instruments all over the world. As a stock trading platform that can be trusted and one of the top platforms for stock trading, we unite state-of-the-art technology, rapid execution, and secure infrastructure for traders and investors regardless of their knowledge level."
+          title="Why Choose an Online Stock Market Trading Platform"
+          subtitle="Choosing an online stock trading platform enables users to make their trades quickly, be more flexible with their investments and still maintain control over them. There are nine reasons below which prove that digital trading with RightTrade Capital is highly ranked by investors."
           items={features}
         />
         {/*  4 (New Reusable) */}
@@ -292,17 +316,17 @@ const StockTrading = () => {
         image={fxTradingImg}
         bgColor="bg-[#121733]"
         textcolor="text-white"
-        title="Future of Online Stock Market Trading Platforms"
+        title="Integration with Advanced Trading Tools"
         paragraphTextColor="text-white"
         paragraphs={[
           "AI & Machine Learning Integration – The use of AI led to predictive analytics, robotic trading, and tailor-made suggestions.",
         ]}
         listItems={[
-          "Blockchain & Digital Ledger Technology – Technology embracing transparency and certified records aiding trust and regulation.",
-          "Global Access & Connectivity – Customers have the opportunity to trade across borders and access international markets through the internet.",
-          "Enhanced Mobile Trading Experiences – Traders can have their mobile devices equipped with real-time alerts, analytics, and trade execution on mobile apps.",
-          "Cloud-Based Platforms – The advantages are high scalability, reliability, and uninterrupted access to market information.",
-          "Education & Community Integration – Continuous learning with the help of the Embedded tutorials, webinars and the social trading features.",
+          "Expert traders require the provision of tools that will offer them an analytical advantage. RightTrade is compatible with a vast range of sophisticated trading instruments which are created to facilitate accuracy and improve the effectiveness of a trader.",
+          "Algorithmic Trading and APIs: The traders have the liberty to turn their strategies into programs that will be connected straight to the trading platform, thereby making their execution much quicker and more efficient, besides being driven by data.",
+          "Backtesting and Strategy Builders: The customers can perform paper trading of their strategies with data from the past to get the most favorable outcome before actual trading.",
+          "Market Scanners and Indicators: Discover high-performance stocks and probable points of entry with the use of adjustable filters and graphs.",
+          "By merging automation, analytics, and user-friendly design, RightTrade equips its users with all the necessary resources for smart trading, thus ranking it among the top online stock trading platforms for professionals as well as beginners.",
         ]}
       />
 
@@ -326,18 +350,28 @@ const StockTrading = () => {
 
       <SecurityRegulationSection
         image={home6}
-        title="Advanced Trading Platforms"
-        introParagraph="There are a lot of good reasons to trade gold and silver:"
+        title="Start Trading Stocks with Confidence"
+        introParagraph="There are a lot of good reasons to trade :"
         bulletPoints={[
-          "MetaTrader 4 (MT4) – Full-featured platform with live charts, expert advisors, one-click trading, multiple languages supported.",
-          "WebTrader – Simply trade directly in your browser, no installation needed.",
-          "Mobile Apps – iOS and Android apps that allow you to trade anytime and anywhere with the push notifications of the latest updates.",
+          "RightTrade is very user-friendly, fast, and safe when it comes to getting started. Opening an account is basically done within a few minutes, identity verification, and trading on one of the best stock trading platforms in the market follows.",
+          "After your funds are in place, you can even tap into global stock markets, use real-time charts, and trade via smart tools that come pre-installed on the platform. The option of the demo account allows you to rehearse your moves before you dare to use your genuine capital.",
+          "Opting for sophisticated technology, transparent pricing, and outstanding customer service, RightTrade grants its users the same level of confidence regardless of which financial markets they choose to participate in. It is the ultimate online stock trading platform, specially designed for anyone eager to commence with a smart, secure, and risk-free investing journey.",
         ]}
+      />
+
+      <MarketViewFeatureSection
+        title={otherNotesData.title}
+        description={otherNotesData.description}
+        features={otherNotesData.features}
+        bgcolor="bg-[#121733]"
+        titlecolor="text-white"
       />
 
       <FeatureSection
         title="Conclusion"
-        paragraph="In short, a reliable stock trading platform is doing wonders for traders. Fast decision-making, reliability, and security come along with advanced tools that allow one to be friendly with the trading world. Moreover, with the ever-evolving technologies like AI, blockchain, and cloud-based solutions, the online trading platform keeps getting smarter, more efficient, and being accessible from any part of the globe which in turn allows trading to thrive."
+        paragraph="RightTrade Capital is one of the top online stock trading services that best suit the needs of investors who like quick, safe, and simple transactions. It doesn’t matter if you are a beginner or an experienced investor, the great features of RightTrade, fair prices, and nice attitude of your personal assistants will create the moment for you to trade every time with conviction."
+        bgcolor=""
+        textcolor=""
       />
 
       <FaqSection faqs={faqs} />

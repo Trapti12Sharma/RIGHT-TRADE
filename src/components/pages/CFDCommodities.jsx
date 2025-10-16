@@ -20,11 +20,11 @@ import home6 from "../../assets/sign-up.png";
 const CFDCommodities = () => {
   // ✅ First section data
   const statsData = {
-    title: "Start CFD Commodities trading with RightTrade Capital",
+    title: "Trade Smarter with CFD Commodity Trading on RightTrade Capital",
     subtitle:
-      "Trade the most popular CFD Commodities majors with spreads from zero",
-    buttonText: "Open account",
-    note: "Trading is risky",
+      "The best CFD commodity trading platform that integrates the characteristics of speed, transparency, and security will make you have gold, oil, silver, and almost all commodities of the world at your fingertips right.",
+    buttonText: "Open Live Account",
+    note: "Try Demo Account",
     image: statsBg,
   };
 
@@ -149,13 +149,9 @@ const CFDCommodities = () => {
         {/*  1 Section */}
         <StatsSection {...statsData} />
         {/*  2 Section */}
-        <ForexTradeSection
-          title={CFDCommoditiesContent.title}
-          description={CFDCommoditiesContent.description}
-          benefits={CFDCommoditiesContent.benefits}
-          paragraph={CFDCommoditiesContent.paragraph}
-          bgcolor="bg-[#121733]"
-          textcolor="text-white"
+        <FeatureSection
+          title="Safe Transactions & Easy Withdrawals"
+          paragraph="RightTrade Capital makes sure that deposits and withdrawals are done quickly, safely, and transparently. Multiple payment methods and a regulated environment are what guarantee that all users will have safe and smooth trading."
         />
 
         {/*  3 (New Reusable) */}
